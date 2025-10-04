@@ -34,64 +34,71 @@ const Grievances = () => {
                 ]}
             />
 
-            <div className="container mx-auto px-6 py-12">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <Card
-                        iconClass="fa-pen"
-                        title="Submit Your Complaint"
-                        description="Report your concern online. We ensure fair and prompt handling of all grievances submitted."
-                        color="border-yellow-500"
-                    />
+            <div className="container mx-auto px-6 py-12 text-justify">
+               <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <Card
+        iconClass="fa-pen"
+        title="Submit Your Complaint"
+        description="You can submit your complaints online easily and securely. Every concern is taken seriously, and we ensure fair, transparent, and timely handling of grievances to maintain a safe and supportive campus environment for all students."
+        color="border-yellow-500"
+    />
 
-                    <Card
-                        iconClass="fa-users"
-                        title="Minority Cell"
-                        description={`Protects rights of minority students.\nResolves academic/admin issues.\nPromotes awareness of rights.`}
-                        color="border-indigo-500"
-                    />
+    <Card
+        iconClass="fa-users"
+        title="Minority Cell"
+        description="The Minority Cell works to protect the rights of minority students and ensures that academic and administrative issues are resolved effectively. It also conducts awareness programs to educate students about their rights and available support systems."
+        color="border-indigo-500"
+    />
 
-                    <Card
-                        iconClass="fa-handshake"
-                        title="SC/ST/OBC Cell"
-                        description={`Handles caste-based issues.\nAssists in scholarships and reservations.\nSupports underrepresented groups.`}
-                        color="border-green-500"
-                    />
+    <Card
+        iconClass="fa-handshake"
+        title="SC/ST/OBC Cell"
+        description="This cell addresses caste-based concerns and ensures equal opportunities for SC/ST/OBC students. It helps with scholarship applications, reservations, and any academic or social issues, providing consistent guidance and support to underrepresented groups on campus."
+        color="border-green-500"
+    />
 
-                    <Card
-                        iconClass="fa-shield-alt"
-                        title="Anti-Ragging Committee"
-                        description={`Monitors campus to prevent ragging.\nEnsures UGC compliance.\nResponds quickly to incidents.`}
-                        color="border-red-400"
-                    />
+    <Card
+        iconClass="fa-shield-alt"
+        title="Anti-Ragging Committee"
+        description="The Anti-Ragging Committee actively monitors the campus to prevent ragging incidents. It ensures full compliance with UGC regulations, responds promptly to complaints, and organizes preventive measures to create a safe and respectful learning environment for all students."
+        color="border-red-400"
+    />
 
-                    <Card
-                        iconClass="fa-venus"
-                        title="Women's Rights Committee / ICC"
-                        description={`Handles gender-based issues.\nActs on harassment complaints.\nConducts gender sensitization.`}
-                        color="border-pink-400"
-                    />
+    <Card
+        iconClass="fa-venus"
+        title="Women's Rights Committee / ICC"
+        description="This committee handles gender-based issues, investigates harassment complaints, and provides support for victims. It also organizes workshops and sensitization programs to promote awareness of gender equality and empower women within the campus community."
+        color="border-pink-400"
+    />
 
-                    <Card
-                        iconClass="fa-comments"
-                        title="Student Grievance Redressal"
-                        description={`Deals with complaints on academics and facilities.\nFair and transparent resolution system.`}
-                        color="border-blue-500"
-                    />
+    <Card
+        iconClass="fa-comments"
+        title="Student Grievance Redressal"
+        description="The Student Grievance Redressal system addresses complaints regarding academics, infrastructure, and campus facilities. It follows a fair, transparent, and timely resolution process to ensure every student’s concerns are heard and resolved efficiently."
+        color="border-blue-500"
+    />
 
-                    <Card
-                        iconClass="fa-stream"
-                        title="Grievance Submission Process"
-                        description={`1. Choose correct cell.\n2. Submit complaint.\n3. Acknowledgment in 3 days.\n4. Resolution in 15 days.`}
-                        color="border-cyan-500"
-                    />
+    <Card
+        iconClass="fa-stream"
+        title="Grievance Submission Process"
+        description="Submitting a grievance is simple: first, identify the appropriate cell for your concern. Next, submit your complaint online or offline. You will receive acknowledgment within three days, and the issue is investigated and resolved, usually within fifteen days."
+        color="border-cyan-500"
+    />
 
-                    <Card
-                        iconClass="fa-user-shield"
-                        title="Confidentiality & Safety"
-                        description={`All grievances are confidential.\nZero tolerance for retaliation.\nSupport assured.`}
-                        color="border-orange-400"
-                    />
-                </div>
+    <Card
+        iconClass="fa-user-shield"
+        title="Confidentiality & Safety"
+        description="All grievance submissions are treated with strict confidentiality. Students can raise concerns without fear of retaliation. The institution guarantees a safe, supportive environment, ensuring that every complaint is handled discreetly and with utmost priority for safety."
+        color="border-orange-400"
+    />
+    <Card
+        iconClass="fa-address-book"
+        title="Authorities to Contact"
+        description="For any escalations or urgent concerns, students may contact the designated authorities directly. Dr. Balwan, Registrar, and Mr. Ashok Kumar, Proctor, are responsible for overseeing student welfare and ensuring timely and fair resolution of grievances."
+        color="border-purple-500"
+    />
+</div>
+
 
                 {/* Download Notifications Section */}
                 <div className="mt-16">

@@ -93,28 +93,30 @@ export default function HeroSlider() {
   }
 
   return (
-    <section className="hero-slider relative overflow-hidden">
+    <section className="hero-slider relative overflow-hidden bg-gray-100">
+  <div
+    ref={slideContainerRef}
+    className="slider-container relative w-full max-w-8xl mx-auto 
+               h-[350px] sm:h-[450px] md:h-[600px] lg:h-[660px] 
+               mt-16 sm:mt-8 md:mt-10 lg:mt-12 rounded-2xl shadow-lg overflow-hidden"
+  >
+    {banners.map((banner, index) => (
       <div
-        ref={slideContainerRef}
-        className="slider-container h-[300px] sm:h-[400px] md:h-[500px] lg:h-[560px] w-full mt-16 sm:mt-20 md:mt-24 lg:mt-32"
+        key={banner._id}
+        className={`slide absolute inset-0 transition-all duration-1000 ${
+          index === currentSlide
+            ? "opacity-100 z-10 scale-100"
+            : "opacity-0 z-0 scale-105"
+        }`}
       >
-        {banners.map((banner, index) => (
-          <div
-            key={banner._id}
-            className={`slide h-full w-full absolute inset-0 transition-all duration-1000 ${
-              index === currentSlide
-                ? "opacity-100 z-10 scale-100"
-                : "opacity-0 z-0 scale-105"
-            }`}
-          >
-            <img
-              src={banner.imageUrl}
-              alt={banner.title}
-              className="w-full h-full object-cover object-center"
-              loading={index === 0 ? "eager" : "lazy"}
-            />
-          </div>
-        ))}
+        <img
+          src={banner.imageUrl}
+          alt={banner.title}
+          className="w-full h-full object-cover object-center"
+          loading={index === 0 ? "eager" : "lazy"}
+        />
+      </div>
+    ))}
 
         {/* Show navigation only if there are multiple banners */}
         {banners.length > 1 && (
