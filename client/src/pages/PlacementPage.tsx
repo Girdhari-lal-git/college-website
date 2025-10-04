@@ -254,33 +254,40 @@ const TrainingPrograms = () => {
 // Placement Records Component
 const PlacementRecords = () => {
   const yearlyData = [
-    {
-      year: "2023-24",
-      placed: 485,
-      companies: 150,
-      highest: "₹18,00,000",
+     {
+      year: "2024-25",
+      placed: 122,
+      companies: 55,
+      highest: "₹9,60,000",
       average: "₹6,80,000",
     },
     {
+      year: "2023-24",
+      placed: 203,
+      companies: 46,
+      highest: "₹12,00,000",
+      average: "₹5,40,000",
+    },
+    {
       year: "2022-23",
-      placed: 465,
-      companies: 142,
-      highest: "₹16,50,000",
-      average: "₹6,50,000",
+      placed: 198,
+      companies: 58,
+      highest: "₹11,70,000",
+      average: "₹4,50,000",
     },
     {
       year: "2021-22",
-      placed: 445,
-      companies: 138,
-      highest: "₹16,00,000",
-      average: "₹6,20,000",
+      placed: 195,
+      companies: 64,
+      highest: "₹10,40,000",
+      average: "₹4,10,000",
     },
     {
       year: "2020-21",
-      placed: 425,
-      companies: 135,
-      highest: "₹18,00,000",
-      average: "₹5,80,000",
+      placed: 183,
+      companies: 53,
+      highest: "₹10,50,000",
+      average: "₹5,20,000",
     },
   ];
 

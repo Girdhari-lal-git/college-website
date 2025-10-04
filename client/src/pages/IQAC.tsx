@@ -5,6 +5,7 @@ import BreadCrumb from '@/components/BreadCrumb';
 import Cta from '@/components/Cta';
 import LazyImage from "@/components/LazyImage";
 import { ChevronDown, ChevronRight, Download, Eye, Users, Target, Award, BookOpen, FileText, Calendar, CheckCircle } from 'lucide-react';
+import { AccessibilityFeatures } from '@/components/AccessibilityFeatures';
 
 const iqacConstitution = [
     'Constitution 2024-25 (After Visit)',
@@ -1094,6 +1095,7 @@ const IQACPage = () => {
     return (
         <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50">
             <Header />
+            <AccessibilityFeatures />
             <BreadCrumb
                 title="IQAC"
                 description="Internal Quality Assurance Cell - Enhancing educational standards and academic excellence at PIET."
@@ -1262,7 +1264,7 @@ const IQACPage = () => {
                                             <LazyImage
                                                 src={presidentInfo.imageUrl}
                                                 alt={presidentInfo.name}
-                                                className="rounded-full w-90 h-90 mx-auto md:mx-0 object-cover shadow-lw " // Increased size, object-cover, shadow
+                                                className="rounded-full w-88 h-88 mx-auto md:mx-0 object-cover shadow-lw " // Increased size, object-cover, shadow
                                             />
                                             <h3 className="text-3xl font-bold mt-4 text-primary"> {/* Increased font size */}
                                                 {presidentInfo.name}
@@ -1282,7 +1284,9 @@ const IQACPage = () => {
                                 </div>
 
                 {/* Tables with modern design */}
+                 <div >
                 <ModernTable title="Quality Policy" data={['Quality Policy']} icon={FileText} />
+                </div>
                 <ModernTable title="IQAC Constitution" data={iqacConstitution} icon={Users} />
                 <ModernTable title="IQAC Handbook" data={['IQAC Handbook']} icon={BookOpen} />
                 <ModernTable title="IQAC Initiatives" data={iqacInitiatives} icon={Target} />
