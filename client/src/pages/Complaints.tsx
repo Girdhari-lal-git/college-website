@@ -120,7 +120,7 @@ const Complaints = () => {
                 subtitle="An Insight into PIET"
                 reverse={false}
                 image={{
-                    src: "https://www.piet.poornima.org/images/idealab.jpeg",
+                    src: "/public/images/committies/icc/icc.png",
                     alt: "Deptartment of Applied Sciences",
                     caption: "Accredited with Grade 'A' by NAAC",
                 }}

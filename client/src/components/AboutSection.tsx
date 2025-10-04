@@ -70,7 +70,7 @@ export default function AboutSection() {
 
 
             <LazyImage
-              src={'https://res.cloudinary.com/ddygzamv4/image/upload/v1747648404/gp8krjucihqxre0zs3jl.jpg'}
+              src={'/images/autonomous/piet-side.jpg'}
               alt={'NAAC Accreditation'}
               className="rounded-xl shadow-xl w-full h-auto z-10 relative"
             />

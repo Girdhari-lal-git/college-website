@@ -86,6 +86,26 @@ const activityData = [
     { sno: 11, activity: 'International Woman’s Day', date: '08/03/2025', time: '8:30AM-3:20PM', attendees: '40+', venue: 'PIET JAIPUR' },
     { sno: 12, activity: 'Blood Donation Day', date: '10/03/2025', time: '8:30AM-3:20PM', attendees: '700+', venue: 'PIET JAIPUR' },
     { sno: 13, activity: 'Old Age Home Visit', date: '20/03/2024', time: '12:00PM-3:20PM', attendees: '250+', venue: 'Old Age Home' },
+    { sno: 11, activity: 'Awareness Session on UTI', date: '03/04/2025', time: '', attendees: '', venue: 'PIET JAIPUR' },
+{ sno: 14, activity: 'World Health Day with Pioneering Cancer Awareness Initiative', date: '07/04/2025', time: '', attendees: '', venue: 'PIET JAIPUR' },
+{ sno: 15, activity: 'World Earth Day Poster Making Competition', date: '22/04/2025', time: '', attendees: '', venue: 'PIET JAIPUR' },
+{ sno: 16, activity: 'Session on Scope of Business in Rural Areas', date: '05/05/2025', time: '', attendees: '', venue: 'PIET JAIPUR' },
+{ sno: 17, activity: 'World Environment Day', date: '05/06/2025', time: '', attendees: '', venue: 'PIET JAIPUR' },
+{ sno: 18, activity: 'International Yoga Day', date: '21/06/2025', time: '', attendees: '', venue: 'PIET JAIPUR' },
+{ sno: 19, activity: 'Free Health Checkup Camp', date: '06/07/2025', time: '', attendees: '', venue: 'PIET JAIPUR' },
+{ sno: 20, activity: 'Life Saving Skills Training Program', date: '02/08/2025', time: '', attendees: '', venue: 'PIET JAIPUR' },
+{ sno: 21, activity: 'Red Run Marathon', date: '08/08/2025', time: '', attendees: '', venue: 'PIET JAIPUR' },
+{ sno: 22, activity: 'Independence Day Celebration', date: '15/08/2025', time: '', attendees: '', venue: 'PIET JAIPUR' },
+{ sno: 23, activity: 'Ramchandrpura Govt School Celebration', date: '15/08/2025', time: '', attendees: '', venue: 'PIET JAIPUR' },
+{ sno: 24, activity: 'Yoga Session', date: '26/08/2025', time: '', attendees: '', venue: 'PIET JAIPUR' },
+{ sno: 25, activity: 'NSS Orientation and IKS Knowledge', date: '03/09/2025', time: '', attendees: '', venue: 'PIET JAIPUR' },
+{ sno: 26, activity: 'Student Outreach Activity', date: '06/09/2025', time: '', attendees: '', venue: 'PIET JAIPUR' },
+{ sno: 27, activity: 'One Day UNICEF Training on Mental Health Awareness', date: '12/09/2025', time: '', attendees: '', venue: 'PIET JAIPUR' },
+{ sno: 28, activity: 'Expression Wall', date: '17/09/2025', time: '', attendees: '', venue: 'PIET JAIPUR' },
+{ sno: 29, activity: 'Debate Competition', date: '23/09/2025', time: '', attendees: '', venue: 'PIET JAIPUR' },
+{ sno: 30, activity: 'Poster Competition', date: '24/09/2025', time: '', attendees: '', venue: 'PIET JAIPUR' },
+{ sno: 31, activity: 'NSS Day Celebration', date: '24/09/2025', time: '', attendees: '', venue: 'PIET JAIPUR' },
+
 ];
 
 

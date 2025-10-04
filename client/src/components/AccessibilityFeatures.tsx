@@ -124,7 +124,7 @@ export const FontSizeAdjuster = () => {
   };
 
   return (
-    <div className="fixed top-24 right-4 z-40 bg-white rounded-lg shadow-md p-2 flex flex-col items-center">
+    <div className="fixed top-50 right-0 z-40 bg-white rounded-lg shadow-md p-2 flex flex-col items-center">
       <span className="text-xs mb-1 font-medium text-neutral-700">Text</span>
       <div className="flex flex-col gap-1">
         <button
@@ -155,7 +155,7 @@ export const FontSizeAdjuster = () => {
 
 export const ContactButtons = () => {
   return (
-    <div className="fixed top-1/3 right-0 z-50 flex flex-col items-end space-y-2">
+    <div className="fixed top-1/2 right-0 z-50 flex flex-col items-end space-y-2">
       {/* Call Button */}
       <a
         href="tel:+919001893262"

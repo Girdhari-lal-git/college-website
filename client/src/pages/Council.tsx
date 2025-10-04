@@ -3,7 +3,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Cta from '@/components/Cta';
 import BreadCrumb from '@/components/BreadCrumb';
-import DynamicTable from '@/components/DynamicTable';
+import DynamicTable from '@/components/DynamicTable ';
 
 const councilMembersColumns = [
     { label: 'S. No', key: 'sno' },

@@ -58,13 +58,25 @@ const AcmChapter = () => {
           { label: 'ACM Chapter', isCurrent: true },
         ]}
       />
-
+ {/* ACM Logo Section */}
+    <section className="py-12 bg-white">
+      <div className="container mx-auto px-6 text-center">
+        <img
+          src={"/public/images/council/acm.png"}
+          alt="ACM Logo"
+          className="mx-auto h-24 mb-6 transform hover:scale-105 transition-transform duration-300"
+        />
+        <p className="text-xl text-gray-700 max-w-2xl mx-auto">
+          The IETE Student Branch at PIET empowers students through innovation, collaboration, and technical excellence.
+        </p>
+      </div>
+    </section>
       <OverviewSection
         title="ACM Student Chapter @ PIET"
         subtitle="About the Chapter"
         reverse={false}
         image={{
-          src: 'https://www.piet.poornima.org/images/idealab.jpeg',
+          src: '/images/chapters/acm/acm-1.jpg',
           alt: 'ACM Chapter Events',
         }}
       >
@@ -114,10 +126,52 @@ const AcmChapter = () => {
       <div className="container mt-14 mx-auto mb-16">
         <h2 className="text-3xl text-primary font-bold mb-8 text-center">Glimpses of the Events</h2>
         <div className="w-24 h-1 bg-secondary mb-6 mx-auto"></div>
-        <div className="flex justify-center items-center h-64 bg-gray-100 border rounded-lg text-gray-500">
-          {/* Replace this with actual images or gallery component */}
-          <span>Event gallery coming soon...</span>
-        </div>
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+  <div className="aspect-square">
+    <img
+      src="/images/chapters/acm/acm-2.jpg"
+      alt="Event 1"
+      className="w-full h-full object-cover rounded-lg shadow"
+    />
+  </div>
+  <div className="aspect-square">
+    <img
+      src="/images/chapters/acm/acm-6.jpg"
+      alt="Event 2"
+      className="w-full h-full object-cover rounded-lg shadow"
+    />
+  </div>
+  <div className="aspect-square">
+    <img
+      src="/images/chapters/acm/acm-3.jpg"
+      alt="Event 3"
+      className="w-full h-full object-cover rounded-lg shadow"
+    />
+  </div>
+  <div className="aspect-square">
+    <img
+      src="/images/chapters/acm/acm-4.jpg"
+      alt="Event 4"
+      className="w-full h-full object-cover rounded-lg shadow"
+    />
+  </div>
+  <div className="aspect-square">
+    <img
+      src="/images/chapters/acm/acm-5.jpg"
+      alt="Event 5"
+      className="w-full h-full object-cover rounded-lg shadow"
+    />
+  </div>
+  <div className="aspect-square">
+    <img
+      src="/images/chapters/acm/acm-2.jpg"
+      alt="Event 6"
+      className="w-full h-full object-cover rounded-lg shadow"
+    />
+  </div>
+</div>
+
+
       </div>
 
       <Cta />

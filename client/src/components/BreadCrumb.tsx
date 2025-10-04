@@ -26,13 +26,13 @@ const BreadCrumb: React.FC<BreadCrumbProps> = ({
     breadcrumbs,
 }) => {
     return (
-        <div className="relative mt-16rem">
+        <div className="relative mt-48 ">
             <img
                 src={backgroundImage}
                 alt={`${title} Banner`}
-                className="w-full h-[250px] object-cover rounded-xl"
+                className="w-full h-[150px] object-cover rounded-xl"
             />
-            <div className="absolute inset-0 bg-black/60 flex items-center px-8 md:px-16">
+            <div className="absolute inset-0 bg-black/60 flex items-center px-8 mt:px-48">
                 <div>
                     <Breadcrumb>
                         <BreadcrumbList>

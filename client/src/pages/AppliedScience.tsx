@@ -373,7 +373,7 @@ const objectivePoints = [
 ]
 
 const visionContent = (
-    <p>
+    <p className="text-justify text-xl 2xl:text-2xl">
         To create knowledge based society with scientific temper through cutting-edge
         technologies, innovative research and to become valuable resource for enriching mankind.
     </p>

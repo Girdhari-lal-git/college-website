@@ -34,6 +34,14 @@ const scopePoints = [
     "Enhanced career prospects through networking and collaboration.",
 ];
 
+const studentbenefits = [
+    "Through their active involvement in the IETE Student Forum (ISF), students gain access to a wide range of opportunities that extend beyond the classroom. ",
+    "These include participation in national and international level technical events, conferences, and competitions, which help broaden their exposure and professional outlook.",
+    "Students also work on live projects that provide practical, hands-on experience, while mentorship from industry experts and academicians guides their growth. ",
+    "Additionally, certifications, career networking, and recognition further strengthen their academic profile and employability.",
+   
+];
+
 const committeeColumns = [
     { label: "Role", key: "role" },
     { label: "Name", key: "name" },
@@ -105,21 +113,42 @@ const IETEPage = () => {
                 ]}
             />
 
+            {/* IETE Logo Section */}
+    <section className="py-12 bg-white">
+      <div className="container mx-auto px-6 text-center">
+        <img
+          src={"/public/images/council/iste.png"}
+          alt="IETE Logo"
+          className="mx-auto h-24 mb-6 transform hover:scale-105 transition-transform duration-300"
+        />
+        <p className="text-xl text-gray-700 max-w-2xl mx-auto">
+          The IETE Student Branch at PIET empowers students through innovation, collaboration, and technical excellence.
+        </p>
+      </div>
+    </section>
+
             <OverviewSection
                 title="About IETE Student Forum (ISF)"
                 subtitle="Empowering Future Engineers"
                 reverse={false}
                 image={{
-                    src: "https://www.piet.poornima.org/images/electronics.jpeg",
+                    src: "/public/images/event1.png",
                     alt: "IETE Forum at PIET",
                     caption: "Fostering Innovation & Technical Excellence",
                 }}
             >
-                <p>
-                    The IETE Student Forum (ISF) at PIET is established with the
-                    aim of fostering a vibrant technical ecosystem for students,
-                    promoting research, innovation, and professional
-                    development.
+                <p className="text-justify">
+                    The IETE Student Forum (ISF) at Poornima Institute of Engineering and Technology (PIET) has been 
+                    established with the objective of creating a vibrant and dynamic technical ecosystem for students.
+                     The forum serves as a platform where young minds can come together to exchange knowledge, explore 
+                     new technologies, and participate in a variety of academic and professional development activities.
+                      Through ISF, students are encouraged to engage in research, innovation, and hands-on learning that
+                       complement their academic curriculum. It provides opportunities for organizing technical talks,
+                        seminars, workshops, hackathons, and industrial visits, which help bridge the gap between 
+                        classroom learning and industry practices. In addition, ISF focuses on nurturing leadership 
+                        qualities, teamwork, and communication skills, thereby preparing students for global challenges 
+                        in engineering and technology. By being a part of ISF, students gain exposure to the larger IETE 
+                    community, opening doors for networking, higher learning, and career advancement.
                 </p>
             </OverviewSection>
 
@@ -142,7 +171,7 @@ const IETEPage = () => {
                 <InfoCard
                     title="Benefits of Joining ISF"
                     iconClass="fas fa-handshake"
-                    content="Students gain access to national/international events, live projects, mentorship, certifications, career networking, and recognition."
+                    content= {<Checklist items={studentbenefits} />}
                 />
             </div>
 

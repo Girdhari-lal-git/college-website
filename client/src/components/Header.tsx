@@ -634,7 +634,7 @@ export default function Header() {
       </div>
 
       {/* Main Header */}
-      <div className="container mx-auto py-4 px-4 lg:px-0">
+      <div className="container mx-auto py-1 px-4 lg:px-0">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="flex items-center">
                     <div className="w-full">
@@ -642,7 +642,7 @@ export default function Header() {
                         <LazyImage
                           src={"/images/logo/pietlogo.png"}
                           alt={"NAAC Accreditation"}
-                          className="w-full max-w-md md:max-w-lg object-contain cursor-pointer"
+                          className="h-20 w-full max-w-md md:max-w-lg object-contain cursor-pointer"
                         />
                       </Link>
                     </div>
@@ -784,7 +784,7 @@ export default function Header() {
                   </Link>
 
                   <a
-                    href="https://drive.google.com/file/d/1cFORo7Udcbnw7OqiDXs4eenTXl1Ur7H5/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1cVFJV76_LhPGCgFSUnVw6s08o4r-6g5W/view?usp=drive_link"
                     target="_blank"
                     className="block p-3 text-neutral-800 hover:bg-primary hover:text-white transition-colors whitespace-nowrap overflow-hidden text-ellipsis"
                   >
@@ -813,7 +813,7 @@ export default function Header() {
                   </Link>
 
                   <a
-                    href="https://drive.google.com/file/d/1sSR8B4kEzt1Ize_lfLveVmmtil6XTeUd/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1gIi22yqhg7bwRdFBS1ZtHcGDGLAbozWi/view?usp=drive_link"
                     target="_blank"
                     className="block p-3 text-neutral-800 hover:bg-primary hover:text-white transition-colors whitespace-nowrap overflow-hidden text-ellipsis"
                   >
@@ -1238,6 +1238,12 @@ export default function Header() {
                     <i className="fas fa-users mr-2"></i>Industry Institute
                     Innovation
                   </Link>
+                   <Link
+                    href="/hackathons"
+                    className="block p-3 text-neutral-800 hover:bg-primary hover:text-white transition-colors whitespace-nowrap overflow-hidden text-ellipsis"
+                  >
+                    <i className="fas fa-code mr-2"></i>Hackathons
+                  </Link>
                 </div>
               </div>
             </li>
@@ -1300,7 +1306,7 @@ export default function Header() {
                     href="/greviance"
                     className="block p-3 text-neutral-800 hover:bg-primary hover:text-white transition-colors whitespace-nowrap overflow-hidden text-ellipsis"
                   >
-                    <i className="fas fa-comments mr-2"></i>Grievance Cell
+                    <i className="fas fa-comments mr-2"></i>Grievance Cell/Anti Ragging
                   </Link>
 
                   <Link
@@ -1325,7 +1331,7 @@ export default function Header() {
                     <i className="fas fa-edit mr-2"></i>Submit Complaint
                   </Link>
 
-                  */}
+                  
 
                   <Link
                     href="/greviance"
@@ -1333,7 +1339,7 @@ export default function Header() {
                   >
                     <i className="fas fa-ban mr-2"></i>Anti Ragging
                   </Link>
-
+                  */}
                   <a
                     href="https://drive.google.com/file/d/1H-G1_SYhblhZ4O-q7tUHPLKVo8yYYwT3/view?usp=sharing"
                     target="__blank"
@@ -1363,12 +1369,7 @@ export default function Header() {
                     <i className="fas fa-tools mr-2"></i>Campus Facilities
                   </Link>
 
-                  <Link
-                    href="/hackathons"
-                    className="block p-3 text-neutral-800 hover:bg-primary hover:text-white transition-colors whitespace-nowrap overflow-hidden text-ellipsis"
-                  >
-                    <i className="fas fa-code mr-2"></i>Hackathons
-                  </Link>
+                 
                 </div>
               </div>
             </li>

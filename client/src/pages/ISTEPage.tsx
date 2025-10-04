@@ -81,12 +81,26 @@ const ISTEPage = () => {
         ]}
       />
 
+         {/* ISTE Logo Section */}
+    <section className="py-12 bg-white">
+      <div className="container mx-auto px-6 text-center">
+        <img
+          src={"/public/image/council/iste.PNG"}
+          alt="ISTE Logo"
+          className="mx-auto h-24 mb-6 transform hover:scale-105 transition-transform duration-300"
+        />
+        <p className="text-xl text-gray-700 max-w-2xl mx-auto">
+          The IETE Student Branch at PIET empowers students through innovation, collaboration, and technical excellence.
+        </p>
+      </div>
+    </section>
+
       <OverviewSection
         title="ISTE Student Chapter @ PIET"
         subtitle="About ISTE"
         reverse={false}
         image={{
-          src: 'https://www.piet.poornima.org/images/idealab.jpeg',
+          src: '/images/chapters/iste/ISTE_Certificate_3.jpg',
           alt: 'ISTE Chapter at PIET',
         }}
       >
@@ -220,16 +234,74 @@ const ISTEPage = () => {
         <div className="flex justify-center items-center">
           <div className="bg-white rounded-lg shadow-lg p-6 max-w-4xl">
             <img 
-              src="/attached_assets/image_1753950676913.png" 
+              src="/images/chapters/iste/iste_cert_1.jpg" 
               alt="ISTE Institutional Membership Certificate" 
               className="w-full h-auto rounded-lg shadow-md"
             />
-            <p className="text-center mt-4 text-gray-600 font-medium">
-              ISTE Institutional Membership Certificate - Established 2010
-            </p>
+            
+          </div>
+          <div className="bg-white rounded-lg shadow-lg p-6 max-w-4xl">
+            <img 
+              src="/images/chapters/iste/iste_cert_2.jpg" 
+              alt="ISTE Institutional Membership Certificate" 
+              className="w-full h-auto rounded-lg shadow-md"
+            />
+            
           </div>
         </div>
       </div>
+
+      <div className="container mt-14 mx-auto mb-16">
+        <h2 className="text-3xl text-primary font-bold mb-8 text-center">Some Glimpses</h2>
+        <div className="w-24 h-1 bg-secondary mb-6 mx-auto"></div>
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+  <div className="aspect-square">
+    <img
+      src="/images/chapters/iste/iste-1.jpg"
+      alt="Event 1"
+      className="w-full h-full object-cover rounded-lg shadow"
+    />
+  </div>
+  <div className="aspect-square">
+    <img
+      src="/images/chapters/iste/iste-2.jpg"
+      alt="Event 2"
+      className="w-full h-full object-cover rounded-lg shadow"
+    />
+  </div>
+  <div className="aspect-square">
+    <img
+      src="/images/chapters/iste/iste.jpg"
+      alt="Event 3"
+      className="w-full h-full object-cover rounded-lg shadow"
+    />
+  </div>
+  <div className="aspect-square">
+    <img
+      src="/images/chapters/acm/acm-4.jpg"
+      alt="Event 4"
+      className="w-full h-full object-cover rounded-lg shadow"
+    />
+  </div>
+  <div className="aspect-square">
+    <img
+      src="/images/chapters/acm/acm-5.jpg"
+      alt="Event 5"
+      className="w-full h-full object-cover rounded-lg shadow"
+    />
+  </div>
+  <div className="aspect-square">
+    <img
+      src="/images/chapters/acm/acm-6.jpg"
+      alt="Event 6"
+      className="w-full h-full object-cover rounded-lg shadow"
+    />
+  </div>
+</div>
+
+
+      </div>
+
 
       <Cta />
       <Footer />

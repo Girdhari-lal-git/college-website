@@ -5,6 +5,31 @@ import BreadCrumb from "@/components/BreadCrumb";
 import Cta from "@/components/Cta";
 import { AccessibilityFeatures } from "@/components/AccessibilityFeatures";
 import LazyImage from "@/components/LazyImage";
+import DynamicTable from "@/components/DynamicTable ";
+
+interface Column<T> {
+    label: string;
+    key: keyof T;
+}
+
+interface qsCertificateRow {
+    sno: number;
+    name: string;
+    download: React.ReactNode;
+}; 
+const downloadqsColumns: Column<qsCertificateRow>[] = 
+[
+    { label: "S. No", key: "sno" },
+    { label: "Certificate", key: "name" },
+    { label: "Download", key: "download" },
+];
+
+const qsCertificateData: qsCertificateRow[] = [
+  { sno: 1, name: "QS Institute of Happiness", download: (<a href="https://drive.google.com/file/d/1VFED3hjid52sge3xCPUNheRQo9wwK_ce/view?usp=drive_link" download target="_blank" rel="noopener noreferrer"><button className="bg-primary text-white px-4 py-1 rounded hover:bg-secondary transition inline-flex items-center gap-2"><i className="fas fa-download" /> Download</button></a>) },
+  { sno: 2, name: "QS I-Guage Diamond Ranking", download: (<a href="https://drive.google.com/file/d/1kU99bJX3k4exEoza0KL4_OawGgl6XVI8/view?usp=drive_link" download target="_blank" rel="noopener noreferrer"><button className="bg-primary text-white px-4 py-1 rounded hover:bg-secondary transition inline-flex items-center gap-2"><i className="fas fa-download" /> Download</button></a>) },
+ 
+];
+
 
 const QSGaugePage = () => {
     const featuredImage = {
@@ -141,6 +166,16 @@ const QSGaugePage = () => {
                         </p>
                     </div>
                 </section>
+                <div className="container mt-10 mx-auto my-10">
+                <h2 className="text-3xl text-primary font-bold mb-8 text-center">
+                    QS Certificates
+                </h2>
+                <div className="w-24 h-1 bg-secondary mb-6 mx-auto"></div>
+                <DynamicTable
+                    columns={downloadqsColumns}
+                    data={qsCertificateData}
+                />
+            </div>
             </div>
 
             <Cta />

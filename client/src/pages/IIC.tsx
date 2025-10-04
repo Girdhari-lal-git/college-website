@@ -331,10 +331,35 @@ const iiccertificatedocumentColumns = [
         breadcrumbs={breadcrumbItems}
       />
 
+{/* --- Two Symmetrical Images --- */}
+<div className="max-w-7xl mx-auto px-4 py-8">
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div className="w-full h-80 overflow-hidden rounded-2xl shadow-md">
+      <img
+        src="/public/images/chapters/iic/iic-ranking.png"
+      alt="IIC Certificate"
+        className="w-full h-full object-cover"
+      />
+    </div>
+    <div className="w-full h-80 overflow-hidden rounded-2xl shadow-md">
+      <img
+        src="/public/images/chapters/iic/iic-event.png"
+      alt="IIC Activity"
+        className="w-full h-full object-cover"
+      />
+    </div>
+  </div>
+</div>
+{/* --- End of Symmetrical Images --- */}
+
+
+
+     
+
       <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
           {/* Main Content */}
-          <div className="lg:col-span-2 space-y-8">
+          <div className="lg:col-span-5 space-y-8">
             <Card>
               <CardHeader>
                 <CardTitle className="text-2xl font-bold text-blue-700">About IIC</CardTitle>
@@ -374,63 +399,85 @@ const iiccertificatedocumentColumns = [
               </CardContent>
             </Card>
 
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-2xl font-bold text-blue-700">Objectives</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-3 text-gray-700">
-                  <li className="flex items-start">
-                    <span className="text-blue-600 mr-2">•</span>
-                    To create a vibrant local innovation ecosystem
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-blue-600 mr-2">•</span>
-                    To prepare students for entrepreneurship and innovation
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-blue-600 mr-2">•</span>
-                    To support incubation of new ideas and startups
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-blue-600 mr-2">•</span>
-                    To establish strong networks with industry and academia
-                  </li>
-                </ul>
-              </CardContent>
-            </Card>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+  
+</div>
 
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-2xl font-bold text-blue-700">Activities</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div className="bg-blue-50 p-4 rounded-lg">
-                    <h4 className="font-semibold text-blue-700 mb-2">Innovation Workshops</h4>
-                    <p className="text-sm text-gray-600">Regular workshops on design thinking and innovation methodologies</p>
-                  </div>
-                  <div className="bg-green-50 p-4 rounded-lg">
-                    <h4 className="font-semibold text-green-700 mb-2">Startup Support</h4>
-                    <p className="text-sm text-gray-600">Mentoring and incubation support for student startups</p>
-                  </div>
-                  <div className="bg-purple-50 p-4 rounded-lg">
-                    <h4 className="font-semibold text-purple-700 mb-2">Industry Connect</h4>
-                    <p className="text-sm text-gray-600">Connecting students with industry experts and mentors</p>
-                  </div>
-                  <div className="bg-orange-50 p-4 rounded-lg">
-                    <h4 className="font-semibold text-orange-700 mb-2">Innovation Challenges</h4>
-                    <p className="text-sm text-gray-600">Organizing hackathons and innovation competitions</p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
           </div>
 
             
 
-          {/* Sidebar */}
-          <div className="space-y-6">
+          
+        </div>
+      </div>
+<div className="container mx-auto px-4 py-4">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <Card>
+    <CardHeader>
+      <CardTitle className="text-2xl font-bold text-blue-700 lg:col-span-4">Objectives</CardTitle>
+    </CardHeader>
+    <CardContent>
+      <ul className="space-y-3 text-gray-700">
+        <li className="flex items-start">
+          <span className="text-blue-600 mr-2">•</span>
+          To create a vibrant local innovation ecosystem
+        </li>
+        <li className="flex items-start">
+          <span className="text-blue-600 mr-2">•</span>
+          To prepare students for entrepreneurship and innovation
+        </li>
+        <li className="flex items-start">
+          <span className="text-blue-600 mr-2">•</span>
+          To support incubation of new ideas and startups
+        </li>
+        <li className="flex items-start">
+          <span className="text-blue-600 mr-2">•</span>
+          To establish strong networks with industry and academia
+        </li>
+        <li className="flex items-start">
+          <span className="text-blue-600 mr-2">•</span>
+          To promote research and development activities
+        </li>
+      </ul>
+    </CardContent>
+  </Card>
+
+  <Card>
+    <CardHeader>
+      <CardTitle className="text-2xl font-bold text-blue-700">Activities</CardTitle>
+    </CardHeader>
+    <CardContent>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="bg-blue-50 p-4 rounded-lg">
+          <h4 className="font-semibold text-blue-700 mb-2">Innovation Workshops</h4>
+          <p className="text-sm text-gray-600">
+            Regular workshops on design thinking and innovation methodologies
+          </p>
+        </div>
+        <div className="bg-green-50 p-4 rounded-lg">
+          <h4 className="font-semibold text-green-700 mb-2">Startup Support</h4>
+          <p className="text-sm text-gray-600">
+            Mentoring and incubation support for student startups
+          </p>
+        </div>
+        <div className="bg-purple-50 p-4 rounded-lg">
+          <h4 className="font-semibold text-purple-700 mb-2">Industry Connect</h4>
+          <p className="text-sm text-gray-600">
+            Connecting students with industry experts and mentors
+          </p>
+        </div>
+        <div className="bg-orange-50 p-4 rounded-lg">
+          <h4 className="font-semibold text-orange-700 mb-2">Innovation Challenges</h4>
+          <p className="text-sm text-gray-600">
+            Organizing hackathons and innovation competitions
+          </p>
+        </div>
+        
+      </div>
+    </CardContent>
+  </Card>
+  {/* Sidebar */}
+          <div className="space-y-10">
             <Card>
               <CardHeader>
                 <CardTitle className="text-lg font-bold text-blue-700">Quick Links</CardTitle>
@@ -450,7 +497,7 @@ const iiccertificatedocumentColumns = [
                 <CardTitle className="text-lg font-bold text-blue-700">Contact IIC</CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="space-y-2 text-sm text-gray-600">
+                <div className="space-y-4 text-sm text-gray-600">
                   <p><strong>Email:</strong> piet.iic@poornima.org</p>
                   <p><strong>Phone:</strong> +91-141-2761001</p>
                   <p><strong>Office:</strong> PBIC, PIET Campus</p>
@@ -458,8 +505,11 @@ const iiccertificatedocumentColumns = [
               </CardContent>
             </Card>
           </div>
-        </div>
-      </div>
+        
+  </div>
+  
+  </div>
+
 
         {/* IIC Team */}
 

@@ -22,10 +22,10 @@ export default function Home() {
       <AccessibilityFeatures />
       <ConnectionStatus />
       <Header />
-      <main id="main-content" className="pt-16"> {/* Added pt-16 for header spacing */}
+      <main id="main-content" className="pt-12"> {/* Added pt-16 for header spacing */}
         <HeroSlider />
-        <QuickLinks />
         <AboutSection />
+         <QuickLinks />
         <WhyChoosePIET />
         <TopRecruitersSection />
         <AcademicPrograms />

@@ -732,7 +732,7 @@ const objectivePoints = [
 ];
 
 const visionContent = (
-    <p>
+    <p className="text-justify text-xl 2xl:text-2xl">
         To be a center of excellence in Artificial Intelligence and Data Science
         education and research, nurturing innovative leaders who transform
         society through cutting-edge technology and interdisciplinary
@@ -818,12 +818,12 @@ const AI = () => {
             <AccessibilityFeatures />
             <Header />
             <BreadCrumb
-                title="Artificial Intelligence & Data Science Deptartment"
+                title="Department of Artificial Intelligence & Data Science"
                 description="Discover who we are and what makes Poornima Institute a center of excellence."
                 breadcrumbs={[
                     { label: "Home", href: "/" },
                     {
-                        label: "Artificial Intelligence & Data Science Deptartment",
+                        label: "Department of Artificial Intelligence & Data Science",
                         isCurrent: true,
                     },
                 ]}

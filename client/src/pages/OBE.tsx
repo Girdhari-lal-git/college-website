@@ -13,9 +13,9 @@ import LazyImage from '@/components/LazyImage';
 const obereportsDocumentData = [
     {
         sno: 1,
-        name: 'Annual Report 2023-24',
+        name: 'OBE Manual 2025-26',
         download: (
-            <a href="https://drive.google.com/file/d/1soaLlIi4kmeYECqya5Aaz1077ldYgWL8/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">
+            <a href="https://drive.google.com/file/d/1oQe09bUriWWy6mIgWWN9CZ8_zr_aX1Pt/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">
                 <button className="bg-primary text-white px-4 py-1 rounded hover:bg-secondary transition inline-flex items-center gap-2">
                     <i className="fas fa-download" /> Download PDF
                 </button>
@@ -24,9 +24,9 @@ const obereportsDocumentData = [
     },
     {
         sno: 2,
-        name: 'Annual Report 2022-23',
+        name: 'OBE Manual 2024-25',
         download: (
-            <a href="https://drive.google.com/file/d/1ZmOXAW28n182jbcXIFuVpLx60aTLYJm6/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">
+            <a href="https://drive.google.com/file/d/1n9MTuZdTL75VHBIJoTBoI56JOGdTTjM8/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">
                 <button className="bg-primary text-white px-4 py-1 rounded hover:bg-secondary transition inline-flex items-center gap-2">
                     <i className="fas fa-download" /> Download PDF
                 </button>
@@ -35,9 +35,9 @@ const obereportsDocumentData = [
     },
     {
         sno: 3,
-        name: 'Annual Report 2021-22',
+        name: 'OBE Manual 2023-24',
         download: (
-            <a href="https://drive.google.com/file/d/1qabfAC2dTYbZQrzvv28jVPa_HrfMhRT4/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">
+            <a href="https://drive.google.com/file/d/18ymY8phfGUeMChfrZZUuA0_q6hrSLdOU/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">
                 <button className="bg-primary text-white px-4 py-1 rounded hover:bg-secondary transition inline-flex items-center gap-2">
                     <i className="fas fa-download" /> Download PDF
                 </button>
@@ -46,9 +46,53 @@ const obereportsDocumentData = [
     },
     {
         sno: 4,
-        name: 'Annual Report 2020-21',
+        name: 'OBE Manual 2022-23',
         download: (
-            <a href="https://drive.google.com/file/d/1wp1vaheZSTe2YgJrb92NvCSlkUEuUUZD/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">
+            <a href="https://drive.google.com/file/d/17lcj31h5GDEj2shV-ejoyGchhUa9pWcg/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">
+                <button className="bg-primary text-white px-4 py-1 rounded hover:bg-secondary transition inline-flex items-center gap-2">
+                    <i className="fas fa-download" /> Download PDF
+                </button>
+            </a>
+        )
+    },
+    {
+        sno: 5,
+        name: 'OBE Manual 2021-22',
+        download: (
+            <a href="https://drive.google.com/file/d/1gnB6zzKCqrCwJyTfxXn8k26G4uv8HSpS/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">
+                <button className="bg-primary text-white px-4 py-1 rounded hover:bg-secondary transition inline-flex items-center gap-2">
+                    <i className="fas fa-download" /> Download PDF
+                </button>
+            </a>
+        )
+    },
+    {
+        sno: 6,
+        name: 'OBE Manual 2020-21',
+        download: (
+            <a href="https://drive.google.com/file/d/15RYhWj4hGmFuhYAXCE8yjGQb-Ss8KdE3/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">
+                <button className="bg-primary text-white px-4 py-1 rounded hover:bg-secondary transition inline-flex items-center gap-2">
+                    <i className="fas fa-download" /> Download PDF
+                </button>
+            </a>
+        )
+    },
+    {
+        sno: 7,
+        name: 'OBE Manual 2019-20',
+        download: (
+            <a href="https://drive.google.com/file/d/1cIOq8yI-vt4_d33lGTcrzZTeOD_EPAl_/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">
+                <button className="bg-primary text-white px-4 py-1 rounded hover:bg-secondary transition inline-flex items-center gap-2">
+                    <i className="fas fa-download" /> Download PDF
+                </button>
+            </a>
+        )
+    },
+    {
+        sno: 8,
+        name: 'OBE Manual 2018-19',
+        download: (
+            <a href="https://drive.google.com/file/d/1YEUsgNAFEr_TLL5beLdf7Hm2PerWHpbk/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">
                 <button className="bg-primary text-white px-4 py-1 rounded hover:bg-secondary transition inline-flex items-center gap-2">
                     <i className="fas fa-download" /> Download PDF
                 </button>

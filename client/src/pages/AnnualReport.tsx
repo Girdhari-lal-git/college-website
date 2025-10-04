@@ -9,6 +9,13 @@ import { useState } from "react";
 
 const reports = [
     {
+        year: "2024-25",
+        title: "2024-25 Annual Report",
+        pdfUrl: "https://drive.google.com/file/d/1f0xtTCVG4El8wLZRqC7ACnmNMg8BiUlt/view?usp=drive_link",
+        description: "",
+        highlights: [],
+    },
+    {
         year: "2023-24",
         title: "2023-24 Annual Report",
         pdfUrl: "https://drive.google.com/file/d/1YkphJItAMwcJ3Mo-MB04OpzLQ7koahYX/view?usp=sharing",

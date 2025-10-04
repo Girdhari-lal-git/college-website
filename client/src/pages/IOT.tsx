@@ -932,10 +932,10 @@ const labData = [
 const points = [
     "AICTE- IDEA Lab ( Simulation lab, Testing Lab, PCB Design Lab, Mechancial Workshop lab, 3D Printing lab and laser cutter & Beam Works lab)",
     "Internet of Things Lab",
-    "Embedded System Lab",
+   
     "Robotics Lab",
     "Machine learning & Data Analytics Lab",
-    "Advanced Computing lab",
+    
 ];
 
 const missionPoints = [
@@ -953,7 +953,7 @@ const objectivePoints = [
 ];
 
 const visionContent = (
-    <p>
+    <p className="text-justify text-xl 2xl:text-2xl">
         To foster an environment of innovation, research, and academic
         excellence that prepares future technocrats and leaders to address
         global challenges in computer engineering and technology.
@@ -1063,40 +1063,21 @@ const IOT = () => {
                     caption: "Accredited with Grade 'A' by NAAC",
                 }}
             >
-                <p className="mb-4 text-justify">
-                    The Department of Internet of Things (IoT) at Poornima
-                    Institute of Engineering and Technology was established in
-                    session 2023-24 with a visionary goal to cultivate a dynamic
-                    ecosystem where innovation and technological advancements
-                    converge to shape the technocrats and innovators of tomorrow
-                    who work in collaborative domains of Computer Engineering,
-                    Electronics & communication and leading to creating IoT
-                    based solutions for ease of life for society. The department
-                    offers B.Tech Computer Science & Engineering (IoT) program
-                    with an intake of 60 seats, duly approved by AICTE and
-                    affiliated to Rajasthan Technical University. With a faculty
-                    comprising dedicated mentors, a substantial percentage
-                    holding Ph.D. degrees, and state-of-the-art infrastructure,
-                    we've consistently attracted bright minds from both within
-                    the state and beyond. Through initiatives like project
-                    exhibitions and international conferences, we will provide a
-                    platform for students to showcase their innovative projects
-                    and engage in research endeavors. Furthermore, our
-                    department fosters a culture of continuous learning and
-                    skill development through workshops, technical seminars, and
-                    industry partnerships, ensuring our students are
-                    well-equipped for the challenges of the digital age.
+                <p className="mb-1 text-justify">
+                   The Department of Internet of Things (IoT) at PIET, established in 2023-24, aims to create a dynamic
+                    ecosystem where innovation and technology converge to shape future technocrats. The department offers
+                     a B.Tech in Computer Science & Engineering (IoT) with an intake of 60 seats, approved by AICTE and
+                      affiliated to Rajasthan Technical University. With highly qualified faculty, including Ph.D. holders,
+                       and modern infrastructure, we attract talented students from across the region. Through project
+                        exhibitions, conferences, workshops, and industry partnerships, the department fosters research,
+                         skill development, and hands-on learning, ensuring students are well-prepared for the digital age.
                 </p>
                 <br />
-                <p className="mb-4 text-justify">
-                    AICTE- IDEA Lab ( Simulation lab, Testing Lab, PCB Design
-                    Lab, Mechancial Workshop lab, 3D Printing lab and laser
-                    cutter & Beam Works lab) Internet of Things Lab Embedded
-                    System Lab Robotics Lab Machine learning & Data Analytics
-                    Lab Advanced Computing lab
+                <p className="mb-1 text-justify">
+                    The department is equipped with state-of-the-art laboratories, including:
                 </p>
 
-                <Checklist items={points} />
+               <Checklist items={points} /> 
 
                 <br />
             </OverviewSection>
