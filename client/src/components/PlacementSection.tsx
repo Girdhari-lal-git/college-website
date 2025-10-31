@@ -29,7 +29,7 @@ export default function PlacementSection() {
   const stats: PlacementStatProps[] = [
     { number: "75%", label: "Placement Rate" },
     { number: "150+", label: "Recruiting Companies" },
-    { number: "₹18L", label: "Highest Package" },
+    { number: "₹11L", label: "Highest Package" },
     { number: "₹5.6L", label: "Average Package" }
   ];
 

@@ -646,7 +646,7 @@ export const courseData: SubjectCO[] = [
 
 const labData = [
     {
-    image: "https://stock.adobe.com/274385444",
+    image: "/images/Labs/AI&DS/CS-lab-1.jpg",
     title: "DEEP LEARNING LAB",
     facultyInCharge: "Ms. Bhawana Purohit",
     labAssistant: "Mr. Rajesh Chaoudhary",
@@ -654,7 +654,7 @@ const labData = [
     syllabusLink: "https://example.com/syllabus.pdf",
   },
   {
-    image: "https://pixabay.com/photos/181083",
+    image: "/images/Labs/AI&DS/CS-lab-2.jpg",
     title: "NUMERICAL MODELING LAB",
     facultyInCharge: "Mr. Ebtasam Ahmad Siddiqui",
     labAssistant: "Mr. Rajesh Chaoudhary",
@@ -662,7 +662,7 @@ const labData = [
     syllabusLink: "https://example.com/syllabus.pdf",
   },
   {
-    image: "https://stock.adobe.com/274385444",
+    image: "/images/Labs/AI&DS/CS-lab-3.jpg",
     title: "COMPUTER-AIDED DESIGN LAB",
     facultyInCharge: "Mr. Vaibhav Shekhawat",
     labAssistant: "Mr. Hansraj Meena",
@@ -670,7 +670,7 @@ const labData = [
     syllabusLink: "https://example.com/syllabus.pdf",
   },
   {
-    image: "https://pixabay.com/photos/181083",
+    image: "/images/Labs/AI&DS/C-lang-lab.jpg",
     title: "PROGRAMMING & OPTIMIZATION LAB",
     facultyInCharge: "Mr. Mohnish Sachdeva",
     labAssistant: "Mr. Hansraj Meena",
@@ -678,7 +678,7 @@ const labData = [
     syllabusLink: "https://example.com/syllabus.pdf",
   },
   {
-    image: "https://stock.adobe.com/274385444",
+    image: "/images/Labs/AI&DS/CS-lab-6.jpg",
     title: "JAVA TECHNOLOGY LAB",
     facultyInCharge: "Mr. Punit Kumar",
     labAssistant: "Mr. Amardeep Singh",
@@ -686,7 +686,7 @@ const labData = [
     syllabusLink: "https://example.com/syllabus.pdf",
   },
   {
-    image: "https://pixabay.com/photos/181083",
+    image: "/images/Labs/AI&DS/cs-lab-5.jpg",
     title: "CLOUD COMPUTING LAB",
     facultyInCharge: "Mr. Girdhari Lal",
     labAssistant: "Mr. Amardeep Singh",
@@ -694,7 +694,7 @@ const labData = [
     syllabusLink: "https://example.com/syllabus.pdf",
   },
   {
-    image: "https://stock.adobe.com/274385444",
+    image: "/images/Labs/AI&DS/cs-lab-4.jpg",
     title: "DIGITAL ELECTRONICS LAB",
     facultyInCharge: "Dr. Saurabh Raj",
     labAssistant: "Mr. Rajneesh Chopra",
@@ -702,11 +702,19 @@ const labData = [
     syllabusLink: "https://example.com/syllabus.pdf",
   },
   {
-    image: "https://pixabay.com/photos/181083",
+    image: "/images/Labs/AI&DS/CS-lab-3.jpg",
     title: "BUSINESS INTELLIGENCE LAB",
     facultyInCharge: "Mr. Kamal Saini",
     labAssistant: "Mr. Vishnu Sain",
     roomNumber: "A111",
+    syllabusLink: "https://example.com/syllabus.pdf",
+  },
+  {
+    image: "/images/Labs/AI&DS/CS-lab-2.jpg",
+    title: "AWS LAB",
+    facultyInCharge: "Dr. Ajay Mourya",
+    labAssistant: "Mr. Amardeep Singh",
+    roomNumber: "B-20",
     syllabusLink: "https://example.com/syllabus.pdf",
   },
 ];
@@ -732,13 +740,23 @@ const objectivePoints = [
 ];
 
 const visionContent = (
-    <p className="text-justify text-xl 2xl:text-2xl">
-        To be a center of excellence in Artificial Intelligence and Data Science
+    <div className="flex flex-col items-center text-center space-y-4">
+    <i className="fas fa-lightbulb text-yellow-500 text-5xl"></i>
+    <p className="text-gray-700 flex-grow flex items-center justify-center text-justify">
+      To be a center of excellence in Artificial Intelligence and Data Science
         education and research, nurturing innovative leaders who transform
         society through cutting-edge technology and interdisciplinary
         collaboration.
     </p>
+  </div> 
+    
 );
+{/*<p className="text-justify text-xl 2xl:text-2xl">
+        To be a center of excellence in Artificial Intelligence and Data Science
+        education and research, nurturing innovative leaders who transform
+        society through cutting-edge technology and interdisciplinary
+        collaboration.
+    </p> */}
 
 const projectFieldCounts = [
     { field: "Machine Learning/Deep Learning", count: 9 },

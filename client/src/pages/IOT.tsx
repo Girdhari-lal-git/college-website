@@ -953,11 +953,15 @@ const objectivePoints = [
 ];
 
 const visionContent = (
-    <p className="text-justify text-xl 2xl:text-2xl">
-        To foster an environment of innovation, research, and academic
+     <div className="flex flex-col items-center text-center space-y-4">
+    <i className="fas fa-lightbulb text-yellow-500 text-5xl"></i>
+    <p className="text-gray-700 flex-grow flex items-center justify-center text-justify">
+       To foster an environment of innovation, research, and academic
         excellence that prepares future technocrats and leaders to address
         global challenges in computer engineering and technology.
     </p>
+  </div> 
+    
 );
 
 const projects = [

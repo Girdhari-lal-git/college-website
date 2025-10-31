@@ -253,7 +253,7 @@ const labData = [
 
     // Newly added data
     {
-        image: "https://stock.adobe.com/274385444",
+        image: "/images/Labs/AS/Physics-lab.jpg",
         title: "Engineering Physics Lab",
         facultyInCharge: "Dr. Rajendra Singh",
         labAssistant: "Ms. Seema Sharma",
@@ -261,7 +261,7 @@ const labData = [
         syllabusLink: "https://example.com/syllabus.pdf",
     },
     {
-        image: "https://stock.adobe.com/274385444",
+        image: "/images/Labs/AS/Chemistry-lab.jpg",
         title: "Engineering Chemistry Lab",
         facultyInCharge: "Dr. Nupur Jain",
         labAssistant: "Ms. Rekha Kumari",
@@ -269,7 +269,7 @@ const labData = [
         syllabusLink: "https://example.com/syllabus.pdf",
     },
     {
-        image: "https://pixabay.com/photos/181083",
+        image: "/images/Labs/AS/Language-lab.jpg",
         title: "Language Lab",
         facultyInCharge: "Dr. Neetu Sharma",
         labAssistant: "Mr. Manraj Prajapat",
@@ -277,7 +277,7 @@ const labData = [
         syllabusLink: "https://example.com/syllabus.pdf",
     },
     {
-        image: "https://pixabay.com/photos/181083",
+        image: "/images/Labs/AS/CS-lab-1.jpg",
         title: "Employability & Soft Skills Lab",
         facultyInCharge: "Dr. Krati Sharma",
         labAssistant: "Mr. Narendra Saini",
@@ -285,7 +285,7 @@ const labData = [
         syllabusLink: "https://example.com/syllabus.pdf",
     },
     {
-        image: "https://stock.adobe.com/274385444",
+        image: "/images/Labs/AS/CS-lab-2.jpg",
         title: "Computer Programming Lab",
         facultyInCharge: "Mr. Arvind Mathur",
         labAssistant: "Mr. Rajesh Kumar Gurjar",
@@ -293,7 +293,7 @@ const labData = [
         syllabusLink: "https://example.com/syllabus.pdf",
     },
     {
-        image: "https://stock.adobe.com/274385444",
+        image: "/images/Labs/AS/C-lang-lab.jpg",
         title: "Computer Programming Lab",
         facultyInCharge: "Ms. Charul Bapna",
         labAssistant: "Mr. Hansraj Mourya",
@@ -301,7 +301,7 @@ const labData = [
         syllabusLink: "https://example.com/syllabus.pdf",
     },
     {
-        image: "https://pixabay.com/photos/181083",
+        image: "/images/Labs/AS/CE-lab.jpg",
         title: "Basic Electrical & Electronics Engineering Lab",
         facultyInCharge: "Dr. Ashish Laddha",
         labAssistant: "Mr. Mahendra Sharma",
@@ -309,7 +309,7 @@ const labData = [
         syllabusLink: "https://example.com/syllabus.pdf",
     },
     {
-        image: "https://stock.adobe.com/274385444",
+        image: "/images/Labs/AS/Web-lab.jpg",
         title: "Web Designing Lab",
         facultyInCharge: "Dr. Sanjay Kumar Sinha",
         labAssistant: "Mr. Ashish Mahawar",
@@ -317,7 +317,7 @@ const labData = [
         syllabusLink: "https://example.com/syllabus.pdf",
     },
     {
-        image: "https://stock.adobe.com/274385444",
+        image: "/images/Labs/AS/ME-lab.jpg",
         title: "Advanced Manufacturing Practices Workshop",
         facultyInCharge: "Dr. Nitin Mukesh Mathur",
         labAssistant: "Mr. Vimal Jain",
@@ -325,7 +325,7 @@ const labData = [
         syllabusLink: "https://example.com/syllabus.pdf",
     },
     {
-        image: "https://stock.adobe.com/274385444",
+        image: "/images/Labs/AS/CE-lab.jpg",
         title: "Basic Civil Engineering Lab",
         facultyInCharge: "Mr. Mukul Nama",
         labAssistant: "Mr. Umesh Sharma",
@@ -333,7 +333,7 @@ const labData = [
         syllabusLink: "https://example.com/syllabus.pdf",
     },
     {
-        image: "https://pixabay.com/photos/181083",
+        image: "/images/Labs/AS/CS-lab-3.jpg",
         title: "Computer Aided Engineering Graphics",
         facultyInCharge: "Mr. Naveen Porwal",
         labAssistant: "Mr. Manraj Prajapat",
@@ -341,7 +341,7 @@ const labData = [
         syllabusLink: "https://example.com/syllabus.pdf",
     },
     {
-        image: "https://pixabay.com/photos/181083",
+        image: "/images/Labs/AS/CS-lab-1.jpg",
         title: "Computer Aided Engineering Graphics",
         facultyInCharge: "Mr. Sharad Srivastava",
         labAssistant: "Mr. Hansraj Mourya",
@@ -373,11 +373,19 @@ const objectivePoints = [
 ]
 
 const visionContent = (
-    <p className="text-justify text-xl 2xl:text-2xl">
-        To create knowledge based society with scientific temper through cutting-edge
+    <div className="flex flex-col items-center text-center space-y-4">
+    <i className="fas fa-lightbulb text-yellow-500 text-5xl"></i>
+    <p className="text-gray-700 flex-grow flex items-center justify-center text-justify">
+      To create knowledge based society with scientific temper through cutting-edge
         technologies, innovative research and to become valuable resource for enriching mankind.
     </p>
+  </div> 
 );
+   {/* <p className="text-gray-700 flex-grow flex items-center justify-center text-center">
+        To create knowledge based society with scientific temper through cutting-edge
+        technologies, innovative research and to become valuable resource for enriching mankind.
+    </p> */}
+
 
 
 

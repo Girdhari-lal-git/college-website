@@ -1600,7 +1600,7 @@ export const courseData: SubjectCO[] = [
 // ...existing code...
 const labData = [
     {
-        image: "https://stock.adobe.com/274385444",
+        image: "/images/Labs/Cse/CS-lab-1.jpg",
         title: "Network & Mobile Application Lab",
         facultyInCharge: "Ms. Priya Verma",
         labAssistant: "Mr. Lokesh Sharma",
@@ -1608,7 +1608,7 @@ const labData = [
         syllabusLink: "https://example.com/syllabus.pdf",
     },
     {
-        image: "https://pixabay.com/photos/181083",
+        image: "/images/Labs/Cse/cs-lab-5.jpg",
         title: "Open Source Lab",
         facultyInCharge: "Dr. Navin Goyal",
         labAssistant: "Mr. Deepak Sain",
@@ -1616,7 +1616,7 @@ const labData = [
         syllabusLink: "https://example.com/syllabus.pdf",
     },
     {
-        image: "https://stock.adobe.com/274385444",
+        image: "/images/Labs/Cse/cs-lab-4.jpg",
         title: "System Design Lab",
         facultyInCharge: "Ms. Rekha Devrani",
         labAssistant: "Mr. Deepak Sain",
@@ -1624,7 +1624,7 @@ const labData = [
         syllabusLink: "https://example.com/syllabus.pdf",
     },
     {
-        image: "https://pixabay.com/photos/181083",
+        image: "/images/Labs/Cse/CS-lab-2.jpg",
         title: "Microprocessor and Interfaces Lab",
         facultyInCharge: "Dr. Shalini Chaudhary",
         labAssistant: "Ms. Divya Rastogi",
@@ -1632,7 +1632,7 @@ const labData = [
         syllabusLink: "https://example.com/syllabus.pdf",
     },
     {
-        image: "https://stock.adobe.com/274385444",
+        image: "/images/Labs/Cse/CS-lab-6.jpg",
         title: "Database Management System Lab",
         facultyInCharge: "Ms. Shruti Gupta",
         labAssistant: "Mr. Ashok Sharma",
@@ -1640,7 +1640,7 @@ const labData = [
         syllabusLink: "https://example.com/syllabus.pdf",
     },
     {
-        image: "https://pixabay.com/photos/181083",
+        image: "/images/Labs/Cse/CS-lab-3.jpg",
         title: "Augmented Reality and Virtual Reality Lab",
         facultyInCharge: "Mr. Udbhav Ojha",
         labAssistant: "Mr. Ashok Sharma",
@@ -1648,7 +1648,7 @@ const labData = [
         syllabusLink: "https://example.com/syllabus.pdf",
     },
     {
-        image: "https://stock.adobe.com/274385444",
+        image: "/images/Labs/Cse/cs-lab-5.jpg",
         title: "MACHINE LEARNING Lab",
         facultyInCharge: "Ms. Bersha Kumari",
         labAssistant: "Mr. Gyan Aloriya",
@@ -1656,7 +1656,7 @@ const labData = [
         syllabusLink: "https://example.com/syllabus.pdf",
     },
     {
-        image: "https://pixabay.com/photos/181083",
+        image: "/images/Labs/Cse/cs-lab-4.jpg",
         title: "Graphics & Vision Lab",
         facultyInCharge: "Ms. Chanchal Tiwari",
         labAssistant: "Mr. Gyan Aloriya",
@@ -1664,7 +1664,7 @@ const labData = [
         syllabusLink: "https://example.com/syllabus.pdf",
     },
     {
-        image: "https://stock.adobe.com/274385444",
+        image: "/images/Labs/Cse/CS-lab-6.jpg",
         title: "Internet Of Things (IOT) Lab",
         facultyInCharge: "Mr. Abhishek Dadhich",
         labAssistant: "Mr. Bilal Hussain / Ms. Divya Rastogi",
@@ -1672,7 +1672,7 @@ const labData = [
         syllabusLink: "https://example.com/syllabus.pdf",
     },
     {
-        image: "https://pixabay.com/photos/181083",
+        image: "/images/Labs/Cse/CS-lab-3.jpg",
         title: "High Performance Computing Lab",
         facultyInCharge: "Mr. Indra Kishor",
         labAssistant: "Mr. Manish Acharya",
@@ -1680,7 +1680,7 @@ const labData = [
         syllabusLink: "https://example.com/syllabus.pdf",
     },
     {
-        image: "https://stock.adobe.com/274385444",
+        image: "/images/Labs/Cse/CS-lab-1.jpg",
         title: "System Programming Lab",
         facultyInCharge: "Ms. Madhu Chaudhary",
         labAssistant: "Mr. Bilal Hussain",
@@ -1688,7 +1688,7 @@ const labData = [
         syllabusLink: "https://example.com/syllabus.pdf",
     },
     {
-        image: "https://pixabay.com/photos/181083",
+        image: "/images/Labs/Cse/CS-lab-2.jpg",
         title: "Advanced Computing Lab",
         facultyInCharge: "Mr. Nitin Phulwani",
         labAssistant: "Mr. Manish Acharya",
@@ -1718,24 +1718,34 @@ const objectivePoints = [
 ];
 
 const visionContent = (
-    <p>
+     <div className="flex flex-col items-center text-center space-y-4">
+    <i className="fas fa-lightbulb text-yellow-500 text-5xl"></i>
+    <p className="text-gray-700 flex-grow flex items-center justify-center text-justify">
+       To foster an environment of innovation, research, and academic
+        excellence that prepares future technocrats and leaders to address
+        global challenges in computer engineering and technology.
+    </p>
+  </div> 
+    
+);
+
+{/* <p>
         To foster an environment of innovation, research, and academic
         excellence that prepares future technocrats and leaders to address
         global challenges in computer engineering and technology.
     </p>
-);
-
+*/} 
 const projectFieldCounts = [
   { field: "Artificial Intelligence and Machine Learning", count: 12 },
   { field: "Augmented and Virtual Reality", count: 3 },
   { field: "Blockchain", count: 1 },
   { field: "Deep Learning", count: 2 },
   { field: "Internet of Things", count: 11 },
-  { field: "Mobile Application Development", count: 7 },
+  { field: "Mobile Application Development", count: 9 },
   { field: "Robotics", count: 1 },
-  { field: "VR + IOT + Robotics", count: 1 },
+  { field: "VR + IOT + Robotics", count: 4 },
   { field: "Web Designing", count: 24 },
-  { field: "Others (WebAI, Cloud, IOTML)", count: 5 },
+  
 ];
 
 

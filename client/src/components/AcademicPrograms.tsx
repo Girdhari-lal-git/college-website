@@ -1,41 +1,27 @@
 import { Link } from "wouter";
+import { motion } from "framer-motion";
 import { useEffect } from "react";
 
-// Add custom element type for 'lord-icon'
-declare global {
-  namespace JSX {
-    interface IntrinsicElements {
-      'lord-icon': React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement> & {
-        src?: string;
-        trigger?: string;
-        colors?: string;
-        style?: React.CSSProperties;
-      };
-    }
-  }
-}
-
 type ProgramProps = {
-  icon: string;
+  image: string;
   title: string;
   description: string;
   href: string;
 };
 
-const Program = ({ icon, title, description, href }: ProgramProps) => (
+const Program = ({ image, title, description, href }: ProgramProps) => (
   <div className="bg-white rounded-xl overflow-hidden shadow-md border border-neutral-200 hover:shadow-xl hover:border-primary transition-all duration-300 group hover:-translate-y-2 flex flex-col h-full">
-    {/* Header Section */}
+    {/* Header Section with Image */}
     <div className="h-48 bg-gradient-to-r from-primary to-primary-dark flex items-center justify-center relative overflow-hidden">
       <div className="absolute inset-0 bg-black/10"></div>
       <div className="absolute w-32 h-32 bg-white/10 rounded-full -top-10 -right-10"></div>
       <div className="absolute w-24 h-24 bg-white/10 rounded-full -bottom-8 -left-8"></div>
-      <lord-icon
-        src={icon}
-        trigger="hover"
-        style={{ width: "80px", height: "80px" }}
-        colors="primary:#ffffff,secondary:#ffffff"
-        className="z-10 transform group-hover:scale-110 transition-transform duration-300"
-      ></lord-icon>
+
+      <img
+        src={image}
+        alt={title}
+        className="z-10 h-42 w-88 object-cover rounded-lg transform group-hover:scale-110 transition-transform duration-300"
+      />
     </div>
 
     {/* Body Section */}
@@ -53,76 +39,63 @@ const Program = ({ icon, title, description, href }: ProgramProps) => (
     </div>
   </div>
 );
-import { motion } from "framer-motion";
+
 export default function AcademicPrograms() {
-  useEffect(() => {
-    // Load Lordicon script if not already loaded
-    if (!document.querySelector('script[src*="lordicon"]')) {
-      const script = document.createElement("script");
-      script.src = "https://cdn.lordicon.com/bhenfmcm.js";
-      script.async = true;
-      document.head.appendChild(script);
-    }
-  }, []);
+  // No more need to load Lordicon script
+  useEffect(() => {}, []);
 
   const programs: ProgramProps[] = [
     {
-      icon: "https://cdn.lordicon.com/fhtaantg.json",
+      image: "/images/programs/cse.jpg",
       title: "Computer Engineering",
       description:
         "Comprehensive computer engineering program covering hardware-software integration, system design, programming, and modern computing technologies.",
       href: "/computer-science",
     },
-
     {
-      icon: "https://cdn.lordicon.com/kbtmbyzy.json",
+      image: "/images/programs/cs & tech.jpg",
       title: "Artificial Intelligence & Data Science",
       description:
         "Interdisciplinary program combining AI techniques with data science methodologies for intelligent data analysis and automated systems.",
-      href:"/artificial-intelligence",
+      href: "/artificial-intelligence",
     },
-    
     {
-      icon: "https://cdn.lordicon.com/wcjauznf.json",
+      image: "/images/programs/CS(AI).jpg",
       title: "Computer Science & Engineering (AI)",
       description:
         "Advanced computer science program with specialized focus on artificial intelligence, machine learning algorithms, neural networks, and intelligent system design.",
       href: "/artificial-intelligence",
     },
-   {
-      icon: "https://cdn.lordicon.com/qhviklyi.json",
+    {
+      image: "/images/programs/csds.jpg",
       title: "Computer Science & Engineering (Data Science)",
       description:
         "Computer engineering with emphasis on data analytics, big data processing, statistical modeling, and data-driven decision making.",
       href: "/artificial-intelligence",
     },
-    
-
     {
-      icon: "https://cdn.lordicon.com/slkvcfos.json",
+      image: "/images/programs/IoT.jpg",
       title: "Computer Science & Engineering (IoT)",
       description:
         "Specialized program focusing on Internet of Things technologies, connected devices, smart systems, and embedded computing solutions.",
       href: "/dep-iot",
     },
-    
-    
     {
-      icon: "https://cdn.lordicon.com/tqywkdcz.json",
+      image: "/images/programs/electronics.jpg",
       title: "Electronics and Communication Engineering",
       description:
         "Focus on electronic circuits, communication systems, signal processing, wireless technologies, and modern telecommunication networks.",
       href: "/programs/ece",
     },
     {
-      icon: "https://cdn.lordicon.com/gqdnbnwt.json",
+      image: "/images/programs/electrical.jpg",
       title: "Electrical Engineering",
       description:
         "Study of electrical systems, power generation, renewable energy, control systems, and electrical machine design and analysis.",
       href: "/programs/electrical",
     },
-     {
-      icon: "https://cdn.lordicon.com/nocovwne.json",
+    {
+      image: "/images/programs/mach-learn.jpg",
       title: "Computer Science & Engineering (Indian Language)",
       description:
         "Computer engineering program designed to promote indigenous language computing, localization technologies, and regional software development.",
@@ -132,7 +105,6 @@ export default function AcademicPrograms() {
 
   return (
     <section className="py-20 bg-neutral-50 relative">
-      {/* Decorative background */}
       <div className="absolute inset-0 bg-gradient-to-b from-white to-neutral-50"></div>
 
       <div className="container mx-auto px-4 lg:px-0 relative z-10">
