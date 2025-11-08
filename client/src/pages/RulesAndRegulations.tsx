@@ -666,6 +666,21 @@ const policyData = [
             </a>
         ),
     },
+    {
+        sno: 38,
+        name: "PIET Academic and Examination Policy (Autonomous)",
+        download: (
+            <a
+                href="https://drive.google.com/file/d/1j5RsxfifAv7Rz1131ra4xCSUO5jc7s9W/view?usp=drive_link"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <button className="bg-primary text-white px-4 py-1 rounded hover:bg-secondary transition inline-flex items-center gap-2">
+                    <i className="fas fa-download" /> Download
+                </button>
+            </a>
+        ),
+    },
 ];
 
 const RulesAndRegulations = () => {

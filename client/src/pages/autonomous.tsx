@@ -25,6 +25,11 @@ const ImportantAnnouncements = () => {
   ];
 
   const announcements = [
+     {
+      title: "Circular - Academic and Examination Policy of PIET as an Autonomous Institution",
+      date: "2025-11-08",
+      link: "https://drive.google.com/file/d/1_W20LF_ShbHlJQgqGk9M2GxLnCb99OPC/view?usp=drive_link",
+    },
     {
       title: "UGC Notification of Autonomous Status",
       date: "2025-01-15",

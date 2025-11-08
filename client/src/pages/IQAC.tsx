@@ -8,6 +8,7 @@ import { ChevronDown, ChevronRight, Download, Eye, Users, Target, Award, BookOpe
 import { AccessibilityFeatures } from '@/components/AccessibilityFeatures';
 
 const iqacConstitution = [
+    'Constitution 2025-26',
     'Constitution 2024-25 (After Visit)',
     'Constitution 2024-25',
     'Constitution 2023-24',
@@ -109,9 +110,9 @@ export const iqacMeetingsData: Record<string, Record<string, { label: string; li
       { label: "Action Taken Report - 29", link: "#" },
     ],
      "Meeting 29": [
-      { label: "Agenda of Meeting - 29", link: "#" },
-      { label: "Minutes of Meeting - 29", link: "#" },
-      { label: "Action Taken Report - 28", link: "#" },
+      { label: "Agenda of Meeting - 29", link: "https://drive.google.com/file/d/14XMZYFtajWiI78MQHtmPZNUwRoGDz-wQ/view?usp=drive_link" },
+      { label: "Minutes of Meeting - 29", link: "https://drive.google.com/file/d/1DUjWeIbVZeMQBoxQNq8oC6VBz-RZVMLf/view?usp=drive_link" },
+      { label: "Action Taken Report - 28", link: "https://drive.google.com/file/d/1HeMCD1eqW3lpHIz464vCfo0ZLVlj4oOS/view?usp=drive_link" },
     ],
   },
   "2024-25": {
@@ -652,6 +653,7 @@ const IQACPage = () => {
             'Academic & Administrative Audit 2020-21': 'https://drive.google.com/file/d/1SLiD_-xilJKRenkVUMiXUSLpvJaOvBZG/view?usp=drive_link',
             'Academic & Administrative Audit 2019-20': 'https://drive.google.com/file/d/1PLhjSQHoyLbK4c8xuoDi6pFHVqKs9JtV/view?usp=drive_link',
             'Academic & Administrative Audit 2018-19': 'https://drive.google.com/file/d/1wjLwaqZp0Yj9uttE3jbIN-yqoCbc0-X_/view?usp=drive_link',
+            'Constitution 2025-26': 'https://drive.google.com/file/d/1eKYQblAON5H-VC2A5LMZ_EwWUj1bzlBG/view?usp=drive_link',
             'Constitution 2024-25 (After Visit)': 'https://drive.google.com/file/d/1mJ4hXVjTrdMdhrLg8E7dZJSEjx09KvmZ/view?usp=drive_link',
             'Constitution 2024-25': 'https://drive.google.com/file/d/1yAbRUHkNg5-tVhmrVWresdbPEKhLgRD2/view?usp=drive_link',
             'Constitution 2023-24': 'https://drive.google.com/file/d/12YAfJMZTsvsKXkjsufwa18eb6r-_ZXJK/view?usp=drive_link',
