@@ -253,7 +253,7 @@ const labData = [
 
     // Newly added data
     {
-        image: "/images/Labs/AS/Physics-lab.jpg",
+        image: "/images/Labs/AS/AppliedScienceDepartmentB06.jpeg",
         title: "Engineering Physics Lab",
         facultyInCharge: "Dr. Rajendra Singh",
         labAssistant: "Ms. Seema Sharma",
@@ -269,7 +269,7 @@ const labData = [
         syllabusLink: "https://example.com/syllabus.pdf",
     },
     {
-        image: "/images/Labs/AS/Language-lab.jpg",
+        image: "/images/Labs/AS/AppliedScienceDepartmentB10.jpeg",
         title: "Language Lab",
         facultyInCharge: "Dr. Neetu Sharma",
         labAssistant: "Mr. Manraj Prajapat",
@@ -277,7 +277,7 @@ const labData = [
         syllabusLink: "https://example.com/syllabus.pdf",
     },
     {
-        image: "/images/Labs/AS/CS-lab-1.jpg",
+        image: "/images/Labs/AS/AppliedScienceDepartment(006).jpeg",
         title: "Employability & Soft Skills Lab",
         facultyInCharge: "Dr. Krati Sharma",
         labAssistant: "Mr. Narendra Saini",
@@ -285,7 +285,7 @@ const labData = [
         syllabusLink: "https://example.com/syllabus.pdf",
     },
     {
-        image: "/images/Labs/AS/CS-lab-2.jpg",
+        image: "/images/Labs/AS/AppliedScienceDepartmentB09.jpeg",
         title: "Computer Programming Lab",
         facultyInCharge: "Mr. Arvind Mathur",
         labAssistant: "Mr. Rajesh Kumar Gurjar",
@@ -293,7 +293,7 @@ const labData = [
         syllabusLink: "https://example.com/syllabus.pdf",
     },
     {
-        image: "/images/Labs/AS/C-lang-lab.jpg",
+        image: "/images/Labs/AS/AppliedScienceDepartment109.jpeg",
         title: "Computer Programming Lab",
         facultyInCharge: "Ms. Charul Bapna",
         labAssistant: "Mr. Hansraj Mourya",
@@ -301,7 +301,7 @@ const labData = [
         syllabusLink: "https://example.com/syllabus.pdf",
     },
     {
-        image: "/images/Labs/AS/CE-lab.jpg",
+        image: "/images/Labs/AS/AppliedScienceDepartment007.jpeg",
         title: "Basic Electrical & Electronics Engineering Lab",
         facultyInCharge: "Dr. Ashish Laddha",
         labAssistant: "Mr. Mahendra Sharma",
@@ -309,7 +309,7 @@ const labData = [
         syllabusLink: "https://example.com/syllabus.pdf",
     },
     {
-        image: "/images/Labs/AS/Web-lab.jpg",
+        image: "/images/Labs/AS/AppliedScienceDepartment008.jpeg",
         title: "Web Designing Lab",
         facultyInCharge: "Dr. Sanjay Kumar Sinha",
         labAssistant: "Mr. Ashish Mahawar",
@@ -317,7 +317,7 @@ const labData = [
         syllabusLink: "https://example.com/syllabus.pdf",
     },
     {
-        image: "/images/Labs/AS/ME-lab.jpg",
+        image: "/images/Labs/AS/AppliedScienceDepartment(B08).jpeg",
         title: "Advanced Manufacturing Practices Workshop",
         facultyInCharge: "Dr. Nitin Mukesh Mathur",
         labAssistant: "Mr. Vimal Jain",
@@ -325,7 +325,7 @@ const labData = [
         syllabusLink: "https://example.com/syllabus.pdf",
     },
     {
-        image: "/images/Labs/AS/CE-lab.jpg",
+        image: "/images/Labs/AS/AIDSDepartment(B23).jpeg",
         title: "Basic Civil Engineering Lab",
         facultyInCharge: "Mr. Mukul Nama",
         labAssistant: "Mr. Umesh Sharma",
@@ -333,7 +333,7 @@ const labData = [
         syllabusLink: "https://example.com/syllabus.pdf",
     },
     {
-        image: "/images/Labs/AS/CS-lab-3.jpg",
+        image: "/images/Labs/AS/AppliedScienceDepartment(B11).jpeg",
         title: "Computer Aided Engineering Graphics",
         facultyInCharge: "Mr. Naveen Porwal",
         labAssistant: "Mr. Manraj Prajapat",
@@ -341,7 +341,7 @@ const labData = [
         syllabusLink: "https://example.com/syllabus.pdf",
     },
     {
-        image: "/images/Labs/AS/CS-lab-1.jpg",
+        image: "/images/Labs/AS/AppliedScienceDepartment110.jpeg",
         title: "Computer Aided Engineering Graphics",
         facultyInCharge: "Mr. Sharad Srivastava",
         labAssistant: "Mr. Hansraj Mourya",

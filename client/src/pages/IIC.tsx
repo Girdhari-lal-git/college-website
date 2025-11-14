@@ -336,14 +336,14 @@ const iiccertificatedocumentColumns = [
   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
     <div className="w-full h-80 overflow-hidden rounded-2xl shadow-md">
       <img
-        src="/public/images/chapters/iic/iic-ranking.png"
+        src="/public/images/chapters/iic/iic-ranking.PNG"
       alt="IIC Certificate"
         className="w-full h-full object-cover"
       />
     </div>
     <div className="w-full h-80 overflow-hidden rounded-2xl shadow-md">
       <img
-        src="/public/images/chapters/iic/iic-event.png"
+        src="/public/images/chapters/iic/iic-event.PNG"
       alt="IIC Activity"
         className="w-full h-full object-cover"
       />

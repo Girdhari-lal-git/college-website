@@ -544,12 +544,14 @@ export default function Header() {
                 </Link>
               </div>
             </div>
-            <Link
-              to="/careers"
-              className="text-sm hover:text-accent-light transition-colors"
-            >
-              Careers
-            </Link>
+           <a
+  href="https://www.linkedin.com/school/poornima-group-of-colleges/jobs/"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-sm hover:text-accent-light transition-colors"
+>
+  Careers
+</a>
             <Link
               to="/gallery"
               className="text-sm hover:text-accent-light transition-colors"
@@ -1236,8 +1238,8 @@ export default function Header() {
                     className="block p-3 text-neutral-800 hover:bg-primary hover:text-white transition-colors whitespace-nowrap overflow-hidden text-ellipsis"
                   >
                     <i className="fas fa-users mr-2"></i>Industry Institute
-                    Innovation
-                  </Link>
+                    Interaction                 
+                     </Link>
                    <Link
                     href="/hackathons"
                     className="block p-3 text-neutral-800 hover:bg-primary hover:text-white transition-colors whitespace-nowrap overflow-hidden text-ellipsis"

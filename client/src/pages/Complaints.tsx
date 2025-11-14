@@ -105,7 +105,7 @@ const Complaints = () => {
             <Header />
             <BreadCrumb
                 title="PIET - Internal Complaints Committee"
-                description="Discover who we are and what makes Poornima Institute a center of excellence."
+                description=" Ensuring a Safe and Respectful Environment for All"
                 breadcrumbs={[
                     { label: "Home", href: "/" },
                     {
@@ -117,11 +117,11 @@ const Complaints = () => {
 
             <OverviewSection
                 title="About ICC (Internal Complaints Committee)"
-                subtitle="An Insight into PIET"
+                subtitle=" Creating a Safe and Respectful Environment"
                 reverse={false}
                 image={{
-                    src: "/public/images/committies/icc/icc.png",
-                    alt: "Deptartment of Applied Sciences",
+                    src: "/public/images/Committies/icc/icc.PNG",
+                    alt: "Internal Complaints Committee",
                     caption: "Accredited with Grade 'A' by NAAC",
                 }}
             >

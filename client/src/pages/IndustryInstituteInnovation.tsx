@@ -10,8 +10,8 @@ import { link } from "fs";
 const IndustryInstituteInnovation = () => {
     const breadcrumbItems = [
         { label: "Home", href: "/" },
-        { label: "Innovation", href: "#" },
-        { label: "Industry Institute Innovation", isCurrent: true },
+        { label: "Interaction", href: "#" },
+        { label: "Industry Institute Interaction", isCurrent: true },
     ];
 
     const objectives = [
@@ -72,8 +72,8 @@ const IndustryInstituteInnovation = () => {
             <Header />
 
             <BreadCrumb
-                title="Industry Institute Innovation"
-                description="Bridging the gap between academia and industry through collaborative innovation"
+                title="Industry Institute Interaction"
+                description="Bridging the gap between academia and industry through collaborations"
                 breadcrumbs={breadcrumbItems}
             />
 

@@ -18,13 +18,14 @@ const conferenceColumns = [
 
 const conferenceData = [
 
-    {
+
+{
   sno: 1,
-  title: 'International Conference on Intelligent Systems Using Semiconductors for Robotics and IoT',
-  name: 'ICISRI-2024',
-  date: '29-30 November 2024',
+  title: 'International Conference on Sustainable & Intelligent Computing in Science and Technology',
+  name: 'ICSICST-2025',
+  date: '16-17 May 2025',
   type: 'International',
-  year: '2024',
+  year: '2025',
   link: (
     <a
       href="NA"
@@ -38,22 +39,23 @@ const conferenceData = [
 },
 {
   sno: 2,
-  title: 'International Conference on Information Management and Machine Intelligence',
-  name: 'ICIMMI-2024',
-  date: '23-24 December 2024',
+  title: 'International Conference on Networked Computing and Data Analytics',
+  name: 'ICNCDA-2025',
+  date: '23-24 May 2025',
   type: 'International',
-  year: '2024',
+  year: '2025',
   link: (
     <a
-      href="https://dl.acm.org/doi/proceedings/10.1145/3745812"
+      href="NA"
       target="_blank"
       rel="noopener noreferrer"
       className="text-blue-600 hover:underline"
     >
-      ICIMMI-2024
+      NA
     </a>
   ),
 },
+
 {
   sno: 3,
   title: 'International Conference on Recent Advances in Artificial Intelligence, Computer Vision & Smart Systems',
@@ -72,31 +74,36 @@ const conferenceData = [
     </a>
   ),
 },
+
+
 {
   sno: 4,
-  title: 'International Conference on Sustainable & Intelligent Computing in Science and Technology',
-  name: 'ICSICST-2025',
-  date: '16-17 May 2025',
+  title: 'International Conference on Information Management and Machine Intelligence',
+  name: 'ICIMMI-2024',
+  date: '23-24 December 2024',
   type: 'International',
-  year: '2025',
+  year: '2024',
   link: (
     <a
-      href="NA"
+      href="https://dl.acm.org/doi/proceedings/10.1145/3745812"
       target="_blank"
       rel="noopener noreferrer"
       className="text-blue-600 hover:underline"
     >
-      NA
+      ICIMMI-2024
     </a>
   ),
-},
-{
+}, 
+
+
+
+    {
   sno: 5,
-  title: 'International Conference on Networked Computing and Data Analytics',
-  name: 'ICNCDA-2025',
-  date: '23-24 May 2025',
+  title: 'International Conference on Intelligent Systems Using Semiconductors for Robotics and IoT',
+  name: 'ICISRI-2024',
+  date: '29-30 November 2024',
   type: 'International',
-  year: '2025',
+  year: '2024',
   link: (
     <a
       href="NA"

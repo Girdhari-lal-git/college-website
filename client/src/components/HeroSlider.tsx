@@ -53,7 +53,9 @@ export default function HeroSlider() {
       <section className="hero-slider  relative overflow-hidden">
         <div
           ref={slideContainerRef}
-          className="slider-container h-[300px] sm:h-[400px] md:h-[500px] lg:h-[560px] w-full mt-16 sm:mt-24 md:mt-32 lg:mt-40"
+          className="slider-container relative w-full max-w-8xl mx-auto 
+               h-[350px] sm:h-[450px] md:h-[600px] lg:h-[660px] 
+               mt-8 sm:mt-8 md:mt-10 lg:mt-12 rounded-2xl shadow-lg overflow-hidden"
         >
           <div className="h-full bg-gray-200 relative">
             <Skeleton className="w-full h-full" />
@@ -75,7 +77,9 @@ export default function HeroSlider() {
       <section className="hero-slider relative overflow-hidden">
         <div
           ref={slideContainerRef}
-          className="slider-container h-[300px] sm:h-[400px] md:h-[500px] lg:h-[560px] w-full mt-16 sm:mt-20 md:mt-24 lg:mt-32"
+          className="slider-container relative w-full max-w-8xl mx-auto 
+               h-[350px] sm:h-[450px] md:h-[600px] lg:h-[660px] 
+               mt-8 sm:mt-8 md:mt-10 lg:mt-12 rounded-2xl shadow-lg overflow-hidden"
         >
           <div className="h-full bg-gradient-to-r from-primary to-secondary flex items-center justify-center">
             <div className="text-center text-white px-4">
