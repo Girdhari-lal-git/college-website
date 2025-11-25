@@ -41,10 +41,27 @@ const documentColumns = [
 const documentData = [
     {
         sno: 1,
-        name: "Notification of Research & development Cell",
+        name: "Notification of R&D Co-ordinators",
         download: (
             <a
                 href="https://drive.google.com/file/d/1FlluNOj31HC5s6vJ8U3uvp8S95WDvuF6/view?usp=sharing"
+                download
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <button className="bg-primary text-white px-4 py-1 rounded hover:bg-secondary transition">
+                    Download
+                </button>
+            </a>
+        ),
+    },
+
+    {
+        sno: 2,
+        name: "Research & development Cell",
+        download: (
+            <a
+                href="https://drive.google.com/file/d/1In7fSxtakS_CcshqWNyeDafJCWC0YboZ/view?usp=drive_link"
                 download
                 target="_blank"
                 rel="noopener noreferrer"

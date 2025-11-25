@@ -87,7 +87,7 @@ const StudentCouncil = () => {
     ];
 
     const councilYears = [
-        { year: "2025-26", image: "/images/council/council25-26.jpg" },
+        { year: "2025-26", image: "/images/council/council2025-26.jpg" },
         { year: "2024-25", image: "/images/council/council24-25.png" },
         { year: "2023-24", image: "/images/council/council23-24.png" },
         { year: "2022-23", image: "/images/council/council22-23.png" },

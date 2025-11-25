@@ -62,7 +62,7 @@ const AcmChapter = () => {
     <section className="py-12 bg-white">
       <div className="container mx-auto px-6 text-center">
         <img
-          src={"/public/images/council/acm.png"}
+          src={"/images/council/acm.png"}
           alt="ACM Logo"
           className="mx-auto h-24 mb-6 transform hover:scale-105 transition-transform duration-300"
         />

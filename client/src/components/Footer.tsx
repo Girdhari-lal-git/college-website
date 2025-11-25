@@ -233,7 +233,7 @@ export default function Footer() {
                 <div className="flex items-center">
                   <i className="fab fa-dev text-secondary mr-1"></i>
                   <span className="text-white/80 font-medium">
-                    Shivendram Pratap Singh
+                    Shivendra Pratap Singh
                   </span>
                 </div>
               </div>

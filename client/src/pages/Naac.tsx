@@ -26,7 +26,7 @@ const naacSecondCycleColumns: Column<NaacFirstCycleRow>[] = [
 const naacSecondCycleData: NaacFirstCycleRow[] = [
     {
         sno: 1,
-        name: "NAAC Certificate",
+        name: "NAAC Certificate (Second Cycle) ",
         download: (
             <a
                 href="https://drive.google.com/file/d/1fJcFEU1aiHIiVjM0in0Nyagww5LpAKwo/view?usp=drive_link"
@@ -42,10 +42,10 @@ const naacSecondCycleData: NaacFirstCycleRow[] = [
     },
     {
         sno: 2,
-        name: "NAAC Score Card",
+        name: "NAAC Score Card (Second Cycle) ",
         download: (
             <a
-                href="https://drive.google.com/file/d/1fJcFEU1aiHIiVjM0in0Nyagww5LpAKwo/view?usp=drive_link"
+                href="https://drive.google.com/file/d/1dEFtPlAYSep8dZh0paEXk8-fK-oWDusv/view?usp=drive_link"
                 download
                 target="_blank"
                 rel="noopener noreferrer"
@@ -87,7 +87,7 @@ const naacFirstCycleColumns: Column<NaacFirstCycleRow>[] = [
 const naacFirstCycleData: NaacFirstCycleRow[] = [
     {
         sno: 1,
-        name: "NAAC Certificate",
+        name: "NAAC Certificate (First Cycle) ",
         download: (
             <a
                 href="https://drive.google.com/file/d/1m3kUGHhUblrY7SOobKjf1TmdYJSsqkzd/view?usp=drive_link"
@@ -103,7 +103,7 @@ const naacFirstCycleData: NaacFirstCycleRow[] = [
     },
     {
         sno: 2,
-        name: "NAAC Score Card",
+        name: "NAAC Score Card (First Cycle)",
         download: (
             <a
                 href="https://drive.google.com/file/d/1Qez7cEf3y6SyhFdef3JAxH_8yEmxD1Xd/view?usp=drive_link"
@@ -119,7 +119,7 @@ const naacFirstCycleData: NaacFirstCycleRow[] = [
     },
     {
         sno: 3,
-        name: "NAAC SSR Report (Second Cycle)",
+        name: "NAAC SSR Report (First Cycle)",
         download: (
             <a
                 href="https://drive.google.com/file/d/1Oaglfsnel_GyFF4xY-0d9vZRnJbS0wyJ/view?usp=drive_link"
@@ -140,11 +140,11 @@ const NaacFirstCycle: React.FC = () => {
         <div>
             <Header />
             <BreadCrumb
-                title="NAAC - First Cycle"
+                title="NAAC- National Assessment and Accreditation Council"
                 description="Download the NAAC Certificate, Score Card, and SSR Report from the first cycle of accreditation."
                 breadcrumbs={[
                     { label: "Home", href: "/" },
-                    { label: "NAAC - First Cycle", isCurrent: true },
+                    { label: "NAAC", isCurrent: true },
                 ]}
             />
 

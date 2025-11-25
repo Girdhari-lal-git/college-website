@@ -103,7 +103,7 @@ const IEEEPage = () => (
     <section className="py-12 bg-white">
       <div className="container mx-auto px-6 text-center">
         <img
-          src={"/public/images/ieee-logo.png"}
+          src={"/images/ieee-logo.png"}
           alt="IEEE Logo"
           className="mx-auto h-24 mb-6 transform hover:scale-105 transition-transform duration-300"
         />
@@ -144,7 +144,7 @@ const IEEEPage = () => (
         <div className="flex justify-center">
           <div className="bg-white rounded-xl shadow-2xl overflow-hidden w-full max-w-lg md:max-w-2xl transform hover:scale-105 transition-transform duration-300">
             <img
-              src={"/public/images/IEE.jpg"}
+              src={"/images/IEE.jpg"}
               alt="IEEE CIS Chapter Certificate"
               className="object-contain w-full h-auto"
             />
@@ -186,17 +186,17 @@ const IEEEPage = () => (
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           <img
-            src={"/public/images/event1.png"}
+            src={"/images/event1.png"}
             alt="Text Classification Workshop"
             className="rounded-lg shadow-md hover:scale-105 transition-transform duration-300 object-cover h-64 w-full"
           />
           <img
-            src={"/public/images/event2.png"}
+            src={"/images/event2.png"}
             alt="IEEE CIS Launch Event"
             className="rounded-lg shadow-md hover:scale-105 transition-transform duration-300 object-cover h-64 w-full"
           />
           <img
-            src={"/public/images/event1.png"}
+            src={"/images/event1.png"}
             alt="ANN Workshop"
             className="rounded-lg shadow-md hover:scale-105 transition-transform duration-300 object-cover h-64 w-full"
           />

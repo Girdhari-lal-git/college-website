@@ -171,6 +171,18 @@ const iicresourcetableColumns = [
 const iicreportsDocumentData = [
     {
         sno: 1,
+        name: 'Annual Report 2024-25',
+        download: (
+            <a href="https://drive.google.com/file/d/16XaBdQYjfLbkxxC0IzmDiWOBPCjgeiba/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">
+                <button className="bg-primary text-white px-4 py-1 rounded hover:bg-secondary transition inline-flex items-center gap-2">
+                    <i className="fas fa-download" /> Download PDF
+                </button>
+            </a>
+        )
+    },
+
+    {
+        sno: 2,
         name: 'Annual Report 2023-24',
         download: (
             <a href="https://drive.google.com/file/d/1soaLlIi4kmeYECqya5Aaz1077ldYgWL8/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">
@@ -181,7 +193,7 @@ const iicreportsDocumentData = [
         )
     },
     {
-        sno: 2,
+        sno: 3,
         name: 'Annual Report 2022-23',
         download: (
             <a href="https://drive.google.com/file/d/1ZmOXAW28n182jbcXIFuVpLx60aTLYJm6/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">
@@ -192,7 +204,7 @@ const iicreportsDocumentData = [
         )
     },
     {
-        sno: 3,
+        sno: 4,
         name: 'Annual Report 2021-22',
         download: (
             <a href="https://drive.google.com/file/d/1qabfAC2dTYbZQrzvv28jVPa_HrfMhRT4/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">
@@ -203,7 +215,7 @@ const iicreportsDocumentData = [
         )
     },
     {
-        sno: 4,
+        sno: 5,
         name: 'Annual Report 2020-21',
         download: (
             <a href="https://drive.google.com/file/d/1wp1vaheZSTe2YgJrb92NvCSlkUEuUUZD/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">
@@ -336,14 +348,14 @@ const iiccertificatedocumentColumns = [
   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
     <div className="w-full h-80 overflow-hidden rounded-2xl shadow-md">
       <img
-        src="/public/images/chapters/iic/iic-ranking.PNG"
+        src="/images/chapters/iic/iic-ranking.png"
       alt="IIC Certificate"
         className="w-full h-full object-cover"
       />
     </div>
     <div className="w-full h-80 overflow-hidden rounded-2xl shadow-md">
       <img
-        src="/public/images/chapters/iic/iic-event.PNG"
+        src="/images/chapters/iic/iic-event.png"
       alt="IIC Activity"
         className="w-full h-full object-cover"
       />

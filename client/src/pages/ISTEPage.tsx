@@ -85,7 +85,7 @@ const ISTEPage = () => {
     <section className="py-12 bg-white">
       <div className="container mx-auto px-6 text-center">
         <img
-          src={"/public/image/council/iste.PNG"}
+          src={"/images/council/iste.png"}
           alt="ISTE Logo"
           className="mx-auto h-24 mb-6 transform hover:scale-105 transition-transform duration-300"
         />
@@ -271,7 +271,7 @@ const ISTEPage = () => {
   </div>
   <div className="aspect-square">
     <img
-      src="/images/chapters/iste/iste.jpg"
+      src="/images/chapters/iste/iste.JPG"
       alt="Event 3"
       className="w-full h-full object-cover rounded-lg shadow"
     />

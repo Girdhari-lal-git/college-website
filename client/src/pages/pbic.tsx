@@ -69,36 +69,32 @@ const Innovation = [
 const Utility = ["PElectricity", "Internet", "Water", "Maintenance"];
 
 const annualreports = [
-    {
-        year: "2025-26",
-        title: "PBIC Annual Report 2025-26",
-        pdfUrl: "https://drive.google.com/file/d/1WgPtWfEbI33-Fvp1R3mzdyrl1CCR0fYu/view?usp=sharing",
-    },
+    
     {
         year: "2024-25",
         title: "PBIC Annual Report 2024-25",
-        pdfUrl: "https://drive.google.com/file/d/1WgPtWfEbI33-Fvp1R3mzdyrl1CCR0fYu/view?usp=sharing",
+        pdfUrl: "https://drive.google.com/file/d/1eJybA6PFFptNNiLL79WQ22wkbA8Ol-0c/view?usp=drive_link",
     },
 
     {
         year: "2023-24",
         title: "PBIC Annual Report 2023-24",
-        pdfUrl: "https://drive.google.com/file/d/1WgPtWfEbI33-Fvp1R3mzdyrl1CCR0fYu/view?usp=sharing",
+        pdfUrl: "https://drive.google.com/file/d/1KJGuNyq1jL_VY-LKBe0WkFMrA6CoG_sY/view?usp=drive_link",
     },
     {
         year: "2022-23",
         title: "PBIC Annual Report 2022-23",
-        pdfUrl: "https://drive.google.com/file/d/1IASXV3tMBzs2kFLRQNO6TOvpyAi_inOH/view?usp=sharing",
+        pdfUrl: "https://drive.google.com/file/d/1kIFQXO0OXnSaed7sD377sp-fTneraWJz/view?usp=drive_link",
     },
     {
         year: "2021-22",
         title: "PBIC Annual Report 2021-22",
-        pdfUrl: "https://drive.google.com/file/d/1tOWCmLM4dOXMKbBaTYIHhylJavtFZVPX/view?usp=sharing",
+        pdfUrl: "https://drive.google.com/file/d/17FmdlhkOlHhPlheaGoGueFG1FhqXonIS/view?usp=drive_link",
     },
     {
         year: "2020-21",
         title: "PBIC Annual Report 2020-21",
-        pdfUrl: "https://drive.google.com/file/d/1Q9MYxtON8G0eIRWj5Hv7ZRibBgu4hmK7/view?usp=sharing",
+        pdfUrl: "https://drive.google.com/file/d/1dNdwHMA9DvDgjygc4ibg8YVeqTGLvz7s/view?usp=drive_link",
     },
 ];
 
@@ -149,7 +145,7 @@ const columns = [
     { label: "S.No", key: "sno" },
     { label: "Startup Name", key: "startupName" },
     { label: "Student Name", key: "studentName" },
-    { label: "Phone Number", key: "phoneNumber" },
+    { label: "PBIC ID", key: "pbicid" },
     { label: "Year", key: "year" },
 ];
 
@@ -158,346 +154,354 @@ const startups = [
     sno: 1,
     startupName: "Theta Electronics",
     studentName: "Ajay Saini",
-    phoneNumber: "9314226135",
-    year: 2018,
+    pbicid: "2018P-1",
+    year: 2018
   },
   {
     sno: 2,
     startupName: "RashanBag",
     studentName: "Shubham Khandelwal",
-    phoneNumber: "9772110285",
-    year: 2018,
+    pbicid: "2018P-2",
+    year: 2018
   },
   {
     sno: 3,
     startupName: "Writer's Voice Society",
     studentName: "Ram Kinkar Tripathi",
-    phoneNumber: "9649676563",
-    year: 2018,
+    pbicid: "2018P-3",
+    year: 2018
   },
   {
     sno: 4,
     startupName: "Tinkers Town",
     studentName: "Ravi Suthar",
-    phoneNumber: "7425967157",
-    year: 2018,
+    pbicid: "2018P-4",
+    year: 2018
   },
   {
     sno: 5,
     startupName: "NamasteSir.com",
     studentName: "Nitin Jindal",
-    phoneNumber: "8952834418",
-    year: 2018,
+    pbicid: "2018P-5",
+    year: 2018
   },
   {
     sno: 6,
-    startupName: "REGOOLUR PRODUCT AND TECHNOLOGIES PRIVATE LIMITED",
+    startupName: "Regoolur Product and Technologies Pvt Ltd",
     studentName: "Tanya Kumawat",
-    phoneNumber: "7742481873",
-    year: 2018,
+    pbicid: "2018P12-6",
+    year: 2018
   },
   {
     sno: 7,
-    startupName: "M/s. BREADNBUTTER TECH",
+    startupName: "M/s BreadNButter Tech",
     studentName: "Saksham Saxena",
-    phoneNumber: "7230093372",
-    year: 2019,
+    pbicid: "2019P10-1",
+    year: 2019
   },
   {
     sno: 8,
     startupName: "READINGBOX.IN",
     studentName: "Amit Jangid",
-    phoneNumber: "8440902650",
-    year: 2019,
+    pbicid: "2019P08-2",
+    year: 2019
   },
   {
     sno: 9,
-    startupName: "TECHNOBUILD PRIVATE LIMITED",
+    startupName: "Technobuild Private Limited",
     studentName: "Abhishek Parashar",
-    phoneNumber: "9950890635",
-    year: 2019,
+    pbicid: "2019P08-3",
+    year: 2019
   },
   {
     sno: 10,
     startupName: "Auxicuix Consultancies LLP",
     studentName: "Abhinav Tiwari",
-    phoneNumber: "7976178647",
-    year: 2020,
+    pbicid: "2020P10-1",
+    year: 2020
   },
   {
     sno: 11,
     startupName: "olxtech (Bech Do)",
     studentName: "Yash Saxena",
-    phoneNumber: "8890170172",
-    year: 2020,
+    pbicid: "2020P11-2",
+    year: 2020
   },
   {
     sno: 12,
     startupName: "Digital Darzi",
     studentName: "Himanshu Hingorani",
-    phoneNumber: "7014648668",
-    year: 2021,
+    pbicid: "2021P01-1",
+    year: 2021
   },
   {
     sno: 13,
     startupName: "Book of Youth",
     studentName: "Priyanshi Goyal",
-    phoneNumber: "9461233742",
-    year: 2021,
+    pbicid: "2021P03-2",
+    year: 2021
   },
   {
     sno: 14,
     startupName: "Local Eyes",
     studentName: "Yuvraj Dagur",
-    phoneNumber: "8949090660",
-    year: 2021,
+    pbicid: "2021P04-3",
+    year: 2021
   },
   {
     sno: 15,
     startupName: "The Engineers Cafe",
     studentName: "Amit Jangid",
-    phoneNumber: "8440902650",
-    year: 2021,
+    pbicid: "2021P06-4",
+    year: 2021
   },
   {
     sno: 16,
     startupName: "PIE Star Interactive Studio",
     studentName: "Vikash Sharma",
-    phoneNumber: "9214993678",
-    year: 2021,
+    pbicid: "2021P11-5",
+    year: 2021
   },
   {
     sno: 17,
     startupName: "Kanha Ji Handicrafts",
     studentName: "Gaurav Prajapat",
-    phoneNumber: "7427022709",
-    year: 2022,
+    pbicid: "2022P08-1",
+    year: 2022
   },
   {
     sno: 18,
     startupName: "Rent N Earn",
     studentName: "Ankit Khemani",
-    phoneNumber: "9057599584",
-    year: 2022,
+    pbicid: "2022P08-2",
+    year: 2022
   },
   {
     sno: 19,
     startupName: "Aerophantom",
     studentName: "Rahul Sharma",
-    phoneNumber: "9509206534",
-    year: 2022,
+    pbicid: "2022P09-3",
+    year: 2022
   },
   {
     sno: 20,
     startupName: "CAFTRO",
     studentName: "Sourav Sharma",
-    phoneNumber: "8239753202",
-    year: 2023,
+    pbicid: "2023P02-1",
+    year: 2023
   },
   {
     sno: 21,
     startupName: "REP-X",
     studentName: "Nitesh Sharma",
-    phoneNumber: "8690643265",
-    year: 2023,
+    pbicid: "2023P02-2",
+    year: 2023
   },
   {
     sno: 22,
     startupName: "MOOONTECH",
     studentName: "Jeki Panchal",
-    phoneNumber: "8209023368",
-    year: 2023,
+    pbicid: "2023P02-3",
+    year: 2023
   },
   {
     sno: 23,
     startupName: "Devils Honey",
     studentName: "Abhinav Tiwari",
-    phoneNumber: "7976178647",
-    year: 2023,
+    pbicid: "2023P02-4",
+    year: 2023
   },
   {
     sno: 24,
     startupName: "Bitesfly",
     studentName: "Bhavya Agarwal",
-    phoneNumber: "8290999582",
-    year: 2023,
+    pbicid: "2023P02-5",
+    year: 2023
   },
   {
     sno: 25,
     startupName: "V-gthr",
     studentName: "Dhruv Sharma",
-    phoneNumber: "9079907146",
-    year: 2023,
+    pbicid: "2023P04-6",
+    year: 2023
   },
   {
     sno: 26,
     startupName: "Staqia",
     studentName: "Lakshya Jain",
-    phoneNumber: "9521688043",
-    year: 2023,
+    pbicid: "2023P10-7",
+    year: 2023
   },
   {
     sno: 27,
     startupName: "Comacks",
     studentName: "Arpit Singh",
-    phoneNumber: "7303908344",
-    year: 2023,
+    pbicid: "2023P10-8",
+    year: 2023
   },
   {
     sno: 28,
     startupName: "Teknokrshak",
     studentName: "Rajendra Choudhary",
-    phoneNumber: "6305255383",
-    year: 2023,
+    pbicid: "2023P10-9",
+    year: 2023
   },
   {
     sno: 29,
     startupName: "WEBTECH.IT",
     studentName: "Saurav Singh",
-    phoneNumber: "8094636030",
-    year: 2024,
+    pbicid: "2024P01-1",
+    year: 2024
   },
   {
     sno: 30,
     startupName: "MKG Servicemen",
     studentName: "Dhruv Gupta",
-    phoneNumber: "8619292633",
-    year: 2024,
+    pbicid: "2024P02-1",
+    year: 2024
   },
   {
     sno: 31,
     startupName: "Blinxher",
     studentName: "Sneha Meghnani",
-    phoneNumber: "9772229206",
-    year: 2024,
+    pbicid: "2024P09-1",
+    year: 2024
   },
   {
     sno: 32,
     startupName: "Borrow-Hub",
     studentName: "Anurag Dadhich",
-    phoneNumber: "8000384690",
-    year: 2024,
+    pbicid: "2024P09-1",
+    year: 2024
   },
   {
     sno: 33,
     startupName: "PG-Pyaara Ghar",
     studentName: "Varun Chahar",
-    phoneNumber: "8949738298",
-    year: 2024,
+    pbicid: "2024P09-2",
+    year: 2024
   },
   {
     sno: 34,
     startupName: "Diksha Education",
     studentName: "Koushal Acharya",
-    phoneNumber: "9549423454",
-    year: 2024,
+    pbicid: "2024P09-3",
+    year: 2024
   },
   {
     sno: 35,
     startupName: "NexTech",
     studentName: "Ansh Kumawat",
-    phoneNumber: "9829093593",
-    year: 2024,
+    pbicid: "2024P10-1",
+    year: 2024
   },
   {
     sno: 36,
-    startupName: "Memory",
+    startupName: "Krashivv",
     studentName: "Aashika Singhal",
-    phoneNumber: "9351065897",
-    year: 2024,
+    pbicid: "2024P10-2",
+    year: 2024
   },
   {
     sno: 37,
     startupName: "Scribblesslott",
     studentName: "Ayushi Bhardwaj",
-    phoneNumber: "6375869121",
-    year: 2024,
+    pbicid: "2024P10-3",
+    year: 2024
   },
   {
     sno: 38,
     startupName: "Expoliv",
     studentName: "Kartikey Sharma",
-    phoneNumber: "7727873273",
-    year: 2024,
+    pbicid: "2024P10-4",
+    year: 2024
   },
   {
     sno: 39,
     startupName: "Empire Edge Marketing",
     studentName: "Aakash Singh",
-    phoneNumber: "6378318162",
-    year: 2025,
+    pbicid: "2025P01-1",
+    year: 2025
   },
   {
     sno: 40,
     startupName: "Pick Your Price",
     studentName: "Shubham",
-    phoneNumber: "7023109077",
-    year: 2025,
+    pbicid: "2025P01-2",
+    year: 2025
   },
   {
     sno: 41,
     startupName: "Urban Loft",
     studentName: "Jayansh Jaiminee",
-    phoneNumber: "6367308482",
-    year: 2025,
+    pbicid: "2025P01-3",
+    year: 2025
   },
   {
     sno: 42,
     startupName: "Graphic Moron",
     studentName: "Sahaj Jain",
-    phoneNumber: "7340624097",
-    year: 2025,
+    pbicid: "2025P02-1",
+    year: 2025
   },
   {
     sno: 43,
     startupName: "CollabClan",
     studentName: "Ashish Kumar",
-    phoneNumber: "9608449442",
-    year: 2025,
+    pbicid: "2025P02-2",
+    year: 2025
   },
   {
     sno: 44,
     startupName: "WELKIN MEDIA & ENTERTAINMENT",
     studentName: "Manas Joshi",
-    phoneNumber: "9079774988",
-    year: 2025,
+    pbicid: "2025P02-3",
+    year: 2025
   },
   {
     sno: 45,
     startupName: "NOVA",
     studentName: "Ekansh Sharma",
-    phoneNumber: "9352605981",
-    year: 2025,
+    pbicid: "2025P02-4",
+    year: 2025
   },
   {
     sno: 46,
     startupName: "3RE-Tech",
     studentName: "Sujal Tarafdar",
-    phoneNumber: "8306215860",
-    year: 2025,
+    pbicid: "2025P03-1",
+    year: 2025
   },
   {
     sno: 47,
     startupName: "Zapserve",
     studentName: "Akshat Varshney",
-    phoneNumber: "7014688024",
-    year: 2025,
+    pbicid: "2025P04-1",
+    year: 2025
   },
   {
     sno: 48,
     startupName: "Nivi Inc",
     studentName: "Vivek Kumar",
-    phoneNumber: "7297880860",
-    year: 2025,
+    pbicid: "2025P04-2",
+    year: 2025
   },
   {
     sno: 49,
     startupName: "Linkstatic Techno",
     studentName: "Aditya Pareek",
-    phoneNumber: "9422817148",
-    year: 2025,
+    pbicid: "2025P08-1",
+    year: 2025
   },
-];
+  {
+    sno: 50,
+    startupName: "Health Guard",
+    studentName: "Tanishq Sharma",
+    pbicid: "2025P10-1",
+    year: 2025
+  },
+]; 
+
 
 
 const pbic = () => {
@@ -666,36 +670,38 @@ const pbic = () => {
   </h2>
   <div className="w-24 h-1 bg-secondary mb-6 mx-auto"></div>
 
+
   {/* Table Section */}
-  <div className="w-full max-w-7xl mx-auto overflow-x-auto">
-    <table className="w-full border border-gray-200 divide-y divide-gray-200 rounded-lg shadow-sm">
-      <thead className="bg-gray-100">
-        <tr>
-          <th className="px-4 py-3 text-center text-sm font-semibold text-gray-700">Year</th>
-          <th className="px-4 py-3 text-center text-sm font-semibold text-gray-700">Title</th>
-          <th className="px-4 py-3 text-center text-sm font-semibold text-gray-700">Download</th>
+<div className="bg-white container mx-auto mt-10 overflow-x-auto p-4 rounded-lg">
+  <table className="w-full border border-gray-200 divide-y divide-gray-200 rounded-lg shadow-lg">
+    <thead className="bg-gray-100">
+      <tr>
+        <th className="px-4 py-3 text-center text-sm font-semibold text-gray-700">Year</th>
+        <th className="px-4 py-3 text-center text-sm font-semibold text-gray-700">Title</th>
+        <th className="px-4 py-3 text-center text-sm font-semibold text-gray-700">Download</th>
+      </tr>
+    </thead>
+    <tbody className="bg-white divide-y divide-gray-200">
+      {annualreports.map((report, idx) => (
+        <tr key={idx} className="hover:bg-gray-50 transition">
+          <td className="px-4 py-3 text-md text-gray-800">{report.year}</td>
+          <td className="px-4 py-3 text-md text-gray-800">{report.title}</td>
+          <td className="px-4 py-3 text-md text-primary">
+            <a
+              href={report.pdfUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-primary-dark"
+            >
+              View Report
+            </a>
+          </td>
         </tr>
-      </thead>
-      <tbody className="bg-white divide-y divide-gray-200">
-        {annualreports.map((report, idx) => (
-          <tr key={idx} className="hover:bg-gray-50 transition">
-            <td className="px-4 py-3 text-sm text-gray-800">{report.year}</td>
-            <td className="px-4 py-3 text-sm text-gray-800">{report.title}</td>
-            <td className="px-4 py-3 text-sm text-primary">
-              <a
-                href={report.pdfUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline hover:text-primary-dark"
-              >
-                View Report
-              </a>
-            </td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
-  </div>
+      ))}
+    </tbody>
+  </table>
+</div>
+
 </div>
 
 

@@ -48,6 +48,8 @@ const feedbackForms = [
 ];
 
 const feedbackAnalysis = [
+    'Action Taken Report of Feedback (2024-25)',
+    'Feedback Analysis (2024-25)',
     'Action Taken Report of Feedback (2023-24)',
     'Feedback Analysis (2023-24)',
     'Action Taken Report of Feedback (2022-23)',
@@ -63,6 +65,7 @@ const feedbackAnalysis = [
 ];
 
 const studentSurveys = [
+    'Students Satisfaction Survey 2024-25',
     'Students Satisfaction Survey 2023-24',
     'Students Satisfaction Survey 2022-23',
     'Students Satisfaction Survey 2021-22',
@@ -399,6 +402,15 @@ const iqacQualityActivities = {
 
 // Data for other dropdowns
 const fdpWorkshopsData = {
+    '2024-2025': [
+        'Six Days FDP on Machine Learning',
+        'FDP On Advanced Tools & Techniques for Quality Research, Innovation and Analysis',
+        'Three Day Introductory Face to Face FDP on UHV',
+        'Faculty Development Program on Mobile Application Development',
+        'FDP on The Laser Cutting Training',
+        'Five Days Faculty Development Programme on “Facilitating IGNITE Course in Entrepreneurship”'
+    ],
+
     '2023-2024': [
         'FDP on Changing Paradigm for Quality of Teaching, Learning & Research under NEP-2020',
         'One week Training Program for Non-teaching Staff on Effective Team Building and Documentation',
@@ -540,6 +552,13 @@ const IQACPage = () => {
     const getFDPDocumentLink = (item: string, year: string) => {
         // Map specific FDP documents to their Google Drive links
         const fdpLinks = {
+            // 2024-25
+            'Six Days FDP on Machine Learning': 'https://drive.google.com/file/d/15EfPev8vSSTWy5eyy2bSsAxc_PiKSgnS/view?usp=drive_link',
+            'FDP On Advanced Tools & Techniques for Quality Research, Innovation and Analysis': 'https://drive.google.com/file/d/1ffZUeUp_0bwdMJ0dsvInmcu2nji0vNJH/view?usp=drive_link',
+            'Three Day Introductory Face to Face FDP on UHV': 'https://drive.google.com/file/d/1lKy0t2rjFvOMQagPZ0RjjTvGBjsOug68/view?usp=drive_link',
+            'Faculty Development Program on Mobile Application Development': 'https://drive.google.com/file/d/1tMGTIA21ArbvgCCODAwUEdnMcWz4xG9N/view?usp=drive_link',
+            'FDP on The Laser Cutting Training': 'https://drive.google.com/file/d/1tAjP4LTyjV-uYBd9ZuLPwxqZhmPzyuov/view?usp=drive_link',
+            'Five Days Faculty Development Programme on “Facilitating IGNITE Course in Entrepreneurship”': 'https://drive.google.com/file/d/1eQS9gpzFIT5MtMmpbXOIHp-gVTTRrXm4/view?usp=drive_link',
             //2023-24
             'FDP on Changing Paradigm for Quality of Teaching, Learning & Research under NEP-2020': 'https://drive.google.com/file/d/1Hp6pWff4WsNFZsWHLl5SNznsbop1ti7a/view?usp=drive_link',
             'One week Training Program for Non-teaching Staff on Effective Team Building and Documentation': 'https://drive.google.com/file/d/1lhL9NS-KfJ6mbwoWMQ4rsLyy_Ia5HOo-/view?usp=drive_link',
@@ -672,6 +691,8 @@ const IQACPage = () => {
             'Student Feedback form on Ambience': 'https://drive.google.com/file/d/1VBDK_kFoDULC6wguHwg5LGw9ONZL6woU/view?usp=drive_link',
             'Student Feedback form on Academics': 'https://drive.google.com/file/d/1GywY6_Xuf1z8ZYoWi1mKkQ40oqZkX_hT/view?usp=drive_link',
             'Student Feedback on Academics over ERP (Process)': 'https://drive.google.com/file/d/1NCkjC-niVMM3iMJvB4-NTyaIMi7AdYHv/view?usp=drive_link',
+            'Action Taken Report of Feedback (2024-25)': 'https://drive.google.com/file/d/1k8322p0PYJRb_Yn2C_KY8kZkzSo3bR78/view?usp=drive_link',
+             'Feedback Analysis (2024-25)': 'https://drive.google.com/file/d/1n70wjTXIQVXt56lsSsHY3gCqxtutirCW/view?usp=drive_link',
             'Action Taken Report of Feedback (2023-24)': 'https://drive.google.com/file/d/1S6Uaw35s9s1yY9WADCaACMAMJjKw8yuc/view?usp=drive_link',
              'Feedback Analysis (2023-24)': 'https://drive.google.com/file/d/12r5uy8xlvbl9dIFP-hwzV5DwNPyZOhSp/view?usp=drive_link',
             'Action Taken Report of Feedback (2022-23)': 'https://drive.google.com/file/d/1pwy8XaSNz3QKl-jBDQDhF-4VQglCW2iX/view?usp=drive_link',
@@ -684,6 +705,7 @@ const IQACPage = () => {
             'Feedback Analysis (2019-20)': 'https://drive.google.com/file/d/1KS4RkuKtZrHcCrEDs93N8GRqHfYXRohZ/view?usp=drive_link',
             'Action Taken Report of Feedback (2018-19)': 'https://drive.google.com/file/d/1kGEnczIyd05z07cwMRIpQRv2gVwOfl1n/view?usp=drive_link',
             'Feedback Analysis (2018-19)': 'https://drive.google.com/file/d/1Y3MbalCOhKQreesU6jaYSWH8gYoTXtYV/view?usp=drive_link',
+            'Students Satisfaction Survey 2024-25': 'https://drive.google.com/file/d/1srRJ9gXIj4PwJePJHnIrqpFleplke7Bf/view?usp=drive_link',
             'Students Satisfaction Survey 2023-24': 'https://drive.google.com/file/d/1g6FLs6UNjJz8xWiVabMbx06n8y69owlk/view?usp=drive_link',
             'Students Satisfaction Survey 2022-23': 'https://drive.google.com/file/d/1jPCi4djBraWohjEVCIdo2yqgrwouiLrw/view?usp=drive_link',
             'Students Satisfaction Survey 2021-22': 'https://drive.google.com/file/d/1hK-speuh2Z1lOlCqjOuU5fJkpbO9rhDj/view?usp=drive_link',

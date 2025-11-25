@@ -9,12 +9,29 @@ import { ChevronDown, ChevronRight, Download, FileText, Calendar, Award, Users, 
 
 const iprData = {
     2025: [
-        { sno: 1, grantNo: '202511003955', author: 'Mr. Indra Kishor', affiliation: 'PIET, Jaipur', title: 'REVOLUTIONIZING TRAIN HOSPITALITY WITH INTELLIGENT PNR INTEGRATION AND REAL-TIME TRACKING' },
-        { sno: 2, grantNo: '202511003957', author: 'Mr. Indra Kishor', affiliation: 'PIET, Jaipur', title: 'Intelligent Autonomous Drone: Dual-Battery Swapping, Ethical AI Navigation, IoT Weather Insights, AR/VR Control, and Noise-Cancelling Communication' },
-        { sno: 3, grantNo: '202511004327', author: 'Mr. Indra Kishor', affiliation: 'PIET, Jaipur', title: 'AI-POWERED ROBOTIC NAVIGATION SYSTEM FOR DYNAMIC TRAFFIC MANAGEMENT USING IOT AND DEEP LEARNING' },
-        { sno: 4, grantNo: '202511004346', author: 'Mr. Indra Kishor', affiliation: 'PIET, Jaipur', title: 'AN INTELLIGENT VOICE COMMUNICATION SYSTEM FOR HUMANOID ROBOT WITH MOOD RECOGNITION AND SELF-LEARNING FOR PERSONALIZED INTERACTION BASED ON IOT AND DEEP LEARNING' },
-        { sno: 5, grantNo: '202511004358', author: 'Mr. Indra Kishor', affiliation: 'PIET, Jaipur', title: 'A NOVEL VR-BASED HAND THERAPY SYSTEM EMPOWERED BY IOT AND AI-ML FOR STROKE REHABILITATION' },
-        { sno: 6, grantNo: '202511004363', author: 'Mr. Indra Kishor', affiliation: 'PIET, Jaipur', title: 'ADAPTIVE AI SYSTEM FOR FACE RECOGNITION AND INTELLIGENT VOICE INTERACTION IN LEARNING ENVIRONMENTS' },
+        { sno: 1, grantNo: '202511076121', author: 'Dr. Sandeep Gupta', affiliation: 'PIET, Jaipur', title: 'Adaptive Voice-Controlled Robotic Navigation System with Distributed Processing Architecture' },
+{ sno: 2, grantNo: '202511076485', author: 'Dr. Sandeep Gupta', affiliation: 'PIET, Jaipur', title: 'Dual-Thread Mobile Acoustic Sensing System with Real-Time Audio Processing and Wireless Communication' },
+{ sno: 3, grantNo: '202511076492', author: 'Dr. Sandeep Gupta', affiliation: 'PIET, Jaipur', title: 'Integrated Bluetooth Communication Framework for Simultaneous Motor Control and Video Streaming in Embedded Robotics' },
+{ sno: 4, grantNo: '202511077395', author: 'Dr. Sandeep Gupta', affiliation: 'PIET, Jaipur', title: 'Intelligent Quadruped Spider Robot System with Dual-Domain Power Architecture and Biomimetic Locomotion' },
+{ sno: 5, grantNo: '202511077025', author: 'Abhay Choudhary', affiliation: 'PIET, Jaipur', title: 'Development of An Electric Vehicle with Integrated Dyanamo for Recharging Battery and Enhacning Vehicle Safeyt' },
+{ sno: 6, grantNo: '202511077038', author: 'Abhay Choudhary', affiliation: 'PIET, Jaipur', title: 'Development of an Automated Cloth Protection System from Rain, Water Droplets in Winters and Night time Retrieval Functionality' },
+{ sno: 7, grantNo: '202511077039', author: 'Indra Kishor', affiliation: 'PIET, Jaipur', title: 'AI-Driven IoT-Enabled Hardware-Accelerated Search Engine for Optimized Real-Time Distributed Data Retrieval and Processing' },
+{ sno: 8, grantNo: '202511077049', author: 'Indra Kishor', affiliation: 'PIET, Jaipur', title: 'AI-Optimized Real-Time VR Teleportation System for Workspace Navigation Using 360° Cameras & HTC VIVE Controllers' },
+{ sno: 9, grantNo: '202511077071', author: 'Indra Kishor', affiliation: 'PIET, Jaipur', title: 'System and Method for Voice-Based Knowledge Evaluation Using Offline Speech Recognition and AI-Driven Answer Processing' },
+{ sno: 10, grantNo: '202511077084', author: 'Indra Kishor', affiliation: 'PIET, Jaipur', title: 'AI-Powered Autonomous Physiotherapy Robot with Adaptive Therapy Optimization and IoT-Enabled Remote Monitoring' },
+{ sno: 11, grantNo: '202511003955', author: 'Mr. Indra Kishor', affiliation: 'PIET, Jaipur', title: 'REVOLUTIONIZING TRAIN HOSPITALITY WITH INTELLIGENT PNR INTEGRATION AND REAL-TIME TRACKING' },
+{ sno: 12, grantNo: '202511003957', author: 'Mr. Indra Kishor', affiliation: 'PIET, Jaipur', title: 'Intelligent Autonomous Drone: Dual-Battery Swapping, Ethical AI Navigation, IoT Weather Insights, AR/VR Control, and Noise-Cancelling Communication' },
+{ sno: 13, grantNo: '202511004327', author: 'Mr. Indra Kishor', affiliation: 'PIET, Jaipur', title: 'AI-POWERED ROBOTIC NAVIGATION SYSTEM FOR DYNAMIC TRAFFIC MANAGEMENT USING IOT AND DEEP LEARNING' },
+{ sno: 14, grantNo: '202511004346', author: 'Mr. Indra Kishor', affiliation: 'PIET, Jaipur', title: 'AN INTELLIGENT VOICE COMMUNICATION SYSTEM FOR HUMANOID ROBOT WITH MOOD RECOGNITION AND SELF-LEARNING FOR PERSONALIZED INTERACTION BASED ON IOT AND DEEP LEARNING' },
+{ sno: 15, grantNo: '202511004358', author: 'Mr. Indra Kishor', affiliation: 'PIET, Jaipur', title: 'A NOVEL VR-BASED HAND THERAPY SYSTEM EMPOWERED BY IOT AND AI-ML FOR STROKE REHABILITATION' },
+{ sno: 16, grantNo: '202511004363', author: 'Mr. Indra Kishor', affiliation: 'PIET, Jaipur', title: 'ADAPTIVE AI SYSTEM FOR FACE RECOGNITION AND INTELLIGENT VOICE INTERACTION IN LEARNING ENVIRONMENTS' },
+{ sno: 17, grantNo: '202511004392', author: 'Mr. Indra Kishor', affiliation: 'PIET, Jaipur', title: 'AUTONOMOUS HUMANOID ROBOT WITH REAL-TIME BRAIN-MIMICKING CAPABILITIES USING NEURAL SIGNAL PROCESSING' },
+{ sno: 18, grantNo: '202511004399', author: 'Mr. Indra Kishor', affiliation: 'PIET, Jaipur', title: 'BI-DIRECTIONAL LINE FOLLOWING ROBOT WITH ENHANCED SENSOR INTEGRATION AND AUTONOMOUS OPERATIONAL CAPABILITIES' },
+{ sno: 19, grantNo: '202511004408', author: 'Mr. Indra Kishor', affiliation: 'PIET, Jaipur', title: 'VISIONARY CONNECT: MULTI-FUNCTIONAL SMART GLASSES FOR ENHANCED COMMUNICATION AND MOBILITY FOR THE HEARING, SPEECH, AND VISION IMPAIRED' },
+{ sno: 20, grantNo: '202511008505', author: 'Ms. Alka Rani', affiliation: 'PIET, Jaipur', title: 'Smart Pool Guardian: Voice-Controlled Management System' },
+{ sno: 21, grantNo: '202511009043', author: 'Aditya Pareek', affiliation: 'PIET, Jaipur', title: 'EmpowerFemGuard: Smart Vending with Mobile Authentication & Personalized Usage Tracking' },
+{ sno: 22, grantNo: '202511018359', author: 'Ms. Shruti Gupta', affiliation: 'PIET, Jaipur', title: 'Safeguarding Health: IoT-Powered Smart Water Monitoring for Cholera Control' },
+
     ],
     2022: [
         { sno: 1, grantNo: '202241065504', author: 'Dr. Pankaj Rahi', affiliation: 'PIET, Jaipur', title: 'A Smart Evaluation Method Of The Effect Of Economic Development On Crypto-Currency Using Machine Learning Techniques' },
@@ -243,7 +260,7 @@ const IPRList = () => {
                         <StatsCard
                             icon={<Award className="h-8 w-8" />}
                             title="Latest Patents"
-                            value={iprData[latestYear]?.length.toString() || '0'}
+                            value={iprData[latestYear.toString()]?.length.toString() || '0'}
                             color="bg-primary"
                         />
                         <StatsCard
@@ -272,7 +289,7 @@ const IPRList = () => {
 
                     <div className="max-w-6xl mx-auto">
                         {Object.keys(iprData).sort((a, b) => b.localeCompare(a)).map((year) => (
-                            <IPRAccordion key={year} year={year} data={iprData[year as keyof typeof iprData]} />
+                            <IPRAccordion key={year} year={year} data={iprData[year as unknown as keyof typeof iprData]} />
                         ))}
                     </div>
                 </div>
