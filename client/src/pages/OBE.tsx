@@ -395,12 +395,12 @@ const OBE = () => {
                             <DynamicTable columns={obereportdocumentColumns} data={obereportsDocumentData} />
                         </div>
 
-            {/* IIC Annual Reports */}
+            {/* IIC Annual Reports 
                          <div className="container mt-14 mx-auto mb-10">
                             <h2 className="text-3xl text-primary font-bold mb-8 text-center">OBE Analysis</h2>
                             <div className="w-24 h-1 bg-secondary mb-6 mx-auto"></div>
                             <DynamicTable columns={obeanalysisdocumentColumns} data={obeanalysisDocumentData} />
-                        </div>
+                        </div> */}
 
             <Cta />
             <Footer />

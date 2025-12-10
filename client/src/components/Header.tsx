@@ -1481,7 +1481,7 @@ export default function Header() {
                   href="/governing-council"
                   className="block py-2 hover:text-secondary transition-colors"
                 >
-                  <i className="fas fa-gavel mr-2"></i>Governing Council
+                  <i className="fas fa-gavel mr-2"></i>Board of Governors
                 </Link>
               </li>
               <li>
@@ -1562,7 +1562,7 @@ export default function Header() {
                   href="/coe-message"
                   className="block py-2 hover:text-secondary transition-colors"
                 >
-                  <i className="fas fa-clipboard-check mr-2"></i>Controller
+                  <i className="fas fa-clipboard-check mr-2"></i>Controller of Exams
                 </Link>
               </li>
               <li>
@@ -1767,7 +1767,7 @@ export default function Header() {
                   href="/conferences"
                   className="block py-2 hover:text-secondary transition-colors"
                 >
-                  <i className="fas fa-users mr-2"></i>Conference
+                  <i className="fas fa-users mr-2"></i>Conferences
                 </Link>
               </li>
               <li>
@@ -2274,7 +2274,7 @@ export default function Header() {
                   href="/governing-council"
                   className="block py-2 hover:text-secondary transition-colors"
                 >
-                  <i className="fas fa-gavel mr-2"></i>Governing Council
+                  <i className="fas fa-gavel mr-2"></i>Board of Governors
                 </Link>
               </li>
               <li>
@@ -2560,7 +2560,7 @@ export default function Header() {
                   href="/conferences"
                   className="block py-2 hover:text-secondary transition-colors"
                 >
-                  <i className="fas fa-users mr-2"></i>Conference
+                  <i className="fas fa-users mr-2"></i>Conferences
                 </Link>
               </li>
               <li>
@@ -2802,7 +2802,7 @@ export default function Header() {
                   className="block py-2 hover:text-secondary transition-colors"
                 >
                   <i className="fas fa-users mr-2"></i>Industry Institute
-                  Innovation
+                  Interaction
                 </Link>
               </li>
             </ul>
@@ -2949,7 +2949,7 @@ export default function Header() {
                   href="/facilties"
                   className="block py-2 hover:text-secondary transition-colors"
                 >
-                  <i className="fas fa-tools mr-2"></i>Campus Tools
+                  <i className="fas fa-tools mr-2"></i>Campus Facilities
                 </Link>
               </li>
               <li>

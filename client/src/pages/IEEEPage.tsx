@@ -55,6 +55,51 @@ const cisActivities = [
     event: "ANN Workshop using Python & TensorFlow",
     coordinator: "Dr. Sandeep Gupta, Kamal Saini, Alka Rani",
   },
+  {
+  date: "21/7/2025",
+  event: "IEEE & GEN AI (21st JULY)",
+  coordinator: "IEEE PIET and Dr. Budesh Kanwar",
+},
+{
+  date: "25/8/2025",
+  event: "IEEE INTERACTIVE SESSION (25th AUG)",
+  coordinator: "IEEE PIET and Dr. Budesh Kanwar",
+},
+{
+  date: "6/10/2025",
+  event: "IEEE DAY INAUGURAL (6th OCT)",
+  coordinator: "IEEE PIET and Dr. Payal Bansal",
+},
+{
+  date: "7/10/2025",
+  event: "WIE INAUGURAL (7th OCT)",
+  coordinator: "IEEE Team PIET",
+},
+{
+  date: "7/10/2025",
+  event: "PANEL DISCUSSION (7th OCT)",
+  coordinator: "IEEE Team PIET",
+},
+{
+  date: "8/10/2025",
+  event: "IEEE DAY BRAIN WAR (8th OCT)",
+  coordinator: "IEEE Team PIET",
+},
+{
+  date: "9/10/2025",
+  event: "IEEE GAMING SESSION (9th OCT)",
+  coordinator: "IEEE Team PIET",
+},
+{
+  date: "10/10/2025",
+  event: "UDHBHAV 2025 (10th OCT)",
+  coordinator: "IEEE Team PIET",
+},
+{
+  date: "10/10/2025",
+  event: "VALEDICTORY CEREMONY (10th OCT)",
+  coordinator: "IEEE Team PIET",
+},
 ];
 
 const cisCommittee = [
@@ -186,18 +231,33 @@ const IEEEPage = () => (
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           <img
-            src={"/images/event1.png"}
-            alt="Text Classification Workshop"
+            src={"/images/chapters/ieee/ieee-1.JPG"}
+            alt="Orientation Session IEEE Delhi Section"
             className="rounded-lg shadow-md hover:scale-105 transition-transform duration-300 object-cover h-64 w-full"
           />
           <img
-            src={"/images/event2.png"}
+            src={"/images/chapters/ieee/ieee-2.JPG"}
+            alt="orientation program"
+            className="rounded-lg shadow-md hover:scale-105 transition-transform duration-300 object-cover h-64 w-full"
+          />
+          <img
+            src={"/images/chapters/ieee/ieee-3.jpg"}
+            alt="IEEE day Celebration"
+            className="rounded-lg shadow-md hover:scale-105 transition-transform duration-300 object-cover h-64 w-full"
+          />
+          <img
+            src={"/images/chapters/ieee/ieee-4.jpg"}
             alt="IEEE CIS Launch Event"
             className="rounded-lg shadow-md hover:scale-105 transition-transform duration-300 object-cover h-64 w-full"
           />
           <img
-            src={"/images/event1.png"}
-            alt="ANN Workshop"
+            src={"/images/chapters/ieee/ieee-5.jpg"}
+            alt="IEEE Day Celebration"
+            className="rounded-lg shadow-md hover:scale-105 transition-transform duration-300 object-cover h-64 w-full"
+          />
+           <img
+            src={"/images/chapters/ieee/ieee-6.jpg"}
+            alt="GEN AI  Workshop"
             className="rounded-lg shadow-md hover:scale-105 transition-transform duration-300 object-cover h-64 w-full"
           />
         </div>

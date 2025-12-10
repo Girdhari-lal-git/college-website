@@ -355,8 +355,8 @@ const GoverningCouncil: React.FC = () => {
             <AccessibilityFeatures />
             <Header />
             <BreadCrumb
-                title="Governing Council"
-                description="Meet the members guiding Poornima Institute of Engineering & Technology."
+                title="Board of Governors"
+                description="The Governing Council (GC) is the highest policy-making body of the Institute. It is responsible for the overall governance and strategic direction of the Institute, ensuring that it fulfills its mission and objectives."
                 breadcrumbs={[
                     { label: "Home", href: "/" },
                     { label: "Governing Council", isCurrent: true },

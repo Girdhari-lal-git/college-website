@@ -2119,7 +2119,7 @@ type Patent = { sno: string; appNo: string; applicant: string; title: string };
 
      {/*Project data in different format */} 
 
-type Project = { sno: string; projectname: string; studentname: string; facultycoordinator: string; facilityused: string };
+type Project = { sno: string; projectname: string; studentname: string | string[]; facultycoordinator: string; facilityused: string };
     
 
   const projectsByYear: Record<string, Project[]> =  {
@@ -2407,8 +2407,684 @@ type Project = { sno: string; projectname: string; studentname: string; facultyc
     facilityused: "PCB, sensors, IoT and other hardware & software support"
   }
 ],
-      "2024": [],
-      "2025": [],
+      "2024": [
+  {
+    sno: "1",
+    projectname: "Dry and waste segregator",
+    studentname: ["Adhya Agrawal", "Ayush Single", "Bhoomi Singhal", "Bhanu Prakash Swami", "Divyanshu Sharma"],
+    facultycoordinator: "Mr. Vishnu Prakash Sharma",
+    facilityused: "All work completed in IDEA Lab with software knowledge, PCB design, PCB board, LASER cutting, circuit equipment etc."
+  },
+  {
+    sno: "2",
+    projectname: "Smart door lock with RFID sensor",
+    studentname: ["Manan Jain", "Karan Awasthi", "Himanshu Kumar", "Lakshya Gupta", "Jaitin Yadav"],
+    facultycoordinator: "Ms. Aniva Sharma",
+    facilityused: "PCB, LASER cutting, IoT kit, hardware and software equipment"
+  },
+  {
+    sno: "3",
+    projectname: "Solar Garper",
+    studentname: ["Kartar Singh Jadon", "Indresh Sharma", "Himanshu", "Laksh Vyas", "Khwaish Saini", "Hitesh Sharma"],
+    facultycoordinator: "Mr. Vishnu Prakash Sharma",
+    facilityused: "EAGLE training, IoT kit, Laser cutting and complete hardware and software support"
+  },
+  {
+    sno: "4",
+    projectname: "Portable ventilator system",
+    studentname: ["Anag Agrawal", "Akshat Jain", "Aditiya Kumar", "Aagam Jain", "Ansh Kumawat"],
+    facultycoordinator: "Ms. Aniva Sharma",
+    facilityused: "EAGLE training, PCB, IoT kit and complete hardware and software equipment"
+  },
+  {
+    sno: "5",
+    projectname: "Wall guard file system",
+    studentname: ["Divyanshu Prajapati", "Anuraj Kumar", "Akshat Agrawal", "Akshat Singh Solanki"],
+    facultycoordinator: "Ms. Shanky Chouhan",
+    facilityused: "LASER cutting, IoT kit, PCB and complete hardware and software equipment"
+  },
+  {
+    sno: "6",
+    projectname: "Home automation system",
+    studentname: ["Abhishek Vashishtha", "Aditya Kumar", "Akshya Vyas", "Daksh Jain", "Divyansh Sharma"],
+    facultycoordinator: "Mr. Vishnu Prakash Sharma",
+    facilityused: "All work completed in IDEA Lab with software knowledge, PCB design, PCB board, LASER cutting, circuit equipment etc."
+  },
+  {
+    sno: "7",
+    projectname: "Bank locker security system",
+    studentname: ["Krishan Pal Singh", "Manveer Singh", "Molika Singh", "Kartik Kumar", "Manvaditya Singh"],
+    facultycoordinator: "Ms. Aniva Sharma",
+    facilityused: "PCB, LASER cutting, IoT kit, hardware and software equipment"
+  },
+  {
+    sno: "8",
+    projectname: "Automatic solar tracker",
+    studentname: ["Sanyam Kothari", "Sanchit Saraswat", "Saksham Sharna", "Sanjay Single", "Rahul Prajapat"],
+    facultycoordinator: "Mr. Vishnu Prakash Sharma",
+    facilityused: "EAGLE training, PCB, IoT kit and complete hardware and software support"
+  },
+  {
+    sno: "9",
+    projectname: "Wi-Fi based home automation",
+    studentname: ["Lakshya Singh Bhati", "Pradeep Sharma", "Piyush Sharma", "Naitik Sharma", "Naman Verma"],
+    facultycoordinator: "Ms. Aniva Sharma",
+    facilityused: "PCB, LASER cutting, IoT kit, hardware and software equipment"
+  },
+  {
+    sno: "10",
+    projectname: "EDM",
+    studentname: ["Harshita Sharma", "Ishant Kumar Gupta", "Jatin Ajmera", "Karan Patodiya", "Jitendra Prajapat", "Joy Dixit"],
+    facultycoordinator: "Mr. Vishnu Prakash Sharma",
+    facilityused: "EAGLE training, IoT kit, Laser cutting and complete hardware and software support"
+  },
+  {
+    sno: "11",
+    projectname: "Air quality monitor",
+    studentname: ["Anubhav Gautam", "Chandra Bhushan", "Anurag Kumar", "Ayush Agrawal", "Chetan Pratap"],
+    facultycoordinator: "Ms. Shanky Chouhan",
+    facilityused: "LASER cutting, IoT kit, PCB and complete hardware and software equipment"
+  },
+  {
+    sno: "12",
+    projectname: "Car parking system",
+    studentname: ["Avantika Chouhan", "Bhumika Maheshwari", "Dhuvani Jain", "Divyanshi Sharma", "Himanshu Singh"],
+    facultycoordinator: "Ms. Aniva Sharma",
+    facilityused: "All work completed in IDEA Lab with software knowledge, PCB design, PCB board, LASER cutting, circuit equipment etc."
+  },
+  {
+    sno: "13",
+    projectname: "Smart shop system prototype",
+    studentname: ["Digendra Sharma", "Divyansh Sharma", "Divyansh Malviya", "Dhruw Jain", "Dhruw Sharma"],
+    facultycoordinator: "Ms. Shanky Chouhan",
+    facilityused: "PCB, LASER cutting, IoT kit, hardware and software equipment"
+  },
+  {
+    sno: "14",
+    projectname: "Irrigation automation",
+    studentname: ["Himanshu Singh", "Kunal Kumar", "Kumari Saloni", "Manas Jain", "Jatin Kinra", "Hassan Hameed"],
+    facultycoordinator: "Mr. Vishnu Prakash Sharma",
+    facilityused: "All work completed in IDEA Lab with software knowledge, PCB design, PCB board, LASER cutting, circuit equipment etc."
+  },
+  {
+    sno: "15",
+    projectname: "Mini oscilloscope",
+    studentname: ["Deepak Sharma", "Harsh Anand", "Divya Gouttam", "Gaurav Choudhary", "Divyansh Khandelwal"],
+    facultycoordinator: "Ms. Shanky Chouhan",
+    facilityused: "PCB, LASER cutting, IoT kit, hardware and software equipment"
+  },
+  {
+    sno: "16",
+    projectname: "Data transfer using Li-Fi",
+    studentname: ["Chayan Jain", "Chhavi Jain", "Arpit Garg", "Bhanu Pratap Singh Chouhan", "Daksh Mahehra"],
+    facultycoordinator: "Ms. Aniva Sharma",
+    facilityused: "EAGLE training, PCB, IoT kit and complete hardware and software equipment"
+  },
+  {
+    sno: "17",
+    projectname: "Train accident prevention",
+    studentname: ["Sparsh Jain", "Shrishti Khandelwal", "Sudhanshu Sharma", "Swasti Jain", "Tarun Saini"],
+    facultycoordinator: "Mr. Vishnu Prakash Sharma",
+    facilityused: "All work completed in IDEA Lab with software knowledge, PCB design, PCB board, LASER cutting, circuit equipment etc."
+  },
+  {
+    sno: "18",
+    projectname: "Keyless bike & smart helmet",
+    studentname: ["Krish Agrawal", "Kartik Duseja", "Lav Gurjar", "Madhav Khandelwal"],
+    facultycoordinator: "Ms. Shanky Chouhan",
+    facilityused: "LASER cutting, IoT kit, PCB and complete hardware and software equipment"
+  },
+  {
+    sno: "19",
+    projectname: "Home automation system",
+    studentname: ["Vishal Jangid", "Vansh Jain", "Vashudev Sharma", "Vikash Sharma", "Yashasvi Agarwal", "Vinit Gautam"],
+    facultycoordinator: "Ms. Aniva Sharma",
+    facilityused: "PCB, LASER cutting, IoT kit, hardware and software equipment"
+  },
+  {
+    sno: "20",
+    projectname: "Weather station",
+    studentname: ["Anirudh Singh Bhati", "Aadhar Gautam", "Abhishek Agarwal", "Anshika Agal", "Aaditya Gautam"],
+    facultycoordinator: "Mr. Vishnu Prakash Sharma",
+    facilityused: "All work completed in IDEA Lab with software knowledge, PCB design, PCB board, LASER cutting, circuit equipment etc."
+  },
+  {
+    sno: "21",
+    projectname: "Attendance system using RFID",
+    studentname: ["Avani Jain", "Avani Sharma", "Avdhi Khandelwal", "Bhargavi Gupta", "Ayush Kumar", "Dault Kumar Jain"],
+    facultycoordinator: "Ms. Shanky Chouhan",
+    facilityused: "EAGLE training, IoT kit, Laser cutting and complete hardware and software support"
+  },
+  {
+    sno: "22",
+    projectname: "Earthquake detector",
+    studentname: ["Mridul Gupta", "Nilesh Kumar", "Mohit Soni", "Kunal Sharma", "Kanak Jangid"],
+    facultycoordinator: "Ms. Aniva Sharma",
+    facilityused: "PCB, LASER cutting, IoT kit, hardware and software equipment"
+  },
+  {
+    sno: "23",
+    projectname: "LPG leakage safety device",
+    studentname: ["Keshav Kumar Sharma", "Mahaveer Singh Rathore", "Kartikey Sharma", "Gagan Rathore", "Jayant Roop"],
+    facultycoordinator: "Mr. Vishnu Prakash Sharma",
+    facilityused: "All work completed in IDEA Lab with software knowledge, PCB design, PCB board, LASER cutting, circuit equipment etc."
+  },
+  {
+    sno: "24",
+    projectname: "Soldier position and health tracking system",
+    studentname: ["Krish Khandelwal", "Harshul Dadhich", "Harshit Kumar", "Harshit Gehlot", "Mudit Pancholi"],
+    facultycoordinator: "Ms. Shanky Chouhan",
+    facilityused: "EAGLE training, PCB, IoT kit and complete hardware and software equipment"
+  },
+  {
+    sno: "25",
+    projectname: "Automatic stair light system",
+    studentname: ["Pranav Khandewal", "Rhishikesh Porwal", "Prachi Soni", "Shraya Singh", "Sunidhi", "Rohit Bhatia"],
+    facultycoordinator: "Ms. Aniva Sharma",
+    facilityused: "EAGLE training, IoT kit, Laser cutting and complete hardware and software support"
+  },
+  {
+    sno: "26",
+    projectname: "Multifunctional surveillance car",
+    studentname: ["Komal", "Kushi Kumari", "Kaumudi Mishra", "Lakshita Sharma"],
+    facultycoordinator: "Ms. Shanky Chouhan",
+    facilityused: "LASER cutting, IoT kit, PCB and complete hardware and software equipment"
+  },
+  {
+    sno: "27",
+    projectname: "Earthquake detector alarm",
+    studentname: ["Utkarsh", "Vidhi Dubey", "Youraj Singh", "Zubia Khanm", "Tribhuwan Singh"],
+    facultycoordinator: "Mr. Vishnu Prakash Sharma",
+    facilityused: "All work completed in IDEA Lab with software knowledge, PCB design, PCB board, LASER cutting, circuit equipment etc."
+  },
+  {
+    sno: "28",
+    projectname: "Sentry turret for intrusion detection",
+    studentname: ["Aaditya Vinayak"],
+    facultycoordinator: "Mr. Vishnu Prakash Sharma",
+    facilityused: "EAGLE PCB design, IoT connectivity setup and complete hardware testing bench used in IDEA Lab"
+  },
+  {
+    sno: "29",
+    projectname: "IV bag monitoring alert system",
+    studentname: ["Kuldeep Soni", "Hardik", "Himanshu Sharma", "Hement Sharma", "Kuldeep Saini"],
+    facultycoordinator: "Ms. Aniva Sharma",
+    facilityused: "PCB, LASER cutting, IoT kit, hardware and software equipment"
+  },
+  {
+    sno: "30",
+    projectname: "Wi-Fi home surveillance camera",
+    studentname: ["Rishab Pugalia", "Rishabh Jain", "Riya", "Sachin Kumar", "Sadhana Patidar"],
+    facultycoordinator: "Ms. Shanky Chouhan",
+    facilityused: "EAGLE training, PCB, IoT kit and complete hardware and software equipment"
+  },
+  {
+    sno: "31",
+    projectname: "Temperature controlled fan",
+    studentname: ["Giriraj Singh", "Bhavy Soni", "Gaurav Mittal", "Dhruv Sharma", "Divyanshu Gupta"],
+    facultycoordinator: "Ms. Aniva Sharma",
+    facilityused: "All work completed in IDEA Lab with software knowledge, PCB design, PCB board, LASER cutting, circuit equipment etc."
+  },
+  {
+    sno: "32",
+    projectname: "Smart security system",
+    studentname: ["Himanshu Verma", "Harsh Khandelwal", "Ishpreet Kaur", "Etisha Jangid", "Imtuyai Alam"],
+    facultycoordinator: "Mr. Vishnu Prakash Sharma",
+    facilityused: "PCB, LASER cutting, IoT kit, hardware and software equipment"
+  },
+  {
+    sno: "33",
+    projectname: "Obstacle detective walking stick for blind people",
+    studentname: ["Yuvraj", "Yash Swami", "Preeti Shekhawat", "Saksham Yadav", "Rahul", "Rashi Sharma"],
+    facultycoordinator: "Ms. Shanky Chouhan",
+    facilityused: "EAGLE training, IoT kit, Laser cutting and complete hardware and software support"
+  },
+  {
+    sno: "34",
+    projectname: "Road accident analysis",
+    studentname: ["Sakshi Mittal", "Unnati Sharma", "Vishakha Sharma", "Rajan Agrawal"],
+    facultycoordinator: "Ms. Shanky Chouhan",
+    facilityused: "LASER cutting, IoT kit, PCB and complete hardware and software equipment"
+  },
+  {
+    sno: "35",
+    projectname: "Obstacle detection stick for blind people",
+    studentname: ["Dev Sharma", "Avi Mathur", "Abhikirti Saxena", "Akshita", "Diya Beniwal"],
+    facultycoordinator: "Ms. Aniva Sharma",
+    facilityused: "All work completed in IDEA Lab with software knowledge, PCB design, PCB board, LASER cutting, circuit equipment etc."
+  },
+  {
+    sno: "36",
+    projectname: "Smart lock with security camera",
+    studentname: ["Anil Jangid", "Aryan Nama", "Chetan Dhakad", "Chitrakshi", "Gauri Dadhich"],
+    facultycoordinator: "Mr. Vishnu Prakash Sharma",
+    facilityused: "PCB, LASER cutting, IoT kit, hardware and software equipment"
+  },
+  {
+    sno: "37",
+    projectname: "Cloth retrieval system using ESP",
+    studentname: ["Aditya Yadav", "Devansh Gupta", "Devraj Kumawat", "Ajay Singh Shekhawat", "Ashley Kumawat"],
+    facultycoordinator: "Ms. Shanky Chouhan",
+    facilityused: "EAGLE training, PCB, IoT kit and complete hardware and software equipment"
+  },
+  {
+    sno: "38",
+    projectname: "EV wireless station charging",
+    studentname: ["Raghav Sharma", "Palak", "Shreya Pareek", "Yashasvi Sharma", "Shubham Sharma", "Tanisha Kumawat"],
+    facultycoordinator: "Ms. Shanky Chouhan",
+    facilityused: "EAGLE training, IoT kit, Laser cutting and complete hardware and software support"
+  },
+  {
+    sno: "39",
+    projectname: "Air monitoring system",
+    studentname: ["Jatin Saxena", "Hinshu Sachdeva", "Mayank Prajapat", "Harshit Agarwal", "Hanish Saini"],
+    facultycoordinator: "Mr. Vishnu Prakash Sharma",
+    facilityused: "All work completed in IDEA Lab with software knowledge, PCB design, PCB board, LASER cutting, circuit equipment etc."
+  },
+  {
+    sno: "40",
+    projectname: "Bidirectional visitor counter",
+    studentname: ["Anurag Shukla", "Bhumi Vijayvergiya", "Buliya Rathore", "Divyansh Sharma", "Diksha Vijay"],
+    facultycoordinator: "Ms. Shanky Chouhan",
+    facilityused: "EAGLE training, PCB, IoT kit, hardware and software equipment"
+  },
+  {
+    sno: "41",
+    projectname: "Third eye for blind person",
+    studentname: ["Rudraksha Garg", "Tanahik Rawat"],
+    facultycoordinator: "Mr. Vishnu Prakash Sharma",
+    facilityused: "EAGLE PCB design, IoT connectivity setup and hardware testing bench used in IDEA Lab"
+  },
+  {
+    sno: "42",
+    projectname: "Train accident prevention",
+    studentname: ["Mumuksha Sharma", "Meghal Singh", "Manah Yadav", "Kashish Lakhuja", "Jhalak Agrawal"],
+    facultycoordinator: "Ms. Aniva Sharma",
+    facilityused: "All work completed in IDEA Lab with software knowledge, PCB design, PCB board, LASER cutting, circuit equipment etc."
+  },
+  {
+    sno: "43",
+    projectname: "Web socket RC car",
+    studentname: ["Vikash Kumar", "Vishesh Singh", "Vibha Bari", "Vikki Kumar", "Yash Jaiman"],
+    facultycoordinator: "Ms. Shanky Chouhan",
+    facilityused: "PCB, LASER cutting, IoT kit, hardware and software equipment"
+  },
+  {
+    sno: "44",
+    projectname: "Soldering health and monitoring system",
+    studentname: ["Hardik Jain", "Divya", "Deepak Kumar", "Devang Jain"],
+    facultycoordinator: "Ms. Shanky Chouhan",
+    facilityused: "LASER cutting, IoT kit, PCB and complete hardware and software equipment"
+  },
+  {
+    sno: "45",
+    projectname: "Driver behaviour monitoring system",
+    studentname: ["Dhruv Saxena", "Dishant Sharma", "Gaurika Pareek", "Harsh Dhakar", "Dushyant Kaushik"],
+    facultycoordinator: "Mr. Vishnu Prakash Sharma",
+    facilityused: "All work completed in IDEA Lab with software knowledge, PCB design, PCB board, LASER cutting, circuit equipment etc."
+  },
+
+]
+,
+      "2025": [
+  {
+    sno: "1",
+    projectname: "Smart Walking Stick",
+    studentname: ["Kartik Goyal", "Jatin Diduaniya"],
+    facultycoordinator: "Ms. Aniva Sharma",
+    facilityused: "EAGLE training, PCB, IoT kit and complete hardware and software equipment"
+  },
+  {
+    sno: "2",
+    projectname: "Smart Irrigation System",
+    studentname: ["Kuldeep Jain"],
+    facultycoordinator: "Mr. Vishnu Prakash Sharma",
+    facilityused: "LASER cutting, IoT kit, PCB and complete hardware and software equipment"
+  },
+  {
+    sno: "3",
+    projectname: "IoT Based Medical Alert System",
+    studentname: ["Himanshu Gaud", "Arpita Jain", "Kevaram Modi", "Akshay Pareek"],
+    facultycoordinator: "Mr. Vishnu Prakash Sharma",
+    facilityused: "All work completed in IDEA Lab with software knowledge, PCB design, PCB board, LASER cutting, circuit equipment etc."
+  },
+  {
+    sno: "4",
+    projectname: "Smart Bridge System",
+    studentname: ["Navya Jain", "Nikhil Jethani", "Priyanshu Sharma", "Mayank Saraswat"],
+    facultycoordinator: "Ms. Shanky Chouhan",
+    facilityused: "PCB, LASER cutting, IoT kit, hardware and software equipment"
+  },
+  {
+    sno: "5",
+    projectname: "AI Based Air Monitoring and Pollution Control",
+    studentname: ["Divyanshu Shrotriya", "Garvit Kulhari", "Divyansh Saini", "Harsh Pareek", "Govind Kumawat"],
+    facultycoordinator: "Ms. Aniva Sharma",
+    facilityused: "EAGLE training, IoT kit, Laser cutting and complete hardware and software support"
+  },
+  {
+    sno: "6",
+    projectname: "Gesture Control LED",
+    studentname: ["Mahul Vijay", "Meenal Goswami", "Maitri Mehta", "Kunal Kumawat", "Mansi Dhadhich"],
+    facultycoordinator: "Mr. Vishnu Prakash Sharma",
+    facilityused: "EAGLE training, PCB, IoT kit and complete hardware and software equipment"
+  },
+  {
+    sno: "7",
+    projectname: "Turbidity Sensor",
+    studentname: ["Nitin Kumar Sharma", "Mahipal Singh", "Kuldeep Nagar", "Syed Saif Sikander"],
+    facultycoordinator: "Ms. Aniva Sharma",
+    facilityused: "PCB, LASER cutting, IoT kit, hardware and software equipment"
+  },
+  {
+    sno: "8",
+    projectname: "Line Follower Robot Car",
+    studentname: ["Khushal Sharma", "Kapish Nain", "Krati Saini", "Karina Shahi", "Kashish Gera", "Kishan Vaishnav"],
+    facultycoordinator: "Ms. Shanky Chouhan",
+    facilityused: "LASER cutting, IoT kit, PCB and complete hardware and software equipment"
+  },
+  {
+    sno: "9",
+    projectname: "Grass Cutter with Pesticide Sprayer",
+    studentname: ["Nirmal Yogi", "Nitin Sharma", "Neha Yadav", "Pooja Dhakad", "Miridul"],
+    facultycoordinator: "Mr. Vishnu Prakash Sharma",
+    facilityused: "PCB, LASER cutting, IoT kit, hardware and software equipment"
+  },
+  {
+    sno: "10",
+    projectname: "Ultrasonic Radar System",
+    studentname: ["Gourav Bohra", "Harshveer Shekhawat", "Divyanshi Lohar", "Devesh Vijay", "Devendra Saini", "Fezan Khan"],
+    facultycoordinator: "Ms. Shanky Chouhan",
+    facilityused: "LASER cutting, IoT kit, PCB and complete hardware and software equipment"
+  },
+  {
+    sno: "11",
+    projectname: "Earthquake Disaster Management",
+    studentname: ["Manish Jangid", "Lucky Dokania", "Mohit Kumavat", "Mohmmed Danish", "Manas Bhatt"],
+    facultycoordinator: "Ms. Aniva Sharma",
+    facilityused: "EAGLE PCB design, IoT connectivity setup and complete hardware testing bench were used in IDEA Lab"
+  },
+  {
+    sno: "12",
+    projectname: "Anti Sleep Alarm",
+    studentname: ["Mohit Tailor", "Kirtna Vaishnav", "Pinak Dave", "Priyansh Gupta", "Jayansh"],
+    facultycoordinator: "Mr. Vishnu Prakash Sharma",
+    facilityused: "PCB fabrication, 3D printing, soldering workstation and circuit simulation tools were used to prototype and test the model"
+  },
+  {
+    sno: "13",
+    projectname: "Line Follower Robot",
+    studentname: ["Abhay Raj Singh Hada", "Abhinav Rao", "Anjali Ramani", "Aarya Vijay", "Ayushman Singh", "Aakriti Gupta"],
+    facultycoordinator: "Mr. Vishnu Prakash Sharma",
+    facilityused: "All work completed in IDEA Lab with software knowledge, PCB design, PCB board, LASER cutting, circuit equipment etc."
+  },
+  {
+    sno: "14",
+    projectname: "Home Automation",
+    studentname: ["Shivam Vashistha", "Samyak Jain", "Shiv Singh Rajpurohit", "Shreenath Mehta"],
+    facultycoordinator: "Ms. Aniva Sharma",
+    facilityused: "LASER cutting, IoT kit, PCB and complete hardware and software equipment"
+  },
+  {
+    sno: "15",
+    projectname: "RFID Door Unlock System",
+    studentname: ["Anshul Kumar", "Gaurang Sharma", "Dheeraj Chelam", "Ankita", "Ananya Goyal"],
+    facultycoordinator: "Ms. Shanky Chouhan",
+    facilityused: "EAGLE PCB design, IoT connectivity setup and complete hardware testing bench were used in IDEA Lab"
+  },
+  {
+    sno: "16",
+    projectname: "Wi-Fi Signal Strength Monitoring System",
+    studentname: ["Labhanshu Jain", "Lokesh Kumar Saini", "Lakshay Agarwal", "Kunal Gupta", "Lajuta Pareek"],
+    facultycoordinator: "Mr. Vishnu Prakash Sharma",
+    facilityused: "PCB, LASER cutting, IoT kit and complete hardware and software equipment"
+  },
+  {
+    sno: "17",
+    projectname: "Noise Detector",
+    studentname: ["Bhumi Pareek", "Himanshu Lohar", "Adarsh Kumar", "Jyoti Sharma", "Anil Gadri"],
+    facultycoordinator: "Ms. Shanky Chouhan",
+    facilityused: "EAGLE PCB design, IoT connectivity setup and complete hardware testing bench were used in IDEA Lab"
+  },
+  {
+    sno: "18",
+    projectname: "Mini Weather Station",
+    studentname: ["Gopal Gadri", "Dhruv Parmar", "Himanshu Sharma", "Chetna Swarnkar", "Chetan Mangal"],
+    facultycoordinator: "Mr. Vishnu Prakash Sharma",
+    facilityused: "PCB fabrication, 3D printing, soldering workstation and circuit simulation tools were used to prototype and test the model"
+  },
+  {
+    sno: "19",
+    projectname: "Portable Weather Station",
+    studentname: ["Abhinav Choudhary", "Akshat Jain", "Ankit Singh Tanwar", "Akshay Vijayvergiya", "Adouotiya Devansh", "Akshat Varshney"],
+    facultycoordinator: "Ms. Aniva Sharma",
+    facilityused: "PCB fabrication, 3D printing, soldering workstation and circuit simulation tools were used to prototype and test the model"
+  },
+  {
+    sno: "20",
+    projectname: "Renewable Energy Charging Station",
+    studentname: ["Ajay Sharma", "Ishant Kumawat", "Aditya Rawat", "Jay Gupta", "Epshita Singhal"],
+    facultycoordinator: "Ms. Shanky Chouhan",
+    facilityused: "LASER cutting, IoT kit, PCB and complete hardware and software equipment"
+  },
+  {
+    sno: "21",
+    projectname: "Smart Ignition Using RFID",
+    studentname: ["Himani Nihalani", "Mandhatta Shekhawat", "Nitin Saini", "Hitesh Khanchandani", "Priyansh Sharma", "Pulkit Shrivastava"],
+    facultycoordinator: "Mr. Vishnu Prakash Sharma",
+    facilityused: "EAGLE training, PCB, IoT kit and complete hardware and software equipment"
+  },
+  {
+    sno: "22",
+    projectname: "Fire Fighting Robot",
+    studentname: ["Lavkush Garg", "Kushal Agarwal"],
+    facultycoordinator: "Ms. Aniva Sharma",
+    facilityused: "IoT kit, cloud dashboard, Blynk and MQTT server facilities were utilized for remote monitoring and automation"
+  },
+  {
+    sno: "23",
+    projectname: "Ultrasonic Radar",
+    studentname: ["Saksham Agarwal", "Riddhima Agarwal", "Rupal Bothra", "Priyanka Rahisa"],
+    facultycoordinator: "Ms. Shanky Chouhan",
+    facilityused: "PCB, LASER cutting, IoT kit, hardware and software equipment"
+  },
+  {
+    sno: "24",
+    projectname: "IR Based Security System",
+    studentname: ["Vimridh Sharma", "Rudraksh Sharma", "Sagar Sharma", "Yash Kumawat", "Harsh Pratap"],
+    facultycoordinator: "Mr. Vishnu Prakash Sharma",
+    facilityused: "EAGLE training, IoT kit, Laser cutting and complete hardware and software support"
+  },
+  {
+    sno: "25",
+    projectname: "Wireless Water Level Indicator",
+    studentname: ["Sangram Singh Rathore", "Shubham Sharma", "Rimjhim Rochwani", "Sorav Shekhawat", "Ronak", "Reshpal Singh Bhati"],
+    facultycoordinator: "Mr. Vishnu Prakash Sharma",
+    facilityused: "All work completed in IDEA Lab with software knowledge, PCB design, PCB board, LASER cutting, circuit equipment etc."
+  },
+  {
+    sno: "26",
+    projectname: "AI Automated Home System",
+    studentname: ["Aakash Singh", "Dishu Choudhary", "Bhavya Gupta", "Ankit Choudhary", "Ashutosh"],
+    facultycoordinator: "Ms. Shanky Chouhan",
+    facilityused: "EAGLE PCB design, IoT connectivity setup and complete hardware testing bench were used in IDEA Lab"
+  },
+  {
+    sno: "27",
+    projectname: "Way Find Robo",
+    studentname: ["Umesh Yadav", "Shudhanshu Shandilya", "Umesh Jangid", "Shivang Sharma", "Ritika Jangid", "Sarswat Divya"],
+    facultycoordinator: "Mr. Vishnu Prakash Sharma",
+    facilityused: "IoT kit, cloud dashboard, Blynk and MQTT server facilities were utilized for remote monitoring and automation"
+  },
+  {
+    sno: "28",
+    projectname: "Alcohol Detecting System",
+    studentname: ["Diwakar Saxena", "Bhumika Kabra", "Dheeraj Prajapati", "Harshit Verma"],
+    facultycoordinator: "Ms. Aniva Sharma",
+    facilityused: "EAGLE PCB design, IoT connectivity setup and complete hardware testing bench were used in IDEA Lab"
+  },
+  {
+    sno: "29",
+    projectname: "Human Following Robot",
+    studentname: ["Siddhika Agarwal", "Shrusti Sharma", "Shaurya Shrivastava"],
+    facultycoordinator: "Mr. Vishnu Prakash Sharma",
+    facilityused: "LASER cutting, IoT kit, PCB and complete hardware and software equipment"
+  },
+  {
+    sno: "30",
+    projectname: "Sound Energy to Electrical Energy Converter",
+    studentname: ["Piyush Sharma", "Kamal Kumar", "Kapil Kateri", "Krishna Saini", "Kashish Mahlawat", "Harsh Sahu"],
+    facultycoordinator: "Ms. Aniva Sharma",
+    facilityused: "EAGLE training, IoT kit, Laser cutting and complete hardware and software support"
+  },
+  {
+    sno: "31",
+    projectname: "Fully Automatic Grass Cutter with Solar Panel",
+    studentname: ["Shivam Rawat", "Ronak Kumar Goyal", "Sarthak Sharma", "Sanchita Prajapat", "Vanshika Pareek"],
+    facultycoordinator: "Mr. Vishnu Prakash Sharma",
+    facilityused: "PCB fabrication, 3D printing, soldering workstation and circuit simulation tools were used to prototype and test the model"
+  },
+  {
+    sno: "32",
+    projectname: "Home Automation System",
+    studentname: ["Nishant Soni", "Sanmati Jain", "Ritik Dhakar", "Vinay Saini", "Vikas Saini", "Yashvardhan"],
+    facultycoordinator: "Ms. Shanky Chouhan",
+    facilityused: "IoT kit, cloud dashboard, Blynk and MQTT server facilities were utilized for remote monitoring and automation"
+  },
+  {
+    sno: "33",
+    projectname: "Smart Water Level Monitoring System",
+    studentname: ["Saksham Sharma", "Sujal Talabdar", "Vidit Sharma", "Udbhav Rai", "Sanjana Jeenwal"],
+    facultycoordinator: "Mr. Vishnu Prakash Sharma",
+    facilityused: "EAGLE training, PCB, IoT kit and complete hardware and software equipment"
+  },
+  {
+    sno: "34",
+    projectname: "Smart Parking System",
+    studentname: ["Rakesh", "Saleena", "Pratham", "Vikash", "Divyansh", "Rahul"],
+    facultycoordinator: "Ms. Aniva Sharma",
+    facilityused: "IoT kit, cloud dashboard, Blynk and MQTT server facilities were utilized for remote monitoring and automation"
+  },
+  {
+    sno: "35",
+    projectname: "Earthquake Detector",
+    studentname: ["Tanishka Sharma", "Vinay Pratap", "Vivek Singh", "Rishabh", "Rakesh Nath"],
+    facultycoordinator: "Mr. Vishnu Prakash Sharma",
+    facilityused: "EAGLE PCB design, IoT connectivity setup and complete hardware testing bench were used in IDEA Lab"
+  },
+  {
+    sno: "36",
+    projectname: "Self Balancing Robot",
+    studentname: ["Versha Goyal", "Jiya Agnihotri", "Diya Agnihotri"],
+    facultycoordinator: "Ms. Shanky Chouhan",
+    facilityused: "PCB, LASER cutting, IoT kit, hardware and software equipment"
+  },
+  {
+    sno: "37",
+    projectname: "Advance Farming",
+    studentname: ["Mansi Sharma", "Harsh Choudhary", "Girish Khedia", "Kuldeep Singh", "Harshita Sharma"],
+    facultycoordinator: "Mr. Vishnu Prakash Sharma",
+    facilityused: "EAGLE training, IoT kit, Laser cutting and complete hardware and software support"
+  },
+  {
+    sno: "38",
+    projectname: "Wireless Home Security System",
+    studentname: ["Ayush Sharma", "Chitram", "Aina", "Arpit", "Ayushi"],
+    facultycoordinator: "Ms. Aniva Sharma",
+    facilityused: "PCB fabrication, 3D printing, soldering workstation and circuit simulation tools were used to prototype and test the model"
+  },
+  {
+    sno: "39",
+    projectname: "AIR QUALITY INDEX (AQI)",
+    studentname: ["Anusha Shandilya", "Lavina Garg", "Pooja Bhadu", "Harshil Gupta", "Bhavna"],
+    facultycoordinator: "Mr. Vishnu Prakash Sharma",
+    facilityused: "IoT kit, cloud dashboard, Blynk and MQTT server facilities were utilized for remote monitoring and automation"
+  },
+  {
+    sno: "40",
+    projectname: "Line Following Rover",
+    studentname: ["Ujjwal Dubey", "Yogesh Jangir", "Suhani Bhargava", "Shreya Garg", "Rakhi Gandhi"],
+    facultycoordinator: "Ms. Shanky Chouhan",
+    facilityused: "All work completed in IDEA Lab with software knowledge, PCB design, PCB board, LASER cutting, circuit equipment etc."
+  },
+  {
+    sno: "41",
+    projectname: "Voice Controlled Car",
+    studentname: ["Nandini Sethiya", "Nandini Runwal", "Prachi Kashyap", "Rahul Saini", "Nirmal Singh Chouhan", "Rajyavardhan Singh"],
+    facultycoordinator: "Ms. Aniva Sharma",
+    facilityused: "EAGLE PCB design, IoT connectivity setup and complete hardware testing bench were used in IDEA Lab"
+  },
+  {
+    sno: "42",
+    projectname: "IoT Based Gas Detection System",
+    studentname: ["Bharat Purohit", "Aditya Tolambiya", "Anish Tamoli", "Charanjot Singh", "Ashish Saini", "Chirag Gupta"],
+    facultycoordinator: "Mr. Vishnu Prakash Sharma",
+    facilityused: "IoT kit, cloud dashboard, Blynk and MQTT server facilities were utilized for remote monitoring and automation"
+  },
+  {
+    sno: "43",
+    projectname: "Home Automation Using Voice Google Assistant",
+    studentname: ["Ahsan Khan", "Ayush Kumar Singh", "Akshat Pareek", "Ayushman Singh", "Chirag Rathore"],
+    facultycoordinator: "Ms. Aniva Sharma",
+    facilityused: "LASER cutting, IoT kit, PCB and complete hardware and software equipment"
+  },
+  {
+    sno: "44",
+    projectname: "Wi-Fi Controlled RC Car",
+    studentname: ["Raghav Sharma", "Devesh Saxena", "Govinda Shil", "Gautam Saini", "Vinay Sharma", "Shravan Sharma"],
+    facultycoordinator: "Mr. Vishnu Prakash Sharma",
+    facilityused: "EAGLE training, PCB, IoT kit and complete hardware and software equipment"
+  },
+  {
+    sno: "45",
+    projectname: "GPS Speedometer",
+    studentname: ["Aashika Singhal", "Ayush Soni", "Anishka Sharma", "Girish"],
+    facultycoordinator: "Ms. Shanky Chouhan",
+    facilityused: "PCB, LASER cutting, IoT kit, hardware and software equipment"
+  },
+  {
+    sno: "46",
+    projectname: "Temperature Based Fan Speed Controller",
+    studentname: ["Gunika Sethi", "Kavya Jangid", "Ishan Khan", "Mohammed Ali", "Archit Agarwal", "Daksh Sharma"],
+    facultycoordinator: "Ms. Aniva Sharma",
+    facilityused: "EAGLE training, PCB, IoT kit and complete hardware and software equipment"
+  },
+  {
+    sno: "47",
+    projectname: "Mechanical Hand Tracking ARM",
+    studentname: ["Anuj Sharma", "Aman Sharma", "Dikshant Kumar Sharma", "Ajit Gurjar", "Akansha Agarwal", "Aryan Samota"],
+    facultycoordinator: "Mr. Vishnu Prakash Sharma",
+    facilityused: "PCB fabrication, 3D printing, soldering workstation and circuit simulation tools were used to prototype and test the model"
+  },
+  {
+    sno: "48",
+    projectname: "Air Defence System",
+    studentname: ["Vivek Goyal", "Virendra Jangir", "Vishesh Sinha", "Pratham Upadhyay", "Vaibhav Vaishnav"],
+    facultycoordinator: "Ms. Aniva Sharma",
+    facilityused: "EAGLE training, IoT kit, Laser cutting and complete hardware and software support"
+  },
+  {
+    sno: "49",
+    projectname: "Temperature and Humidity Sensor",
+    studentname: ["Kuldeep Singh", "Koushal Joshi", "Lakshay Nirvan", "Nitesh Choudhary", "Mo. Shahid"],
+    facultycoordinator: "Ms. Shanky Chouhan",
+    facilityused: "IoT kit, cloud dashboard, Blynk and MQTT server facilities were utilized for remote monitoring and automation"
+  },
+  {
+    sno: "50",
+    projectname: "Soil Moisture Detector",
+    studentname: ["Palak Agarwal", "Nitin Sahu", "Nivish Soni", "Harender Sain"],
+    facultycoordinator: "Mr. Vishnu Prakash Sharma",
+    facilityused: "EAGLE PCB design, IoT connectivity setup and complete hardware testing bench were used in IDEA Lab"
+  },
+  {
+    sno: "51",
+    projectname: "Radar System",
+    studentname: ["Parmeshvari", "Hariom Chaudhary", "Nikhil Pradhan", "Pooja Yadav"],
+    facultycoordinator: "Ms. Aniva Sharma",
+    facilityused: "All work completed in IDEA Lab with software knowledge, PCB design, PCB board, LASER cutting, circuit equipment etc."
+  }
+],
       "2026": [],
       "archive": [],
   };
@@ -2553,7 +3229,7 @@ type Project = { sno: string; projectname: string; studentname: string; facultyc
                 <div className="w-24 h-1 bg-secondary mb-6 mx-auto"></div>
                 <LazyImage
                     src={
-                        "https://www.piet.poornima.org/img_idealab/Idealab_Committee.jpeg"
+                        "/images/ideaLab/STUDENT_COMITTEE_IDEALAB.jpg"
                     }
                     alt={"AICTE IDEA Lab Committee"}
                     className="rounded-xl shadow-xl w-full h-auto z-10 relative border border-primary"
@@ -2860,6 +3536,7 @@ type Project = { sno: string; projectname: string; studentname: string; facultyc
 
 
             {/* Student Projects Section */}
+             {/*
             <section className="py-16 bg-white">
                 <div className="container mx-auto">
                     <div className="text-center mb-12">
@@ -2967,6 +3644,7 @@ type Project = { sno: string; projectname: string; studentname: string; facultyc
                     </div>
                 </div>
             </section>
+            */}
 
             {/* Funding Section */}
             <section className="py-16 bg-neutral-100">

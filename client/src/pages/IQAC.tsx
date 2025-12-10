@@ -629,7 +629,7 @@ const IQACPage = () => {
     const getSimpleDocumentLink = (item: string, year: string) => {
         // Map specific documents to their Google Drive links
         const documentLinks = {
-            'Academic Calendar 2025-26(Even Sem)': 'https://drive.google.com/file/d/1VwqO--p7iGGd2cxT_678MCPAQabZk1hM/view?usp=sharing',
+            'Academic Calendar 2025-26(Even Sem)': 'https://drive.google.com/file/d/114eiQ33-Yzq-fjUiW3L0-k71H8a-1512/view?usp=drive_link',
             'Academic Calendar 2025-26(odd Sem)': 'https://drive.google.com/file/d/1VwqO--p7iGGd2cxT_678MCPAQabZk1hM/view?usp=sharing',
             'Academic Calendar 2024-25(Even Sem)': 'https://drive.google.com/file/d/1DCIpAmnUo-qNIHhIIq_SdNkU2P8Rr_b6/view?usp=drive_link',
             'Academic Calendar 2024-25(odd Sem)': 'https://drive.google.com/file/d/1Z10c6asqk5Bb_W-VjMoWX26H_NqcmdzN/view?usp=drive_link',

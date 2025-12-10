@@ -54,16 +54,16 @@ const nepCommittee2023 = [
 const saarthiTeam = [
     {
         sno: 1,
-        name: "Dr. Sonia Kaur Bansal",
+        name: "Dr. Krati Sharma",
         designation: "Faculty Coordinator",
     },
-    { sno: 2, name: "Ms. Himani Agarwal", designation: "Student Coordinator" },
+    { sno: 2, name: "Mr. Piyush sharma", designation: "Student Coordinator" },
     {
         sno: 3,
         name: "Mr. Davit Kumar Fadia",
         designation: "Student Coordinator",
     },
-    { sno: 4, name: "Mr. Mayank Singh", designation: "Student Coordinator" },
+    { sno: 4, name: "Ms. Mansi Dadhich", designation: "Student Coordinator" },
 ];
 
 const committeeColumns = [
@@ -892,6 +892,21 @@ const importantNotices = [
         document: (
             <a
                 href="https://drive.google.com/file/d/1_eIqbvBq6lYtBZEmJUXgXzo0b9uPehPC/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <button className="bg-blue-600 text-white px-4 py-1 rounded hover:bg-blue-700">
+                    View PDF
+                </button>
+            </a>
+        ),
+    },
+    {
+        sno: 3,
+        name: "NET SAARTHI Team 2025-26",
+        document: (
+            <a
+                href="https://drive.google.com/file/d/1JAe_qaILwsEUAspYAC7oYUUwXzGNjBog/view?usp=drive_link"
                 target="_blank"
                 rel="noopener noreferrer"
             >

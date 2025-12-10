@@ -1,10 +1,133 @@
 import { Link } from "wouter";
 import LazyImage from "./LazyImage";
+import { Award } from "lucide-react";
+import { useState, useEffect } from "react";
 
 
 type StatProps = {
   number: string;
   label: string;
+};
+
+//Upcoming event details
+
+const events = [
+  {
+    id: 1,
+    image:
+      "/images/UpcomingEvents/IIT-G-spoc.jpg",
+    title: "PIET has recognized among india's top 50 institutes along with IITs and NITs",
+    description: "We will mentor tier-2 and tier-3 colleges nationwide to enhance critical thinking, industry connect and employbility in engineering colleges",
+    link: "/events/kalanidhi",
+  },
+  {
+    id: 2,
+    image:
+      "/images/UpcomingEvents/SIH-2025-Nodel-Center.jpg",
+    title: "Smart India Hackathon 2025-Software Edition",
+    description: "8-9 December 2025-A national-level innovation event for students to develop software solutions for real-world problems",
+    link: "/events/hackathon",
+  },
+  {
+    id: 3,
+    image:
+      "/images/UpcomingEvents/PIET-campus_cornor.jpg",
+    title: "FDP on Agentic Ai",
+    description: "Expert talks and workshops on AI advancements.",
+    link: "/events/ai-conclave",
+  },
+];
+
+
+// Event Carousel Component, with auto-slide and marquee effect
+
+const EventCarousel = () => {
+  const [index, setIndex] = useState(0);
+
+  // Auto-slide every 4 seconds
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setIndex((prev) => (prev + 1) % events.length);
+    }, 4000);
+    return () => clearInterval(timer);
+  }, []);
+
+  return (
+    <div className="relative w-full">
+      {/* Image Slider */}
+      <div className="relative overflow-hidden rounded-2xl shadow-2xl">
+                        <img
+                src={events[index].image}
+                alt={events[index].title}
+                className="w-full aspect-[3/2] object-cover transition-all duration-700"
+                />
+
+
+        {/* Floating Badge - NAAC */}
+        <div className="absolute top-4 right-4 bg-white rounded-xl p-3 shadow-lg border border-neutral-200">
+          <div className="flex items-center gap-2">
+            <div className="p-2 bg-gradient-to-br from-primary to-secondary rounded-lg">
+              <Award className="h-5 w-5 text-white" />
+            </div>
+            <div>
+              <p className="font-bold text-primary text-sm">Grade 'A'</p>
+              <p className="text-[11px] text-neutral-600">NAAC Accredited</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Bottom Running Info Bar */}
+      <div className="absolute bottom-0 left-0 w-full bg-black/70 text-white py-5 overflow-hidden rounded-b-2xl">
+        <div className="absolute bottom-0 left-0 w-full bg-black/70 text-white py-4 overflow-hidden rounded-b-2xl marquee-container">
+  <div className="whitespace-nowrap animate-marquee px-4 text-sm flex items-center gap-4">
+
+          <span className="font-semibold">{events[index].title}</span> —{" "}
+          {events[index].description}
+          <a
+            href={events[index].link}
+            className="underline text-blue-300 hover:text-blue-400 ml-3"
+          >
+            Know More →
+          </a>
+        </div>
+        </div>
+      </div>
+
+      {/* Dots for manual control */}
+      <div className="flex justify-center mt-5 gap-2">
+        {events.map((_, i) => (
+          <button
+            key={i}
+            onClick={() => setIndex(i)}
+            className={`h-3 w-3 rounded-full ${
+              i === index ? "bg-primary" : "bg-gray-300"
+            }`}
+          ></button>
+        ))}
+      </div>
+
+      {/* Marquee animation */}
+                <style>
+            {`
+                .animate-marquee {
+                display: inline-block;
+                animation: marquee 10s linear infinite;
+                }
+
+                /* Pause animation on hover */
+                .marquee-container:hover .animate-marquee {
+                animation-play-state: paused;
+                }
+
+                @keyframes marquee {
+                0% { transform: translateX(100%); }
+                100% { transform: translateX(-100%); }
+                }
+            `}
+</style>
+    </div>
+  );
 };
 
 const Stat = ({ number, label }: StatProps) => (
@@ -66,25 +189,14 @@ export default function AboutSection() {
             </Link>
           </div>
 
-          <div className="relative animate-slideInRight">
+          {/* Upcoming Event Section  */}
+                    <div className="relative">
+                            <EventCarousel />
 
-
-            <LazyImage
-              src={'/images/autonomous/piet-side.jpg'}
-              alt={'NAAC Accreditation'}
-              className="rounded-xl shadow-xl w-full h-auto z-10 relative"
-            />
-
-            <div className="absolute -bottom-6 -right-6 w-48 h-48 bg-secondary rounded-lg -z-10 opacity-70"></div>
-            <div className="absolute -top-6 -left-6 w-48 h-48 bg-primary rounded-lg -z-10 opacity-70"></div>
-
-            {/* Photo caption */}
-            <div className="absolute bottom-6 left-6 right-6 bg-white/90 backdrop-blur-sm p-4 rounded-lg shadow-lg">
-              <p className="text-primary font-medium">
-                Accredited with Grade 'A' by NAAC
-              </p>
-            </div>
-          </div>
+                            {/* Background Decorations (you can keep them for design) */}
+                            <div className="absolute -top-8 -left-8 w-32 h-32 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-2xl -z-10"></div>
+                            <div className="absolute -bottom-8 -right-8 w-32 h-32 bg-gradient-to-br from-secondary/20 to-primary/20 rounded-2xl -z-10"></div>
+                            </div>
         </div>
       </div>
 

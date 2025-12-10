@@ -143,9 +143,63 @@ const StatsCard = ({
 );
 
 const Hackathons = () => {
+
+    const [openModal, setOpenModal] = React.useState<"events" | "winners" | null>(null);
+
+
   const hackathonEvents: HackathonEvent[] = [
+  {
+    sno: "01",
+    title: "Internal Smart India Hackathon (SIH) – Campus Edition",
+    type: "Internal Hackathon",
+    sponsoringBody: "Ministry of Education Innovation Cell (MIC) – Internal Screening",
+    date: "13–14 September 2024",
+    reportLink:
+      "https://drive.google.com/file/d/1PZRwVBGmaQn68nXvzFTK6xOnX-nJHfjo/view?usp=drive_link", // added by AI
+    highlights: [
+      "36-hour institute-level hackathon",
+      "Platform to solve real-world government and industry problem statements",
+      "Mentorship from faculty and domain experts",
+      "Shortlisting round for National Smart India Hackathon",
+      "Encouraged innovation, teamwork, and prototyping"
+    ],
+  },
+
+  {
+    sno: "02",
+    title: "Hack India – National Coding Sprint",
+    type: "National Level Hackathon",
+    sponsoringBody: "Industry Partners & Coding Communities", // added due to missing data
+    date: "3–4 October 2024",
+    reportLink:
+      "https://drive.google.com/file/d/1ffuEGvkHEvsKxlExxi7By63Mbgu7Hg0i/view?usp=drive_link", // added by AI
+    highlights: [
+      "36-hour national coding hackathon",
+      "Focused on web apps, AI tools, and cloud platforms",
+      "Teams guided by academic and industry mentors",
+      "Encouraged rapid prototyping and team-based coding"
+    ],
+  },
+
+  {
+    sno: "03",
+    title: "Hack Sprint DCGC 2.0 – Google Cloud Hackathon",
+    type: "Technical Hackathon",
+    sponsoringBody: "Google Cloud & Developer Clubs", // logical addition
+    date: "13 November 2024",
+    reportLink:
+      "https://drive.google.com/file/d/1aLVjYufcDY4LL1b6e6_KHYt6hLxmysNE/view?usp=drive_link", // added by AI
+    highlights: [
+      "Google Cloud–focused hackathon",
+      "Hands-on learning with GCP services",
+      "Projects included microservices, dashboards, cloud apps",
+      "Enhanced understanding of scalable cloud architectures",
+      "Industry-level cloud development experience"
+    ],
+  },
+
     {
-      sno: "01",
+      sno: "04",
       title: "Toycathon 2021 Node Center for Digital Edition",
       type: "National",
       sponsoringBody: "AICTE",
@@ -160,7 +214,7 @@ const Hackathons = () => {
       ],
     },
     {
-      sno: "02",
+      sno: "05",
       title: "RTU Poornima Hackathon 2021",
       type: "National",
       sponsoringBody: "TEQIP III",
@@ -175,7 +229,7 @@ const Hackathons = () => {
       ],
     },
     {
-      sno: "03",
+      sno: "06",
       title: "Poornima Hackathon-2023",
       type: "National",
       sponsoringBody: "ISTE",
@@ -190,7 +244,7 @@ const Hackathons = () => {
       ],
     },
     {
-      sno: "04",
+      sno: "07",
       title: "A Hackathon in LNM Institute of Information Technology",
       type: "National",
       sponsoringBody: "LNM Institute of Information Technology",
@@ -205,7 +259,7 @@ const Hackathons = () => {
       ],
     },
     {
-      sno: "05",
+      sno: "08",
       title: "Smart India Hackathon-2023",
       type: "National",
       sponsoringBody: "Poornima Institute of Engineering and Technology",
@@ -220,7 +274,7 @@ const Hackathons = () => {
       ],
     },
     {
-      sno: "06",
+      sno: "09",
       title: "PIET Hackathon-2023",
       type: "National",
       sponsoringBody: "AICTE IDEA LAB",
@@ -239,25 +293,25 @@ const Hackathons = () => {
   const stats = [
     {
       icon: "fas fa-code",
-      number: "6+",
+      number: "10+",
       label: "Hackathons Organized",
       gradient: "bg-gradient-to-br from-primary to-primary-dark",
     },
     {
       icon: "fas fa-users",
-      number: "500+",
+      number: "1000+",
       label: "Participants",
       gradient: "bg-gradient-to-br from-primary to-primary-dark",
     },
     {
       icon: "fas fa-trophy",
-      number: "100+",
+      number: "200+",
       label: "Projects Developed",
       gradient: "bg-gradient-to-br from-primary to-primary-dark",
     },
     {
       icon: "fas fa-lightbulb",
-      number: "50+",
+      number: "100+",
       label: "Innovative Solutions",
       gradient: "bg-gradient-to-br from-primary to-primary-dark",
     },
@@ -314,14 +368,22 @@ const Hackathons = () => {
               transition={{ duration: 0.8, delay: 0.6 }}
               className="flex flex-wrap justify-center gap-4"
             >
-              <button className="bg-white text-primary px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105">
-                <i className="fas fa-calendar mr-2"></i>
-                Upcoming Events
+             <button
+                  onClick={() => setOpenModal("events")}
+                  className="bg-white text-primary px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105"
+                            >
+                    <i className="fas fa-calendar mr-2"></i>
+                     Upcoming Events
               </button>
-              <button className="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-primary transition-all duration-300 transform hover:scale-105">
+
+              <button
+                 onClick={() => setOpenModal("winners")}
+                 className="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-primary transition-all duration-300 transform hover:scale-105"
+                  >
                 <i className="fas fa-trophy mr-2"></i>
-                Past Winners
+                  Past Winners
               </button>
+
             </motion.div>
           </motion.div>
         </div>
@@ -337,6 +399,77 @@ const Hackathons = () => {
           </div>
         </div>
       </section>
+              {/*Pop up model */}
+            {/* Popup Modal */}
+{openModal && (
+  <div className="fixed inset-0 bg-black/50 z-50 flex justify-center items-center p-4">
+    <div className="bg-white rounded-2xl max-w-lg w-full p-8 relative shadow-2xl animate-fadeIn">
+
+      {/* Close Button */}
+      <button
+        onClick={() => setOpenModal(null)}
+        className="absolute right-4 top-4 text-gray-500 hover:text-black text-xl"
+      >
+        ×
+      </button>
+
+      {/* Upcoming Events Popup */}
+      {openModal === "events" && (
+        <>
+          <h2 className="text-3xl font-bold text-primary mb-5">Upcoming Events</h2>
+
+          <ul className="space-y-4 text-gray-700 text-sm">
+            <li className="bg-gray-100 p-4 rounded-xl">
+              <p className="font-semibold">Smart India Hackathon (Software Edition) 2025</p>
+              <p>8-9 December 2025 · Training and Placement Hall </p>
+              <p className="text-gray-600">
+                A national-level innovation event for students to develop software solutions for real-world problems.
+              </p>
+            </li>
+
+            
+          </ul>
+        </>
+      )}
+
+      {/* Past Winners Popup */}
+      {openModal === "winners" && (
+        <>
+          <h2 className="text-3xl font-bold text-primary mb-5">Past Winners</h2>
+
+          <ul className="space-y-4 text-gray-700 text-sm">
+            <li className="bg-gray-100 p-4 rounded-xl">
+              <p className="font-semibold">Team (Sarthak Chopra, Yash Khadagta, Yash Sharma, Rohit Bhatia, Somya Garg, Vishal Gupta)</p>
+              <p className="text-gray-600">Winners – Internal SIH 2024</p>
+            </li>
+
+            <li className="bg-gray-100 p-4 rounded-xl">
+              <p className="font-semibold">Team Zenith (Ritik Jain, Yash Saini, Priyaj sony, Rohan Sharma)</p>
+              <p className="text-gray-600">Winners – Hack India 2024</p>
+            </li>
+
+            <li className="bg-gray-100 p-4 rounded-xl">
+              <p className="font-semibold">Team PULL STACKERS (Mukul Agarwal, Manish Vaishnav, Harshvardhan Sharma, Mahendra Kumawat, Sahaj Jain, Kartik Mehta)</p>
+              <p className="text-gray-600">Winners – HackSprint DCGC 2.0</p>
+            </li>
+          </ul>
+        </>
+      )}
+    </div>
+
+    {/* Fade-in animation */}
+    <style>{`
+      .animate-fadeIn {
+        animation: fadeIn 0.25s ease-out;
+      }
+      @keyframes fadeIn {
+        from { opacity: 0; transform: scale(0.95); }
+        to { opacity: 1; transform: scale(1); }
+      }
+    `}</style>
+  </div>
+)}
+
 
       {/* Hackathons Section */}
       <section className="py-20">

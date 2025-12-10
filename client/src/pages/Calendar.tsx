@@ -17,7 +17,7 @@ const academicCalendars = [
         },
         evenSemester: {
             title: "Even Semester 2025-26",
-            image: "/images/ac/25-26/ac-odd-2025-26.jpg",
+            image: "/images/ac/25-26/Even_Sem_2025-26-1.png",
         },
         status: "active"
     },

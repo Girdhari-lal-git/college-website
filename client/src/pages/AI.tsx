@@ -646,7 +646,7 @@ export const courseData: SubjectCO[] = [
 
 const labData = [
     {
-    image: "/images/Labs/AI&DS/CS-lab-1.jpg",
+    image: "/images/Labs/AI&DS/B-003-lab.jpeg",
     title: "DEEP LEARNING LAB",
     facultyInCharge: "Ms. Bhawana Purohit",
     labAssistant: "Mr. Rajesh Chaoudhary",
@@ -662,7 +662,7 @@ const labData = [
     syllabusLink: "https://example.com/syllabus.pdf",
   },
   {
-    image: "/images/Labs/AI&DS/CS-lab-3.jpg",
+    image: "/images/Labs/AI&DS/B-14-lab.jpeg",
     title: "COMPUTER-AIDED DESIGN LAB",
     facultyInCharge: "Mr. Vaibhav Shekhawat",
     labAssistant: "Mr. Hansraj Meena",
@@ -670,7 +670,7 @@ const labData = [
     syllabusLink: "https://example.com/syllabus.pdf",
   },
   {
-    image: "/images/Labs/AI&DS/C-lang-lab.jpg",
+    image: "/images/Labs/AI&DS/B-15-lab.jpeg",
     title: "PROGRAMMING & OPTIMIZATION LAB",
     facultyInCharge: "Mr. Mohnish Sachdeva",
     labAssistant: "Mr. Hansraj Meena",
@@ -694,7 +694,7 @@ const labData = [
     syllabusLink: "https://example.com/syllabus.pdf",
   },
   {
-    image: "/images/Labs/AI&DS/cs-lab-4.jpg",
+    image: "/images/Labs/AI&DS/DE-Lab-A-105.jpeg",
     title: "DIGITAL ELECTRONICS LAB",
     facultyInCharge: "Dr. Saurabh Raj",
     labAssistant: "Mr. Rajneesh Chopra",
@@ -702,7 +702,7 @@ const labData = [
     syllabusLink: "https://example.com/syllabus.pdf",
   },
   {
-    image: "/images/Labs/AI&DS/CS-lab-3.jpg",
+    image: "/images/Labs/AI&DS/A-101-1.jpeg",
     title: "BUSINESS INTELLIGENCE LAB",
     facultyInCharge: "Mr. Kamal Saini",
     labAssistant: "Mr. Vishnu Sain",
@@ -771,25 +771,15 @@ const missionContent = <Checklist items={missionPoints} />;
 
 const objectiveContent = <Checklist items={objectivePoints} />;
 
+// FDP and Workshop data in yearwise manner
+// Define the structure for FDP/Workshop data
+
 const columns = [
     { label: "S.No", key: "sno" },
     { label: "Title of FDP / Workshop", key: "title" },
 ];
 
-const data = [
-    {
-        sno: 1,
-        title: "Workshop Faculty Development Program Conference Event Conducted",
-    },
-    { sno: 2, title: "SPL Webinar Conducted" },
-    { sno: 3, title: "FDPs Workshop Conference Seminar Participation Details" },
-    { sno: 4, title: "Student Achievements" },
-    { sno: 5, title: "Appeared in Gate" },
-    { sno: 6, title: "Paper Published By Students" },
-    { sno: 7, title: "Workshop Conference Seminar of Students" },
-    { sno: 8, title: "Inside outside Participation" },
-    { sno: 9, title: "Award Recognization" },
-];
+
 const AI = () => {
     const [facultyData, setFacultyData] = useState<Faculty[]>([]);
     const [loading, setLoading] = useState(true);
@@ -830,6 +820,72 @@ const AI = () => {
 
         loadFaculty();
     }, []);
+
+    type YearKey = "2021-22" | "2022-23" | "2023-24" | "2024-25" | "2025-26";
+
+const yearWiseData: Record<YearKey, { sno: number; title: string }[]> = {
+    "2021-22": [
+    { sno: 1, title: "Five Days Workshop on ‘Fundamentals of C Language – Hands On’" },
+    { sno: 2, title: "Three Day Workshop on ‘Basic of Python – Hands On’" },
+    { sno: 3, title: "AICTE - ISTE FDP on Applications of Artificial Intelligence Using Machine Learning & Deep Learning" },
+    { sno: 4, title: "Five Day Workshop on ‘Website Design & Development with Digital Marketing’" },
+    { sno: 5, title: "Workshop on AI & Data Science Master Classes" }
+],
+    "2022-23":[
+    { sno: 1, title: "One Week Skill Development Program on ‘Office Tools’" },
+    { sno: 2, title: "One Week Skill Development Program on ‘Hands-on Practice on C’" },
+    { sno: 3, title: "3 Day Workshop on Ethical Hacking and Cyber Security" },
+    { sno: 4, title: "Workshop on Python with DevOps" },
+    { sno: 5, title: "5 Days Industrial Workshop on DevOps Virtualization" },
+
+    { sno: 6, title: "FDP on Practice of Network Programming" },
+    { sno: 7, title: "Six Day Workshop on Textual Magic: Exploring NLP with NLTK" },
+    { sno: 8, title: "One Day Workshop on Advance Java and its Techniques" }
+],
+
+    "2023-24": [
+    { sno: 1, title: "C Workshop 1.0" },
+    { sno: 2, title: "DSA Workshop – Diving into DSA" },
+    { sno: 3, title: "International Student Workshop 2024 on Data Science & Python" },
+    { sno: 4, title: "Workshop on Neural Networks" },
+    { sno: 5, title: "Three Days Workshop on Data Analytics" },
+    { sno: 6, title: "AWS Workshop 2024" },
+    { sno: 7, title: "2 Days Workshop on Rise of Prompt Engineering with Generative AI" }
+],
+    "2024-25": [
+    { sno: 1, title: "Fundamentals of Programming - Hands On" },
+    { sno: 2, title: "Blockchain/Web3 Workshop" },
+    { sno: 3, title: "Power BI Workshop" },
+    { sno: 4, title: "Session Gate (Technical Workshop)" },
+    { sno: 5, title: "Learn APIs Using Postman" },
+    { sno: 6, title: "Empowering Digital Classrooms: A Workshop on TCSion Cloud Learning & Course File Preparation" },
+    { sno: 7, title: "6 Days FDP on Machine Learning" },
+    { sno: 8, title: "Robotics Workshop (Faculty Workshop)" },
+
+    { sno: 9, title: "AWS Academy Educator Online Workshop – Introduction to AWS Academy LMS" },
+    { sno: 10, title: "Faculty Development Program on Mobile Application Development" },
+    { sno: 11, title: "Robotics Workshop" },
+    { sno: 12, title: "Use of ML on Real World Applications Workshop" },
+    { sno: 13, title: "AWS Workshop 2024" },
+    { sno: 14, title: "Python Workshop" },
+    { sno: 15, title: "MAD (Mobile Application Development) for Students Workshop" },
+    { sno: 16, title: "Deep Learning Workshop" },
+    { sno: 17, title: "IEEE Hands-on Workshop: Designing IoT/RF Sensor Using HFSS Software" },
+    { sno: 18, title: "SQL Joins Workshop" }
+],
+    "2025-26": [],
+};
+
+const [activeYear, setActiveYear] = useState<YearKey>("2024-25");
+const [currentPage, setCurrentPage] = useState<number>(1);
+
+const entriesPerPage = 10;
+
+const yearData = yearWiseData[activeYear];
+const start = (currentPage - 1) * entriesPerPage;
+const currentEntries = yearData.slice(start, start + entriesPerPage);
+const totalPages = Math.ceil(yearData.length / entriesPerPage);
+
 
     return (
         <div>
@@ -998,13 +1054,76 @@ HOD, Department of AI & Data Science, PIET`}
 </section>
 
             <CourseOutcomeAccordion data={courseData} />
-            <div className="container mt-10 mx-auto">
-                <h2 className="text-3xl text-primary font-bold mb-8 text-center">
-                    FDP / Workshop
-                </h2>
-                <div className="w-24 h-1 bg-secondary mb-6 mx-auto"></div>
-                <DynamicTable columns={columns} data={data} />
-            </div>
+           <div className="container mt-10 mx-auto">
+    <h2 className="text-3xl text-primary font-bold mb-8 text-center">
+        FDP / Workshop (Year-wise)
+    </h2>
+    <div className="w-24 h-1 bg-secondary mb-6 mx-auto"></div>
+
+    {/* ---------------- YEAR TABS ---------------- */}
+    <div className="flex justify-center space-x-4 mb-6">
+        {Object.keys(yearWiseData).map((year) => (
+            <button
+                key={year}
+                onClick={() => {
+                    setActiveYear(year as YearKey);
+                    setCurrentPage(1);
+                }}
+                className={`px-4 py-2 rounded-md font-semibold border transition-all 
+                    ${activeYear === year
+                        ? "bg-primary text-white border-primary"
+                        : "bg-white border-gray-400 text-gray-700 hover:bg-gray-100"
+                    }
+                `}
+            >
+                {year}
+            </button>
+        ))}
+    </div>
+
+    {/* --------------- TABLE WITH PAGINATION --------------- */}
+    <DynamicTable
+        columns={columns}
+        data={currentEntries}
+    />
+
+    {/* --------------- PAGINATION BUTTONS --------------- */}
+    {totalPages > 1 && (
+        <div className="flex justify-center mt-6 space-x-3">
+            <button
+                disabled={currentPage === 1}
+                onClick={() => setCurrentPage(currentPage - 1)}
+                className="px-4 py-2 bg-gray-200 rounded disabled:opacity-50"
+            >
+                Prev
+            </button>
+
+            {[...Array(totalPages)].map((_, i) => (
+                <button
+                    key={i}
+                    onClick={() => setCurrentPage(i + 1)}
+                    className={`px-3 py-1 rounded 
+                        ${currentPage === i + 1
+                            ? "bg-primary text-white"
+                            : "bg-gray-100 hover:bg-gray-200"
+                        }
+                    `}
+                >
+                    {i + 1}
+                </button>
+            ))}
+
+            <button
+                disabled={currentPage === totalPages}
+                onClick={() => setCurrentPage(currentPage + 1)}
+                className="px-4 py-2 bg-gray-200 rounded disabled:opacity-50"
+            >
+                Next
+            </button>
+        </div>
+    )}
+</div>
+
             <Cta />
             <Footer />
         </div>
