@@ -10,19 +10,20 @@ import DynamicTable from '@/components/DynamicTable '
 import { AccessibilityFeatures } from '@/components/AccessibilityFeatures'
 
 const studentOfficeBearers = [
-  { registrationNo: 'PIET21CS506', name: 'Chiya Jamwal', phone: '9103225456', designation: 'Chair Person' },
-  { registrationNo: 'PIET21CS110', name: 'Narendra Kumar', phone: '7023826876', designation: 'Treasurer' },
-  { registrationNo: 'PIET22CS502', name: 'Chahat Gupta', phone: '8825009085', designation: 'Secretary' },
-  { registrationNo: 'PIET23CS015', name: 'Anag Agarwal', phone: '6005200192', designation: 'Executive Committee Members' },
-  { registrationNo: 'PIET23CS065', name: 'Harsh Khandelwal', phone: '7357745972', designation: 'Executive Committee Members' },
-  { registrationNo: 'PIET23CS136', name: 'Rishab Jain', phone: '9214805770', designation: 'Executive Committee Members' },
-  { registrationNo: 'PIET23AD050', name: 'Rudraksh Garg', phone: '7597714387', designation: 'Executive Committee Members' },
-  { registrationNo: 'PIET23CR020', name: 'Gargi Sharma', phone: '8955325419', designation: 'Executive Committee Members' },
-  { registrationNo: 'PIET23CI031', name: 'Keshav Kumar Sharma', phone: '8619819682', designation: 'Executive Committee Members' }
+  { registrationNo: 'PIET24CA060', name: 'Umesh Jangid', phone: '7014934436', designation: 'Chair Person' },
+  { registrationNo: 'PIET23CR038', name: 'Lakshita Prajapati', phone: '8000696041', designation: 'Treasurer' },
+  { registrationNo: 'PIET25CR051', name: 'Sakshi Chanda', phone: '9256236357', designation: 'Secretary' },
+  { registrationNo: 'PIET23AD050', name: 'Rudraksh Garg', phone: '7597714387', designation: 'Executive Committee Member' },
+  { registrationNo: 'PIET23CS089', name: 'Komal Choudhary', phone: '9352869968', designation: 'Executive Committee Member' },
+  { registrationNo: 'PIET24CA006', name: 'Anshul Kumar', phone: '9462735373', designation: 'Executive Committee Member' },
+  { registrationNo: 'PIET25CR056', name: 'Siddhi Gupta', phone: '6350099272', designation: 'Executive Committee Member' },
+  { registrationNo: 'PIET24CS123', name: 'Piyush Bissa', phone: '7976187978', designation: 'Executive Committee Member' },
+  { registrationNo: 'PIET25CR030', name: 'Lucky Saini', phone: '9549974901', designation: 'Executive Committee Member' },
+  { registrationNo: 'PIET25CR023', name: 'Kanishk Sahrma', phone: '7850061130', designation: 'Executive Committee Member' }
 ]
 
 const facultyCoordinators = [
-  { department: 'Applied Sciences', name: 'Dr. Gaurtam Singh', phone: '9001893262', designation: 'Chairman' },
+  { department: 'Applied Sciences', name: 'Dr. Balwan', phone: '9001893262', designation: 'Chairman' },
   { department: 'Applied Sciences', name: 'Dr. Mukesh Chandra', phone: '9897195374', designation: 'Secretary' },
   { department: 'Applied Sciences', name: 'Dr. Sama Jain', phone: '9414321634', designation: 'Faculty Advisor' },
   { department: 'Applied Sciences', name: 'Dr. Bhanu Pratap', phone: '8118874724', designation: 'Faculty Coordinators' },
@@ -90,7 +91,7 @@ const ISTEPage = () => {
           className="mx-auto h-24 mb-6 transform hover:scale-105 transition-transform duration-300"
         />
         <p className="text-xl text-gray-700 max-w-2xl mx-auto">
-          The IETE Student Branch at PIET empowers students through innovation, collaboration, and technical excellence.
+          The ISTE Student Branch at PIET empowers students through innovation, collaboration, and technical excellence.
         </p>
       </div>
     </section>
@@ -257,7 +258,7 @@ const ISTEPage = () => {
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
   <div className="aspect-square">
     <img
-      src="/images/chapters/iste/iste-1.jpg"
+      src="/images/chapters/iste/Stage1.jpeg"
       alt="Event 1"
       className="w-full h-full object-cover rounded-lg shadow"
     />
@@ -278,21 +279,21 @@ const ISTEPage = () => {
   </div>
   <div className="aspect-square">
     <img
-      src="/images/chapters/acm/acm-4.jpg"
+      src="/images/chapters/iste/Debate1.jpeg"
       alt="Event 4"
       className="w-full h-full object-cover rounded-lg shadow"
     />
   </div>
   <div className="aspect-square">
     <img
-      src="/images/chapters/acm/acm-5.jpg"
+      src="/images/chapters/iste/group1.jpeg"
       alt="Event 5"
       className="w-full h-full object-cover rounded-lg shadow"
     />
   </div>
   <div className="aspect-square">
     <img
-      src="/images/chapters/acm/acm-6.jpg"
+      src="/images/chapters/iste/Visit1.jpeg"
       alt="Event 6"
       className="w-full h-full object-cover rounded-lg shadow"
     />

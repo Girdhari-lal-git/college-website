@@ -8,22 +8,16 @@ import { AccessibilityFeatures } from "@/components/AccessibilityFeatures";
 const HostelLife = () => {
     const hostelDetails = [
         {
-            name: "Gayatri Girls Hostel",
+            name: "Gurushikhar",
             type: "Girls",
-            capacity: "1100 Students",
+            capacity: "200+ Students",
         },
         {
-            name: "Aravali Boys Hostel",
+            name: "Gurushikhar ",
             type: "Boys",
-            capacity: "1900 Students",
+            capacity: "600+ Students",
         },
-        {
-            name: "Gurushikhar Boys Hostel",
-            type: "Boys",
-            capacity: "Expandable",
-        },
-        { name: "Gargi Girls Hostel", type: "Girls", capacity: "Expandable" },
-        { name: "Himalaya Boys Hostel", type: "Boys", capacity: "Expandable" },
+       
     ];
 
     const basicFacilities = [
@@ -127,7 +121,7 @@ const HostelLife = () => {
                             <i className="fas fa-building text-3xl text-primary mr-4"></i>
                             <div>
                                 <h3 className="text-2xl font-bold text-primary">
-                                    5
+                                    8
                                 </h3>
                                 <p className="text-gray-600">Modern Hostels</p>
                             </div>
@@ -138,7 +132,7 @@ const HostelLife = () => {
                             <i className="fas fa-users text-3xl text-secondary mr-4"></i>
                             <div>
                                 <h3 className="text-2xl font-bold text-primary">
-                                    3000+
+                                    800+
                                 </h3>
                                 <p className="text-gray-600">
                                     Student Capacity
@@ -637,7 +631,11 @@ const HostelLife = () => {
                     </p>
                     <button className="bg-white text-primary px-8 py-3 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors">
                         <i className="fas fa-download mr-2"></i>
-                        Call +91-9001893262
+                        Ms. Meena Kharol (Girls) +91-9001893261
+                    </button>
+                    <button className="bg-white text-primary px-8 py-3 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors">
+                        <i className="fas fa-download mr-4"></i>
+                        Mr. Dharmendra Singh (Boys) +91-9928017668
                     </button>
                 </div>
             </div>

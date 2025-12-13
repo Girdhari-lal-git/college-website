@@ -256,10 +256,10 @@ const PlacementRecords = () => {
   const yearlyData = [
      {
       year: "2024-25",
-      placed: 122,
+      placed: 162,
       companies: 55,
-      highest: "₹9,60,000",
-      average: "₹6,80,000",
+      highest: "₹13,00,000",
+      average: "₹4,80,000",
     },
     {
       year: "2023-24",
@@ -533,36 +533,42 @@ const PlacementRecordDownloads = () => {
   const placementRecords = [
     {
       sno: 1,
+      year: "Placed Students List 2024-25",
+      downloadLink:
+        "https://drive.google.com/file/d/1t9qng8OxvtNbV7tnK1G81UCCMfGZfrZ8/view?usp=drive_link",
+    },
+    {
+      sno: 2,
       year: "Placed Students List 2023-24",
       downloadLink:
         "https://drive.google.com/file/d/1ZRDbTjoUSja6ilRSXuoZ5hntKgdEdcrX/view?usp=sharing",
     },
     {
-      sno: 2,
+      sno: 3,
       year: "Placed Students List 2022-23",
       downloadLink:
         "https://drive.google.com/file/d/1GA8NwEbed8WZzG9uQavmGM6J_idG0kgn/view?usp=sharing",
     },
     {
-      sno: 3,
+      sno: 4,
       year: "Placed Students List 2021-22",
       downloadLink:
         "https://drive.google.com/file/d/1w2crEgaUCJmwaCyX4MkSiQnR_E-Ea86A/view?usp=sharing",
     },
     {
-      sno: 4,
+      sno: 5,
       year: "Placed Students List 2020-21",
       downloadLink:
         "https://drive.google.com/file/d/1NuoNgm8eEnoDZnTeTftZMEIi2mGJMHgk/view?usp=sharing",
     },
     {
-      sno: 5,
+      sno: 6,
       year: "Placed Students List 2019-20",
       downloadLink:
         "https://drive.google.com/file/d/1pEmux4U7X2wKg4vY7ql0s5F86vpq2D55/view?usp=sharing",
     },
     {
-      sno: 6,
+      sno: 7,
       year: "Placed Students List 2018-19",
       downloadLink:
         "https://drive.google.com/file/d/1V1eubJymlRpKHJoBexl9TYs_hW0epsfs/view?usp=sharing",

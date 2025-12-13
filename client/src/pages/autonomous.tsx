@@ -25,7 +25,17 @@ const ImportantAnnouncements = () => {
   ];
 
   const announcements = [
-     {
+    {
+      title: "Circular-End Semester Practical Examination timetable (First Year- First Semester 2025-26)",
+      date: "2025-12-13",
+      link: "https://drive.google.com/file/d/1mwNJRXihlglzhpScKdMY82CTM4VGVf2e/view?usp=drive_link",
+    },
+    {
+      title: "Circular - End Semester Theory Examination timetable for B.Tech. First Year, First Semester (January 2026)",
+      date: "2025-12-13",
+      link: "https://drive.google.com/file/d/1LyuDN3VF2qNnRCHwQmPyFdxkxBdLv3_r/view?usp=drive_link",
+    }, 
+    {
       title: "Circular - Academic and Examination Policy of PIET as an Autonomous Institution",
       date: "2025-11-08",
       link: "https://drive.google.com/file/d/1_W20LF_ShbHlJQgqGk9M2GxLnCb99OPC/view?usp=drive_link",
