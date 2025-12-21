@@ -229,6 +229,22 @@ const galleryImages: GalleryImage[] = [
     category: 'events'
   },
 
+  {
+    id: '32',
+    src: 'https://res.cloudinary.com/db3x8h2gn/image/upload/v1765954955/farewel13_xpihyr.jpg',
+    alt: 'Farewell Ceremony',
+    title: 'Farewell Ceremony',
+    category: 'events'
+  },
+
+  {
+    id: '33',
+    src: 'https://www.piet.poornima.org/images/hc/Web%20Banner%202.jpg',
+    alt: 'farewell Ceremony',
+    title: 'Farewell Ceremony',
+    category: 'events'
+  },
+
   // Activities
   {
     id: '22',
@@ -250,7 +266,66 @@ const galleryImages: GalleryImage[] = [
     alt: 'National Service Scheme',
     title: 'National Service Scheme Activity',
     category: 'activities'
-  }
+  },
+
+  { "id": "32", "src": "https://res.cloudinary.com/db3x8h2gn/image/upload/w_1200,q_auto,f_auto/icsicst3_gnofl7.jpg", "alt": "ICSICST international research conference session at PIET Jaipur", "title": "ICSICST Research Conference", "category": "research" },
+  { "id": "33", "src": "https://res.cloudinary.com/db3x8h2gn/image/upload/w_1200,q_auto,f_auto/students2_fxjtat.jpg", "alt": "Students participating in campus activities at PIET Jaipur", "title": "Student Participation", "category": "activities" },
+  { "id": "34", "src": "https://res.cloudinary.com/db3x8h2gn/image/upload/w_1200,q_auto,f_auto/yogaday2_oedee5.jpg", "alt": "International Yoga Day activity conducted at PIET Jaipur", "title": "International Yoga Day", "category": "activities" },
+  { "id": "35", "src": "https://res.cloudinary.com/db3x8h2gn/image/upload/w_1200,q_auto,f_auto/rvisit2_wpdc4a.jpg", "alt": "Students during industrial visit organized by PIET Jaipur", "title": "Industrial Visit", "category": "activities" },
+  { "id": "36", "src": "https://res.cloudinary.com/db3x8h2gn/image/upload/w_1200,q_auto,f_auto/rvisit1_u8gt2j.jpg", "alt": "Academic industrial visit for engineering students", "title": "Industrial Exposure Visit", "category": "activities" },
+  { "id": "37", "src": "https://res.cloudinary.com/db3x8h2gn/image/upload/w_1200,q_auto,f_auto/pbic-startup1_nra7lq.jpg", "alt": "Startup incubation activity under PBIC at PIET Jaipur", "title": "PBIC Startup Activity", "category": "activities" },
+  { "id": "38", "src": "https://res.cloudinary.com/db3x8h2gn/image/upload/w_1200,q_auto,f_auto/pbic-startup3_gf10zf.jpg", "alt": "Students presenting startup ideas at PBIC incubation center", "title": "Startup Idea Presentation", "category": "activities" },
+  { "id": "39", "src": "https://res.cloudinary.com/db3x8h2gn/image/upload/w_1200,q_auto,f_auto/pbic-ing2_k00z6w.jpg", "alt": "Innovation and incubation mentoring session at PBIC", "title": "Innovation and Incubation Session", "category": "activities" },
+  { "id": "40", "src": "https://res.cloudinary.com/db3x8h2gn/image/upload/w_1200,q_auto,f_auto/icsicst1_fsacyw.jpg", "alt": "Inaugural session of ICSICST international research conference", "title": "ICSICST Conference Inauguration", "category": "research" },
+  { "id": "41", "src": "https://res.cloudinary.com/db3x8h2gn/image/upload/w_1200,q_auto,f_auto/pbic-ing1_ov0yso.jpg", "alt": "PBIC incubation and mentoring activity for startups", "title": "PBIC Incubation Program", "category": "activities" },
+  { "id": "42", "src": "https://res.cloudinary.com/db3x8h2gn/image/upload/w_1200,q_auto,f_auto/momento-guest1_bzc4xy.jpg", "alt": "Guest being felicitated during institutional event at PIET Jaipur", "title": "Guest Felicitation Ceremony", "category": "events" },
+  { "id": "43", "src": "https://res.cloudinary.com/db3x8h2gn/image/upload/w_1200,q_auto,f_auto/lamp-lighting1_volnwm.jpg", "alt": "Lamp lighting ceremony during academic event at PIET Jaipur", "title": "Lamp Lighting Ceremony", "category": "events" },
+  { "id": "44", "src": "https://res.cloudinary.com/db3x8h2gn/image/upload/w_1200,q_auto,f_auto/ieee-session1_rna08a.jpg", "alt": "IEEE research and technical session at PIET Jaipur", "title": "IEEE Research Session", "category": "research" },
+  { "id": "45", "src": "https://res.cloudinary.com/db3x8h2gn/image/upload/w_1200,q_auto,f_auto/icracs4_tqvwtx.jpg", "alt": "ICRACS international research conference at PIET Jaipur", "title": "ICRACS Research Conference", "category": "research" },
+  { "id": "46", "src": "https://res.cloudinary.com/db3x8h2gn/image/upload/w_1200,q_auto,f_auto/ICNCDA_2025_23052025_119_vim5b2.jpg", "alt": "ICNCDA 2025 international research conference session", "title": "ICNCDA 2025 Conference", "category": "research" },
+  { "id": "47", "src": "https://res.cloudinary.com/db3x8h2gn/image/upload/w_1200,q_auto,f_auto/icracs3_dt1e89.jpg", "alt": "Technical paper presentation during ICRACS conference", "title": "ICRACS Paper Presentation", "category": "research" },
+  { "id": "48", "src": "https://res.cloudinary.com/db3x8h2gn/image/upload/w_1200,q_auto,f_auto/icracs2_hlqkvn.jpg", "alt": "Research discussion session at ICRACS conference", "title": "ICRACS Research Session", "category": "research" },
+  { "id": "49", "src": "https://res.cloudinary.com/db3x8h2gn/image/upload/w_1200,q_auto,f_auto/icracs1_bjuadg.jpg", "alt": "Inaugural moments of ICRACS research conference", "title": "ICRACS Conference Inauguration", "category": "research" },
+  { "id": "50", "src": "https://res.cloudinary.com/db3x8h2gn/image/upload/w_1200,q_auto,f_auto/ICNCDA_2025_23052025_112_h4obar.jpg", "alt": "Researchers attending ICNCDA 2025 conference session", "title": "ICNCDA 2025 Session", "category": "research" },
+  { "id": "51", "src": "https://res.cloudinary.com/db3x8h2gn/image/upload/w_1200,q_auto,f_auto/guest-session1_f4ospi.jpg", "alt": "Expert guest session conducted at PIET Jaipur", "title": "Guest Lecture Session", "category": "events" },
+  { "id": "52", "src": "https://res.cloudinary.com/db3x8h2gn/image/upload/w_1200,q_auto,f_auto/farewel8_dzqfkd.jpg", "alt": "Cultural performance during farewell ceremony at PIET Jaipur", "title": "Farewell Ceremony", "category": "events" },
+  { "id": "53", "src": "https://res.cloudinary.com/db3x8h2gn/image/upload/w_1200,q_auto,f_auto/ICNCDA_2025_23052025_91_zfjbe0.jpg", "alt": "Audience interaction during ICNCDA 2025 conference", "title": "ICNCDA Conference Interaction", "category": "research" },
+  { "id": "54", "src": "https://res.cloudinary.com/db3x8h2gn/image/upload/w_1200,q_auto,f_auto/farewel13_xpihyr.jpg", "alt": "Faculty and students during farewell celebration", "title": "Farewell Celebration", "category": "events" },
+  { "id": "55", "src": "https://res.cloudinary.com/db3x8h2gn/image/upload/w_1200,q_auto,f_auto/farewel11_wtypme.jpg", "alt": "Students enjoying farewell ceremony moments", "title": "Farewell Ceremony Moments", "category": "events" },
+  { "id": "56", "src": "https://res.cloudinary.com/db3x8h2gn/image/upload/w_1200,q_auto,f_auto/farewel10_wzzr7j.jpg", "alt": "Group photograph during farewell ceremony at PIET Jaipur", "title": "Farewell Group Photograph", "category": "events" },
+  { "id": "57", "src": "https://res.cloudinary.com/db3x8h2gn/image/upload/w_1200,q_auto,f_auto/farewel6_udlsba.jpg", "alt": "Farewell ceremony celebration with students and faculty", "title": "Farewell Celebration", "category": "events" },
+  { "id": "58", "src": "https://res.cloudinary.com/db3x8h2gn/image/upload/w_1200,q_auto,f_auto/farewel3_prwldo.jpg", "alt": "Students performing during farewell function", "title": "Farewell Cultural Performance", "category": "events" },
+  { "id": "59", "src": "https://res.cloudinary.com/db3x8h2gn/image/upload/w_1200,q_auto,f_auto/farewel5_txcjat.jpg", "alt": "Memorable moments from farewell ceremony", "title": "Farewell Memories", "category": "events" },
+  { "id": "60", "src": "https://res.cloudinary.com/db3x8h2gn/image/upload/w_1200,q_auto,f_auto/counciling1_m0ggo8.jpg", "alt": "Student counselling and guidance session at PIET Jaipur", "title": "Student Counselling Session", "category": "activities" },
+  { "id": "61", "src": "https://res.cloudinary.com/db3x8h2gn/image/upload/w_1200,q_auto,f_auto/farewel2_kpzgd0.jpg", "alt": "Students captured during farewell ceremony celebrations", "title": "Farewell Ceremony Highlights", "category": "events" },
+  { "id": "62", "src": "https://res.cloudinary.com/db3x8h2gn/image/upload/w_1200,q_auto,f_auto/fairwel1_t1gter.jpg", "alt": "Farewell ceremony group photo with students", "title": "Farewell Ceremony Group Photo", "category": "events" },
+  { "id": "63", "src": "https://res.cloudinary.com/db3x8h2gn/image/upload/w_1200,q_auto,f_auto/yogaday1_sbrdtc.jpg", "alt": "Yoga practice session on International Yoga Day at PIET Jaipur", "title": "Yoga Day Session", "category": "activities" },
+  { "id": "64", "src": "https://res.cloudinary.com/db3x8h2gn/image/upload/w_1200,q_auto,f_auto/dg-speech1_iihzyo.jpg", "alt": "Director General addressing students during institutional event", "title": "Director General Address", "category": "events" },
+  { "id": "65", "src": "https://res.cloudinary.com/db3x8h2gn/image/upload/w_1200,q_auto,f_auto/audience1_rt45s7.jpg", "alt": "Audience attending academic event at PIET Jaipur", "title": "Event Audience", "category": "events" },
+  { "id": "66", "src": "https://res.cloudinary.com/db3x8h2gn/image/upload/w_1200,q_auto,f_auto/students4_rmwaoi.jpg", "alt": "Students attending campus academic activities", "title": "Student Gathering", "category": "activities" },
+  { "id": "67", "src": "https://res.cloudinary.com/db3x8h2gn/image/upload/w_1200,q_auto,f_auto/students3_rhuhpn.jpg", "alt": "Students actively participating in institute activities", "title": "Student Engagement", "category": "activities" },
+  { "id": "68", "src": "https://res.cloudinary.com/db3x8h2gn/image/upload/w_1200,q_auto,f_auto/student1_ppafvd.jpg", "alt": "Student interaction during institutional activity", "title": "Student Interaction", "category": "activities" },
+  { "id": "69", "src": "https://res.cloudinary.com/db3x8h2gn/image/upload/w_1200,q_auto,f_auto/rvisit3_ybzv2g.jpg", "alt": "Students during educational industrial visit", "title": "Educational Industrial Visit", "category": "activities" },
+  { "id": "70", "src": "https://res.cloudinary.com/db3x8h2gn/image/upload/w_1200,q_auto,f_auto/pbic-ing3_gwgjvt.jpg", "alt": "Innovation guidance session at PBIC incubation center", "title": "PBIC Innovation Guidance", "category": "activities" },
+  { "id": "71", "src": "https://res.cloudinary.com/db3x8h2gn/image/upload/w_1200,q_auto,f_auto/pbic-startup2_y6wb1j.jpg", "alt": "Startup mentoring session at PBIC PIET Jaipur", "title": "PBIC Startup Mentoring", "category": "activities" },
+  { "id": "72", "src": "https://res.cloudinary.com/db3x8h2gn/image/upload/w_1200,q_auto,f_auto/icsicst2_zeooki.jpg", "alt": "Research paper presentation during ICSICST conference", "title": "ICSICST Paper Presentation", "category": "research" },
+  { "id": "73", "src": "https://res.cloudinary.com/db3x8h2gn/image/upload/w_1200,q_auto,f_auto/nss-ing_ceknhp.jpg", "alt": "NSS volunteers participating in social service activity", "title": "NSS Activity", "category": "activities" },
+  { "id": "74", "src": "https://res.cloudinary.com/db3x8h2gn/image/upload/w_1200,q_auto,f_auto/ICNCDA_2025_23052025_126_hdtd8x.jpg", "alt": "Participants attending ICNCDA 2025 research conference", "title": "ICNCDA 2025 Conference", "category": "research" },
+  { "id": "75", "src": "https://res.cloudinary.com/db3x8h2gn/image/upload/w_1200,q_auto,f_auto/icracs5_vkvnrp.jpg", "alt": "Research scholars presenting work at ICRACS conference", "title": "ICRACS Research Presentation", "category": "research" },
+  { "id": "76", "src": "https://res.cloudinary.com/db3x8h2gn/image/upload/w_1200,q_auto,f_auto/ieee-group1_wugroo.jpg", "alt": "IEEE members group photo during technical event", "title": "IEEE Group Photo", "category": "research" },
+  { "id": "77", "src": "https://res.cloudinary.com/db3x8h2gn/image/upload/w_1200,q_auto,f_auto/ICNCDA_2025_23052025_118_sbtnlw.jpg", "alt": "Keynote address during ICNCDA 2025 conference", "title": "ICNCDA Keynote Session", "category": "research" },
+  { "id": "78", "src": "https://res.cloudinary.com/db3x8h2gn/image/upload/w_1200,q_auto,f_auto/farewel9_vb2ovy.jpg", "alt": "Students celebrating farewell ceremony together", "title": "Farewell Celebration", "category": "events" },
+  { "id": "79", "src": "https://res.cloudinary.com/db3x8h2gn/image/upload/w_1200,q_auto,f_auto/ICNCDA_2025_23052025_108_lkbdqf.jpg", "alt": "Panel discussion during ICNCDA 2025 research conference", "title": "ICNCDA Panel Discussion", "category": "research" },
+  { "id": "80", "src": "https://res.cloudinary.com/db3x8h2gn/image/upload/w_1200,q_auto,f_auto/goomer1_hn0ssf.jpg", "alt": "Guest of honour addressing the gathering at PIET Jaipur", "title": "Guest Address", "category": "events" },
+  { "id": "81", "src": "https://res.cloudinary.com/db3x8h2gn/image/upload/w_1200,q_auto,f_auto/momento-guest2_i91eq1.jpg", "alt": "Guest receiving memento during institutional event", "title": "Guest Felicitation", "category": "events" },
+  { "id": "82", "src": "https://res.cloudinary.com/db3x8h2gn/image/upload/w_1200,q_auto,f_auto/farewel12_dppe6n.jpg", "alt": "Farewell ceremony moments with faculty and students", "title": "Farewell Ceremony Moments", "category": "events" },
+  { "id": "83", "src": "https://res.cloudinary.com/db3x8h2gn/image/upload/w_1200,q_auto,f_auto/farewel4_pqp28f.jpg", "alt": "Students enjoying farewell cultural activities", "title": "Farewell Cultural Activity", "category": "events" },
+  { "id": "84", "src": "https://res.cloudinary.com/db3x8h2gn/image/upload/w_1200,q_auto,f_auto/ieee-welcome_wtxeaq.jpg", "alt": "Welcome session for IEEE event at PIET Jaipur", "title": "IEEE Welcome Session", "category": "research" },
+  { "id": "85", "src": "https://res.cloudinary.com/db3x8h2gn/image/upload/w_1200,q_auto,f_auto/independence-day1_k6fwia.jpg", "alt": "Independence Day celebration at PIET Jaipur campus", "title": "Independence Day Celebration", "category": "events" },
+  { "id": "86", "src": "https://res.cloudinary.com/db3x8h2gn/image/upload/w_1200,q_auto,f_auto/guest-session2_rffk0x.jpg", "alt": "Second expert guest session conducted at PIET Jaipur", "title": "Guest Session", "category": "events" },
+  { "id": "87", "src": "https://res.cloudinary.com/db3x8h2gn/image/upload/w_1200,q_auto,f_auto/farewel7_vzpbh9.jpg", "alt": "Group photograph during farewell ceremony", "title": "Farewell Group Photo", "category": "events" }
+
+  
 ];
 
 const categories = [
