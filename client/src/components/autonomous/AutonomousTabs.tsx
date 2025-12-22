@@ -11,6 +11,8 @@ const tabs = [
   "governance",
   "syllabus",
   "policies",
+  "exam-section",
+
 ];
 
 const AutonomousTabs: React.FC<Props> = ({ active, onChange }) => {
