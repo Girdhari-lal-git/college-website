@@ -15,6 +15,15 @@ const tabs = [
 
 ];
 
+const tabLabels: Record<string, string> = {
+  about: "ABOUT",
+  announcements: "ANNOUNCEMENTS",
+  governance: "GOVERNANCE",
+  syllabus: "SYLLABUS",
+  "exam-section": "EXAMINATIONS",
+  policies: "POLICIES",
+};
+
 const AutonomousTabs: React.FC<Props> = ({ active, onChange }) => {
   return (
     <div className="flex gap-3 mb-8 flex-wrap">
@@ -24,7 +33,7 @@ const AutonomousTabs: React.FC<Props> = ({ active, onChange }) => {
           onClick={() => onChange(t)}
           className={active === t ? "btn-primary" : "btn-outline"}
         >
-          {t.toUpperCase()}
+           {tabLabels[t]}
         </button>
       ))}
     </div>

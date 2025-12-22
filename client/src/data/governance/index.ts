@@ -4,10 +4,14 @@ import { boardsOfStudies } from "./boardsOfStudies";
 import { financeCommittee } from "./financeCommittee";
 import { examinationCommittee } from "./examinationCommittee";
 
-export const governanceData = {
+import { CommitteeData } from "@/types/governance";
+
+export const governanceData: Record<string, CommitteeData> = {
   "Board of Governors": boardOfGovernors,
   "Academic Council": academicCouncil,
-  ...boardsOfStudies,
+  "Board of Studies": boardsOfStudies,
   "Finance Committee": financeCommittee,
-  "Examination Committee": examinationCommittee
+  "Examination Committee": examinationCommittee,
 };
+
+

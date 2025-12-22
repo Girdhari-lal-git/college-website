@@ -1,35 +1,36 @@
-import { CommitteeData } from "@/components/governance/CommitteeLayout";
-
-export const examinationCommittee: CommitteeData = {
+export const examinationCommittee = {
+  type: "examination",
   title: "Examination Committee",
-  description:
-    "The Examination Committee is responsible for planning, conduct, evaluation, and declaration of results.",
 
   members: [
     {
-      name: "Controller of Examinations",
-      designation: "Chairperson",
-      affiliation: "Autonomous Examination Cell"
-    },
-    {
-      name: "Faculty Representative",
-      designation: "Member",
-      affiliation: "Academic Departments"
+      category: "Chairperson",
+      nominee: "Controller of Examinations",
+      designation: "Professor",
+      name: "Dr. XYZ",
+      email: "coe@poornima.org"
     }
   ],
 
   mom: [
-    {
-      date: "22-08-2024",
-      title: "Autonomous Examination System Planning",
-      link: "/pdfs/exam/exam-mom.pdf"
-    }
-  ],
+  {
+    title: "First Board of Governors Meeting",
+    date: "10-08-2024",
+    link: "/pdfs/bog/mom-aug-2024.pdf"
+  }
+],
 
-  atr: [
-    {
-      action: "Implementation of Continuous Internal Evaluation",
-      status: "In Progress"
-    }
-  ]
-};
+atr: [
+  {
+    title: "Approval of Autonomous Examination Regulations",
+    date: "22-08-2024",
+    link: "/pdfs/exam/atr-exam-regulations.pdf",
+  },
+  {
+    title: "Implementation of Digital Evaluation System",
+    date: "22-08-2024",
+    link: "/pdfs/exam/atr-digital-evaluation.pdf",
+  },
+],
+
+} as const;

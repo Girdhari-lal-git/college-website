@@ -1,37 +1,63 @@
-import { CommitteeData } from "@/components/governance/CommitteeLayout";
+export const boardsOfStudies = {
+  type: "bos-group",
+  title: "Board of Studies",
 
-export const boardsOfStudies: Record<string, CommitteeData> = {
-  "BoS – Computer Science & Engineering": {
-    title: "Board of Studies – CSE",
-    description:
-      "Responsible for curriculum design, review, and academic standards for CSE programs.",
-
-    members: [
-      {
-        name: "Dr. Sanjay Sinha",
-        designation: "Chairperson",
-        affiliation: "CSE Department"
-      },
-      {
-        name: "Industry Expert",
-        designation: "External Member",
-        affiliation: "IT Industry"
-      }
-    ],
-
-    mom: [
-      {
-        date: "18-09-2024",
-        title: "Revision of CSE Curriculum",
-        link: "/pdfs/bos/cse-mom.pdf"
-      }
-    ],
-
-    atr: [
-      {
-        action: "Curriculum updated as per NEP-2020",
-        status: "Implemented"
-      }
-    ]
+  departments: {
+    "BoS – CSE": {
+      type: "bos",
+      members: [
+        {
+          category: "Chairperson",
+          nominatedBy: "Academic Council",
+          name: "Dr. Sanjay Sinha",
+          address: "PIET Jaipur"
+        }
+      ],
+     mom: [
+  {
+    title: "First Board of Governors Meeting",
+    date: "10-08-2024",
+    link: "/pdfs/bog/mom-aug-2024.pdf"
   }
-};
+],
+
+atr: [
+  {
+    title: "Revision of CSE Curriculum as per NEP 2020",
+    date: "12-09-2024",
+    link: "/pdfs/bos/cse/atr-nep-curriculum.pdf",
+  },
+],
+
+
+    },
+
+    "BoS – AI & DS": {
+      type: "bos",
+      members: {
+          category: "Chairperson",
+          nominatedBy: "Academic Council",
+          name: "Dr. Sanjay Sinha",
+          address: "PIET Jaipur"
+        },
+
+     mom: [
+  {
+    title: "First Board of Governors Meeting",
+    date: "10-08-2024",
+    link: "/pdfs/bog/mom-aug-2024.pdf"
+  }
+],
+
+atr: [
+  {
+    title: "Introduction of AI & DS Electives",
+    date: "14-09-2024",
+    link: "/pdfs/bos/aids/atr-new-electives.pdf",
+  },
+],
+
+
+    },
+  }
+} as const;

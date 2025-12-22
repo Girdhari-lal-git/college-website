@@ -12,20 +12,19 @@ const GovernanceSidebar: React.FC<Props> = ({
   onSelect,
 }) => {
   return (
-    <div className="border rounded-lg p-4 space-y-1">
-      {bodies.map((b) => (
-        <div
-          key={b}
-          onClick={() => onSelect(b)}
-          className={`p-2 rounded cursor-pointer transition
-            ${
-              active === b
-                ? "bg-primary text-white"
-                : "hover:bg-muted"
-            }`}
+    <div className="border rounded-lg p-4 space-y-2">
+      {bodies.map((body) => (
+        <button
+          key={body}
+          onClick={() => onSelect(body)}
+          className={`w-full text-left px-3 py-2 rounded transition ${
+            active === body
+              ? "bg-primary text-white"
+              : "hover:bg-muted"
+          }`}
         >
-          {b}
-        </div>
+          {body}
+        </button>
       ))}
     </div>
   );

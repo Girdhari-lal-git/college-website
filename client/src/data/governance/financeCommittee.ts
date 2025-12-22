@@ -1,35 +1,36 @@
-import { CommitteeData } from "@/components/governance/CommitteeLayout";
-
-export const financeCommittee: CommitteeData = {
+export const financeCommittee = {
+  type: "finance",
   title: "Finance Committee",
-  description:
-    "The Finance Committee oversees financial planning, budgeting, and expenditure of the institute.",
 
   members: [
     {
+      position: "Chairman",
+      department: "Management",
+      designation: "Chairperson",
       name: "Shri N. K. Jain",
-      designation: "Chairman",
-      affiliation: "Management"
+      email: "finance@poornima.org",
     },
-    {
-      name: "Accounts Officer",
-      designation: "Member",
-      affiliation: "Finance Department"
-    }
   ],
 
   mom: [
     {
-      date: "12-07-2024",
-      title: "Budget Approval Meeting 2024–25",
-      link: "/pdfs/finance/finance-mom-2024.pdf"
-    }
+      title: "First Finance Committee Meeting",
+      date: "10-08-2024",
+      link: "/pdfs/finance/mom-aug-2024.pdf",
+    },
   ],
 
   atr: [
-    {
-      action: "Approval of Annual Budget",
-      status: "Implemented"
-    }
-  ]
-};
+  {
+    title: "Approval of Annual Budget (Autonomous)",
+    date: "15-08-2024",
+    link: "/pdfs/finance/atr-annual-budget.pdf",
+  },
+  {
+    title: "Approval of Procurement Policy",
+    date: "15-08-2024",
+    link: "/pdfs/finance/atr-procurement-policy.pdf",
+  },
+],
+
+} as const;

@@ -1,45 +1,37 @@
-import { CommitteeData } from "@/components/governance/CommitteeLayout";
+import { CommitteeType } from "@/types/governance";
 
-export const boardOfGovernors: CommitteeData = {
+export const boardOfGovernors = {
+  type: "bog",
   title: "Board of Governors",
-  description:
-    "The Board of Governors is the highest decision-making authority of the Autonomous Institute.",
 
   members: [
     {
+      position: "Chairperson",
+      nominatedBy: "Management",
+      category: "Chairman",
       name: "Shri N. K. Jain",
-      designation: "Chairman",
-      affiliation: "Poornima Group"
-    },
-    {
-      name: "Dr. R. P. Singh",
-      designation: "Director",
-      affiliation: "Poornima Institute"
-    },
-    {
-      name: "Dr. S. K. Sharma",
-      designation: "Academic Expert",
-      affiliation: "University Nominee"
+      email: "nk.jain@poornima.org"
     }
   ],
 
   mom: [
     {
+      title: "First BoG Meeting",
       date: "10-08-2024",
-      title: "First BoG Meeting (Autonomy Implementation)",
       link: "/pdfs/bog/mom-aug-2024.pdf"
     }
   ],
 
-  // ATR not published → dummy placeholder
   atr: [
-    {
-      action: "Approval of Academic Regulations",
-      status: "Implemented (Provisional)"
-    },
-    {
-      action: "Formation of Statutory Bodies",
-      status: "Completed"
-    }
-  ]
-};
+  {
+    title: "Approval of Academic Regulations",
+    date: "15-08-2024",
+    link: "/pdfs/bog/atr-academic-regulations.pdf",
+  },
+  {
+    title: "Approval of New UG & PG Programs",
+    date: "15-08-2024",
+    link: "/pdfs/bog/atr-new-programs.pdf",
+  },
+],
+}as const;

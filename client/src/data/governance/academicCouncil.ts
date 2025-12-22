@@ -1,44 +1,36 @@
-import { CommitteeData } from "@/components/governance/CommitteeLayout";
-
-export const academicCouncil: CommitteeData = {
+export const academicCouncil = {
+  type: "academic-council",
   title: "Academic Council",
-  description:
-    "The Academic Council supervises and regulates all academic matters of the Autonomous Institute.",
 
   members: [
     {
+      category: "Chairperson",
+      nominatedBy: "Governing Body",
       name: "Dr. Payal Bansal",
-      designation: "Chairperson",
-      affiliation: "Principal"
-    },
-    {
-      name: "Dr. Ritam Dutta",
-      designation: "External Academic Expert",
-      affiliation: "Industry / University"
-    },
-    {
-      name: "Dr. Aisha Rafi",
-      designation: "Member",
-      affiliation: "Applied Sciences"
+      designation: "Principal"
     }
   ],
 
-  mom: [
-    {
-      date: "05-09-2024",
-      title: "Approval of Autonomous Curriculum Framework",
-      link: "/pdfs/ac/mom-sep-2024.pdf"
-    }
-  ],
+   mom: [
+  {
+    title: "First Board of Governors Meeting",
+    date: "10-08-2024",
+    link: "/pdfs/bog/mom-aug-2024.pdf"
+  }
+],
 
-  atr: [
-    {
-      action: "Approval of First Year Syllabus",
-      status: "Implemented"
-    },
-    {
-      action: "Introduction of Minor & Honors Degrees",
-      status: "Approved"
-    }
-  ]
-};
+atr: [
+  {
+    title: "Approval of Autonomous Syllabus (First Year)",
+    date: "20-08-2024",
+    link: "/pdfs/ac/atr-fy-syllabus.pdf",
+  },
+  {
+    title: "Implementation of Continuous Evaluation Scheme",
+    date: "20-08-2024",
+    link: "/pdfs/ac/atr-evaluation-scheme.pdf",
+  },
+],
+
+
+} as const;

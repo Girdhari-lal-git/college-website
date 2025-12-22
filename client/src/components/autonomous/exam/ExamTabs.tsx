@@ -3,6 +3,7 @@ import React from "react";
 const tabs = [
   "question-papers",
   "exam-timetable",
+  "exam-notices",
   "result",
 ] as const;
 
@@ -28,6 +29,13 @@ const ExamTabs: React.FC<Props> = ({ active, onChange }) => {
         className={active === "exam-timetable" ? "btn-primary w-full" : "btn-outline w-full"}
       >
         Exam Timetable
+      </button>
+
+      <button
+        onClick={() => onChange("exam-notices")}
+        className={active === "exam-notices" ? "btn-primary w-full" : "btn-outline w-full"}
+      >
+        Notices
       </button>
 
       <button

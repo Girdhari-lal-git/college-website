@@ -3,10 +3,11 @@ import ExamTabs from "./ExamTabs";
 import QuestionPapers from "./QuestionPapers";
 import ExamTimetable from "./ExamTimetable";
 import ResultRedirect from "./ResultRedirect";
+import ExamNotices from "./ExamNotices";
 
 const ExamSection: React.FC = () => {
   const [active, setActive] = React.useState<
-    "question-papers" | "exam-timetable" | "result"
+    "question-papers" | "exam-timetable" | "exam-notices" | "result"
   >("question-papers");
 
   return (
@@ -16,10 +17,12 @@ const ExamSection: React.FC = () => {
       <div className="md:col-span-3 border rounded-lg p-6">
         {active === "question-papers" && <QuestionPapers />}
         {active === "exam-timetable" && <ExamTimetable />}
+        {active === "exam-notices" && <ExamNotices />}
         {active === "result" && <ResultRedirect />}
       </div>
     </div>
   );
 };
+
 
 export default ExamSection;
