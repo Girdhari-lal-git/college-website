@@ -10,59 +10,80 @@ import BoSSelector from "./BoSSelector";
 import MoMTable from "./MoMTable";
 import ATRTable from "./ATRTable";
 
+import { CommitteeData } from "@/types/governance";
+
 interface Props {
-  committee: any;
+  committee: CommitteeData;
 }
 
 const CommitteeRenderer: React.FC<Props> = ({ committee }) => {
-  // 🔹 Helper function to render committee-specific table
-  const renderCommitteeTable = (data: any) => {
-    switch (data.type) {
-      case "bog":
-        return <BoGTable members={data.members} />;
+  /* =====================================================
+     ✅ ALL HOOKS — TOP LEVEL ONLY
+     ===================================================== */
+  const [activeDept, setActiveDept] = React.useState<string | null>(null);
 
-      case "academic-council":
-        return <AcademicCouncilTable members={data.members} />;
-
-      case "finance":
-        return <FinanceCommitteeTable members={data.members} />;
-
-      case "examination":
-        return <ExaminationCommitteeTable members={data.members} />;
-
-      default:
-        return null;
+  /* =====================================================
+     🔹 Sync activeDept when committee changes
+     ===================================================== */
+  React.useEffect(() => {
+    if (committee.type === "bos-group") {
+      const keys = Object.keys(committee.departments ?? {});
+      setActiveDept(keys.length > 0 ? keys[0] : null);
+    } else {
+      setActiveDept(null);
     }
-  };
+  }, [committee]);
 
-  // 🔹 Special handling for Board of Studies (multiple departments)
-  if (committee.type === "bos-group") {
-    const departments = Object.keys(committee.departments);
-    const [activeDept, setActiveDept] = React.useState(departments[0]);
-
-    const activeBoS = committee.departments[activeDept];
-
+  /* =====================================================
+     🔹 Render normal committees
+     ===================================================== */
+  if (committee.type !== "bos-group") {
     return (
       <>
-        <BoSSelector
-          departments={committee.departments}
-          active={activeDept}
-          onChange={setActiveDept}
-        />
+        {committee.type === "bog" && (
+          <BoGTable members={committee.members ?? []} />
+        )}
 
-        <BoSTable members={activeBoS.members} />
-        <MoMTable data={activeBoS.mom} />
-        <ATRTable data={activeBoS.atr} />
+        {committee.type === "academic-council" && (
+          <AcademicCouncilTable members={committee.members ?? []} />
+        )}
+
+        {committee.type === "finance" && (
+          <FinanceCommitteeTable members={committee.members ?? []} />
+        )}
+
+        {committee.type === "examination" && (
+          <ExaminationCommitteeTable members={committee.members ?? []} />
+        )}
+
+        <MoMTable data={committee.mom ?? []} />
+        <ATRTable data={committee.atr ?? []} />
       </>
     );
   }
 
-  // 🔹 Default rendering for all other committees
+  /* =====================================================
+     🔹 Render Board of Studies (bos-group)
+     ===================================================== */
+  const departments = Object.keys(committee.departments ?? {});
+
+  if (!activeDept || !committee.departments[activeDept]) {
+    return <p>Loading Board of Studies…</p>;
+  }
+
+  const activeBoS = committee.departments[activeDept];
+
   return (
     <>
-      {renderCommitteeTable(committee)}
-      <MoMTable data={committee.mom} />
-      <ATRTable data={committee.atr} />
+      <BoSSelector
+        departments={committee.departments}
+        active={activeDept}
+        onChange={setActiveDept}
+      />
+
+      <BoSTable members={activeBoS.members ?? []} />
+      <MoMTable data={activeBoS.mom ?? []} />
+      <ATRTable data={activeBoS.atr ?? []} />
     </>
   );
 };

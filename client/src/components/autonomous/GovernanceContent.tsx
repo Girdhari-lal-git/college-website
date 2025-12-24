@@ -1,23 +1,13 @@
 import React from "react";
-import CommitteeLayout, {
-  CommitteeData,
-} from "../governance/CommitteeLayout";
-import EmptyState from "../common/EmptyState";
+import { CommitteeData } from "@/types/governance";
+import CommitteeRenderer from "@/components/governance/CommitteeRenderer";
 
 interface Props {
-  data?: CommitteeData;
+  committee: CommitteeData;
 }
 
-const GovernanceContent: React.FC<Props> = ({ data }) => {
-  if (!data) {
-    return <EmptyState message="Committee data not available." />;
-  }
-
-  return (
-    <div className="border rounded-lg p-6">
-      <CommitteeLayout data={data} />
-    </div>
-  );
+const GovernanceContent: React.FC<Props> = ({ committee }) => {
+  return <CommitteeRenderer committee={committee} />;
 };
 
 export default GovernanceContent;

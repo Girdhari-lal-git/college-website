@@ -31,7 +31,7 @@ const partnerCategories = {
          { id: 41, src: "https://www.piet.poornima.org/images/partners/quicksmartwash.png", alt: "Quick Smart Wash", name: "Quick Smart Wash", type: "Technology Partner", mou: "https://drive.google.com/file/d/1i2AFXxpUXooTiMjtuFJoJe6T8JdNQeGM/view?usp=drive_link" },
            { id: 43, src: "https://www.piet.poornima.org/images/partners/leo-logo.png", alt: "LEO Card", name: "LEO Card", type: "Technology Partner", mou: "https://drive.google.com/file/d/1q4eW8kE9t91wqW-h5KhP6KVwIn3Oc1ra/view?usp=drive_link" },        
         { id: 44, src: "https://www.piet.poornima.org/images/partners/ehrlogic_logo.jpg", alt: "EHR Logic", name: "EHR Logic", type: "Technology Partner", mou: "https://drive.google.com/file/d/1veQrY0eEkUgeaIj0Z--V2ziHogYag8S0/view?usp=drive_link" },
-        { id: 45, src: "https://www.piet.poornima.org/images/partners/xcrotek_logo.jpg", alt: "xCroTek", name: "xCroTek", type: "Technology Partner", mou: "https://drive.google.com/file/d/1caByHpG2demO8qPeUQwfUgvNsLexy9sl/view?usp=drive_link" },
+        { id: 45, src: "https://www.piet.poornima.org/images/partners/xcrotek_logo.jpg", alt: "xCroTek", name: "xCroTek", type: "Technology Partner", mou: "LLLhttps://drive.google.com/file/d/1caByHpG2demO8qPeUQwfUgvNsLexy9sl/view?usp=drive_link" },
          { id: 49, src: "/images/cmp/kedman-sony.png", alt: "SONY-KEDMAN", name: "SONY-KEDMAN", type: "Technology Partner", mou: "https://drive.google.com/file/d/1nB-HfeJn83JyakqP7LeHAwjOFA8BHoBf/view?usp=drive_link" },
         { id: 50, src: "/images/cmp/captain-tractors.png", alt: "Captain Tractors", name: "Captain Tractors", type: "Technology Partner", mou: "https://drive.google.com/file/d/1lofKQr7mCex0J-wzaltF38QD9GXyPJX4/view?usp=drive_link" },
         
@@ -70,6 +70,7 @@ const partnerCategories = {
         { id: 18, src: "https://www.piet.poornima.org/images/partners/upflairs.PNG", alt: "Upflairs", name: "Upflairs", type: "Training Partner", mou: "https://drive.google.com/file/d/1akrGKDTlgRtSMgOsItljjJsPfHliVET6/view?usp=drive_link" },
         { id: 32, src: "https://www.piet.poornima.org/images/partners/celebal.png", alt: "Celebal", name: "Celebal", type: "Placement Partner", mou: "https://drive.google.com/file/d/1AVb_gCwR-RLiFdca90WxM-OuQMkkB8aD/view?usp=drive_link" },
         { id: 52, src: "/images/cmp/edunet-partners.jpg", alt: "Edunet Foundation", name: "Edunet Foundation", type: "Placement Partner", mou: "https://drive.google.com/file/d/18yEDZr9Wo9do0YzN92JD_AzKdD6CktW1/view?usp=drive_link" },
+        { id: 53, src: "/images/cmp/FACEPREP.png", alt: "Face Prep", name: "Face Prep", type: "Placement Partner", mou: "https://drive.google.com/file/d/1qihR8Tx1DeYVpO5sUhKdfF6QYKcMfehD/view?usp=drive_link" },
 
         
   

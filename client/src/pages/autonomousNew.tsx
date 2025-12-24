@@ -6,6 +6,7 @@ import Cta from "@/components/Cta";
 import { AccessibilityFeatures } from "@/components/AccessibilityFeatures";
 import Checklist from "@/components/Checklist";
 import OverviewSection from "@/components/OverviewSection";
+import SyllabusExplorer from "@/components/autonomous/SyllabusExplorer";
 
 /* Components */
 import AutonomousTabs from "@/components/autonomous/AutonomousTabs";
@@ -169,9 +170,8 @@ const AutonomousPage: React.FC = () => {
         )}
 
         {/* SYLLABUS */}
-        {activeTab === "syllabus" && (
-          <SyllabusPanel minor={minorSyllabus} honors={honorsSyllabus} />
-        )}
+        {activeTab === "syllabus" && <SyllabusExplorer />}
+
 
         {/* POLICIES */}
         {activeTab === "policies" && (

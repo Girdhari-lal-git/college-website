@@ -1,7 +1,7 @@
 import React from "react";
 import GovernanceSidebar from "./GovernanceSidebar";
 import GovernanceContent from "./GovernanceContent";
-import { CommitteeData } from "../governance/CommitteeLayout";
+import { CommitteeData } from "@/types/governance";
 
 interface Props {
   data: Record<string, CommitteeData>;
@@ -18,8 +18,9 @@ const GovernancePanel: React.FC<Props> = ({ data }) => {
         active={active}
         onSelect={setActive}
       />
+
       <div className="md:col-span-3">
-        <GovernanceContent data={data[active]} />
+        <GovernanceContent committee={data[active]} />
       </div>
     </div>
   );
