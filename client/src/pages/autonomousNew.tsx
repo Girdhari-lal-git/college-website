@@ -150,15 +150,105 @@ const AutonomousPage: React.FC = () => {
               <tbody>
                 <tr>
                   <td className="border p-2">
-                    Autonomous Regulations Notification
+                    UGC Grants Autonomy to PIET (Approval Letter)
                   </td>
-                  <td className="border p-2">15-07-2024</td>
+                  <td className="border p-2">03-07-2025</td>
                   <td className="border p-2">
-                    <a className="text-primary" href="#">
+                    <a className="text-primary" href="https://drive.google.com/file/d/123FMQxBN6xvkRDkEOpDi-2yS0dQw5Cab/view?usp=drive_link">
                       PDF
                     </a>
                   </td>
                 </tr>
+                <tr>
+                  <td className="border p-2">
+                    RTU Notification on PIET's Autonomous Status
+                  </td>
+                  <td className="border p-2">09-07-2025</td>
+                  <td className="border p-2">
+                    <a className="text-primary" href="https://drive.google.com/file/d/1TeLf_4NWqRtsTm5jtVsMJjK9r4hYMHT_/view?usp=drive_link">
+                      PDF
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td className="border p-2">
+                    Constitution of PIET Autonomous board of Governors
+                  </td>
+                  <td className="border p-2">10-06-2025</td>
+                  <td className="border p-2">
+                    <a className="text-primary" href="https://drive.google.com/file/d/1dQtIsQlimHEzx9G5WhiFe6u8d_pq1cbz/view?usp=drive_link">
+                      PDF
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td className="border p-2">
+                    Constitution of PIET Academic Council
+                  </td>
+                  <td className="border p-2">21-07-2025</td>
+                  <td className="border p-2">
+                    <a className="text-primary" href="https://drive.google.com/file/d/1_hbp_YjqD1ct65PNU1d9R6epXVrEhxNB/view?usp=drive_link">
+                      PDF
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td className="border p-2">
+                    Publication of Academic and Examination Policy for Autonomous Batches (Admitted from Academic Year 2025–2026 Onwards)
+                  </td>
+                  <td className="border p-2">08-11-2025</td>
+                  <td className="border p-2">
+                    <a className="text-primary" href="https://drive.google.com/file/d/1_W20LF_ShbHlJQgqGk9M2GxLnCb99OPC/view?usp=drive_link">
+                      PDF
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td className="border p-2">
+                    Constitution of Board of Studies for Department of Applied Sciences
+                  </td>
+                  <td className="border p-2">28-07-2025</td>
+                  <td className="border p-2">
+                    <a className="text-primary" href="https://drive.google.com/file/d/1zVIkXdTOHu3TdmhtK--CCMS9_vCaUvKK/view?usp=drive_link">
+                      PDF
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td className="border p-2">
+                    Constitution of Board of Studies for Department of Computer Science & Engineering
+                  </td>
+                  <td className="border p-2">14-08-2025</td>
+                  <td className="border p-2">
+                    <a className="text-primary" href="https://drive.google.com/file/d/1TdLrWFk9Sb2Ge3FCPxnHsNCDAyeUB9e4/view?usp=drive_link">
+                      PDF
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td className="border p-2">
+                   Constitution of Board of Studies for Department of Artificial Intelligence & Data Science
+                  </td>
+                  <td className="border p-2">14-08-2025</td>
+                  <td className="border p-2">
+                    <a className="text-primary" href="https://drive.google.com/file/d/15F3oKqm7oLnOgYKOzorbpPr7A6DUNzRZ/view?usp=drive_link">
+                      PDF
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td className="border p-2">
+                    Constitution of Board of Studies for Department of Internet of Things
+                  </td>
+                  <td className="border p-2">12-08-2025</td>
+                  <td className="border p-2">
+                    <a className="text-primary" href="https://drive.google.com/file/d/1RUbatq8h4xJQ9QK6vmXhGmEF8ZzTgtd5/view?usp=drive_link">
+                      PDF
+                    </a>
+                  </td>
+                </tr>
+                
+                
               </tbody>
             </table>
           </div>

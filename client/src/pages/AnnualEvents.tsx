@@ -225,8 +225,8 @@ const AnnualEvents = () => {
   ];
 
   //Annual Event Data
-  const annualDocumentData = [
-    {
+  const annualDocumentData = [ 
+       {
         sno: 1,
         name: 'Aarohan 2025 ',
         download: (
@@ -237,8 +237,21 @@ const AnnualEvents = () => {
             </a>
         )
       },
-    {
+
+      {
         sno: 2,
+        name: 'Kalanidhi 2025 ',
+        download: (
+            <a href="https://drive.google.com/file/d/1N4cbYIF3G_j4pHushq6D1V5tFFXMLsjY/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">
+                <button className="bg-primary text-white px-4 py-1 rounded hover:bg-secondary transition inline-flex items-center gap-2">
+                    <i className="fas fa-download" /> Download PDF
+                </button>
+            </a>
+        )
+      },
+
+    {
+        sno: 3,
         name: 'Aarohan 2024 ',
         download: (
             <a href="https://drive.google.com/file/d/1c6fEJgOiTnTN5YRlv2wPqI9Ks56dJk7S/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">
@@ -248,8 +261,20 @@ const AnnualEvents = () => {
             </a>
         )
       },
+
       {
-      sno: 3,
+        sno: 4,
+        name: 'Kalanidhi 2024 ',
+        download: (
+            <a href="https://drive.google.com/file/d/1i84UhnAMo43JCn82bM66fnDYRNcSrQIG/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">
+                <button className="bg-primary text-white px-4 py-1 rounded hover:bg-secondary transition inline-flex items-center gap-2">
+                    <i className="fas fa-download" /> Download PDF
+                </button>
+            </a>
+        )
+      },
+      {
+      sno: 5,
         name: 'Aarohan 2023',
         download: (
             <a href="https://drive.google.com/file/d/1fXCkEw7h5pIkbQL-nC-9GVqfUxoCe_ah/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">
@@ -259,63 +284,9 @@ const AnnualEvents = () => {
             </a>
         )
     },
+    
     {
-      sno: 4,
-        name: 'Aarohan 2022',
-        download: (
-            <a href="https://drive.google.com/file/d/1HXT-OArNhLicSt81JXCGiZqWT76vPSpv/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">
-                <button className="bg-primary text-white px-4 py-1 rounded hover:bg-secondary transition inline-flex items-center gap-2">
-                    <i className="fas fa-download" /> Download PDF
-                </button>
-            </a>
-        )
-    },
-    {
-        sno: 5,
-        name: 'Aarohan 2019 ',
-        download: (
-            <a href="https://drive.google.com/file/d/1au4WC28G3sVRW6rZLtXRG8oVNd7L4q2D/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">
-                <button className="bg-primary text-white px-4 py-1 rounded hover:bg-secondary transition inline-flex items-center gap-2">
-                    <i className="fas fa-download" /> Download PDF
-                </button>
-            </a>
-        )
-      },
-      {
       sno: 6,
-        name: 'Manthan 2023',
-        download: (
-            <a href="https://drive.google.com/file/d/1LkOWAQJFV_5if6zQQD-WT7ZJdiSF9gMC/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">
-                <button className="bg-primary text-white px-4 py-1 rounded hover:bg-secondary transition inline-flex items-center gap-2">
-                    <i className="fas fa-download" /> Download PDF
-                </button>
-            </a>
-        )
-    },
-    {
-      sno: 7,
-        name: 'Manthan 2021',
-        download: (
-            <a href="https://drive.google.com/file/d/1z4Q_YBxGqVMcu6atTWW6KgZxPzMqeZsn/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">
-                <button className="bg-primary text-white px-4 py-1 rounded hover:bg-secondary transition inline-flex items-center gap-2">
-                    <i className="fas fa-download" /> Download PDF
-                </button>
-            </a>
-        )
-    },
-    {
-        sno: 8,
-        name: 'Manthan 2019 ',
-        download: (
-            <a href="https://drive.google.com/file/d/1qIum9ZR285WWHHQggKFDtOLrE_YtwB5p/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">
-                <button className="bg-primary text-white px-4 py-1 rounded hover:bg-secondary transition inline-flex items-center gap-2">
-                    <i className="fas fa-download" /> Download PDF
-                </button>
-            </a>
-        )
-      },
-      {
-      sno: 9,
         name: 'Kalanidhi 2023',
         download: (
             <a href="https://drive.google.com/file/d/15E5nmCXPKlWdU1Szs8jhg2L0mCvMRZws/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">
@@ -326,7 +297,30 @@ const AnnualEvents = () => {
         )
     },
     {
-      sno: 10,
+      sno: 7,
+        name: 'Manthan 2023',
+        download: (
+            <a href="https://drive.google.com/file/d/1LkOWAQJFV_5if6zQQD-WT7ZJdiSF9gMC/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">
+                <button className="bg-primary text-white px-4 py-1 rounded hover:bg-secondary transition inline-flex items-center gap-2">
+                    <i className="fas fa-download" /> Download PDF
+                </button>
+            </a>
+        )
+    },
+
+    {
+      sno: 8,
+        name: 'Aarohan 2022',
+        download: (
+            <a href="https://drive.google.com/file/d/1HXT-OArNhLicSt81JXCGiZqWT76vPSpv/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">
+                <button className="bg-primary text-white px-4 py-1 rounded hover:bg-secondary transition inline-flex items-center gap-2">
+                    <i className="fas fa-download" /> Download PDF
+                </button>
+            </a>
+        )
+    },
+    {
+      sno: 9,
         name: 'Kalanidhi 2022',
         download: (
             <a href="https://drive.google.com/file/d/18PzDTLEi_uBNBBKszZGydlevavGLKi4a/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">
@@ -335,7 +329,40 @@ const AnnualEvents = () => {
                 </button>
             </a>
         )
-    }
+    },
+    {
+      sno: 10,
+        name: 'Manthan 2021',
+        download: (
+            <a href="https://drive.google.com/file/d/1z4Q_YBxGqVMcu6atTWW6KgZxPzMqeZsn/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">
+                <button className="bg-primary text-white px-4 py-1 rounded hover:bg-secondary transition inline-flex items-center gap-2">
+                    <i className="fas fa-download" /> Download PDF
+                </button>
+            </a>
+        )
+    },
+    {
+        sno: 11,
+        name: 'Aarohan 2019 ',
+        download: (
+            <a href="https://drive.google.com/file/d/1au4WC28G3sVRW6rZLtXRG8oVNd7L4q2D/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">
+                <button className="bg-primary text-white px-4 py-1 rounded hover:bg-secondary transition inline-flex items-center gap-2">
+                    <i className="fas fa-download" /> Download PDF
+                </button>
+            </a>
+        )
+      },
+      {
+        sno: 12,
+        name: 'Manthan 2019 ',
+        download: (
+            <a href="https://drive.google.com/file/d/1qIum9ZR285WWHHQggKFDtOLrE_YtwB5p/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">
+                <button className="bg-primary text-white px-4 py-1 rounded hover:bg-secondary transition inline-flex items-center gap-2">
+                    <i className="fas fa-download" /> Download PDF
+                </button>
+            </a>
+        )
+      },
 ];
 
 //Annual Event Table

@@ -31,12 +31,13 @@ const IndustryInstituteInnovation = () => {
     ];
 
     const annualReports = [
-        { sno: "01", name: "III Annual Report 2023-24" , link: "https://drive.google.com/file/d/1iTO26e5Ha4qjj5-zXqTezVt_lWF2Rqaa/view?usp=drive_link"},
-        { sno: "02", name: "III Annual Report 2022-23", link: "https://drive.google.com/file/d/1jW7EnXE7PcyStAFpeNlvxWbD-YH60Bt0/view?usp=drive_link" },
-        { sno: "03", name: "III Annual Report 2021-22", link: "https://drive.google.com/file/d/13VaLn24Z_OPx2PagItrbIP6qjO2ltQvk/view?usp=drive_link" },
-        { sno: "04", name: "III Annual Report 2020-21", link:"https://drive.google.com/file/d/17g6bBzUZduHzpja8TG7ZWmMSLW-37UEk/view?usp=drive_link" },
-        { sno: "05", name: "III Annual Report 2019-20" , link: "https://drive.google.com/file/d/1Ga3gQZaeOUNQ43ZmoFL_aNTkUX7eM79J/view?usp=drive_link"},
-        { sno: "06", name: "III Annual Report 2018-19" , link: "https://drive.google.com/file/d/1LLm8RSI4iuLIZPaFh8e8hN8yausbtNBV/view?usp=drive_link" }
+        { sno: "01", name: "III Annual Report 2024-25" , link: "https://drive.google.com/file/d/1L5NvoakNfQ9_NZJI0HHqG1VIKWwQ3rfo/view?usp=drive_link"},
+        { sno: "02", name: "III Annual Report 2023-24" , link: "https://drive.google.com/file/d/1iTO26e5Ha4qjj5-zXqTezVt_lWF2Rqaa/view?usp=drive_link"},
+        { sno: "03", name: "III Annual Report 2022-23", link: "https://drive.google.com/file/d/1jW7EnXE7PcyStAFpeNlvxWbD-YH60Bt0/view?usp=drive_link" },
+        { sno: "04", name: "III Annual Report 2021-22", link: "https://drive.google.com/file/d/13VaLn24Z_OPx2PagItrbIP6qjO2ltQvk/view?usp=drive_link" },
+        { sno: "05", name: "III Annual Report 2020-21", link:"https://drive.google.com/file/d/17g6bBzUZduHzpja8TG7ZWmMSLW-37UEk/view?usp=drive_link" },
+        { sno: "06", name: "III Annual Report 2019-20" , link: "https://drive.google.com/file/d/1Ga3gQZaeOUNQ43ZmoFL_aNTkUX7eM79J/view?usp=drive_link"},
+        { sno: "07", name: "III Annual Report 2018-19" , link: "https://drive.google.com/file/d/1LLm8RSI4iuLIZPaFh8e8hN8yausbtNBV/view?usp=drive_link" }
     ];
 
     const achievements = [

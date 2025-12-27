@@ -21,7 +21,8 @@ const iqacConstitution = [
 
 const iqacInitiatives = [
     'IQAC Initiatives (After 2018)',
-    'IQAC Initiatives (Before 2018)'
+    'IQAC Initiatives (Before 2018)',
+    'IQAC Initiatives (from 2023-24)',
 ];
 
 const aqarReports = [
@@ -658,6 +659,7 @@ const IQACPage = () => {
         const tableLinks = {
             'Quality Policy': 'https://drive.google.com/file/d/1lR9Qb2UeYQmrHCRVtsXZl5KFqL6fcMrm/view?usp=drive_link',
             'IQAC Handbook': 'https://drive.google.com/file/d/1StGgGUMWj8RwFdhvO3-1I1LM0NVGF-PA/view?usp=drive_link',
+            'IQAC Initiatives (From 2023-24)': 'https://drive.google.com/file/d/1hfIG2OhZz5UUKs8VT008NG3Qu4SBP76_/view?usp=drive_link',
             'IQAC Initiatives (After 2018)': 'https://drive.google.com/file/d/1hfIG2OhZz5UUKs8VT008NG3Qu4SBP76_/view?usp=drive_link',
             'IQAC Initiatives (Before 2018)': 'https://drive.google.com/file/d/1SHI5G6qmxlekI8oboO2bi7PLk6wKt5yA/view?usp=drive_link',
             'Institute Perspective Plan': 'https://drive.google.com/file/d/1hngR8eTnq4e41lN4jjGeJPCgOHvR2C20/view?usp=drive_link',

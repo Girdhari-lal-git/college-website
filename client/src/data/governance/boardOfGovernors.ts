@@ -147,10 +147,50 @@ export const boardOfGovernors = {
 
   mom: [
     {
-      title: "First BoG Meeting",
-      date: "10-08-2024",
-      link: "/pdfs/bog/mom-aug-2024.pdf"
-    }
+    title: "2nd Meeting of BoG",
+    date: "October 8, 2025",
+    link: "https://drive.google.com/file/d/1AsDmcdR2hvGCz2PTCEm2vGyeJk8ZrFgT/view?usp=drive_link"
+  },
+  {
+    title: "1st Meeting of BoG",
+    date: "July 17, 2025",
+    link: "https://drive.google.com/file/d/1-N9zmUr3ng8_1U9v44E7h7_DLTSm_z_m/view?usp=drive_link"
+  },
+  {
+    title: "16th GC Meeting",
+    date: "April 02, 2024",
+    link: "https://drive.google.com/file/d/1AqrY365OFdEfD3YeVaEY4TPfP0eaKW0T/view?usp=sharing"
+  },
+  {
+    title: "15th GC Meeting",
+    date: "September 13, 2019",
+    link: "https://drive.google.com/file/d/1Xt10-6_i4vzwvYWrGLCCrXKYuJJ7jAOE/view?usp=sharing"
+  },
+  {
+    title: "14th GC Meeting",
+    date: "September 22, 2018",
+    link: "https://drive.google.com/file/d/1-vpbqySSb1y8TuH9sKT4HDWoHGEQmv_y/view?usp=sharing"
+  },
+  {
+    title: "13th GC Meeting",
+    date: "September 09, 2017",
+    link: "https://drive.google.com/file/d/1WlToHyAJ3NcdEGt7boSCMrz0VAW-poBS/view?usp=sharing"
+  },
+  {
+    title: "12th GC Meeting",
+    date: "October 15, 2016",
+    link: "https://drive.google.com/file/d/1O5pNQ244ATfywSxLtNn6zJof34xVmWMh/view?usp=sharing"
+  },
+  {
+    title: "11th GC Meeting",
+    date: "September 19, 2015",
+    link: "https://drive.google.com/file/d/1yYOyAOggkC_2XcMpTWGNO4U-XYZzDM1o/view?usp=sharing"
+  },
+  {
+    title: "10th GC Meeting",
+    date: "September 23, 2014",
+    link: "https://drive.google.com/file/d/15wXU6VGC3VIlxe4mZxzmZR7j8__lzU0s/view?usp=sharing"
+  }
   ],
 
   atr: [
