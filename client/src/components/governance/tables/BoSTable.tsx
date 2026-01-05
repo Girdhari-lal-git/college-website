@@ -18,9 +18,9 @@ const BoSTable = ({ members }: any) => (
           <th className="px-4 py-3 text-left font-semibold text-gray-700 border-b">
             Address
           </th>
-          <th className="px-4 py-3 text-left font-semibold text-gray-700 border-b">
+        {/* <th className="px-4 py-3 text-left font-semibold text-gray-700 border-b">
             E-Mail
-          </th>
+          </th> */}
         </tr>
       </thead>
 
@@ -46,7 +46,7 @@ const BoSTable = ({ members }: any) => (
               <td className="px-4 py-3 text-gray-700">
                 {m.address}
               </td>
-              <td className="px-4 py-3 text-blue-600">
+              {/* <td className="px-4 py-3 text-blue-600">
                 {m.email ? (
                   <a
                     href={`mailto:${m.email}`}
@@ -57,7 +57,7 @@ const BoSTable = ({ members }: any) => (
                 ) : (
                   <span className="text-gray-400">—</span>
                 )}
-              </td>
+              </td> */}
             </tr>
           ))
         ) : (

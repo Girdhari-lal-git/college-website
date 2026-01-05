@@ -7,6 +7,8 @@ import LazyImage from "@/components/LazyImage";
 import { ChevronDown, ChevronRight, Download, Eye, Users, Target, Award, BookOpen, FileText, Calendar, CheckCircle } from 'lucide-react';
 import { AccessibilityFeatures } from '@/components/AccessibilityFeatures';
 
+
+
 const iqacConstitution = [
     'Constitution 2025-26',
     'Constitution 2024-25 (After Visit)',
@@ -535,14 +537,15 @@ const environmentAuditReports = {
 };
 
 const IQACPage = () => {
-    const [openMeetingsYear, setOpenMeetingsYear] = useState(null);
-    const [openMeetingsSubItem, setOpenMeetingsSubItem] = useState(null);
-    const [openQualityYear, setOpenQualityYear] = useState(null);
-    const [openFDPYear, setOpenFDPYear] = useState(null);
-    const [openFDPItem, setOpenFDPItem] = useState(null);
-    const [openCalendarYear, setOpenCalendarYear] = useState(null);
-    const [openEnvCertYear, setOpenEnvCertYear] = useState(null);
-    const [openEnvReportYear, setOpenEnvReportYear] = useState(null);
+        const [openMeetingsYear, setOpenMeetingsYear] = useState<string | null>(null);
+        const [openMeetingsSubItem, setOpenMeetingsSubItem] = useState<string | null>(null);
+        const [openQualityYear, setOpenQualityYear] = useState<string | null>(null);
+        const [openFDPYear, setOpenFDPYear] = useState<string | null>(null);
+        const [openFDPItem, setOpenFDPItem] = useState<string | null>(null);
+        const [openCalendarYear, setOpenCalendarYear] = useState<string | null>(null);
+        const [openEnvCertYear, setOpenEnvCertYear] = useState<string | null>(null);
+        const [openEnvReportYear, setOpenEnvReportYear] = useState<string | null>(null);
+
 
     // Helper function to get document links
     const getDocumentLink = (docName: string, year: string, meetingName: string) => {
@@ -624,7 +627,7 @@ const IQACPage = () => {
 
         };
         
-        return fdpLinks[item] || 'https://drive.google.com/file/d/1VwqO--p7iGGd2cxT_678MCPAQabZk1hM/view?usp=sharing';
+        return fdpLinks[item as keyof typeof fdpLinks] || 'https://drive.google.com/file/d/1VwqO--p7iGGd2cxT_678MCPAQabZk1hM/view?usp=sharing';
     };
 
     const getSimpleDocumentLink = (item: string, year: string) => {
@@ -651,7 +654,7 @@ const IQACPage = () => {
             'Environment Audit Report': 'https://drive.google.com/file/d/1go2UONAOssmyJpJpovkgu2ESauCIflxD/view?usp=sharing'
         };
         
-        return documentLinks[item] || 'https://drive.google.com/file/d/1VwqO--p7iGGd2cxT_678MCPAQabZk1hM/view?usp=sharing';
+        return documentLinks[item as keyof typeof documentLinks] || 'https://drive.google.com/file/d/1VwqO--p7iGGd2cxT_678MCPAQabZk1hM/view?usp=sharing';
     };
 
     const getTableDocumentLink = (item: string) => {
@@ -659,7 +662,7 @@ const IQACPage = () => {
         const tableLinks = {
             'Quality Policy': 'https://drive.google.com/file/d/1lR9Qb2UeYQmrHCRVtsXZl5KFqL6fcMrm/view?usp=drive_link',
             'IQAC Handbook': 'https://drive.google.com/file/d/1StGgGUMWj8RwFdhvO3-1I1LM0NVGF-PA/view?usp=drive_link',
-            'IQAC Initiatives (From 2023-24)': 'https://drive.google.com/file/d/1hfIG2OhZz5UUKs8VT008NG3Qu4SBP76_/view?usp=drive_link',
+            'IQAC Initiatives (from 2023-24)': 'https://drive.google.com/file/d/1hfIG2OhZz5UUKs8VT008NG3Qu4SBP76_/view?usp=drive_link',
             'IQAC Initiatives (After 2018)': 'https://drive.google.com/file/d/1hfIG2OhZz5UUKs8VT008NG3Qu4SBP76_/view?usp=drive_link',
             'IQAC Initiatives (Before 2018)': 'https://drive.google.com/file/d/1SHI5G6qmxlekI8oboO2bi7PLk6wKt5yA/view?usp=drive_link',
             'Institute Perspective Plan': 'https://drive.google.com/file/d/1hngR8eTnq4e41lN4jjGeJPCgOHvR2C20/view?usp=drive_link',
@@ -724,12 +727,12 @@ const IQACPage = () => {
             'Events on Green Practices': 'https://drive.google.com/file/d/1iSnxE41_EniviqozWH2gSw6MuGGBRVgu/view?usp=drive_link',
 
         };
-        
-        return tableLinks[item] || 'https://drive.google.com/file/d/1VwqO--p7iGGd2cxT_678MCPAQabZk1hM/view?usp=sharing';
+
+        return tableLinks[item as keyof typeof tableLinks] || 'https://drive.google.com/file/d/1VwqO--p7iGGd2cxT_678MCPAQabZk1hM/view?usp=sharing';
     };
 
     // Triple Nested Dropdown for IQAC Meetings
-    const TripleNestedDropdown = ({ title, data, openYear, setOpenYear, openSubItem, setOpenSubItem, icon: Icon }) => (
+    const TripleNestedDropdown = ({ title, data, openYear, setOpenYear, openSubItem, setOpenSubItem, icon: Icon }: { title: string; data: Record<string, Record<string, { label: string; link: string }[]>>; openYear: string | null; setOpenYear: (year: string | null) => void; openSubItem: string | null; setOpenSubItem: (item: string | null) => void; icon: React.ComponentType<{ className?: string }> }) => (
         <div className="mb-12">
             <div className="flex items-center gap-3 mb-6">
                 <div className="p-3 bg-gradient-to-r from-blue-100 to-purple-100 rounded-xl">
@@ -826,7 +829,7 @@ const IQACPage = () => {
     );
 
     // Enhanced Quality Activities Dropdown with table structure
-    const QualityActivitiesDropdown = ({ title, data, openYear, setOpenYear, icon: Icon }) => (
+    const QualityActivitiesDropdown = ({ title, data, openYear, setOpenYear, icon: Icon }: { title: string; data: Record<string, Array<{ name: string; organization: string }>>; openYear: string | null; setOpenYear: (year: string | null) => void; icon: React.ComponentType<{ className?: string }> }) => (
         <div className="mb-12">
             <div className="flex items-center gap-3 mb-6">
                 <div className="p-3 bg-gradient-to-r from-blue-100 to-purple-100 rounded-xl">
@@ -898,7 +901,7 @@ const IQACPage = () => {
         </div>
     );
 
-    const ModernDoubleDropdown = ({ title, data, openYear, setOpenYear, openItem, setOpenItem, icon: Icon }) => (
+    const ModernDoubleDropdown = ({ title, data, openYear, setOpenYear, openItem, setOpenItem, icon: Icon }: { title: string; data: Record<string, string[]>; openYear: string | null; setOpenYear: (year: string | null) => void; openItem: string | null; setOpenItem: (item: string | null) => void; icon: React.ComponentType<{ className?: string }> }) => (
         <div className="mb-12">
             <div className="flex items-center gap-3 mb-6">
                 <div className="p-3 bg-gradient-to-r from-purple-100 to-pink-100 rounded-xl">
@@ -1007,7 +1010,7 @@ const IQACPage = () => {
         </div>
     );
 
-    const ModernTable = ({ title, data, icon: Icon }) => (
+    const ModernTable = ({ title, data, icon: Icon }: { title: string; data: string[]; icon: React.ComponentType<{ className?: string }> }) => (
         <div className="mb-12">
             <div className="flex items-center gap-3 mb-6">
                 <div className="p-3 bg-gradient-to-r from-blue-100 to-purple-100 rounded-xl">
@@ -1058,7 +1061,7 @@ const IQACPage = () => {
         </div>
     );
 
-    const SimpleDropdown = ({ title, data, openYear, setOpenYear, icon: Icon }) => (
+    const SimpleDropdown = ({ title, data, openYear, setOpenYear, icon: Icon }: { title: string; data: Record<string, string[]>; openYear: string | null; setOpenYear: (year: string | null) => void; icon: React.ComponentType<{ className?: string }> }) => (
         <div className="mb-12">
             <div className="flex items-center gap-3 mb-6">
                 <div className="p-3 bg-gradient-to-r from-purple-100 to-pink-100 rounded-xl">
@@ -1279,35 +1282,45 @@ const IQACPage = () => {
 
 
 
-                {/* ADD: IQAC Coordinator's Message Section */}
-                                <div className="container mx-auto py-15 px-8">
-                                    <h2 className="text-3xl text-primary font-bold mb-8 text-left">
-                                        Message from Coordinator (IQAC)
-                                    </h2>
-                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                                        {/* Left: Image and Info */}
-                                        <div className="text-center md:text-center">
-                                            <LazyImage
-                                                src={presidentInfo.imageUrl}
-                                                alt={presidentInfo.name}
-                                                className="rounded-full w-88 h-88 mx-auto md:mx-0 object-cover shadow-lw " // Increased size, object-cover, shadow
-                                            />
-                                            <h3 className="text-3xl font-bold mt-4 text-primary"> {/* Increased font size */}
-                                                {presidentInfo.name}
-                                            </h3>
-                                            <p className="text-neutral-600 text-lg"> {/* Increased font size and changed color */}
-                                                {presidentInfo.designation}
-                                            </p>
-                                        </div>
+                                            {/* IQAC Coordinator's Message Section */}
+                <div className="w-full py-10 px-4 md:px-8">
+                <h2 className="text-5xl text-primary font-bold mb-8 text-left max-w-8xl mx-auto">
+                    Message from Coordinator (IQAC)
+                </h2>
+
+                {/* FULL-WIDTH GRID WRAPPER */}
+                <div className="max-w-7xl mx-auto">
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
                     
-                                        {/* Right: Message */}
-                                        <div>
-                                            <div className="prose lg:prose-lg text-justify">
-                                                <p>  {presidentInfo.message}</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                    {/* LEFT: President Info (1 column) */}
+                    <div className="md:col-span-1 text-center md:text-left">
+                        <LazyImage
+                        src={presidentInfo.imageUrl}
+                        alt={presidentInfo.name}
+                        className="rounded-full w-80 h-80 mx-auto md:mx-0 object-cover shadow-lw"
+                        />
+
+                        <h3 className="text-3xl font-bold mt-4">
+                        {presidentInfo.name}
+                        </h3>
+
+                        <p className="text-neutral-600 text-lg">
+                        {presidentInfo.designation}
+                        </p>
+                    </div>
+
+                    {/* RIGHT: Message (2 columns) */}
+                    <div className="md:col-span-2">
+                        <div className="prose lg:prose-lg max-w-none text-justify">
+                        {presidentInfo.message}
+                        </div>
+                    </div>
+
+                    </div>
+                </div>
+                </div>
+
+
 
                 {/* Tables with modern design */}
                  <div >

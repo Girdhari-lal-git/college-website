@@ -18,9 +18,9 @@ const ExaminationCommitteeTable = ({ members }: any) => (
           <th className="px-4 py-3 text-left font-semibold text-gray-700 border-b">
             Name
           </th>
-          <th className="px-4 py-3 text-left font-semibold text-gray-700 border-b">
+          {/* <th className="px-4 py-3 text-left font-semibold text-gray-700 border-b">
             E-mail
-          </th>
+          </th> */}
         </tr>
       </thead>
 
@@ -46,7 +46,7 @@ const ExaminationCommitteeTable = ({ members }: any) => (
               <td className="px-4 py-3 font-medium text-gray-800">
                 {m.name}
               </td>
-              <td className="px-4 py-3 text-blue-600">
+             {/*  <td className="px-4 py-3 text-blue-600">
                 {m.email ? (
                   <a
                     href={`mailto:${m.email}`}
@@ -57,7 +57,7 @@ const ExaminationCommitteeTable = ({ members }: any) => (
                 ) : (
                   <span className="text-gray-400">—</span>
                 )}
-              </td>
+              </td> */}
             </tr>
           ))
         ) : (

@@ -143,7 +143,7 @@ export const boardsOfStudies = {
 
     mom: [
       {
-        title: "First Board of Governors Meeting",
+        title: "First Board of Studies for Applied Sciences Meeting",
         date: "10-08-2024",
         link: "/pdfs/bog/mom-aug-2024.pdf"
       }

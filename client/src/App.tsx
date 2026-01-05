@@ -89,7 +89,7 @@ import ISOCertificatePage from "./pages/ISOCertificate";
 import ElectoralLiteracyForum from "./pages/ElectoralLiteracyForum";
 import Hackathons from "./pages/Hackathons";
 import StudentCouncil from "./pages/StudentCouncil";
-import Autonomous from "./pages/autonomous";
+{/* import Autonomous from "./pages/autonomous"; */}
 import downloads from "./pages/downloads";
 import SyllabusPage from "./pages/syllabus";
 import BOSPage from "./pages/BoS";
@@ -199,7 +199,7 @@ function Router() {
         <Route path="/qs-gauge" component={QSGaugePage} />
         <Route path="/qiv" component={Qiv} />
         <Route path="/downloads" component={downloads} />
-         <Route path="/autonomous" component={Autonomous} />
+        {/* <Route path="/autonomous" component={Autonomous} /> */}
         <Route path="/times-ranking" component={TimesRanking} />
         <Route path="/aishe" component={AISHEPage} />
         <Route path="/iso-certificate" component={ISOCertificatePage} />
@@ -211,7 +211,7 @@ function Router() {
         <Route path="/syllabus" component={SyllabusPage} />
         <Route path="/bos" component={BOSPage} />
         <Route path="/academicCouncil" component={AcademicCouncilPage} />
-        <Route path="/autonomous-new" component={AutonomousPage} />
+        <Route path="/autonomous" component={AutonomousPage} />
 
 
         <Route>

@@ -19,7 +19,7 @@ import ExamSection from "@/components/autonomous/exam/ExamSection";
 /* Data */
 import { governanceData } from "@/data/governance";
 
-/* OPTIONAL: syllabus data (dummy for now, replace later) */
+/* OPTIONAL: syllabus data */
 const minorSyllabus = [
   {
     srNo: 1,
@@ -259,8 +259,8 @@ const AutonomousPage: React.FC = () => {
           <GovernancePanel data={governanceData} />
         )}
 
-        {/* SYLLABUS */}
-        {activeTab === "syllabus" && <SyllabusExplorer />}
+        {/* SYLLABUS EXPLORER */}
+        {activeTab === "syllabus" && <SyllabusExplorer />} 
 
 
         {/* POLICIES */}
@@ -278,9 +278,109 @@ const AutonomousPage: React.FC = () => {
               <tbody>
                 <tr>
                   <td className="border p-2">1</td>
-                  <td className="border p-2">Academic Integrity Policy</td>
+                  <td className="border p-2">Academic and examination Policy</td>
+                  <td className="border p-2">
+                    <a className="text-primary" href="https://drive.google.com/file/d/1j5RsxfifAv7Rz1131ra4xCSUO5jc7s9W/view?usp=drive_link">
+                      PDF
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td className="border p-2">2</td>
+                  <td className="border p-2">Service Rules/ Human Resource Policy</td>
+                  <td className="border p-2">
+                    <a className="text-primary" href="https://drive.google.com/file/d/1T-fPtAhwGuKgahTu0VDwHyNhy-MExMZj/view?usp=drive_link">
+                      PDF
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td className="border p-2">3</td>
+                  <td className="border p-2">Code of Conduct for Faculty, Staff and Students</td>
+                  <td className="border p-2">
+                    <a className="text-primary" href="https://drive.google.com/file/d/1vsi_6FrfkIOOHlI9tM6fTVAevWKHf8IC/view?usp=drive_link">
+                      PDF
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td className="border p-2">4</td>
+                  <td className="border p-2">Admission Policy</td>
+                  <td className="border p-2">
+                    <a className="text-primary" href="https://drive.google.com/file/d/1fPFuygnbBY_RD9zxBJH_7ajC7aRZ94zy/view?usp=drive_link">
+                      PDF
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td className="border p-2">5</td>
+                  <td className="border p-2">Student Grievance Redressal Policy</td>
+                  <td className="border p-2">
+                    <a className="text-primary" href="https://drive.google.com/file/d/1CxjIZygLQ3wMvc3ZlqSxN4YWYF9pYVgG/view?usp=drive_link">
+                      PDF
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td className="border p-2">6</td>
+                  <td className="border p-2">Anti-Ragging Policy</td>
                   <td className="border p-2">
                     <a className="text-primary" href="#">
+                      PDF
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td className="border p-2">7</td>
+                  <td className="border p-2">Prevention of Sexual Harassment Policy(ICC)</td>
+                  <td className="border p-2">
+                    <a className="text-primary" href="#">
+                      PDF
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td className="border p-2">8</td>
+                  <td className="border p-2">Equal Opportunity Policy</td>
+                  <td className="border p-2">
+                    <a className="text-primary" href="https://drive.google.com/file/d/1xBlKPmy9Sx-RHh-ha0jXPbwgHXjr8aEp/view?usp=drive_link">
+                      PDF
+                    </a>
+                  </td>
+                </tr>
+                
+                <tr>
+                  <td className="border p-2">9</td>
+                  <td className="border p-2">Internship Policy</td>
+                  <td className="border p-2">
+                    <a className="text-primary" href="https://drive.google.com/file/d/1fCZHQYXUVpBNiMgJ0PCCieC7UZELY2Z2/view?usp=drive_link">
+                      PDF
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td className="border p-2">10</td>
+                  <td className="border p-2">Internal Quality Assurance Cell (IQAC) Policy</td>
+                  <td className="border p-2">
+                    <a className="text-primary" href="https://drive.google.com/file/d/1VwqO--p7iGGd2cxT_678MCPAQabZk1hM/view?usp=drive_link">
+                      PDF
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td className="border p-2">11</td>
+                  <td className="border p-2">Fee Refund Policy</td>
+                  <td className="border p-2">
+                    <a className="text-primary" href="https://drive.google.com/file/d/11Sk42Fd1opFSsa0AwR_yEIMqOfOa6Im0/view?usp=drive_link">
+                      PDF
+                    </a>
+                  </td>
+                </tr>
+                 <tr>
+                  <td className="border p-2">12</td>
+                  <td className="border p-2">Finance Policy</td>
+                  <td className="border p-2">
+                    <a className="text-primary" href="https://drive.google.com/file/d/1ffyGVMiDl1Xiw7tT_QYJg89m8MN5iwgV/view?usp=drive_link">
                       PDF
                     </a>
                   </td>

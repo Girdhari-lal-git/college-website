@@ -11,7 +11,7 @@ const programs = [
   "CS (IoT)",
 ];
 
-const sessions = ["2023-24", "2024-25", "2025-26"];
+const sessions = ["2025-26", "2026-27"];
 const examTypes = ["First Mid Term", "Second Mid Term", "End Term"];
 
 const QuestionPapers: React.FC = () => {

@@ -7,7 +7,7 @@ const ResultRedirect: React.FC = () => {
       <p className="mb-6">
         Click the button below to view examination results.
       </p>
-      <a href="/results" className="btn-primary">
+      <a href="https://www.tcsion.com/SelfServices/" className="btn-primary">
         View Results
       </a>
     </div>

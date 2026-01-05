@@ -1,43 +1,31 @@
-export interface SyllabusFile {
-  degree: "Regular" | "Minor" | "Honors";
-  program: string;
-  session: string;
+export interface SyllabusItem {
+  degree: "B. Tech." | "M. Tech.";
+  branch: string;
   semester: number;
-  title: string;
-  link: string;
+  subjectName: string;
+  description: string;
+  schemeLink: string;
+  syllabusLink: string;
 }
-
-export const syllabusData: SyllabusFile[] = [
+export const syllabusData: SyllabusItem[] = [
+  // First year Subjects, Schemes and Syllabi
   {
-    degree: "Regular",
-    program: "Applied Sciences",
-    session: "2024-25",
+    degree: "B. Tech.",
+    branch: "First Year",
     semester: 1,
-    title: "Applied Sciences – Semester 1 Syllabus",
-    link: "/pdfs/syllabus/as-sem1-2024.pdf",
+    subjectName: "Scheme and Syllabus for First Year (B.Tech) First Semester",
+    description: "Scheme and syllabus, common for all the programs (From 2025-26)",
+    schemeLink: "https://drive.google.com/file/d/1ZGo5S4w-qM9imhWbjQlityxKBdXQOzfT/view?usp=drive_link",
+    syllabusLink: "https://drive.google.com/file/d/1AyxRyab793BULlYrjmpwRQfXFoK83EMO/view?usp=drive_link",
   },
   {
-    degree: "Regular",
-    program: "CSE",
-    session: "2024-25",
-    semester: 3,
-    title: "CSE – Semester 3 Syllabus",
-    link: "/pdfs/syllabus/cse-sem3-2024.pdf",
+    degree: "B. Tech.",
+    branch: "First Year",
+    semester: 2,
+    subjectName: "Scheme and Syllabus for First Year (B.Tech) Second Semester",
+    description: "Scheme and syllabus, common for all the programs (From 2025-26)",
+    schemeLink: "https://drive.google.com/file/d/1ZGo5S4w-qM9imhWbjQlityxKBdXQOzfT/view?usp=drive_link",
+    syllabusLink: "https://drive.google.com/file/d/1gXiuFIIpo_U4lnI-NJe9X_TBEIIoBknd/view?usp=drive_link"
   },
-  {
-    degree: "Minor",
-    program: "AI & DS",
-    session: "2024-25",
-    semester: 5,
-    title: "Minor in AI & DS – Semester 5",
-    link: "/pdfs/syllabus/minor-ai-sem5.pdf",
-  },
-  {
-    degree: "Honors",
-    program: "CS (AI)",
-    session: "2024-25",
-    semester: 7,
-    title: "Honors in CS (AI) – Semester 7",
-    link: "/pdfs/syllabus/honors-csai-sem7.pdf",
-  },
+   
 ];

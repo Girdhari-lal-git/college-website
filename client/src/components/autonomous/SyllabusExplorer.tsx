@@ -1,34 +1,59 @@
 import React from "react";
-import { syllabusData } from "@/data/syllabusData";
+import { syllabusData, SyllabusItem } from "@/data/syllabusData";
 
-const degrees = ["Regular", "Minor", "Honors"];
-const programs = [
-  "Applied Sciences",
-  "CSE",
-  "CSE (R)",
-  "AI & DS",
-  "CS (AI)",
-  "CS (DS)",
-  "CS (IoT)",
-];
-const sessions = ["2023-24", "2024-25", "2025-26"];
+const degrees = ["B. Tech.", "M. Tech."];
+
+const programsByDegree: Record<string, string[]> = {
+  "B. Tech.": [
+    "First Year",
+    "CSE",
+    "CS (R)",
+    "AI & DS",
+    "CS (AI)",
+    "CS (DS)",
+    "CS (IoT)",
+  ],
+  "M. Tech.": ["CSE", "AI & DS"],
+};
 
 const SyllabusExplorer: React.FC = () => {
   const [degree, setDegree] = React.useState<string>("");
-  const [program, setProgram] = React.useState<string>("");
-  const [session, setSession] = React.useState<string>("");
+  const [branch, setBranch] = React.useState<string>("");
   const [semester, setSemester] = React.useState<number | "">("");
 
-  const semesters =
-    program === "Applied Sciences"
-      ? [1, 2]
-      : [3, 4, 5, 6, 7, 8];
+  // Semester rules
+  const semesters = React.useMemo(() => {
+    if (!degree || !branch) return [];
 
-  const filteredData = syllabusData.filter(
+    if (degree === "B. Tech." && branch === "First Year") {
+      return [1, 2];
+    }
+
+    if (degree === "B. Tech.") {
+      return [3, 4, 5, 6, 7, 8];
+    }
+
+    if (degree === "M. Tech.") {
+      return [1, 2, 3, 4];
+    }
+
+    return [];
+  }, [degree, branch]);
+
+  // Reset dependent filters
+  React.useEffect(() => {
+    setBranch("");
+    setSemester("");
+  }, [degree]);
+
+  React.useEffect(() => {
+    setSemester("");
+  }, [branch]);
+
+  const filteredData: SyllabusItem[] = syllabusData.filter(
     (s) =>
       (!degree || s.degree === degree) &&
-      (!program || s.program === program) &&
-      (!session || s.session === session) &&
+      (!branch || s.branch === branch) &&
       (!semester || s.semester === semester)
   );
 
@@ -37,33 +62,39 @@ const SyllabusExplorer: React.FC = () => {
       <h3 className="font-heading mb-6">Syllabus</h3>
 
       {/* FILTERS */}
-      <div className="grid md:grid-cols-4 gap-4 mb-6">
-        <select className="input" value={degree} onChange={(e) => setDegree(e.target.value)}>
+      <div className="grid md:grid-cols-3 gap-4 mb-6">
+        {/* Degree */}
+        <select
+          className="input"
+          value={degree}
+          onChange={(e) => setDegree(e.target.value)}
+        >
           <option value="">Select Degree</option>
           {degrees.map((d) => (
             <option key={d}>{d}</option>
           ))}
         </select>
 
-        <select className="input" value={program} onChange={(e) => setProgram(e.target.value)}>
+        {/* Program */}
+        <select
+          className="input"
+          value={branch}
+          onChange={(e) => setBranch(e.target.value)}
+          disabled={!degree}
+        >
           <option value="">Select Program</option>
-          {programs.map((p) => (
-            <option key={p}>{p}</option>
-          ))}
+          {degree &&
+            programsByDegree[degree]?.map((b) => (
+              <option key={b}>{b}</option>
+            ))}
         </select>
 
-        <select className="input" value={session} onChange={(e) => setSession(e.target.value)}>
-          <option value="">Select Session</option>
-          {sessions.map((s) => (
-            <option key={s}>{s}</option>
-          ))}
-        </select>
-
+        {/* Semester */}
         <select
           className="input"
           value={semester}
           onChange={(e) => setSemester(Number(e.target.value))}
-          disabled={!program}
+          disabled={!branch}
         >
           <option value="">Select Semester</option>
           {semesters.map((sem) => (
@@ -78,27 +109,45 @@ const SyllabusExplorer: React.FC = () => {
       <table className="w-full border text-sm">
         <thead className="bg-muted">
           <tr>
-            <th className="border p-2">Syllabus Title</th>
-            <th className="border p-2">Download</th>
+            <th className="border p-2">Sr. No.</th>
+            <th className="border p-2">Document</th>
+            <th className="border p-2">Short Description</th>
+            <th className="border p-2">Scheme</th>
+            <th className="border p-2">Syllabus</th>
           </tr>
         </thead>
         <tbody>
           {filteredData.length === 0 ? (
             <tr>
-              <td colSpan={2} className="border p-4 text-center text-muted-foreground">
-                No syllabus found
+              <td
+                colSpan={5}
+                className="border p-4 text-center text-muted-foreground"
+              >
+                Please select Degree, Program and Semester
               </td>
             </tr>
           ) : (
-            filteredData.map((s, i) => (
-              <tr key={i}>
-                <td className="border p-2">{s.title}</td>
+            filteredData.map((item, index) => (
+              <tr key={index}>
+                <td className="border p-2">{index + 1}</td>
+                <td className="border p-2">{item.subjectName}</td>
+                <td className="border p-2">{item.description}</td>
                 <td className="border p-2">
                   <a
-                    href={s.link}
+                    href={item.schemeLink}
+                    className="text-primary"
                     target="_blank"
                     rel="noreferrer"
+                  >
+                    Download
+                  </a>
+                </td>
+                <td className="border p-2">
+                  <a
+                    href={item.syllabusLink}
                     className="text-primary"
+                    target="_blank"
+                    rel="noreferrer"
                   >
                     Download
                   </a>

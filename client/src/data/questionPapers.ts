@@ -10,25 +10,7 @@ export interface QuestionPaper {
 
 export const questionPapers: QuestionPaper[] = [
      //First Mid Term Papers Applied Science Sem 1 2025-26
-  {
-    program: "CSE",
-    session: "2024-25",
-    semester: 3,
-    examType: "First Mid Term",
-    subjectCode: "CSE301",
-    subjectName: "Data Structures",
-    link: "/pdfs/question-papers/cse301-mid1.pdf",
-  },
-  {
-    program: "CSE",
-    session: "2024-25",
-    semester: 3,
-    examType: "End Term",
-    subjectCode: "CSE301",
-    subjectName: "Data Structures",
-    link: "/pdfs/question-papers/cse301-end.pdf",
-  },
-  {
+    {
     program: "Applied Science",
     session: "2025-26",
     semester: 1,
@@ -110,25 +92,7 @@ export const questionPapers: QuestionPaper[] = [
     link: "https://drive.google.com/file/d/17Ox2IFtjoixcGxv3J87T_A49DZSecT24/view?usp=drive_link",
   },
   //Second Mid Term Papers Applied Science Sem 1 2025-26
-  {
-    program: "CSE",
-    session: "2024-25",
-    semester: 3,
-    examType: "First Mid Term",
-    subjectCode: "CSE301",
-    subjectName: "Data Structures",
-    link: "/pdfs/question-papers/cse301-mid1.pdf",
-  },
-  {
-    program: "CSE",
-    session: "2024-25",
-    semester: 3,
-    examType: "End Term",
-    subjectCode: "CSE301",
-    subjectName: "Data Structures",
-    link: "/pdfs/question-papers/cse301-end.pdf",
-  },
-  {
+    {
     program: "Applied Science",
     session: "2025-26",
     semester: 1,
