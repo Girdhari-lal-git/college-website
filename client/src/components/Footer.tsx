@@ -75,10 +75,11 @@ export default function Footer() {
 
   const quickLinks: FooterLinkProps[] = [
     
+    { href: "/", label: "Mandatory Disclosure" },
     { href: "/admission-fees", label: "Admission & Fees" },
     { href: "/placements", label: "Placements" },
     { href: "/gallery", label: "Gallery" },
-    { href: "/conference", label: "Student Council" },
+    { href: "/student-council", label: "Request Counselling" },
    { href: "/iqac", label: "IQAC" },
     { href: "/downloads", label: "Downloads" },
   
@@ -100,10 +101,11 @@ export default function Footer() {
     { href: "/rules-regulation", label: "Rules & Regulations" },
     { href: "/greviance", label: "Grievance Cell" },
     { href: "/complaints", label: "Complaints & Feedback" },
-    { href: "/icc", label: "Internal Complaints Committee" },
-   { href: "/about", label: "National Service Scheme(NSS)" },
-    { href: "", label: "Fee Refund policy" },
+   { href: "/nss", label: "National Service Scheme(NSS)" },
+   { href: "https://drive.google.com/file/d/1k7U9oTAedlKZjm10BqfY1QrQ2btITZVb/view?usp=drive_link", label: "Public Self Disclosure" },
+    { href: "https://drive.google.com/file/d/12W3KoHEZyWchiXXOjTaPKqkyaTN5Va9j/view?usp=drive_link", label: "Fee Refund policy" },
     { href: "/autonomous", label: "Autonomous PIET" },
+    { href: "/autonomous", label: "Public Information Officer" },
     
   ];
 
@@ -159,7 +161,7 @@ export default function Footer() {
                 pietjaipur@rtu.ac.in principal.piet@poornima.org
                 iqac.piet@poornima.org
               </ContactItem>
-              <ContactItem icon="fas fa-globe">piet.poornima.org</ContactItem>
+              
             </ul>
 
             <div className="mt-6">

@@ -95,6 +95,7 @@ import SyllabusPage from "./pages/syllabus";
 import BOSPage from "./pages/BoS";
 import AcademicCouncilPage from "./pages/academicCouncil";
 import AutonomousPage from "./pages/autonomousNew";
+import StudentCounsellingPage from "./pages/student-counselling";
 
 
 function Router() {
@@ -212,6 +213,7 @@ function Router() {
         <Route path="/bos" component={BOSPage} />
         <Route path="/academicCouncil" component={AcademicCouncilPage} />
         <Route path="/autonomous" component={AutonomousPage} />
+        <Route path="/student-counselling" component={StudentCounsellingPage} />
 
 
         <Route>
