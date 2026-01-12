@@ -19,11 +19,11 @@ const images = [
 ];
 
 const objectivePoints = [
-    "Promotes innovation and entrepreneurship.",
-    "For students in technical institutions.",
-    "Provides a supportive environment. ",
-    "Offers resources and guidance.",
-    "Helps turn ideas into startups.",
+    "To promote innovation and entrepreneurship.",
+    "To impart skills to the students of the technical institutions.",
+    "To provide a supportive ambience. ",
+    "To offer resources and guidance.",
+    "To help turning ideas into startups.",
 ];
 const altTexts = [
     "Description for image 1",
@@ -33,13 +33,11 @@ const altTexts = [
 const objectiveContent = <Checklist items={objectivePoints} />;
 
 const visionContent = (
-    <p>
-        The IDEA Lab will be set up in technical education institutions across
-        the country. It will be equipped with state-of-the-art facilities and
-        resources to support the development of student ideas and projects. The
-        lab will also provide students with access to mentors, experts, and
-        industry leaders who can provide guidance and support throughout the
-        development process.
+    <p className="text-md leading-8 text-gray-600 text-justify">
+        The IDEA Lab will be established in technical education institutions nationwide, featuring 
+        state-of-the-art infrastructure and advanced resources to nurture student innovation and project
+         development. It will also connect students with mentors, domain experts, and industry 
+        leaders who will offer continuous guidance and support throughout the entire development lifecycle.
         <br />
     </p>
 );
@@ -127,80 +125,80 @@ const achievementdata = [
     {
         sno: 1,
         participants:
-            "Team Name - Parksphere: Sudhanshu Tiwari, Kunal Sharma, Megh Shah, Dev Tekwani",
+            "Sudhanshu Tiwari, Kunal Sharma, Megh Shah, Dev Tekwani",
         venue: "Panipat Institute Of Engineering and Technology (National Innovation Challenge), Dec 2022, 1 day",
         outcome: "National Innovation Challenge",
     },
     {
         sno: 2,
-        participants: "Team Name - Error: Kunal Sharma, Dev Tekwani",
+        participants: "Kunal Sharma, Dev Tekwani",
         venue: "Abes Engineering College (Idea Lab Innovation Challenge), 2 days",
         outcome: "2nd winner",
     },
     {
         sno: 3,
-        participants: "Team Name - Error: Kunal Sharma",
+        participants: "Kunal Sharma",
         venue: "LNMIIT (LNM HACKS), Jan 2023, 3 days",
         outcome: "3rd position",
     },
     {
         sno: 4,
-        participants: "Team Name - Error: Kunal Sharma, Dev Tekwani",
+        participants: "Kunal Sharma, Dev Tekwani",
         venue: "VGU (Hackathon), 3 days",
         outcome: "Top 10",
     },
     {
         sno: 5,
-        participants: "Team Name - Error: Kunal Sharma, Dev Tekwani",
+        participants: "Kunal Sharma, Dev Tekwani",
         venue: "VIT (Project Exhibition), 1 day",
         outcome: "2nd Position",
     },
     {
         sno: 6,
         participants:
-            "Team Name - Web3 Wizards: Megh Shah, Mitushi Yadav, Arun Joseph",
+            "Megh Shah, Mitushi Yadav, Arun Joseph",
         venue: "JIET Jodhpur (Hackathon), Mar 2023",
         outcome: "2nd prize",
     },
     {
         sno: 7,
         participants:
-            "Team Name - Bug Squashers: Aditya Pareek, Kartik Mehta, Abhay Kumar Mittal",
+            "Aditya Pareek, Kartik Mehta, Abhay Kumar Mittal",
         venue: "DU (Hackathon), Feb 2023, 2 days",
         outcome: "Top 15",
     },
     {
         sno: 8,
         participants:
-            "Team Name - netWork: Rhythm Verma, Kartik Mehta, Sahaj Jain, Mayank Arora",
+            "Rhythm Verma, Kartik Mehta, Sahaj Jain, Mayank Arora",
         venue: "SKIT (Start-up Expo), Apr 2023, 1 day",
         outcome: "Invited to work in their incubation cell",
     },
     {
         sno: 9,
         participants:
-            "Team Name - Bug Squashers: Aditya Pareek, Kartik Mehta, Abhay Kumar Mittal",
+            "Aditya Pareek, Kartik Mehta, Abhay Kumar Mittal",
         venue: "Thapar Institute of Engineering and Technology (Hackathon), Mar 2023, 2 days",
         outcome: "Built NFT games",
     },
     {
         sno: 10,
         participants:
-            "Team Name - Bit-4-Byte: Hiya Gurbani, Lavina Sevani, Harshit Verma, Jatin Nama",
+            "Hiya Gurbani, Lavina Sevani, Harshit Verma, Jatin Nama",
         venue: "Bharati Vidyapeeth's College, 15–16 June 2023, 2 days",
         outcome: "Top 7 in Software category",
     },
     {
         sno: 11,
         participants:
-            "Team Name - The Errors: Kartikey Sharma, Gauri Singhal, Garvit Arora, Arpita Garg",
+            "Kartikey Sharma, Gauri Singhal, Garvit Arora, Arpita Garg",
         venue: "Bharati Vidyapeeth's College, 15–16 June 2023, 2 days",
         outcome: "Top 5 in Hardware category",
     },
     {
         sno: 12,
         participants:
-            "Team Name - Error 404: Harshvardhan Sharma, Mahendra Kumawat, Anurag Dadhich",
+            "Harshvardhan Sharma, Mahendra Kumawat, Anurag Dadhich",
         venue: "Bharati Vidyapeeth's College, 15–16 June 2023, 2 days",
         outcome:
             "Learned about the latest technologies and gained practical knowledge",
@@ -1403,7 +1401,7 @@ const facilitiesData = [
         title: "Laser Cutter",
         description:
             "Laser cutting uses a high-power laser to vaporize materials, resulting in precise cuts, commonly used in industrial manufacturing, small businesses, and hobbyist projects. It works by directing a focused laser beam through CNC-controlled optics.",
-        imageUrl: "/images/mach/5.jpg",
+        imageUrl: "/images/mach/22.jpeg",
     },
     {
         title: "Reflow Oven",
@@ -1445,49 +1443,44 @@ const facilitiesData = [
         title: "Multi-purpose Lathe/Drill/Mill Machine",
         description:
             "A multi-purpose lathe/drill/mill machine is versatile for turning, drilling, milling, and engraving various materials. It features a lathe bed, drill chuck, milling head, and engraving tool.",
-        imageUrl: "/images/mach/11.jpg",
-    },
-    {
-        title: "Cone Pulley",
-        description:
-            "A cone pulley/belt-driven heavy-duty machine uses a cone pulley and belt to transmit power, making it ideal for heavy-duty tasks like turning metal and wood.",
         imageUrl: "/images/mach/12.jpg",
     },
+    
     {
         title: "Bench Grinder",
         description:
             "A bench grinder uses two abrasive wheels to grind, sharpen, polish, and clean metal and other materials. It's versatile for tasks like sharpening tools and shaping metal.",
-        imageUrl: "/images/mach/13jpg",
+        imageUrl: "/images/mach/14.jpg",
     },
     {
         title: "Pratham 5.0",
         description:
             "Pratham 5.0 is an industrial 3D printer with a 500 x 500 x 500 mm build volume, capable of printing large and complex objects. It features fast print speeds, auto bed leveling, and filament detection.",
-        imageUrl: "/images/mach/14.jpg",
+        imageUrl: "/images/mach/15.jpg",
     },
     {
         title: "SMD Hot Air Gun",
         description:
             "An SMD hot air gun is designed for precise SMD soldering and desoldering, offering adjustable temperature settings and various nozzles for controlled heating.",
-        imageUrl: "/images/mach/15.jpg",
+        imageUrl: "/images/mach/16.jpg",
     },
     {
         title: "Analog Soldering Station",
         description:
             "Analog soldering stations use a mechanical thermostat for temperature control, with adjustments made via a knob. They are more affordable and user-friendly compared to digital models.",
-        imageUrl: "/images/mach/16.jpg",
+        imageUrl: "/images/mach/17.jpg",
     },
     {
         title: "Industrial Vacuum Cleaner",
         description:
             "Industrial vacuum cleaners are robust machines designed for heavy-duty cleaning in factories and warehouses. They feature powerful motors and HEPA filters for dust control.",
-        imageUrl: "/images/mach/17.jpg",
+        imageUrl: "/images/mach/18.jpg",
     },
     {
         title: "Oscilloscope 2 Analogue",
         description:
             "Analog oscilloscopes display electrical signal waveforms using a cathode ray tube (CRT). They measure signal properties like amplitude and frequency.",
-        imageUrl: "/images/mach/18.jpg",
+        imageUrl: "/images/mach/20.jpg",
     },
     {
         title: "Oscilloscope Model EL 801",
@@ -1495,23 +1488,18 @@ const facilitiesData = [
             "The EL 801 is a general-purpose oscilloscope with 1 MHz bandwidth and various controls for signal analysis. Known for its reliability and versatility.",
         imageUrl: "/images/mach/19.jpg",
     },
-    {
-        title: "Laser Cutter Machine",
-        description:
-            "A laser cutter is a precision machine tool that uses a high-powered laser beam to cut, engrave, and shape various materials. It accurately cuts complex designs and patterns with minimal waste. The laser cutter's advanced technology ensures precise control, high speed, and clean finishes.",
-        imageUrl: "/images/mach/20.jpg",
-    },
+    
     {
         title: "SMT Pick and Place",
         description:
             "An SMT (Surface-Mount Technology) pick-and-place machine is an automated system used in electronics manufacturing to place surface-mount components onto printed circuit boards (PCBs). It uses precision nozzles and cameras to accurately pick components from feeders and place them on the board.",
-        imageUrl: "/images/mach/22.jpeg",
+        imageUrl: "/images/mach/23.jpeg",
     },
     {
         title: "Robotic Arm",
         description:
             "A robotic arm is a programmable mechanical device that mimics the movement of a human arm. It typically consists of joints, links, and end-effectors, allowing it to perform tasks such as gripping, lifting, and manipulating objects. Robotic arms are widely used in manufacturing, automation, and medical applications.",
-        imageUrl: "/images/mach/23.jpeg",
+        imageUrl: "/images/mach/cimpress.jpg",
     },
 ];
 
@@ -2007,7 +1995,7 @@ type Patent = { sno: string; appNo: string; applicant: string; title: string };
 },
 {
   sno: "12",
-  appNo: "Not Available",
+  appNo: "4142/2425/CO/L",
   applicant: "Dr. Sonia Kaur Bansal",
   title: "Interactive Multi-Sensory Learning Method for Teaching English Poetry in Classrooms",
 }
@@ -3120,8 +3108,7 @@ type Project = { sno: string; projectname: string; studentname: string | string[
                         </h1>
                         <div className="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mb-8"></div>
                         <p className="text-xl text-neutral-600 max-w-4xl mx-auto leading-relaxed">
-                            Innovation • Development • Entrepreneurship •
-                            Advancement
+                            Idea • Development • Evaluation • Application Lab
                         </p>
                     </div>
 
@@ -3205,7 +3192,7 @@ type Project = { sno: string; projectname: string; studentname: string | string[
 
             <div className=" container mx-auto my-10 grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
                 <InfoCard
-                    title="Objective of Department"
+                    title="Objectives of Department/Lab"
                     iconClass="fas fa-tasks"
                     content={objectiveContent}
                 />
@@ -3331,7 +3318,7 @@ type Project = { sno: string; projectname: string; studentname: string | string[
 
                  <div className="container mt-10 mx-auto">
                 <h2 className="text-3xl text-primary font-bold mb-8 text-center">
-                    Seminar/ Workshop/FDP Organized
+                    Bootcamps/Hackathons/Seminars/Workshops/FDPs Organized
                 </h2>
                 <div className="w-24 h-1 bg-secondary mb-6 mx-auto"></div>
                 <DynamicTable columns={workshopcolumns } data={workshopdata} />

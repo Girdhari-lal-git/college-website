@@ -21,6 +21,7 @@ const SocialLink = ({ icon, href, label }: SocialLinkProps) => (
 type FooterLinkProps = {
   href: string;
   label: string;
+  external?: boolean;
 };
 
 const FooterLink = ({ href, label }: FooterLinkProps) => (
@@ -75,12 +76,13 @@ export default function Footer() {
 
   const quickLinks: FooterLinkProps[] = [
     
-    { href: "/", label: "Mandatory Disclosure" },
-    { href: "/admission-fees", label: "Admission & Fees" },
+    { href: "https://drive.google.com/file/d/1BpB_fTR8rjs0oom_WuVB9n7xWdefIMx6/view?usp=drive_link",  label: "Mandatory Disclosure", external: true },
+    { href: "https://drive.google.com/file/d/1k7U9oTAedlKZjm10BqfY1QrQ2btITZVb/view?usp=drive_link", label: "Public Self Disclosure" },
+    
     { href: "/placements", label: "Placements" },
     { href: "/gallery", label: "Gallery" },
-    { href: "/student-council", label: "Request Counselling" },
-   { href: "/iqac", label: "IQAC" },
+    { href: "/student-counselling", label: "Request Counselling" },
+   { href: "https://drive.google.com/file/d/12W3KoHEZyWchiXXOjTaPKqkyaTN5Va9j/view?usp=drive_link", label: "Fee Refund policy" },
     { href: "/downloads", label: "Downloads" },
   
   ];
@@ -92,7 +94,7 @@ export default function Footer() {
     { href: "/applied-sceince", label: "Applied Sciences" },
     { href: "/ideal-lab", label: "AICTE IDEA Lab" },
     { href: "/calendar", label: "Academic Calendars" },
-    
+    { href: "/iqac", label: "IQAC" },
     
   ];
 
@@ -102,10 +104,10 @@ export default function Footer() {
     { href: "/greviance", label: "Grievance Cell" },
     { href: "/complaints", label: "Complaints & Feedback" },
    { href: "/nss", label: "National Service Scheme(NSS)" },
-   { href: "https://drive.google.com/file/d/1k7U9oTAedlKZjm10BqfY1QrQ2btITZVb/view?usp=drive_link", label: "Public Self Disclosure" },
-    { href: "https://drive.google.com/file/d/12W3KoHEZyWchiXXOjTaPKqkyaTN5Va9j/view?usp=drive_link", label: "Fee Refund policy" },
+   { href: "/admission-fees", label: "Admission & Fees" },
+    
     { href: "/autonomous", label: "Autonomous PIET" },
-    { href: "/autonomous", label: "Public Information Officer" },
+    { href: "/rti-information-officer", label: "Public Information Officer" },
     
   ];
 
@@ -118,14 +120,34 @@ export default function Footer() {
           
 
           {/* Column 2 */}
-          <div>
-            <h3 className="font-heading font-bold text-xl mb-6">Quick Links</h3>
-            <ul className="space-y-3">
-              {quickLinks.map((link, index) => (
-                <FooterLink key={index} {...link} />
-              ))}
-            </ul>
-          </div>
+                    <div>
+                      <h3 className="font-heading font-bold text-xl mb-6">Quick Links</h3>
+
+                      <ul className="space-y-3">
+                        {quickLinks.map((item, idx) => (
+                          <li key={idx}>
+                            {item.external ? (
+                              <a
+                                href={item.href}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="hover:underline block"
+                              >
+                                {item.label}
+                              </a>
+                            ) : (
+                              <Link
+                                href={item.href}
+                                className="hover:underline block"
+                              >
+                                {item.label}
+                              </Link>
+                            )}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+
 
           {/* Column 3 */}
           <div>

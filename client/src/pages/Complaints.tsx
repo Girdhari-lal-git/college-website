@@ -65,7 +65,23 @@ const momColums = [
 const momData = [
     {
         sno: 1,
-        name: "Minutes of Meeting of ICC",
+        name: "Minutes of Meeting of ICC 2025-26",
+        download: (
+            <a
+                href="https://drive.google.com/file/d/1E-QXYD8c9mIMXfSvdI-e01sp9lBxykA1/view?usp=drive_link"
+                download
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <button className="bg-primary text-white px-4 py-1 rounded hover:bg-secondary transition">
+                    Download
+                </button>
+            </a>
+        ),
+    },
+    {
+        sno: 2,
+        name: "Minutes of Meeting of ICC 2024-25",
         download: (
             <a
                 href="https://drive.google.com/file/d/1a8Ekevx9bx3KAJVVXLQdIQBRE0s9VUJg/view?usp=sharing"
@@ -81,7 +97,7 @@ const momData = [
     },
 
     {
-        sno: 1,
+        sno: 3,
         name: "Minutes of Meeting of SGRC",
         download: (
             <a
