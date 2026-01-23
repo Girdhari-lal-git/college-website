@@ -3,7 +3,7 @@ export const boardsOfStudies = {
   title: "Board of Studies",
 
   departments: {
-  "BoS – Applied Sciences": {
+  "Applied Sciences": {
   type: "bos",
   members: [
     {
@@ -158,7 +158,7 @@ export const boardsOfStudies = {
     ]
   },
 
-  "BoS – CSE": {
+  "CSE": {
   type: "bos",
   members: [
     {
@@ -278,7 +278,7 @@ export const boardsOfStudies = {
     ]
   },
 
-  "BoS – AI & DS": {
+  "AI & DS": {
   type: "bos",
   members: [
     {
@@ -405,7 +405,7 @@ export const boardsOfStudies = {
     ]
   },
 
-  "BoS – IoT": {
+  "IoT": {
   type: "bos",
   members: [
     {

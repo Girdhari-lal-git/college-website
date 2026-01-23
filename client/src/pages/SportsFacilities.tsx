@@ -49,7 +49,7 @@ const SportsFacilities = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
   <Card
-    imageSrc="/images/sports/gym1.jpg"
+    imageSrc="/images/sports/pgym1.jpeg"
     title="Overview"
     description={`PIET promotes holistic development through indoor & outdoor facilities, certified coaches, and diverse equipment for student fitness.`}
     color="#f6e05e" // Tailwind yellow-400
@@ -57,7 +57,7 @@ const SportsFacilities = () => {
   />
 
   <Card
-    imageSrc="/images/sports/groun-a.jpg"
+    imageSrc="/images/sports/pgym10.jpeg"
     title="Key Facts"
     description={`Sports Facilities: Indoor & Outdoor\nPlaygrounds: 4\nPlayground Area: 38,878 sq. ft.\nCertified Coaches: 3`}
     color="#4299e1" // Tailwind blue-500
@@ -65,7 +65,7 @@ const SportsFacilities = () => {
   />
 
   <Card
-    imageSrc="/images/sports/outdoor1.jpg"
+    imageSrc="/images/sports/ground-2.jpg"
     title="Outdoor Sports"
     description={`Cricket, Football, Volleyball, Basketball, Track & Field (Shot put, Discus, Javelin, Kho-Kho, etc.)`}
     color="#48bb78" // Tailwind green-500
@@ -73,7 +73,7 @@ const SportsFacilities = () => {
   />
 
   <Card 
-    imageSrc="/images/sports/gym2.jpg"
+    imageSrc="/images/sports/pgym8.jpeg"
     title="Indoor Sports"
     description="Badminton, Table Tennis (68 bats, 89 balls, 16 nets), Carrom, Chess, Rubik’s Cubes, Boxing Gloves"
     color="#9f7aea" // Tailwind purple-500
@@ -81,7 +81,7 @@ const SportsFacilities = () => {
   />
 
   <Card
-    imageSrc="/images/sports/gym1.jpg"
+    imageSrc="/images/sports/sockert1.jpeg"
     title="Yoga & Wellness"
     description={`57 yoga mats (sports section) + 3 in gym.\nStructured sessions by expert instructors.`}
     color="#f687b3" // Tailwind pink-400
@@ -89,7 +89,7 @@ const SportsFacilities = () => {
   />
 
   <Card
-    imageSrc="/images/sports/gym2.jpg"
+    imageSrc="/images/sports/pgym5.jpeg"
     title="Gym - Cardio & Strength"
     description={`Treadmills, Spin Bikes, Lat Pull, Leg Curl, Chest Press, Cable Machines, Bicep Curl Bench.`}
     color="#f56565" // Tailwind red-400
@@ -105,7 +105,7 @@ const SportsFacilities = () => {
   />
 */}
   <Card
-    imageSrc="/images/sports/groun-a.jpg"
+    imageSrc="/images/sports/vground.jpg"
     title="Additional Equipment"
     description={`Benches (Incline, Decline, Curl), Massager, Music System, Measurement Machine.`}
     color="#06b6d4" // Tailwind cyan-500
@@ -113,7 +113,7 @@ const SportsFacilities = () => {
   />
 
   <Card
-    imageSrc="/images/sports/gym1.jpg"
+    imageSrc="/images/sports/pgym1.jpeg"
     title="Coaching Support"
     description={`Certified coaches guide students, prepare for competitions, and support skill development.`}
     color="#f97316" // Tailwind orange-400
@@ -121,7 +121,7 @@ const SportsFacilities = () => {
   />
 
   <Card
-    imageSrc="/images/sports/outdoor1.jpg"
+    imageSrc="/images/sports/billiards1.jpeg"
     title="Highlights"
     description={`30+ Sports Activities\n40+ Gym Machines & Accessories\n4 Playgrounds\nIndoor/Outdoor Zones\nWellness Sessions`}
     color="#84cc16" // Tailwind lime-500

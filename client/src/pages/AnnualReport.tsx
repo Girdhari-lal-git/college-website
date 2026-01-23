@@ -60,6 +60,13 @@ const reports = [
 ];
 
 const accounts = [
+   {
+        year: "2024-25",
+        title: "2024-25 Annual Account",
+        pdfUrl: "https://drive.google.com/file/d/1AToGJDzRF4Qt753AfJcSWjFznepQmrdv/view?usp=drive_link",
+        description: "",
+        highlights: [],
+    },
     {
         year: "2023-24",
         title: "2023-24 Annual Account",

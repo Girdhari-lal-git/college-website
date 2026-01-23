@@ -4,7 +4,9 @@ export type CommitteeType =
   | "bos"
   | "bos-group"
   | "finance"
-  | "examination";
+  | "examination"
+  | "gr-group"
+  | "grc";
 
 export interface BoGMember {
   position: string;
@@ -22,6 +24,13 @@ export interface AcademicCouncilMember {
 }
 
 export interface BoSMember {
+  category: string;
+  nominatedBy: string;
+  name: string;
+  address: string;
+}
+
+export interface GRMember {
   category: string;
   nominatedBy: string;
   name: string;
@@ -93,6 +102,19 @@ export type CommitteeData =
         {
           type: "bos";
           members: readonly BoSMember[];
+          mom: readonly MoMItem[];
+          atr: readonly ATRItem[];
+        }
+      >;
+    }
+  | {
+      type: "gr-group";
+      title: string;
+      departments: Record<
+        string,
+        {
+          type: "grc";
+          members: readonly GRMember[];
           mom: readonly MoMItem[];
           atr: readonly ATRItem[];
         }

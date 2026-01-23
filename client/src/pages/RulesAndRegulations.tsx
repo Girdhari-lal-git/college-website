@@ -18,9 +18,9 @@ const policyColumns = [
 ];
 
 const codeOfConductData = [
-     {
+         {
         sno: 1,
-        name: "Code of Conduct for (Director/Faculty/Staff) 2024-2025",
+        name: "Code of Conduct for (Director/Faculty/Staff) 2025-2026",
         download: (
             <a
                 href="https://drive.google.com/file/d/1GZSP2lX4UHMS0Zg_HJkMc27oTXIS17nc/view?usp=drive_link"
@@ -35,6 +35,21 @@ const codeOfConductData = [
     },
     {
         sno: 2,
+        name: "Code of Conduct for (Director/Faculty/Staff) 2024-2025",
+        download: (
+            <a
+                href="https://drive.google.com/file/d/1GZSP2lX4UHMS0Zg_HJkMc27oTXIS17nc/view?usp=drive_link"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <button className="bg-primary text-white px-4 py-1 rounded hover:bg-secondary transition inline-flex items-center gap-2">
+                    <i className="fas fa-download" /> Download
+                </button>
+            </a>
+        ),
+    },
+    {
+        sno: 3,
         name: "Code of Conduct for (Director/Faculty/Staff) 2023-2024",
         download: (
             <a
@@ -49,7 +64,7 @@ const codeOfConductData = [
         ),
     },
     {
-        sno: 3,
+        sno: 4,
         name: "Code of Conduct for (Director/Faculty/Staff) 2022-2023",
         download: (
             <a
@@ -64,7 +79,7 @@ const codeOfConductData = [
         ),
     },
     {
-        sno: 4,
+        sno: 5,
         name: "Code of Conduct for (Director/Faculty/Staff) 2021-2022",
         download: (
             <a
@@ -79,7 +94,7 @@ const codeOfConductData = [
         ),
     },
     {
-        sno: 5,
+        sno: 6,
         name: "Code of Conduct for (Director/Faculty/Staff) 2020-2021",
         download: (
             <a
@@ -94,7 +109,7 @@ const codeOfConductData = [
         ),
     },
     {
-        sno: 6,
+        sno: 7,
         name: "Code of Conduct for (Director/Faculty/Staff) 2019-2020",
         download: (
             <a
@@ -109,7 +124,7 @@ const codeOfConductData = [
         ),
     },
     {
-        sno: 7,
+        sno: 8,
         name: "Code of Conduct for (Director/Faculty/Staff) 2018-2019",
         download: (
             <a

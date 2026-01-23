@@ -9,14 +9,21 @@ import ExaminationCommitteeTable from "./tables/ExaminationCommitteeTable";
 import BoSSelector from "./BoSSelector";
 import MoMTable from "./MoMTable";
 import ATRTable from "./ATRTable";
+import GRTable from "./tables/GRTable";
+import GRSelector from "./GRSelector";
 
 import { CommitteeData } from "@/types/governance";
 
 interface Props {
   committee: CommitteeData;
+  onSubChange?: (name: string | null) => void;
 }
 
-const CommitteeRenderer: React.FC<Props> = ({ committee }) => {
+const CommitteeRenderer: React.FC<Props> = ({
+  committee,
+  onSubChange
+}) => {
+
   /* =====================================================
      ✅ ALL HOOKS — TOP LEVEL ONLY
      ===================================================== */
@@ -26,18 +33,35 @@ const CommitteeRenderer: React.FC<Props> = ({ committee }) => {
      🔹 Sync activeDept when committee changes
      ===================================================== */
   React.useEffect(() => {
-    if (committee.type === "bos-group") {
-      const keys = Object.keys(committee.departments ?? {});
-      setActiveDept(keys.length > 0 ? keys[0] : null);
+  if (committee.type === "bos-group" || committee.type === "gr-group") {
+    const keys = Object.keys(committee.departments ?? {});
+    setActiveDept(keys.length > 0 ? keys[0] : null);
+  } else {
+    setActiveDept(null);
+  }
+}, [committee]);
+
+
+/* =========================================
+     🔹 Notify parent when sub-committee changes
+     ========================================= */
+  React.useEffect(() => {
+    if (
+      committee.type === "bos-group" ||
+      committee.type === "gr-group"
+    ) {
+      onSubChange?.(activeDept);
     } else {
-      setActiveDept(null);
+      onSubChange?.(null);
     }
-  }, [committee]);
+  }, [activeDept, committee, onSubChange]);
+
+  
 
   /* =====================================================
      🔹 Render normal committees
      ===================================================== */
-  if (committee.type !== "bos-group") {
+  if (committee.type !== "bos-group" && committee.type !== "gr-group") {
     return (
       <>
         {committee.type === "bog" && (
@@ -63,14 +87,18 @@ const CommitteeRenderer: React.FC<Props> = ({ committee }) => {
   }
 
   /* =====================================================
-     🔹 Render Board of Studies (bos-group)
+     🔹 Render Board of Studies (bos-group) and GR Group
      ===================================================== */
   const departments = Object.keys(committee.departments ?? {});
 
-  if (!activeDept || !committee.departments[activeDept]) {
-    return <p>Loading Board of Studies…</p>;
-  }
+if (
+  !activeDept ||
+  !committee.departments?.[activeDept]
+) {
+  return <p>Loading...</p>;
+}
 
+if (committee.type === "bos-group") {
   const activeBoS = committee.departments[activeDept];
 
   return (
@@ -86,6 +114,24 @@ const CommitteeRenderer: React.FC<Props> = ({ committee }) => {
       <ATRTable data={activeBoS.atr ?? []} />
     </>
   );
-};
+}
+
+if (committee.type === "gr-group") {
+  const activeGR = committee.departments[activeDept];
+
+  return (
+    <>
+      <GRSelector
+        departments={committee.departments}
+        active={activeDept}
+        onChange={setActiveDept}
+      />
+
+      <GRTable members={activeGR.members ?? []} />
+      <MoMTable data={activeGR.mom ?? []} />
+    </>
+  );
+}
+}
 
 export default CommitteeRenderer;

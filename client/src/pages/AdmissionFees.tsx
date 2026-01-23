@@ -89,42 +89,48 @@ const AdmissionFees = () => {
     const studentProspectus = [
         {
             sno: 1,
+            name: "Student Prospectus 2025-26",
+            document:
+                "https://drive.google.com/file/d/1Cj3-lhfu9xzdAWG97slrmhodt-NrvCtD/view?usp=drive_link",
+        },
+        {
+            sno: 2,
             name: "Student Prospectus 2024-25",
             document:
                 "https://drive.google.com/file/d/1i_YTB4BkOleU_mVotgiuCXU5UhNGaPoU/view?usp=sharing",
         },
         {
-            sno: 2,
+            sno: 3,
             name: "Student Prospectus 2023-24",
             document:
                 "https://drive.google.com/file/d/14CaYDWKX2nqR8l-RusQCUNF4fIkYb7YF/view?usp=sharing",
         },
         {
-            sno: 3,
+            sno: 4,
             name: "Student Prospectus 2022-23",
             document:
                 "https://drive.google.com/file/d/12ANVV-DrCrvn-BGTG7SBPN1FJjaNL0RK/view?usp=sharing",
         },
         {
-            sno: 4,
+            sno: 5,
             name: "Student Prospectus 2021-22",
             document:
                 "https://drive.google.com/file/d/1IGGCxc6t-Ak_5E_mhIGduB5BefC9yZPp/view?usp=sharing",
         },
         {
-            sno: 5,
+            sno: 6,
             name: "Student Prospectus 2020-21",
             document:
                 "https://drive.google.com/file/d/1zRrGDfJMlRCRHUyWISdjFNM9rRS9tD4m/view?usp=sharing",
         },
         {
-            sno: 6,
+            sno: 7,
             name: "Student Prospectus 2019-20",
             document:
                 "https://drive.google.com/file/d/1jZMZ4pBXtFQLNHR2GlPuKVfQ2Q9X339h/view?usp=sharing",
         },
         {
-            sno: 7,
+            sno: 8,
             name: "Student Prospectus 2018-19",
             document:
                 "https://drive.google.com/file/d/13Osip-LUfKLVeJdcy7y3OCkdW45qgAo4/view?usp=sharing",

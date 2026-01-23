@@ -121,7 +121,7 @@ const Alumni = () => {
         </div>
       </section>
 
-      {/* TEAM */}
+      {/* TEAM 
       <section className="py-20 px-6">
         <h2 className="text-4xl font-bold text-[#002147] text-center mb-12">Team</h2>
         <div className="grid md:grid-cols-3 gap-12 max-w-6xl mx-auto">
@@ -142,7 +142,7 @@ const Alumni = () => {
             </motion.div>
           ))}
         </div>
-      </section>
+      </section> */}
 
       {/* ACTIVITIES */}
 <section className="bg-[#e5eeff] py-20 px-6">
