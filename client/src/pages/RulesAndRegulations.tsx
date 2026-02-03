@@ -713,11 +713,43 @@ const policyData = [
     },
 
     {
-        sno: 9,
+        sno: 39,
         name: "PIET Finance Policy 2025-26 onwards",
         download: (
             <a
                 href="https://drive.google.com/file/d/1ffyGVMiDl1Xiw7tT_QYJg89m8MN5iwgV/view?usp=drive_link"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <button className="bg-primary text-white px-4 py-1 rounded hover:bg-secondary transition inline-flex items-center gap-2">
+                    <i className="fas fa-download" /> Download
+                </button>
+            </a>
+        ),
+    },
+
+    {
+        sno: 40,
+        name: "Prevention of Sexual Harassment Policy",
+        download: (
+            <a
+                href="https://drive.google.com/file/d/1bjOUurB7KoMp82zbXYLrwU1xeAKYxmCM/view?usp=drive_link"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <button className="bg-primary text-white px-4 py-1 rounded hover:bg-secondary transition inline-flex items-center gap-2">
+                    <i className="fas fa-download" /> Download
+                </button>
+            </a>
+        ),
+    },
+
+    {
+        sno: 41,
+        name: "Anti-Ragging Policy",
+        download: (
+            <a
+                href="https://drive.google.com/file/d/1mcVx3QA_wHzHwN0UQN4E6pemSqyvEWIK/view?usp=drive_link"
                 target="_blank"
                 rel="noopener noreferrer"
             >

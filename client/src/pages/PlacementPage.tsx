@@ -439,8 +439,16 @@ const PlacementTeam = () => {
                   <span className="text-gray-700">+91-141-2713208</span>
                 </div>
                 <div className="flex items-center space-x-3">
+                  <Phone className="h-5 w-5 text-primary" />
+                  <span className="text-gray-700">+91-9828510629</span>
+                </div>
+                <div className="flex items-center space-x-3">
                   <Mail className="h-5 w-5 text-primary" />
                   <span className="text-gray-700">tpo@poornima.org</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <Mail className="h-5 w-5 text-primary" />
+                  <span className="text-gray-700"> diptilodha@poornima.org</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <MapPin className="h-5 w-5 text-primary" />
@@ -462,19 +470,22 @@ const OurTeamSection = () => {
   const teamMembers = [
     {
       sno: 1,
+      name: "Ms. Dipti Lodha",
+      designation: "Director - Training & Placement, Poornima Group",
+    },
+    {
+      sno: 2,
       name: "Dr. Anil Kumar",
       designation: "HoD (Computer Science & Engineering)",
     },
     {
-      sno: 2,
-      name: "Dr. Buddesh Kanwar",
+      sno: 3,
+      name: "Dr. Budesh Kanwar",
       designation: "HoD (Artificial Intelligence & Data Science)",
     },
-    { sno: 3, name: "Dr. Sama Jain", designation: "HoD (Applied Sciences)" },
-    { sno: 4, name: "Dr. Payal Bansal", designation: "HoD (IOT)" },
-    { sno: 5, name: "Mr. Mukul Nama", designation: "HoD (Civil)" },
-    { sno: 6, name: "Dr. Shurti Thapar", designation: "Tutor (CS)" },
-    { sno: 7, name: "Mr. Punit Kumawat", designation: "Tutor (AI & DS)" },
+    { sno: 4, name: "Dr. Sama Jain", designation: "HoD (Applied Sciences)" },
+    { sno: 5, name: "Dr. Payal Bansal", designation: "HoD (IOT)" },
+      
   ];
 
   return (
@@ -655,6 +666,11 @@ const ImportantLinksSection = () => {
       sno: 3,
       title: "Academia-Industry Interaction Policy",
       link: "https://drive.google.com/file/d/1N7Uet006dOKi8qNSZUmAHDGM1qQXTRZG/view?usp=sharing",
+    },
+     {
+      sno: 4,
+      title: "Placement Guidelines for Students",
+      link: "https://drive.google.com/file/d/1n6Y--_Ccbo5ANoWpcT4hko4xPiJ6ox42/view?usp=drive_link",
     },
   ];
 
@@ -889,7 +905,11 @@ const PlacementPage = () => {
               </button> */}
               <button className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary transition-all">
                 <Mail className="inline-block w-5 h-5 mr-2" />
-                Contact Placement Cell at tpo@poornima.org
+                Write Us at tpo@poornima.org or diptilodha@poornima.org
+              </button>
+              <button className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary transition-all">
+                <Phone className="inline-block w-5 h-5 mr-2" />
+                Call Us at +91-9828510629 or +91-141-2713208
               </button>
             </div>
           </motion.div>
