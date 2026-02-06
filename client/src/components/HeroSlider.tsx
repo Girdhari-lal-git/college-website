@@ -53,9 +53,10 @@ export default function HeroSlider() {
       <section className="hero-slider  relative overflow-hidden">
         <div
           ref={slideContainerRef}
-          className="slider-container relative w-full max-w-8xl mx-auto 
-               h-[350px] sm:h-[450px] md:h-[600px] lg:h-[660px] 
-               mt-8 sm:mt-8 md:mt-10 lg:mt-12 rounded-2xl shadow-lg overflow-hidden"
+          className="slider-container relative w-full max-w-8xl mx-auto  
+rounded-2xl shadow-lg overflow-hidden
+aspect-[16/9]"
+
         >
           <div className="h-full bg-gray-200 relative">
             <Skeleton className="w-full h-full" />
@@ -77,9 +78,10 @@ export default function HeroSlider() {
       <section className="hero-slider relative overflow-hidden">
         <div
           ref={slideContainerRef}
-          className="slider-container relative w-full max-w-8xl mx-auto 
-               h-[350px] sm:h-[450px] md:h-[600px] lg:h-[660px] 
-               mt-8 sm:mt-8 md:mt-10 lg:mt-12 rounded-2xl shadow-lg overflow-hidden"
+          className="slider-container relative w-full max-w-8xl mx-auto  
+rounded-2xl shadow-lg overflow-hidden
+aspect-[16/9]"
+
         >
           <div className="h-full bg-gradient-to-r from-primary to-secondary flex items-center justify-center">
             <div className="text-center text-white px-4">
@@ -100,9 +102,10 @@ export default function HeroSlider() {
     <section className="hero-slider relative overflow-hidden bg-gray-100">
   <div
     ref={slideContainerRef}
-    className="slider-container relative w-full max-w-8xl mx-auto 
-               h-[350px] sm:h-[450px] md:h-[600px] lg:h-[660px] 
-               mt-8 sm:mt-8 md:mt-10 lg:mt-12 rounded-2xl shadow-lg overflow-hidden"
+    className="slider-container relative w-full max-w-8xl mx-auto  
+rounded-2xl shadow-lg overflow-hidden
+aspect-[16/9]"
+
   >
     {banners.map((banner, index) => (
       <div

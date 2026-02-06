@@ -318,7 +318,7 @@ export default function Header() {
       category: "Chapters",
     },
     {
-      title: "Editorial Literacy Forum",
+      title: "Electoral Literacy Forum",
       description: "Democratic awareness and voting education",
       link: "/electoral-literacy-forum",
       category: "Chapters",
@@ -338,7 +338,7 @@ export default function Header() {
       category: "Innovation",
     },
     {
-      title: "Industry Institute Innovation",
+      title: "Industry Institute Interactions",
       description: "Industry-academia collaboration programs",
       link: "/industry-institute-innovation",
       category: "Innovation",
@@ -640,7 +640,7 @@ export default function Header() {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="flex items-center">
                     <div className="w-full">
-                      <Link href="/" passHref>
+                      <Link href="/">
                         <LazyImage
                           src={"/images/logo/pietlogo.png"}
                           alt={"NAAC Accreditation"}
@@ -758,8 +758,9 @@ export default function Header() {
 
       {/* Navigation */}
       <nav className="bg-gradient-primary hidden md:block">
-        <div className=" mx-auto">
-          <ul className="flex flex-col md:flex-row justify-center">
+  <div className="max-w-8xl mx-auto">
+    <ul className="flex items-center justify-between whitespace-nowrap">
+
             <li className="group relative">
               <Link
                 href="/"
@@ -779,10 +780,47 @@ export default function Header() {
               <div className="absolute left-0 mt-2 w-80 bg-white rounded-lg shadow-lg border border-gray-200 z-50 max-h-96 overflow-y-auto opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
                 <div className="py-2">
                   <Link
+                    href="/sponsering-body"
+                    className="block p-3 text-neutral-800 hover:bg-primary hover:text-white transition-colors whitespace-nowrap overflow-hidden text-ellipsis"
+                  >
+                    <i className="fas fa-handshake mr-2"></i>Sponsoring Body
+                  </Link>
+
+                  <Link
+                    href="/governing-council"
+                    className="block p-3 text-neutral-800 hover:bg-primary hover:text-white transition-colors whitespace-nowrap overflow-hidden text-ellipsis"
+                  >
+                    <i className="fas fa-gavel mr-2"></i>Board of Governors
+                  </Link>
+
+                  <Link
                     href="/about"
                     className="block p-3 text-neutral-800 hover:bg-primary hover:text-white transition-colors whitespace-nowrap overflow-hidden text-ellipsis"
                   >
                     <i className="fas fa-info-circle mr-2"></i>About PIET
+                  </Link>
+
+                  <Link
+                    href="/organogram"
+                    className="block p-3 text-neutral-800 hover:bg-primary hover:text-white transition-colors whitespace-nowrap overflow-hidden text-ellipsis"
+                  >
+                    <i className="fas fa-project-diagram mr-2"></i>Organogram
+                  </Link>
+
+
+                  <Link
+                    href="/management-team"
+                    className="block p-3 text-neutral-800 hover:bg-primary hover:text-white transition-colors whitespace-nowrap overflow-hidden text-ellipsis"
+                  >
+                    <i className="fas fa-users mr-2"></i>Management Team
+                  </Link>
+
+                  <Link
+                    href="/recognization"
+                    className="block p-3 text-neutral-800 hover:bg-primary hover:text-white transition-colors whitespace-nowrap overflow-hidden text-ellipsis"
+                  >
+                    <i className="fas fa-calculator mr-2"></i>Recognization &
+                    Approvals
                   </Link>
 
                   <a
@@ -798,21 +836,24 @@ export default function Header() {
                     className="block p-3 text-neutral-800 hover:bg-primary hover:text-white transition-colors whitespace-nowrap overflow-hidden text-ellipsis"
                   >
                     <i className="fas fa-user-tie mr-2"></i>Director's Message
-                  </Link>*/}
+                  </Link>
 
                   <Link
                     href="/messages"
                     className="block p-3 text-neutral-800 hover:bg-primary hover:text-white transition-colors whitespace-nowrap overflow-hidden text-ellipsis"
                   >
                     <i className="fas fa-envelope mr-2"></i>Messages
-                  </Link>
-
+                  </Link> 
                   <Link
-                    href="/sponsering-body"
+                    href="/advisery-board"
                     className="block p-3 text-neutral-800 hover:bg-primary hover:text-white transition-colors whitespace-nowrap overflow-hidden text-ellipsis"
                   >
-                    <i className="fas fa-handshake mr-2"></i>Sponsoring Body
+                    <i className="fas fa-users-cog mr-2"></i>Advisory Board
                   </Link>
+
+                  */}
+
+                  
 
                   <a
                     href="https://drive.google.com/file/d/1gIi22yqhg7bwRdFBS1ZtHcGDGLAbozWi/view?usp=drive_link"
@@ -822,30 +863,10 @@ export default function Header() {
                     <i className="fas fa-info-circle mr-2"></i>Institutional
                     OutReach Plan
                   </a>
-                  <Link
-                    href="/organogram"
-                    className="block p-3 text-neutral-800 hover:bg-primary hover:text-white transition-colors whitespace-nowrap overflow-hidden text-ellipsis"
-                  >
-                    <i className="fas fa-project-diagram mr-2"></i>Organogram
-                  </Link>
-                  <Link
-                    href="/advisery-board"
-                    className="block p-3 text-neutral-800 hover:bg-primary hover:text-white transition-colors whitespace-nowrap overflow-hidden text-ellipsis"
-                  >
-                    <i className="fas fa-users-cog mr-2"></i>Advisory Board
-                  </Link>
-                  <Link
-                    href="/governing-council"
-                    className="block p-3 text-neutral-800 hover:bg-primary hover:text-white transition-colors whitespace-nowrap overflow-hidden text-ellipsis"
-                  >
-                    <i className="fas fa-gavel mr-2"></i>Board of Governors
-                  </Link>
-                  <Link
-                    href="/management-team"
-                    className="block p-3 text-neutral-800 hover:bg-primary hover:text-white transition-colors whitespace-nowrap overflow-hidden text-ellipsis"
-                  >
-                    <i className="fas fa-users mr-2"></i>Management Team
-                  </Link>
+                  
+                  
+                  
+                  
                   <Link
                     href="/annual-report"
                     className="block p-3 text-neutral-800 hover:bg-primary hover:text-white transition-colors whitespace-nowrap overflow-hidden text-ellipsis"
@@ -853,13 +874,7 @@ export default function Header() {
                     <i className="fas fa-file-alt mr-2"></i>Annual Report
                   </Link>
 
-                  <Link
-                    href="/recognization"
-                    className="block p-3 text-neutral-800 hover:bg-primary hover:text-white transition-colors whitespace-nowrap overflow-hidden text-ellipsis"
-                  >
-                    <i className="fas fa-calculator mr-2"></i>Recognization &
-                    Approvals
-                  </Link>
+                  
                 </div>
               </div>
             </li>
@@ -1410,13 +1425,31 @@ export default function Header() {
             >
               <li>
                 <Link
+                  href="/sponsering-body"
+                  className="block py-2 hover:text-secondary transition-colors"
+                >
+                  <i className="fas fa-handshake mr-2"></i>Sponsoring Body
+                </Link>
+              </li>
+              
+              <li>
+                <Link
+                  href="/governing-council"
+                  className="block py-2 hover:text-secondary transition-colors"
+                >
+                  <i className="fas fa-gavel mr-2"></i>Board of Governors
+                </Link>
+              </li>
+
+              <li>
+                <Link
                   href="/about"
                   className="block py-2 hover:text-secondary transition-colors"
                 >
                   <i className="fas fa-info-circle mr-2"></i>About PIET
                 </Link>
               </li>
-              <li>
+              {/*<li>
                 <Link
                   href="/director-message"
                   className="block py-2 hover:text-secondary transition-colors"
@@ -1431,57 +1464,13 @@ export default function Header() {
                 >
                   <i className="fas fa-envelope mr-2"></i>Messages
                 </Link>
-              </li>
-              <li>
-                <a
-                  href="https://drive.google.com/file/d/1cFORo7Udcbnw7OqiDXs4eenTXl1Ur7H5/view?usp=sharing"
-                  target="_blank"
-                  className="block py-2 hover:text-secondary transition-colors"
-                >
-                  <i className="fas fa-info-circle mr-2"></i>Institutional
-                  Development Plan
-                </a>
-              </li>
-              <li>
-                <Link
-                  href="/sponsering-body"
-                  className="block py-2 hover:text-secondary transition-colors"
-                >
-                  <i className="fas fa-handshake mr-2"></i>Sponsoring Body
-                </Link>
-              </li>
-              <li>
-                <a
-                  href="https://drive.google.com/file/d/1sSR8B4kEzt1Ize_lfLveVmmtil6XTeUd/view?usp=sharing"
-                  target="_blank"
-                  className="block py-2 hover:text-secondary transition-colors"
-                >
-                  <i className="fas fa-info-circle mr-2"></i>Institutional
-                  OutReach Plan
-                </a>
-              </li>
+              </li> */}
               <li>
                 <Link
                   href="/organogram"
                   className="block py-2 hover:text-secondary transition-colors"
                 >
                   <i className="fas fa-project-diagram mr-2"></i>Organogram
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/advisery-board"
-                  className="block py-2 hover:text-secondary transition-colors"
-                >
-                  <i className="fas fa-users-cog mr-2"></i>Advisory Board
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/governing-council"
-                  className="block py-2 hover:text-secondary transition-colors"
-                >
-                  <i className="fas fa-gavel mr-2"></i>Board of Governors
                 </Link>
               </li>
               <li>
@@ -1494,10 +1483,42 @@ export default function Header() {
               </li>
               <li>
                 <Link
-                  href="/annual-report"
+                  href="/recognization"
                   className="block py-2 hover:text-secondary transition-colors"
                 >
-                  <i className="fas fa-file-alt mr-2"></i>Annual Report
+                  <i className="fas fa-calculator mr-2"></i>Recognization &
+                  Approvals
+                </Link>
+              </li>
+
+              <li>
+                <a
+                  href="https://drive.google.com/file/d/1cFORo7Udcbnw7OqiDXs4eenTXl1Ur7H5/view?usp=sharing"
+                  target="_blank"
+                  className="block py-2 hover:text-secondary transition-colors"
+                >
+                  <i className="fas fa-info-circle mr-2"></i>Institutional
+                  Development Plan
+                </a>
+              </li>
+              
+              <li>
+                <a
+                  href="https://drive.google.com/file/d/1sSR8B4kEzt1Ize_lfLveVmmtil6XTeUd/view?usp=sharing"
+                  target="_blank"
+                  className="block py-2 hover:text-secondary transition-colors"
+                >
+                  <i className="fas fa-info-circle mr-2"></i>Institutional
+                  OutReach Plan
+                </a>
+              </li>
+              
+              {/* <li>
+                <Link
+                  href="/advisery-board"
+                  className="block py-2 hover:text-secondary transition-colors"
+                >
+                  <i className="fas fa-users-cog mr-2"></i>Advisory Board
                 </Link>
               </li>
               <li>
@@ -1508,15 +1529,18 @@ export default function Header() {
                   <i className="fas fa-calculator mr-2"></i>Annual Account
                 </Link>
               </li>
+              
+              */}
+              
               <li>
                 <Link
-                  href="/recognization"
+                  href="/annual-report"
                   className="block py-2 hover:text-secondary transition-colors"
                 >
-                  <i className="fas fa-calculator mr-2"></i>Recognization &
-                  Approvals
+                  <i className="fas fa-file-alt mr-2"></i>Annual Report
                 </Link>
               </li>
+              
             </ul>
           </li>
           <li className="py-3 border-b border-neutral-200">
@@ -1589,14 +1613,7 @@ export default function Header() {
                   <i className="fas fa-edit mr-2"></i>Submit Complaint
                 </Link>
               </li>
-              <li>
-                <Link
-                  href="/management-team"
-                  className="block py-2 hover:text-secondary transition-colors"
-                >
-                  <i className="fas fa-users mr-2"></i>Management Team
-                </Link>
-              </li>
+              
               <li>
                 <Link
                   href="/cells-committees"
@@ -1613,14 +1630,7 @@ export default function Header() {
                   <i className="fas fa-book mr-2"></i>NEP 2020
                 </Link>
               </li>
-              <li>
-                <Link
-                  href="/organogram"
-                  className="block py-2 hover:text-secondary transition-colors"
-                >
-                  <i className="fas fa-project-diagram mr-2"></i>Organogram
-                </Link>
-              </li>
+              
               <li>
                 <Link
                   href="/obe"
@@ -1759,7 +1769,7 @@ export default function Header() {
                   href="/ideal-lab"
                   className="block py-2 hover:text-secondary transition-colors"
                 >
-                  <i className="fas fa-lightbulb mr-2"></i>IDEA Lab
+                  <i className="fas fa-lightbulb mr-2"></i>IDEALAB
                 </Link>
               </li>
               <li>
@@ -2009,7 +2019,7 @@ export default function Header() {
                   className="block py-2 hover:text-secondary transition-colors"
                 >
                   <i className="fas fa-users mr-2"></i>Industry Institute
-                  Innovation
+                  Intractions
                 </Link>
               </li>
             </ul>
@@ -2156,7 +2166,7 @@ export default function Header() {
                   href="/facilties"
                   className="block py-2 hover:text-secondary transition-colors"
                 >
-                  <i className="fas fa-tools mr-2"></i>Campus Tools
+                  <i className="fas fa-tools mr-2"></i>Campus Facilities
                 </Link>
               </li>
               <li>
@@ -2172,7 +2182,7 @@ export default function Header() {
         </ul>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile Menu 
       <div
         className={`bg-white shadow-xl md:hidden rounded-b-lg ${mobileMenuOpen ? "block" : "hidden"}`}
       >
@@ -2964,7 +2974,7 @@ export default function Header() {
           </li>
         </ul>
       </div>
-
+*/}
          {/* REPLACE: Inline Search Bar */}
       {/*<div
         className={`transition-all duration-300 overflow-hidden ${

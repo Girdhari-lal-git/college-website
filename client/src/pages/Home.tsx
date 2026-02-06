@@ -22,7 +22,7 @@ export default function Home() {
       <AccessibilityFeatures />
       <ConnectionStatus />
       <Header />
-      <main id="main-content">{/* Added pt-16 for header spacing */}
+      
         <HeroSlider />
         <AboutSection />
          <QuickLinks />
@@ -34,7 +34,7 @@ export default function Home() {
         <TestimonialsSection />
         <ContactSection />
         <MapSection />
-      </main>
+     
       <Footer />
     </div>
   );

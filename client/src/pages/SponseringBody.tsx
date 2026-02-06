@@ -6,8 +6,49 @@ import OverviewSection from "@/components/OverviewSection";
 import BreadCrumb from "@/components/BreadCrumb";
 import InfoCard from "@/components/InfoCard";
 import { AccessibilityFeatures } from "@/components/AccessibilityFeatures";
+import { Quote, Users, Target, Heart } from "lucide-react";
 
 const SponseringBody = () => {
+
+    
+    const messages = [
+        
+        {
+            id: 1,
+            title: "From the desk of Chairman",
+            name: "Ar. Shashikant Singhi",
+            position: "Chairman, Poornima Group",
+            image: "/images/messages/chairperson.png",
+            message: `A deep sense of appreciation, gratitude and joy surge through my heart as I greet you into the 16th year of existence of Poornima Institute of Engineering & Technology and its service to the nation. As I reminiscence over the 15 glorious years of PIET's growth, my heart fills with love, admiration and pride for the fertile soil which the College provides to the young technocrats who enter its portals to leave as responsible human beings as well as engineers. True to its motto "Gyanam Bina na kimapi Sadhyam" PIET always aspires to AIM HIGH, scaling great heights in its quest for EXCELLENCE in imparting human, intellectual, spiritual and moral formation to the students.
+
+Having successfully crossed the various hurdles encountered on the way of its growth, PIET has grown in stature and strength today, and has become one of the finest educational institutions working dedicatedly in the pursuit of knowledge and excellence. To respond effectively and creatively to the crying needs of today's society we focus on an educational program which revolves around equipping our students with such qualities of head and heart that they confidently plunge into any field of activity which is socially USEFUL, intellectually ELEVATING and spiritually ENNOBLING. In an environment where everything is measured by the yardstick of success and outcome, we train our students to think logically, systematically & analytically, so that having faced the emerging technical, economic, social, political and cultural and changes arising from globalization, they may move towards their goals with focused VISION and OBJECTIVE.
+
+Today PIET is not just a college but is a FAMILY in which the educational community, the management, staff, students, parents and alumni work together to foster this FAMILY SPIRIT. The entire atmosphere of PIET is permeated by this spirit, which promotes collaboration and cooperation leading to a human family of peace and harmony. With this spirit guiding us, we have made a deep impact in creating GOODWILL among all sections of society. I would like to make a special mention of the contribution of our ALUMNI in inspiring, motivating and encouraging our students. Be it any walk of life, there are towering POORNIMITES who are known for their competence and high levels of achievement, making a QUALITATIVE DIFFERENCE in today's world, at the state, national and international levels.
+
+In the words of our great visionary Hon'ble Ex. President of India Late Dr. APJ Abdul Kalam: "Learning gives creativity, Creativity leads to thinking, Thinking provides knowledge, and Knowledge makes you great."
+
+May the QUALITY EDUCATION we impart to our students in PIET, ENLIGHTEN their minds and ENTHUSE their hearts towards always AIMING HIGH.`,
+            signature: "JAI JAI POORNIMA SANSTHAN\nJAI HIND",
+        },
+        {
+            id: 2,
+            title: "From the desk of Director",
+            name: "Ar. Rahul Singhi",
+            position: "Director, Poornima Group",
+            image: "/images/messages/dir.jpg",
+            message: `In the present times technology and innovation are not merely a demand or desire, but they have become the foundation for our lifestyle and society. With an impressive campus and well equipped infrastructure, Poornima Institute of Engineering and Technology which was established in the year 2007 under the aegis of Shanti Education Society, provides an academic environment which is unique, amiable and interactive.
+
+We here at Poornima, recognize the abilities of our students very well and adequately educate and prepare them to harness their potential to the most and to evolve into not only successful professionals but also ethical citizens. We continuously strive for disciplined learning, research, creation and innovation. We incorporate lessons and exercises that urge the students to take care of genuine issues utilizing accessible technologies across their undergraduate educational program and proffer the society globally. We are likewise advancing learning both inside and outside the classroom. We nurture the academic skills, fine-tune the aesthetic senses and work towards building a holistic culture that values the individuality of each student. Our emphasis stays on advancing effective, certain and proficient technocrats and business visionaries with worldwide reasoning and cutting edge outlook that will add to country's progress with synchronous confidence in corporate morals.
+
+I am sure you will be pleased to go through our website and the available information will prove useful and productive for you. I also invite you to visit our campus and see with your own eyes how it stands different from others.
+
+I look forward to welcome you to Poornima Institute of Engineering & Technology and assure you that you will have a brilliant educational experience which will enable you to achieve your dreams and passion.`,
+            signature: "JAI JAI POORNIMA SANSTHAN\nJAI HIND",
+        },
+       
+    ];
+
+
     const items = [
         {
             title: "Vision",
@@ -151,7 +192,7 @@ const SponseringBody = () => {
             />
 
             {/* Hero Section with Stats */}
-            <section className="relative bg-gradient-to-r from-primary to-primary-dark text-white py-16">
+            <section className="relative bg-gradient-to-r from-red-600 to-blue-600 text-white py-16">
                 <div className="container mx-auto px-4">
                     <div className="text-center mb-12">
                         <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
@@ -288,8 +329,94 @@ const SponseringBody = () => {
                 </div>
             </section>
 
+            
+
+             {/* Introduction Section */}
+            <div className="container mx-auto px-4 lg:px-0 mb-16 mt-10">
+                <div className="text-center max-w-4xl mx-auto">
+                    <h2 className="text-4xl font-bold text-primary mb-6">
+                        Words of <span className="text-secondary">Wisdom</span>
+                    </h2>
+                    <div className="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mb-8"></div>
+                    <p className="text-xl text-neutral-600 leading-relaxed mb-12">
+                        Discover the vision, values, and aspirations that guide
+                        Poornima Institute through the inspiring messages from
+                        our esteemed leadership. These words reflect our
+                        commitment to excellence, innovation, and holistic
+                        development.
+                    </p>
+                </div>
+            </div>
+
+            {/* Messages Section */}
+            <div className="container mx-auto px-4 lg:px-0 mb-20">
+                <div className="space-y-16">
+                    {messages.map((message, index) => (
+                        <div
+                            key={message.id}
+                            className={`${index % 2 === 0 ? "bg-white" : "bg-gradient-to-br from-neutral-50 to-white"} rounded-2xl shadow-lg border border-neutral-200 overflow-hidden`}
+                        >
+                            <div className="p-8 lg:p-12">
+                                {/* Header */}
+                                <div className="flex items-start gap-6 mb-8">
+                                    <div className="flex-shrink-0">
+                                        <img
+                                            src={message.image}
+                                            alt={message.name}
+                                            className="w-20 h-20 lg:w-24 lg:h-24 rounded-xl object-cover shadow-md"
+                                        />
+                                    </div>
+                                    <div className="flex-1">
+                                        <div className="flex items-start gap-3 mb-2">
+                                            <Quote className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+                                            <h3 className="text-2xl lg:text-3xl font-bold text-primary leading-tight">
+                                                {message.title}
+                                            </h3>
+                                        </div>
+                                        <h4 className="text-xl font-semibold text-secondary mb-2">
+                                            {message.name}
+                                        </h4>
+                                        <p className="text-neutral-600 text-sm lg:text-base">
+                                            {message.position}
+                                        </p>
+                                    </div>
+                                </div>
+
+                                {/* Message Content */}
+                                <div className="prose prose-lg max-w-none">
+                                    <div className="text-neutral-700 leading-relaxed space-y-4">
+                                        {message.message
+                                            .split("\n\n")
+                                            .map((paragraph, idx) => (
+                                                <p
+                                                    key={idx}
+                                                    className="text-justify"
+                                                >
+                                                    {paragraph}
+                                                </p>
+                                            ))}
+                                    </div>
+                                </div>
+
+                                {/* Signature */}
+                                <div className="mt-8 pt-6 border-t border-neutral-200">
+                                    <div className="text-right">
+                                        <div className="inline-block bg-gradient-to-r from-primary to-secondary text-white px-4 py-2 rounded-lg font-semibold text-sm">
+                                            {message.signature
+                                                .split("\n")
+                                                .map((line, idx) => (
+                                                    <div key={idx}>{line}</div>
+                                                ))}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
             {/* Call to Action Section */}
-            <section className="py-16 bg-primary">
+            <section className="py-16 bg-gradient-to-r from-red-600 to-blue-600 text-white">
                 <div className="container mx-auto px-4 text-center">
                     <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
                         Join Our Educational Journey
@@ -317,6 +444,7 @@ const SponseringBody = () => {
                     </div>
                 </div>
             </section>
+
 
             <Footer />
         </div>
