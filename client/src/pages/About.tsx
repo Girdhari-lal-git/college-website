@@ -203,7 +203,7 @@ const FeatureCard = ({
 const About = () => {
     const stats: StatProps[] = [
         {
-            number: "15+",
+            number: "2 Decades",
             label: "Years of Excellence",
             icon: <Award className="h-6 w-6" />,
         },
@@ -304,6 +304,15 @@ const About = () => {
                                 innovation, excellence, and inclusivity.
                             </p>
                         </div>
+                         <div className="bg-white rounded-xl p-6 shadow-lg border-l-4 border-secondary">
+                                <p className="text-neutral-700 leading-relaxed">
+                                    Poornima Institute of Engineering and Technology (PIET) is a {" "}
+                                    <strong className="text-secondary">
+                                        NAAC 'A' Grade Accredited, AICTE Approved and RTU Affiliated
+                                    </strong>{" "}
+                                    premier engineering college in Jaipur.
+                                </p>
+                            </div>
 
                         <div className="space-y-6">
                             <div className="bg-white rounded-xl p-6 shadow-lg border-l-4 border-primary">
