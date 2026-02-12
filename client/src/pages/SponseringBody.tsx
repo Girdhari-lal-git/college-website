@@ -16,7 +16,7 @@ const SponseringBody = () => {
         {
             id: 1,
             title: "From the desk of Chairman",
-            name: "Ar. Shashikant Singhi",
+            name: "Sh. Shashikant Singhi",
             position: "Chairman, Poornima Group",
             image: "/images/messages/chairperson.png",
             message: `A deep sense of appreciation, gratitude and joy surge through my heart as I greet you into the 16th year of existence of Poornima Institute of Engineering & Technology and its service to the nation. As I reminiscence over the 15 glorious years of PIET's growth, my heart fills with love, admiration and pride for the fertile soil which the College provides to the young technocrats who enter its portals to leave as responsible human beings as well as engineers. True to its motto "Gyanam Bina na kimapi Sadhyam" PIET always aspires to AIM HIGH, scaling great heights in its quest for EXCELLENCE in imparting human, intellectual, spiritual and moral formation to the students.
