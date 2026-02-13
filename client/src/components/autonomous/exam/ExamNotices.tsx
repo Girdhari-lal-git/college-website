@@ -17,12 +17,12 @@ const ExamNotices: React.FC = () => {
         <tbody>
           <tr>
             <td className="border p-2">1</td>
-            <td className="border p-2">Exam Form Notification</td>
+            <td className="border p-2">Result of the B.Tech. First Semester Examination (Odd Semester) 2025-26</td>
             <td className="border p-2">
-              Notice regarding submission of examination form
+              Students are advised to view their result through the Institute ERP Portal (TCSiON) using their respective login credentials. Steps to access online results: Login TCSiON--{">"} Self Service--{">"} Exam & Grading--{">"} My Exam Result--{">"} Semester Result--{">"}Select Semester
             </td>
             <td className="border p-2">
-              <a className="text-primary" href="#">
+              <a className="text-primary" href="https://drive.google.com/file/d/1cD_GyZAlEUFHKTM0_yJX59do_H8z9KTp/view?usp=drive_link">
                 PDF
               </a>
             </td>
