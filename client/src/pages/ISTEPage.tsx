@@ -26,7 +26,7 @@ const facultyCoordinators = [
   { department: 'Applied Sciences', name: 'Dr. Balwan', phone: '9001893262', designation: 'Chairman' },
   { department: 'Applied Sciences', name: 'Dr. Mukesh Chandra', phone: '9897195374', designation: 'Secretary' },
   { department: 'Applied Sciences', name: 'Dr. Sama Jain', phone: '9414321634', designation: 'Faculty Advisor' },
-  { department: 'Applied Sciences', name: 'Dr. Bhanu Pratap', phone: '8118874724', designation: 'Faculty Coordinators' },
+  { department: 'Applied Sciences', name: 'Mr. Naveen Porwal', phone: '9950809440', designation: 'Faculty Coordinators' },
   { department: 'AI&DS', name: 'Dr. Uday Pratap', phone: '6394235053', designation: 'Faculty Coordinators' },
   { department: 'AI&DS', name: 'Dr. Budesh Kanwar', phone: '9460503316', designation: 'Faculty Coordinators' },
   { department: 'CSE', name: 'Dr. Anil Kumar', phone: '9896017351', designation: 'Faculty Coordinators' },

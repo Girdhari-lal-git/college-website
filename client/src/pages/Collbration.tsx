@@ -34,6 +34,7 @@ const partnerCategories = {
         { id: 45, src: "https://www.piet.poornima.org/images/partners/xcrotek_logo.jpg", alt: "xCroTek", name: "xCroTek", type: "Technology Partner", mou: "LLLhttps://drive.google.com/file/d/1caByHpG2demO8qPeUQwfUgvNsLexy9sl/view?usp=drive_link" },
          { id: 49, src: "/images/cmp/kedman-sony.png", alt: "SONY-KEDMAN", name: "SONY-KEDMAN", type: "Technology Partner", mou: "https://drive.google.com/file/d/1nB-HfeJn83JyakqP7LeHAwjOFA8BHoBf/view?usp=drive_link" },
         { id: 50, src: "/images/cmp/captain-tractors.png", alt: "Captain Tractors", name: "Captain Tractors", type: "Technology Partner", mou: "https://drive.google.com/file/d/1lofKQr7mCex0J-wzaltF38QD9GXyPJX4/view?usp=drive_link" },
+        { id: 54, src: "/images/cmp/iifon_logo.png", alt: "IIFON", name: "IIFON", type: "Technology Partner", mou: "https://drive.google.com/file/d/1_O1HYpO2g40y0T3D7pReu1ie_Opt6HW5/view?usp=drive_link" },
         
     ],
     academic: [
@@ -54,6 +55,7 @@ const partnerCategories = {
         { id: 5, src: "https://www.piet.poornima.org/images/partners/zeetron.PNG", alt: "Zeetron", name: "Zeetron", type: "Technology Partner", mou: "https://drive.google.com/file/d/13h9HTIFuYKdU-cRzTku9h7fMgeHsXBgo/view?usp=drive_link" },
         { id: 48, src: "/images/cmp/smartbridge_logo.jpg", alt: "Smart Bridge", name: "Smart Bridge", type: "Technology Partner", mou: "https://drive.google.com/file/d/1lOzSDT8zRkqtW2LoPMXcROCQ5nwKRkZU/view?usp=drive_link" },
          { id: 51, src: "/images/cmp/copal.jpg", alt: "Copal Publishing", name: "Copal Publishing", type: "Technology Partner", mou: "https://drive.google.com/file/d/1VGB5FkyEpsEt6cn2YVPFjV7sbicRc0FI/view?usp=drive_link" },
+         { id: 55, src: "/images/cmp/poland_University.jpg", alt: "Jan Wyzykowski University", name: "Jan Wyzykowski University, Poland", type: "Technology Partner", mou: "https://drive.google.com/file/d/1BuxZEkHQOvaL_J1du7VCMqVUWhPvJXbA/view?usp=drive_link" },
        
     ],
     publishing: [         
@@ -71,6 +73,7 @@ const partnerCategories = {
         { id: 32, src: "https://www.piet.poornima.org/images/partners/celebal.png", alt: "Celebal", name: "Celebal", type: "Placement Partner", mou: "https://drive.google.com/file/d/1AVb_gCwR-RLiFdca90WxM-OuQMkkB8aD/view?usp=drive_link" },
         { id: 52, src: "/images/cmp/edunet-partners.jpg", alt: "Edunet Foundation", name: "Edunet Foundation", type: "Placement Partner", mou: "https://drive.google.com/file/d/18yEDZr9Wo9do0YzN92JD_AzKdD6CktW1/view?usp=drive_link" },
         { id: 53, src: "/images/cmp/FACEPREP.png", alt: "Face Prep", name: "Face Prep", type: "Placement Partner", mou: "https://drive.google.com/file/d/1qihR8Tx1DeYVpO5sUhKdfF6QYKcMfehD/view?usp=drive_link" },
+        { id: 56, src: "/images/cmp/ECCouncilLogo.jpg", alt: "EC Council", name: "EC Council", type: "Technology Partner", mou: "https://drive.google.com/file/d/1P2EVQ6DddqkJ950akWU8VvsAKbiIC7B5/view?usp=drive_link" },
 
         
   

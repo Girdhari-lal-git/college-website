@@ -3731,6 +3731,7 @@ type Project = { sno: string; projectname: string; studentname: string | string[
                             </thead>
                             <tbody className="bg-white divide-y divide-gray-200">
                                 {[
+                                  
                                     {
                                         sno: "1",
                                         company:
@@ -3798,6 +3799,13 @@ type Project = { sno: string; projectname: string; studentname: string | string[
                                         company: "Technos COE",
                                         year: "2024",
                                         link: "https://drive.google.com/file/d/1A1suuwimCqzzTqIh4MuGVZqmgMzyEKpK/view?usp=sharing",
+                                    },
+                                    {
+                                        sno: "12",
+                                        company:
+                                            "IIFON",
+                                        year: "2025",
+                                        link: "https://drive.google.com/file/d/1_O1HYpO2g40y0T3D7pReu1ie_Opt6HW5/view?usp=drive_link",
                                     },
                                 ].map((item, index) => (
                                     <tr
