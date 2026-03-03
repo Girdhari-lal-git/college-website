@@ -61,7 +61,7 @@ const naacSecondCycleData: NaacFirstCycleRow[] = [
         name: "NAAC SSR Report (Second Cycle)",
         download: (
             <a
-                href="https://drive.google.com/file/d/174GPWntu1bvNlEVsukp_hNGaNAqCNcmN/view?usp=drive_link"
+                href="https://drive.google.com/file/d/17dfds4GPWntu1bvNlEVsukp_hNGaNAqCNcmN/view?usp=drive_link"
                 download
                 target="_blank"
                 rel="noopener noreferrer"
@@ -122,7 +122,7 @@ const naacFirstCycleData: NaacFirstCycleRow[] = [
         name: "NAAC SSR Report (First Cycle)",
         download: (
             <a
-                href="https://drive.google.com/file/d/1Oaglfsnel_GyFF4xY-0d9vZRnJbS0wyJ/view?usp=drive_link"
+                href="https://drive.google.com/file/d/1Odfdsdfaglfsnel_GyFF4xY-0d9vZRnJbS0wyJ/view?usp=drive_link"
                 download
                 target="_blank"
                 rel="noopener noreferrer"

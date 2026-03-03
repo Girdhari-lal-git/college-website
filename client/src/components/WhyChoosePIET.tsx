@@ -43,7 +43,7 @@ const WhyChoosePIET = () => {
 
 
   const stats = [
-    { number: "15+", label: "Years of Excellence", icon: "fas fa-calendar-alt" },
+    { number: "2 Decades", label: "Years of Excellence", icon: "fas fa-calendar-alt" },
     { number: "5000+", label: "Alumni Network", icon: "fas fa-user-graduate" },
     { number: "75%", label: "Placement Rate", icon: "fas fa-chart-line" },
     { number: "50+", label: "Industry Partners", icon: "fas fa-handshake" }

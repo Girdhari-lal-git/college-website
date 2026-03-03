@@ -398,6 +398,31 @@ const projectFieldCounts = [
     { field: "NLP", count: 1 },
 ];
 
+{/* Semester Closing Report data */}
+const scrColumns = [
+    { label: "S.No", key: "sno" },
+    { label: "Semester ", key: "title" },
+    { label: "Download", key: "link" },
+];
+
+const scrData = [
+    {
+        sno: 1,
+        title: "Semester Closing Report - 2020-21(Odd Semester)",
+        link: "https://example.com/semester-closing-report-2020-21",
+    },
+    {
+        sno: 2,
+        title: "Semester Closing Report - 2020-21(Even Semester)",
+        link: "https://example.com/semester-closing-report-2020-21-even",
+    },
+    {
+        sno: 3,
+        title: "Semester Closing Report - 2021-22(Odd Semester)",
+        link: "https://example.com/semester-closing-report-2021-22",    
+    },
+   
+];
 
 
 
@@ -442,7 +467,7 @@ const AppliedScience = () => {
                     const transformedFaculty = appliedScienceFaculty.map((faculty: Faculty) => ({
                         imageSrc: faculty.imageUrl || "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_FZR1-SNQItQMwECGXMp7MYCspr3Fm0R61Q&s",
                         name: faculty.name,
-                        gender: faculty.gender,
+                        //gender: faculty.gender,
                         designation: faculty.designation,
                     }));
                     
@@ -615,6 +640,46 @@ HOD, Department of Applied Sciences, PIET`}
     </div>
   </div>
 </section>
+
+{/* Semester closing Reports data */}
+             <div className="text-center mx-auto px-4 lg:px-0 relative z-10 my-10 flex items-center justify-center flex-col">
+  <h2 className="text-3xl font-heading font-bold text-primary mb-6 leading-tight font-extrabold text-gray-900 pb-2 inline-block">
+    Semester Closing Reports
+  </h2>
+  <div className="w-24 h-1 bg-secondary mb-6 mx-auto"></div>
+
+
+  {/* Table Section */}
+<div className="bg-white container mx-auto mt-10 overflow-x-auto p-4 rounded-lg">
+  <table className="w-full border border-gray-200 divide-y divide-gray-200 rounded-lg shadow-lg">
+    <thead className="bg-gray-100">
+      <tr>
+        <th className="px-4 py-3 text-center text-sm font-semibold text-gray-700">Sr. No.</th>
+        <th className="px-4 py-3 text-center text-sm font-semibold text-gray-700">Semester Closing Report</th>
+        <th className="px-4 py-3 text-center text-sm font-semibold text-gray-700">Download</th>
+      </tr>
+    </thead>
+    <tbody className="bg-white divide-y divide-gray-200">
+      {scrData.map((report, idx) => (
+        <tr key={idx} className="hover:bg-gray-50 transition">
+          <td className="px-4 py-3 text-md text-gray-800">{report.sno}</td>
+          <td className="px-4 py-3 text-md text-gray-800">{report.title}</td>
+          <td className="px-4 py-3 text-md text-primary">
+            <a
+              href={report.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-primary-dark"
+            >
+              View Report
+            </a>
+          </td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
+</div>
             <CourseOutcomeAccordion data={courseData} />
 
             <Cta />

@@ -250,6 +250,71 @@ const fdpData = [
     { sno: 13, title: "ENGIFEST-2022, ENGINEERS DAY CELEBRATION, 2022" },
 ];
 
+const scrColumns = [
+    { label: "S.No", key: "sno" },
+    { label: "Semester ", key: "title" },
+    { label: "Download", key: "link" },
+];
+
+const scrData = [
+     {
+        sno: 1,
+        title: "Semester Closing Report - 2020-21(Odd Semester)",
+        link: "https://drive.google.com/file/d/1D_CSqeZXXuVLBlod0RygtGdF-d-xr-37/view?usp=drive_link",
+    },
+    {
+        sno: 2,
+        title: "Semester Closing Report - 2020-21(Even Semester)",
+        link: "https://drive.google.com/file/d/1icyi5_tIFmGDQFqhP2_Ju7gNpJQMJ7y2/view?usp=drive_link",
+    },
+    {
+        sno: 3,
+        title: "Semester Closing Report - 2021-22(Odd Semester)",
+        link: "https://drive.google.com/file/d/13W7b0bRe2FLX_1CuLHo2ZUuTXB4fsp2I/view?usp=drive_link",
+    },
+     {
+        sno: 4,
+        title: "Semester Closing Report - 2021-22(Even Semester)",
+        link: "https://drive.google.com/file/d/1JvsMgAmbCaTnYzhn-zxAZtpA4HndEo7i/view?usp=drive_link",
+    },
+    {
+        sno: 5,
+        title: "Semester Closing Report - 2022-23(Odd Semester)",
+        link: "https://drive.google.com/file/d/1tMJJ63spPPp78BhbOxNxKCnUKaDAJF8z/view?usp=drive_link",
+    },
+    {
+        sno: 6,
+        title: "Semester Closing Report - 2022-23(Even Semester)",
+        link: "https://drive.google.com/file/d/1gsPwlZV1wSwOv_d90BeOXVeG9fc6OOZM/view?usp=drive_link",
+    },
+    {
+        sno: 7,
+        title: "Semester Closing Report - 2023-24(Odd Semester)",
+        link: "https://drive.google.com/file/d/1rnni76FoDgC4fADaGDm-dZ1iYxOz2NbM/view?usp=drive_link",
+    },
+     {
+        sno: 8,
+        title: "Semester Closing Report - 2023-24(Even Semester)",
+        link: "https://drive.google.com/file/d/1Gs1bxLTi1SxGp5-gK8KVtienF-dflGBP/view?usp=drive_link",
+    },
+    {
+        sno: 9,
+        title: "Semester Closing Report - 2024-25(Odd Semester)",
+        link: "https://drive.google.com/file/d/1m1vx_j71FjMX6daWrcQVOF920Epor3Yt/view?usp=drive_link",
+    },
+    {
+        sno: 10,
+        title: "Semester Closing Report - 2024-25(Even Semester)",
+        link: "https://drive.google.com/file/d/1Nw87uFHcEUrG_RbXAKd0Feb_pvoTFGyz/view?usp=drive_link",    
+    },
+    {
+        sno: 11,
+        title: "Semester Closing Report - 2025-26(Odd Semester)",
+        link: "https://drive.google.com/file/d/1KDlDvFMr2Se1r7LjBnR_W7ZzVy8DWvlc/view?usp=drive_link",    
+    },
+   
+];
+
 export const courseData: SubjectCO[] = [
     {
         subject: "Advanced Engineering Mathematics",
@@ -1778,7 +1843,7 @@ const ComputerScience = () => {
                                 faculty.imageUrl ||
                                 "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_FZR1-SNQItQMwECGXMp7MYCspr3Fm0R61Q&s",
                             name: faculty.name,
-                            gender: faculty.gender,
+                           // gender: faculty.gender,
                             designation: faculty.designation,
                         }),
                     );
@@ -1989,6 +2054,46 @@ HOD, Department of Computer Engineering, PIET`}
                 <div className="w-24 h-1 bg-secondary mb-6 mx-auto"></div>
                 <DynamicTable columns={fdpColumns} data={fdpData} />
             </div>
+                {/* Semester closing Reports data */}
+             <div className="text-center mx-auto px-4 lg:px-0 relative z-10 my-10 flex items-center justify-center flex-col">
+  <h2 className="text-3xl font-heading font-bold text-primary mb-6 leading-tight font-extrabold text-gray-900 pb-2 inline-block">
+     Semester Closing Reports
+  </h2>
+  <div className="w-24 h-1 bg-secondary mb-6 mx-auto"></div>
+
+
+  {/* Table Section */}
+<div className="bg-white container mx-auto mt-10 overflow-x-auto p-4 rounded-lg">
+  <table className="w-full border border-gray-200 divide-y divide-gray-200 rounded-lg shadow-lg">
+    <thead className="bg-gray-100">
+      <tr>
+        <th className="px-4 py-3 text-center text-sm font-semibold text-gray-700">Sr. No.</th>
+        <th className="px-4 py-3 text-center text-sm font-semibold text-gray-700">Semester Closing Report</th>
+        <th className="px-4 py-3 text-center text-sm font-semibold text-gray-700">Download</th>
+      </tr>
+    </thead>
+    <tbody className="bg-white divide-y divide-gray-200">
+      {scrData.map((report, idx) => (
+        <tr key={idx} className="hover:bg-gray-50 transition">
+          <td className="px-4 py-3 text-md text-gray-800">{report.sno}</td>
+          <td className="px-4 py-3 text-md text-gray-800">{report.title}</td>
+          <td className="px-4 py-3 text-md text-primary">
+            <a
+              href={report.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-primary-dark"
+            >
+              View Report
+            </a>
+          </td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
+</div>
+
 
             <Cta />
             <Footer />

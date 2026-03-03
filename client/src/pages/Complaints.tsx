@@ -136,7 +136,7 @@ const Complaints = () => {
                 subtitle=" Creating a Safe and Respectful Environment"
                 reverse={false}
                 image={{
-                    src: "/public/images/Committies/icc/icc.PNG",
+                    src: "/images/Committies/icc/icc.png",
                     alt: "Internal Complaints Committee",
                     caption: "Accredited with Grade 'A' by NAAC",
                 }}

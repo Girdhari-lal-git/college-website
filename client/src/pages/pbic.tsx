@@ -66,7 +66,7 @@ const Innovation = [
     "Mentorship by domain experts, successful entrepreneurs, and industry leaders.",
     "Networking opportunities with investors, industry partners, and other startups.",
 ];
-const Utility = ["PElectricity", "Internet", "Water", "Maintenance"];
+const Utility = ["Electricity", "Internet", "Water", "Maintenance"];
 
 const annualreports = [
     

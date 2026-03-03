@@ -180,6 +180,51 @@ const Recogniation = () => {
                     </CardFooter>
                 </Card>
 
+                <div className="text-center animate-slideInDown mt-16">
+                    <h2 className="text-3xl font-heading font-bold text-primary mb-6 leading-tight font-extrabold text-gray-900 pb-2 inline-block">
+                        Autonomous Status by UGC and RTU
+                    </h2>
+                    <div className="w-24 h-1 bg-secondary mb-6 mx-auto"></div>
+                </div>
+
+                {/* Recognition Card */}
+                <Card className="container mx-auto mt-10 shadow-md animate-slideInLeft">
+                    <CardHeader>
+                        <CardTitle>Autonomous Status by UGC</CardTitle>
+                        <CardDescription>
+                            Conferment of Autonomous Status upon PIET
+                        </CardDescription>
+                    </CardHeader>
+                    <CardFooter>
+                        <a
+                            href="https://drive.google.com/file/d/123FMQxBN6xvkRDkEOpDi-2yS0dQw5Cab/view?usp=drive_link"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="btn btn-primary"
+                        >
+                            <i className="fas fa-file-pdf mx-2"></i> View PDF
+                        </a>
+                    </CardFooter>
+                </Card>
+                 <Card className="container mx-auto mt-10 shadow-md animate-slideInLeft">
+                    <CardHeader>
+                        <CardTitle>Autonomous Status approval by RTU</CardTitle>
+                        <CardDescription>
+                            Notification of Autonomous Status approval by RTU for PIET
+                        </CardDescription>
+                    </CardHeader>
+                    <CardFooter>
+                        <a
+                            href="https://drive.google.com/file/d/1TeLf_4NWqRtsTm5jtVsMJjK9r4hYMHT_/view?usp=drive_link"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="btn btn-primary"
+                        >
+                            <i className="fas fa-file-pdf mx-2"></i> View PDF
+                        </a>
+                    </CardFooter>
+                </Card>
+
                 <div className="flex flex-col lg:flex-row gap-12 mt-16">
                     {/* AICTE Approvals */}
                     <div className="flex-1 animate-slideInLeft">

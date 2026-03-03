@@ -509,6 +509,15 @@ export default function Header() {
           </div>
           <div className="flex items-center space-x-4">
                             <a
+                    href="https://www.aicte.gov.in/schemes/students-development-schemes"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm hover:text-accent-light transition-colors"
+                  >
+                    AICTE Scholarships
+                  </a>
+         
+                            <a
                     href="https://www4.tcsion.com/SelfServices"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -1076,13 +1085,14 @@ export default function Header() {
                     <i className="fas fa-hand-holding-usd mr-2"></i>Fundings
                   </Link>
 
+                  {/*
                   <Link
                     href="/iprs"
                     className="block p-3 text-neutral-800 hover:bg-primary hover:text-white transition-colors whitespace-nowrap overflow-hidden text-ellipsis"
                   >
                     <i className="fas fa-shield-alt mr-2"></i>IPRs
                   </Link>
-
+                  */}
                   <Link
                     href="/research-activities"
                     className="block p-3 text-neutral-800 hover:bg-primary hover:text-white transition-colors whitespace-nowrap overflow-hidden text-ellipsis"
