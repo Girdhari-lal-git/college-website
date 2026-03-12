@@ -36,6 +36,14 @@ const events = [
     description: "Expert talks and workshops on AI advancements.",
     link: "/events/ai-conclave",
   },
+  {
+    id: 4,
+    image:
+      "/images/UpcomingEvents/Mini_convo-1.jpg",
+    title: "11th Mini Convocation Ceremony",
+    description: "Celebrating the achievements of our graduating students.",
+    link: "/events/mini-convocation",
+  },
 ];
 
 

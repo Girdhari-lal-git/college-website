@@ -409,18 +409,54 @@ const scrData = [
     {
         sno: 1,
         title: "Semester Closing Report - 2020-21(Odd Semester)",
-        link: "https://example.com/semester-closing-report-2020-21",
+        link: "https://drive.google.com/file/d/1kcV4F2n4qQKiQXUY4FXNYgNRevVNJh2J/view?usp=drive_link",
     },
     {
         sno: 2,
         title: "Semester Closing Report - 2020-21(Even Semester)",
-        link: "https://example.com/semester-closing-report-2020-21-even",
+        link: "https://drive.google.com/file/d/1kcV4F2n4qQKiQXUY4FXNYgNRevVNJh2J/view?usp=drive_link",
     },
     {
         sno: 3,
         title: "Semester Closing Report - 2021-22(Odd Semester)",
-        link: "https://example.com/semester-closing-report-2021-22",    
+        link: "https://drive.google.com/file/d/1Q9F07zl7FM01fez9QbFgwO6oi1FWtpZC/view?usp=drive_link",    
     },
+    {
+        sno: 4,
+        title: "Semester Closing Report - 2021-22(Even Semester)",
+        link: "https://drive.google.com/file/d/1LWtKmSEjp45eAFEvbAVqkrA7bXCO7pXv/view?usp=drive_link",    
+    },
+    {
+        sno: 5,
+        title: "Semester Closing Report - 2022-23(Odd Semester)",
+        link: "https://drive.google.com/file/d/11WxlePHIg88JpVPW7UolFk3wNuBOYltX/view?usp=drive_link",    
+    },
+    {
+        sno: 6,
+        title: "Semester Closing Report - 2022-23(Even Semester)",
+        link: "https://drive.google.com/file/d/1oj7NqWfCX_2gJRXjHO6TvYFZocqSk58h/view?usp=drive_link",    
+    },
+    {
+        sno: 7,
+        title: "Semester Closing Report - 2023-24(Odd Semester)",
+        link: "https://drive.google.com/file/d/1U6i2dmKCB5vhJ_C8SCcm6Yi5R10h-5EJ/view?usp=drive_link",    
+    },
+    {
+        sno: 8,
+        title: "Semester Closing Report - 2023-24(Even Semester)",
+        link: "https://drive.google.com/file/d/1U6i2dmKCB5vhJ_C8SCcm6Yi5R10h-5EJ/view?usp=drive_link",    
+    },
+    {
+        sno: 9,
+        title: "Semester Closing Report - 2024-25(Odd Semester)",
+        link: "https://drive.google.com/file/d/1mJX1cPLQ0v61F0xRQXYIUYghfw_xS_E0/view?usp=drive_link",    
+    },
+    {
+        sno: 10,
+        title: "Semester Closing Report - 2024-25(Even Semester)",
+        link: "https://drive.google.com/file/d/1nL3Km3Yopeod5cCSVMZ29zwHJOQo91xh/view?usp=drive_link",    
+    },
+    
    
 ];
 
