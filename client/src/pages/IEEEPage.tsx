@@ -38,6 +38,7 @@ const activities = [
   { date: "08 Oct 2025", event: "IEEE Day Brain War", coordinator: "IEEE Team PIET" },
   { date: "09 Oct 2025", event: "IEEE Gaming Session", coordinator: "IEEE Team PIET" },
   { date: "10 Oct 2025", event: "Udbhav 2025 & Valedictory Ceremony", coordinator: "IEEE Team PIET" },
+   { date: "7-8 Feb 2026", event: "DSSYWLC 2025", coordinator: "IEEE Team PIET" },
 ];
 
 const chapters = [
@@ -188,7 +189,7 @@ const IEEEPage = () => (
         Event Gallery
       </h2>
       <div className="container mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {["ieee-1.JPG","ieee-2.JPG","ieee-3.jpg","ieee-4.jpg","ieee-5.jpg","ieee-6.jpg"].map((img, i) => (
+        {["ieee-1.JPG","ieee-2.JPG","ieee-3.jpg","ieee-4.jpg","ieee-5.jpg","ieee-6.jpg","Dssywlc1.JPG","Dssywlc2.JPG","Dssywlc3.JPG"].map((img, i) => (
           <img
             key={i}
             src={`/images/chapters/ieee/${img}`}

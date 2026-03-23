@@ -25,6 +25,22 @@ const nirfColumns: TableColumn[] = [
 const nirfData: NirfDataItem[] = [
     {
         sno: 1,
+        name: "NIRF_Sustainable-Institutions_2025-26",
+        download: (
+            <a
+                href="https://drive.google.com/file/d/1Dp3XfksvX3m3HWIjw_3-ZixpRiyo48-r/view?usp=drive_link"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <button className="bg-primary text-white px-4 py-1 rounded hover:bg-secondary transition inline-flex items-center gap-2">
+                    <i className="fas fa-download" /> Download
+                </button>
+            </a>
+        ),
+    },
+
+    {
+        sno: 2,
         name: "NIRF_Overall_2026",
         download: (
             <a
@@ -40,7 +56,7 @@ const nirfData: NirfDataItem[] = [
     },
 
     {
-        sno: 2,
+        sno: 3,
         name: "NIRF_Engineering_2026",
         download: (
             <a
@@ -56,7 +72,7 @@ const nirfData: NirfDataItem[] = [
     },
 
     {
-        sno: 3,
+        sno: 4,
         name: "NIRF_SDG_Institution_2025",
         download: (
             <a
@@ -71,7 +87,7 @@ const nirfData: NirfDataItem[] = [
         ),
     },
     {
-        sno: 4,
+        sno: 5,
         name: "NIRF_Engineering_2025",
         download: (
             <a
@@ -86,7 +102,7 @@ const nirfData: NirfDataItem[] = [
         ),
     },
     {
-        sno: 5,
+        sno: 6,
         name: "NIRF College_2025",
         download: (
             <a
@@ -101,7 +117,7 @@ const nirfData: NirfDataItem[] = [
         ),
     },
     {
-        sno: 6,
+        sno: 7,
         name: "NIRF_Innovation_2024",
         download: (
             <a
@@ -116,7 +132,7 @@ const nirfData: NirfDataItem[] = [
         ),
     },
     {
-        sno: 7,
+        sno: 8,
         name: "NIRF_Engineering_2024",
         download: (
             <a
@@ -131,7 +147,7 @@ const nirfData: NirfDataItem[] = [
         ),
     },
     {
-        sno: 8,
+        sno: 9,
         name: "NIRF Engineering_2023",
         download: (
             <a
