@@ -37,12 +37,11 @@ export default function GreenPIETSection() {
           className="text-center mb-12"
         >
           <h2 className="text-4xl md:text-5xl font-heading font-bold text-green-800 mb-4">
-            GREEN PIET
+            Campus Tour: A Glimpse into the Heart of PIET
           </h2>
           <div className="w-24 h-1 bg-green-600 mx-auto mb-6"></div>
           <p className="text-lg text-green-700 max-w-3xl mx-auto">
-            Discover our commitment to environmental sustainability and green initiatives
-            that make PIET an eco-friendly campus for future generations.
+            Step into the inspiring world of PIET and explore the campus where future engineers are shaped through innovation, knowledge, creativity, and real-world learning.
           </p>
         </motion.div>
 
@@ -54,26 +53,36 @@ export default function GreenPIETSection() {
           className="max-w-6xl mx-auto"
         >
           <div className="relative bg-white rounded-2xl shadow-2xl overflow-hidden border border-green-100">
-            <div className="relative" style={{ padding: "56.25% 0 0 0", position: "relative" }}>
-              <iframe 
-                src="https://player.vimeo.com/video/1106655883?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&loop=1&controls=0&dnt=1" 
+            <div className="relative" style={{ padding: "0 0 0 0", position: "relative" }}>
+              {/* <iframe
+              src="https://player.vimeo.com/video/1176828957?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&loop=1&controls=0&dnt=1" 
+                //src="https://player.vimeo.com/video/1106655883?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&loop=1&controls=0&dnt=1" 
                 frameBorder="0" 
                 allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
                 referrerPolicy="strict-origin-when-cross-origin" 
                 style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }} 
                 title="Green Campus"
                 className="rounded-t-2xl"
-              />
+              /> */}
+              <iframe
+  src="https://player.vimeo.com/video/1176828957?autoplay=1&loop=1&muted=1&controls=1&title=1&byline=0&portrait=0&badge=0&autopause=0&dnt=1"
+  width="960"
+  height="540"
+  frameborder="1"
+  allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+  referrerpolicy="strict-origin-when-cross-origin"
+  title="PIET Campus Tour"
+></iframe>
             </div>
             
-            {/* Video overlay info */}
+            {/* Video overlay info 
             <div className="absolute top-4 left-4 bg-green-600/90 backdrop-blur-sm text-white px-4 py-2 rounded-full z-10">
               <div className="flex items-center space-x-2">
                 <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-                <span className="text-sm font-semibold">GREEN CAMPUS</span>
+                <span className="text-sm font-semibold">CAMPUS TOUR</span>
               </div>
-            </div>
-          </div>
+            </div> */}
+          </div> 
 
           {/* Additional info cards */}
           <div className="grid md:grid-cols-3 gap-6 mt-12">

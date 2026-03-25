@@ -1175,6 +1175,12 @@ export default function Header() {
                   >
                     <i className="fas fa-book mr-2"></i>Times Ranking
                   </Link>
+                   <Link
+                    href="/firefood-certificate"
+                    className="block p-3 text-neutral-800 hover:bg-primary hover:text-white transition-colors whitespace-nowrap overflow-hidden text-ellipsis"
+                  >
+                    <i className="fas fa-book mr-2"></i>Fire & Food Safety Certificates
+                  </Link>
                 </div>
               </div>
             </li>
