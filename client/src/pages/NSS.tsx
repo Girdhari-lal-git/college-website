@@ -10,6 +10,7 @@ import InfoCard from '@/components/InfoCard'
 import GallerySection from '@/components/GallerySection'
 import ImageGallery from '@/components/ImageGallery'
 import DynamicTable from '@/components/DynamicTable '
+import NssCoreTeamsSection from "@/components/NssCoreTeamsSection";
 import { AccessibilityFeatures } from '@/components/AccessibilityFeatures'
 const points = [
     'First, regular NSS activities during which volunteers devote 120 hours per year for various community service initiatives.',
@@ -52,6 +53,31 @@ const imageItems = [
         title: "",
         imageUrl: "https://www.piet.poornima.org/images/media-6.jpg",
     },
+    {
+        title: "Receiving Award of excellence",
+        imageUrl: "images/chapters/nss/activities/25nss1.jpeg",
+    },
+    {
+        title: "Natya Manchana for Social Transformation",
+        imageUrl: "images/chapters/nss/activities/25nss2.jpeg",
+    },
+    {
+        title: "Nari Adamya Samman",
+        imageUrl: "images/chapters/nss/activities/25nss3.jpeg",
+    },
+    {
+        title: "Certificate of Appreciation for Outstanding Contribution",
+        imageUrl: "images/chapters/nss/activities/25nss4.jpeg",
+    },
+    {
+        title: "Community Service Day",
+        imageUrl: "images/chapters/nss/activities/25nss5.jpeg",
+    },
+    {
+        title: "Special 7 Day Camp - Inauguration and Environmental Consciousness",
+        imageUrl: "images/chapters/nss/activities/25nss6.jpeg",
+    },
+
 
 
 ];
@@ -61,7 +87,6 @@ const activityColumns = [
     { label: 'S.N.', key: 'sno' },
     { label: 'Activity', key: 'activity' },
     { label: 'Date', key: 'date' },
-    { label: 'Time', key: 'time' },
     { label: 'No. of Attendees', key: 'attendees' },
     { label: 'Venue', key: 'venue' },
 ];
@@ -92,20 +117,40 @@ const activityData = [
 { sno: 16, activity: 'Session on Scope of Business in Rural Areas', date: '05/05/2025', time: '', attendees: '', venue: 'PIET JAIPUR' },
 { sno: 17, activity: 'World Environment Day', date: '05/06/2025', time: '', attendees: '', venue: 'PIET JAIPUR' },
 { sno: 18, activity: 'International Yoga Day', date: '21/06/2025', time: '', attendees: '', venue: 'PIET JAIPUR' },
-{ sno: 19, activity: 'Free Health Checkup Camp', date: '06/07/2025', time: '', attendees: '', venue: 'PIET JAIPUR' },
-{ sno: 20, activity: 'Life Saving Skills Training Program', date: '02/08/2025', time: '', attendees: '', venue: 'PIET JAIPUR' },
-{ sno: 21, activity: 'Red Run Marathon', date: '08/08/2025', time: '', attendees: '', venue: 'PIET JAIPUR' },
-{ sno: 22, activity: 'Independence Day Celebration', date: '15/08/2025', time: '', attendees: '', venue: 'PIET JAIPUR' },
-{ sno: 23, activity: 'Ramchandrpura Govt School Celebration', date: '15/08/2025', time: '', attendees: '', venue: 'PIET JAIPUR' },
-{ sno: 24, activity: 'Yoga Session', date: '26/08/2025', time: '', attendees: '', venue: 'PIET JAIPUR' },
-{ sno: 25, activity: 'NSS Orientation and IKS Knowledge', date: '03/09/2025', time: '', attendees: '', venue: 'PIET JAIPUR' },
-{ sno: 26, activity: 'Student Outreach Activity', date: '06/09/2025', time: '', attendees: '', venue: 'PIET JAIPUR' },
-{ sno: 27, activity: 'One Day UNICEF Training on Mental Health Awareness', date: '12/09/2025', time: '', attendees: '', venue: 'PIET JAIPUR' },
-{ sno: 28, activity: 'Expression Wall', date: '17/09/2025', time: '', attendees: '', venue: 'PIET JAIPUR' },
-{ sno: 29, activity: 'Debate Competition', date: '23/09/2025', time: '', attendees: '', venue: 'PIET JAIPUR' },
-{ sno: 30, activity: 'Poster Competition', date: '24/09/2025', time: '', attendees: '', venue: 'PIET JAIPUR' },
-{ sno: 31, activity: 'NSS Day Celebration', date: '24/09/2025', time: '', attendees: '', venue: 'PIET JAIPUR' },
-
+{ sno: 19, activity: 'Free Health Checkup Camp', date: '06/07/2025', attendees: '50+', venue: 'PIET JAIPUR' },
+{ sno: 20, activity: 'Life Saving Skills Training Program', date: '02/08/2025', attendees: '25+', venue: 'PIET JAIPUR' },
+{ sno: 21, activity: 'HIV/AIDS Awareness "Red Run Marathon - 2025"', date: '08/08/2025', attendees: '40+', venue: 'PIET JAIPUR' },
+{ sno: 22, activity: '79th Independence Day', date: '15/08/2025', attendees: '40+', venue: 'PIET JAIPUR' },
+{ sno: 23, activity: 'Independence Day Celebration at Ramchandrpura Govt School', date: '15/08/2025', attendees: '200+', venue: 'PIET JAIPUR' },
+{ sno: 24, activity: 'Yoga Session', date: '26/08/2025', attendees: '50+', venue: 'PIET JAIPUR' },
+{ sno: 25, activity: 'NSS Orientation and Awareness Session on IKS', date: '03/09/2025', attendees: '200+', venue: 'PIET JAIPUR' },
+{ sno: 26, activity: 'Student Outreach Activity', date: '06/09/2025', attendees: '150+', venue: 'PIET JAIPUR' },
+{ sno: 27, activity: 'One Day UNICEF Training "Mental Health Awareness"', date: '12/09/2025', attendees: '', venue: 'PIET JAIPUR' },
+{ sno: 28, activity: 'Expression Wall Activity for Emotional Well Being', date: '17/09/2025', attendees: '35+', venue: 'PIET JAIPUR' },
+{ sno: 29, activity: 'Box Story Telling for Soundness of Mind', date: '19/09/2025', attendees: '15+', venue: 'PIET JAIPUR' },
+{ sno: 30, activity: 'Vox Pop Activity for Mental Stability', date: '20/09/2025', attendees: '15+', venue: 'PIET JAIPUR' },
+{ sno: 31, activity: 'Online Survey for Mental Wellness', date: '21/09/2025', attendees: '35+', venue: 'PIET JAIPUR' },
+{ sno: 32, activity: 'Debate Competition for Psychological State of Students', date: '22/09/2025', attendees: '30+', venue: 'PIET JAIPUR' },
+{ sno: 33, activity: 'Poster Making Competition Mental Health', date: '23/09/2025', attendees: '15+', venue: 'PIET JAIPUR' },
+{ sno: 34, activity: 'NSS Day & II Unit Inauguration', date: '24/09/2025', attendees: '200+', venue: 'PIET JAIPUR' },
+{ sno: 35, activity: 'Swachhta Pakhwada', date: '30/09/2025', attendees: '30+', venue: 'PIET JAIPUR' },
+{ sno: 36, activity: 'Blood Donation Camp', date: '08/10/2025', attendees: '40+', venue: 'PIET JAIPUR' },
+{ sno: 37, activity: 'Diya Decoration', date: '15/10/2025', attendees: '15+', venue: 'PIET JAIPUR' },
+{ sno: 38, activity: 'Old Age Home Visit', date: '17/10/2025', attendees: '45+', venue: 'PIET JAIPUR' },
+{ sno: 39, activity: 'Road Safety Training', date: '04/11/2025', attendees: '50+', venue: 'PIET JAIPUR' },
+{ sno: 40, activity: 'Experience Sharing Workshop & Feedback Session on Man Darpan Initiative', date: '14/11/2025', attendees: '15+', venue: 'PIET JAIPUR' },
+{ sno: 41, activity: "Children's Day Celebration", date: '15/11/2025', attendees: '55+', venue: 'PIET JAIPUR' },
+{ sno: 42, activity: "International Men's Day Celebration", date: '19/11/2025', attendees: '25+', venue: 'PIET JAIPUR' },
+{ sno: 43, activity: 'Volunteering & Enhancing Sports Initiative "Khelo India University Games 2025"', date: '24/11/2025', attendees: '50+', venue: 'PIET JAIPUR' },
+{ sno: 44, activity: 'Training Session on Government Initiative & "My Bharat" Portal', date: '29/09/2025', attendees: '15+', venue: 'PIET JAIPUR' },
+{ sno: 45, activity: 'Seven Days Special Camp', date: '28/11/2025', attendees: '45+', venue: 'PIET JAIPUR' },
+{ sno: 46, activity: 'Closing Ceremony of Seven Days Camp & Admya Nari Ratan Samman Samroh 2025', date: '07/12/2025', attendees: '40+', venue: 'PIET JAIPUR' },
+{ sno: 47, activity: 'Awareness Session on the Sexual Harassment of Women at Workplace (POSH Act)', date: '17/12/2025', attendees: '35+', venue: 'PIET JAIPUR' },
+{ sno: 48, activity: 'Veer Baal Diwas Celebration', date: '26/12/2025', attendees: '40+', venue: 'PIET JAIPUR' },
+{ sno: 49, activity: 'Visit & Showcasing the Power of Youth by Indian Army Parade', date: '15/01/2026', attendees: '50+', venue: 'PIET JAIPUR' },
+{ sno: 50, activity: 'Marathon "Run For Swadeshi"', date: '12/01/2026', attendees: '60+', venue: 'PIET JAIPUR' },
+{ sno: 51, activity: 'Rajasthan Digifest × TiE Global Summit 2026', date: '05/01/2026 - 06/01/2026', attendees: '40+', venue: 'PIET JAIPUR' },
+{ sno: 52, activity: 'Republic Day Celebration', date: '26/01/2026', attendees: '200+', venue: 'PIET JAIPUR' },
 ];
 
 
@@ -138,21 +183,22 @@ const NSS = () => {
                     caption: "Accredited with Grade 'A' by NAAC",
                 }}
             >
-                <p>
-                    The National Service Scheme, popularly known as NSS, was launched in 1969 with one primary motto: <b> "Not Me, But You".</b> This simple yet powerful phrase encapsulates the essence of our mission to instil the spirit of selfless service in our youth.
-
-
+                <p className="text-gray-700 text-justify">
+                    The National Service Scheme, popularly known as NSS, was launched in 1969 with 
+                    one primary motto: <b> "Not Me, But You".</b> This simple yet powerful phrase
+                     encapsulates the essence of our mission to instil the spirit of selfless 
+                     service in our youth.
                 </p>
                 <br />
-                <p>
-                    The National Service Scheme (NSS), a flagship program of the Ministry of Youth Affairs and Sports, Government of India, has allotted ONE UNIT to Poornima Institute of Engineering & Technology, Jaipur. The allotment was made on 28th August 2024, and it is an honor to be a part of this prestigious program.
-
+                <p className="text-gray-700 text-justify">
+                    The National Service Scheme (NSS), a flagship program of the Ministry of Youth
+                     Affairs and Sports, Government of India, has allotted ONE UNIT to Poornima
+                      Institute of Engineering & Technology, Jaipur. The allotment was made on 28th
+                       August 2024, and it is an honor to be a part of this prestigious program.
                 </p>
                 <br />
                 <p>
                     The scheme operates with two fundamental approaches:
-
-
                 </p>
 
 
@@ -162,26 +208,138 @@ const NSS = () => {
                 <br />
 
             </OverviewSection>
+            
+            {/* 🔷 NSS STRUCTURE */}
+      <section className="bg-white py-16">
+        <h2 className="text-3xl font-bold text-center text-primary mb-12">
+          Our NSS Wings
+        </h2>
 
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
 
-            <div className=" container mx-auto my-10 grid grid-cols-1 md:grid-cols-1 gap-6 items-stretch">
+          {/* Unit 1 */}
+          <div className="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition">
+            <h3 className="text-xl font-semibold text-primary mb-3">
+              NSS Unit I
+            </h3>
+            <p className="text-gray-600 text-justify">
+              NSS Unit I actively engages students in community service,
+              awareness programs, health initiatives, and educational outreach
+              activities aimed at creating a positive social impact.
+            </p>
+          </div>
 
+          {/* Unit 2 */}
+          <div className="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition">
+            <h3 className="text-xl font-semibold text-primary mb-3">
+              NSS Unit II
+            </h3>
+            <p className="text-gray-600 text-justify">
+              NSS Unit II encourages participation in social welfare programs,
+              environmental drives, leadership-building activities, and
+              community-centered initiatives for holistic student development.
+            </p>
+          </div>
 
-                <InfoCard
-                    title="Objective of Department"
-                    iconClass="fas fa-tasks"
-                    content={objectiveContent}
-                />
-            </div>
+          {/* Red Ribbon Club */}
+          <div className="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition border border-red-400">
+            <h3 className="text-xl font-semibold text-red-600 mb-3">
+              Red Ribbon Club
+            </h3>
+            <p className="text-gray-600 text-justify">
+              The Red Ribbon Club promotes awareness on HIV/AIDS prevention,
+              health education, blood donation, and youth well-being while
+              encouraging responsible and informed lifestyle choices.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      <section className="bg-gray-50 py-16">
+  <div className="max-w-7xl mx-auto px-4">
+
+    {/* Heading */}
+    <div className="text-center mb-12">
+      <h2 className="text-3xl font-bold text-primary mb-2">
+        Objectives
+      </h2>
+      <div className="w-20 h-1 bg-secondary mx-auto"></div>
+    </div>
+
+    <div className="grid md:grid-cols-2 gap-10">
+
+      {/* NSS Objectives Card */}
+      <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 border border-gray-100">
+        <h3 className="text-2xl font-semibold mb-6 text-primary flex items-center gap-2">
+          <span className="text-3xl">🎯</span> NSS Objectives
+        </h3>
+
+        <ul className="space-y-4 text-gray-700">
+          <li className="flex items-start gap-3">
+            <span className="text-primary text-lg">✔</span>
+            To understand and connect with our community
+          </li>
+          <li className="flex items-start gap-3">
+            <span className="text-primary text-lg">✔</span>
+            To identify community needs and actively contribute to problem-solving
+          </li>
+          <li className="flex items-start gap-3">
+            <span className="text-primary text-lg">✔</span>
+            To develop a strong sense of social and civic responsibility
+          </li>
+          <li className="flex items-start gap-3">
+            <span className="text-primary text-lg">✔</span>
+            To apply knowledge for practical community solutions
+          </li>
+          <li className="flex items-start gap-3">
+            <span className="text-primary text-lg">✔</span>
+            To build teamwork, leadership, and responsibility-sharing skills
+          </li>
+        </ul>
+      </div>
+
+      {/* Red Ribbon Club Card */}
+      <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 border border-red-100">
+        <h3 className="text-2xl font-semibold mb-6 text-red-600 flex items-center gap-2">
+          <span className="text-3xl">❤️</span> Red Ribbon Club Objectives
+        </h3>
+
+        <ul className="space-y-4 text-gray-700">
+          <li className="flex items-start gap-3">
+            <span className="text-red-500 text-lg">✔</span>
+            Spread awareness about HIV/AIDS and its prevention
+          </li>
+          <li className="flex items-start gap-3">
+            <span className="text-red-500 text-lg">✔</span>
+            Promote voluntary blood donation among youth
+          </li>
+          <li className="flex items-start gap-3">
+            <span className="text-red-500 text-lg">✔</span>
+            Encourage healthy and responsible lifestyle practices
+          </li>
+          <li className="flex items-start gap-3">
+            <span className="text-red-500 text-lg">✔</span>
+            Eliminate stigma and discrimination related to HIV/AIDS
+          </li>
+          <li className="flex items-start gap-3">
+            <span className="text-red-500 text-lg">✔</span>
+            Conduct awareness campaigns and health initiatives
+          </li>
+          <li className="flex items-start gap-3">
+            <span className="text-red-500 text-lg">✔</span>
+            Develop leadership and community service skills
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
             <section className="container py-12 mx-auto">
-                <h2 className="text-3xl text-primary font-bold mb-8 text-center">PIET-NSS Volunteers Core Team</h2>
-                <div className="w-24 h-1 bg-secondary mb-6 mx-auto"></div>
-                <LazyImage
-                    src={'https://www.piet.poornima.org/images/Nss_Team.jpg'}
-                    alt={'Nss'}
-                    className="rounded-xl shadow-xl w-full h-auto z-10 relative border border-primary"
-                />
+                <NssCoreTeamsSection />
             </section>
 
 

@@ -78,6 +78,7 @@ const studentSurveys = [
 ];
 
 const academicAudits = [
+    'Academic & Administrative Audit 2024-25',
     'Academic & Administrative Audit 2023-24',
     'Academic & Administrative Audit 2022-23',
     'Academic & Administrative Audit 2021-22',
@@ -111,9 +112,9 @@ export const iqacMeetingsData: Record<string, Record<string, { label: string; li
       { label: "Action Taken Report - 30", link: "#" },
     ],
     "Meeting 30": [
-      { label: "Agenda of Meeting - 30", link: "#" },
-      { label: "Minutes of Meeting - 30", link: "#" },
-      { label: "Action Taken Report - 29", link: "#" },
+      { label: "Agenda of Meeting - 30", link: "https://drive.google.com/file/d/18QDXPQr8Ki7EnD__yuUQ9j2yhNhhP9Yf/view?usp=drive_link" },
+      { label: "Minutes of Meeting - 30", link: "https://drive.google.com/file/d/1i_VfecoTS4Fz4UVp0nK9bJ9ccwXwwjc1/view?usp=drive_link" },
+      { label: "Action Taken Report - 29", link: "https://drive.google.com/file/d/1E3JWe2PxnJ9fOrQKXyEviGBshC1sSrwR/view?usp=drive_link" },
     ],
      "Meeting 29": [
       { label: "Agenda of Meeting - 29", link: "https://drive.google.com/file/d/14XMZYFtajWiI78MQHtmPZNUwRoGDz-wQ/view?usp=drive_link" },
@@ -671,6 +672,7 @@ const IQACPage = () => {
             'AQAR (2020-21)': 'https://drive.google.com/file/d/1Hdooz58CRXEv-LiLMjjFyp7CijbQ4Kes/view?usp=drive_link',
             'AQAR (2019-20)': 'https://drive.google.com/file/d/1SbJ0NqGApQhY_7DRJNt6V-qG66CUn8Ph/view?usp=drive_link',
             'AQAR (2018-19)': 'https://drive.google.com/file/d/1ozoEJ1Q1HgBxx_Qi8jb7RD_TnwsnE1wV/view?usp=drive_link',
+            'Academic & Administrative Audit 2024-25': 'https://drive.google.com/file/d/1no27s5XB1m41IXXO9JOpirW7o1zk1R7F/view?usp=drive_link',
             'Academic & Administrative Audit 2023-24': 'https://drive.google.com/file/d/1LWhzyZRsjHxkSchCTK_v0wnJa6zpx2qZ/view?usp=drive_link',
             'Academic & Administrative Audit 2022-23': 'https://drive.google.com/file/d/1FnXuO5LmT6BLxBt8exQQw7Unot9w1-yZ/view?usp=drive_link',
             'Academic & Administrative Audit 2021-22': 'https://drive.google.com/file/d/11IOe4Flk9eU5cJ8hlvtoMd01FbOoWZn5/view?usp=drive_link',
@@ -1324,13 +1326,22 @@ const IQACPage = () => {
 
                 {/* Tables with modern design */}
                  <div >
+                 <div >
                 <ModernTable title="Quality Policy" data={['Quality Policy']} icon={FileText} />
                 </div>
+                <div ></div>
                 <ModernTable title="IQAC Constitution" data={iqacConstitution} icon={Users} />
+               </div>
+                <div >
                 <ModernTable title="IQAC Handbook" data={['IQAC Handbook']} icon={BookOpen} />
+                </div>
+                <div >
                 <ModernTable title="IQAC Initiatives" data={iqacInitiatives} icon={Target} />
+                </div>
+                <div >
                 <ModernTable title="Institute Perspective Plan" data={['Institute Perspective Plan']} icon={FileText} />
-
+                </div>
+                <div >
                 {/* Enhanced Triple Nested Dropdown for IQAC Meetings */}
                 <TripleNestedDropdown 
                     title="IQAC Meetings & Action Taken Reports"
@@ -1341,7 +1352,8 @@ const IQACPage = () => {
                     setOpenSubItem={setOpenMeetingsSubItem}
                     icon={Users}
                 />
-
+                </div>
+                <div >
                 {/* Enhanced Quality Activities with table structure */}
                 <QualityActivitiesDropdown 
                     title="IQAC Quality Activities"
@@ -1350,14 +1362,26 @@ const IQACPage = () => {
                     setOpenYear={setOpenQualityYear}
                     icon={Award}
                 />
-
+                </div>
+                <div >
                 <ModernTable title="Annual Quality Assurance Report (AQAR)" data={aqarReports} icon={FileText} />
+                </div>
+                <div >
                 <ModernTable title="Strategic Development Plan" data={strategicPlans} icon={Target} />
+                </div>
+                <div >
                 <ModernTable title="Feedback Policy" data={['Feedback Policy']} icon={FileText} />
+                </div>
+                <div >
                 <ModernTable title="Feedback Forms" data={feedbackForms} icon={FileText} />
+                </div>
+                <div >
                 <ModernTable title="Feedback Analysis & ATR" data={feedbackAnalysis} icon={FileText} />
+                </div>
+                <div >
                 <ModernTable title="Students Satisfaction Survey" data={studentSurveys} icon={Users} />
-
+                </div>
+                <div >
                 <ModernDoubleDropdown 
                     title="FDP's/Workshops for Faculty & Staff"
                     data={fdpWorkshopsData}
@@ -1367,7 +1391,8 @@ const IQACPage = () => {
                     setOpenItem={setOpenFDPItem}
                     icon={BookOpen}
                 />
-
+                </div>
+                <div >
                 <SimpleDropdown 
                     title="Academic Calendars"
                     data={academicCalendars}
@@ -1375,9 +1400,11 @@ const IQACPage = () => {
                     setOpenYear={setOpenCalendarYear}
                     icon={Calendar}
                 />
-
+                </div>
+                <div >
                 <ModernTable title="Academic & Administrative Audit" data={academicAudits} icon={FileText} />
-
+                </div>
+                <div >
                 <SimpleDropdown 
                     title="Environment Audits Certificates"
                     data={environmentAuditCertificates}
@@ -1385,7 +1412,8 @@ const IQACPage = () => {
                     setOpenYear={setOpenEnvCertYear}
                     icon={Award}
                 />
-
+                </div>
+                <div >
                 <SimpleDropdown 
                     title="Environment Audits Reports"
                     data={environmentAuditReports}
@@ -1393,13 +1421,25 @@ const IQACPage = () => {
                     setOpenYear={setOpenEnvReportYear}
                     icon={FileText}
                 />
-
+                </div>
+                <div >
                 <ModernTable title="Best Practices" data={bestPractices} icon={Award} />
+                </div>
+                <div >
                 <ModernTable title="Best Practices Evidence" data={bestPracticesEvidence} icon={FileText} />
+                </div>
+                <div >
                 <ModernTable title="Institute Distinctiveness" data={['Institute Distinctiveness']} icon={Award} />
+                </div>
+                <div >
                 <ModernTable title="Institute Distinctiveness Evidences" data={['Institute Distinctiveness Evidences']} icon={FileText} />
+                </div>
+                <div >
                 <ModernTable title="Green Initiatives" data={['Green Initiatives']} icon={Award} />
+                </div>
+                <div >
                 <ModernTable title="Events on Green Practices" data={['Events on Green Practices']} icon={FileText} />
+                </div>
             </div>
 
             <Cta />

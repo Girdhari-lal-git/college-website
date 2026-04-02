@@ -87,6 +87,22 @@ const ExamTimetable: React.FC = () => {
               <a className="text-primary" href="https://drive.google.com/file/d/1h6nzvS32Q23YOUvOeiFxY6ygEAkpyA3t/view?usp=drive_link">PDF</a>
             </td>
           </tr>
+          <tr>
+            <td className="border p-2">10</td>
+            <td className="border p-2">III Year VI Semester II Mid-Term Examination Timetable April 2026</td>
+            <td className="border p-2">This is to inform you that the timetable for the III Year VI Semester II Mid-Term Theory and Practical Examinations has been finalized. Please find the enclosed timetable for your reference. You are advised to go through it carefully and prepare accordingly.</td>
+            <td className="border p-2">
+              <a className="text-primary" href="https://drive.google.com/file/d/1Upa-huTmIHGzzWt71tuEZionkqxX79Oz/view?usp=drive_link">PDF</a>
+            </td>
+          </tr>
+          <tr>
+            <td className="border p-2">11</td>
+            <td className="border p-2">III Year VI Semester End Term Practical Examination Timetable April 2026</td>
+            <td className="border p-2">This is to inform you that the timetable for the III Year VI SemesterEnd Term Practical Examinations has been finalized. Please find the enclosed timetable for your reference. You are advised to go through it carefully and prepare accordingly.</td>
+            <td className="border p-2">
+              <a className="text-primary" href="https://drive.google.com/file/d/1WUWFZ_b-C7Fz-JJl8qpiW7DdB9vaMmhS/view?usp=drive_link">PDF</a>
+            </td>
+          </tr>
         </tbody>
       </table>
     </div>
