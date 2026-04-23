@@ -108,6 +108,7 @@ export default function Footer() {
     
     { href: "/autonomous", label: "Autonomous PIET" },
     { href: "/rti-information-officer", label: "Public Information Officer" },
+    { href: "/nirf", label: "NIRF" },
     
   ];
 
