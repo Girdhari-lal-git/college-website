@@ -101,6 +101,13 @@ export default function AcademicPrograms() {
         "Computer engineering program designed to promote indigenous language computing, localization technologies, and regional software development.",
       href: "/computer-science",
     },
+     {
+      image: "/images/programs/E&CE.jpeg",
+      title: "Electronics and Computer Engineering",
+      description:
+        "Interdisciplinary program combining electronics engineering principles with computer science concepts for designing integrated electronic and computing systems.",
+      href: "/dep-iot",
+    },
   ];
 
   return (
@@ -120,7 +127,7 @@ export default function AcademicPrograms() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {programs.map((program, index) => (
             <div
               key={index}

@@ -12,6 +12,7 @@ const programsByDegree: Record<string, string[]> = {
     "CS (AI)",
     "CS (DS)",
     "CS (IoT)",
+    "ECE",
   ],
   "M. Tech.": ["CSE", "AI & DS"],
 };

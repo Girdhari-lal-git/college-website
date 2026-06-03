@@ -70,23 +70,29 @@ export const examinationCommittee = {
 
   mom: [
   {
-    title: "First Board of Governors Meeting",
-    date: "10-08-2024",
-    link: "/pdfs/bog/mom-aug-2024.pdf"
-  }
+    title: "First Examination Committee Meeting",
+    date: "05-08-2025",
+    link: "https://drive.google.com/file/d/1Vdqoa4smwuuYqRAOCN2K5kQeg_AqSWO3/view?usp=drive_link"
+  },
+  {
+    title: "Second Examination Committee Meeting",
+    date: "30-01-2026",
+    link: "https://drive.google.com/file/d/18Jg1Oh8amQVsI77HulY9lEY_SdRFyEuy/view?usp=drive_link"
+  },
+  {
+    title: "Third Examination Committee Meeting",
+    date: "12-03-2026",
+    link: "https://drive.google.com/file/d/1MiQpt6wb14fY-2fSTVWwSO8NlYvzpqLu/view?usp=drive_link"
+  },
 ],
 
 atr: [
   {
-    title: "Approval of Autonomous Examination Regulations",
-    date: "22-08-2024",
-    link: "/pdfs/exam/atr-exam-regulations.pdf",
+    title: "",
+    date: "",
+    link: "",
   },
-  {
-    title: "Implementation of Digital Evaluation System",
-    date: "22-08-2024",
-    link: "/pdfs/exam/atr-digital-evaluation.pdf",
-  },
+ 
 ],
 
 } as const;

@@ -12,7 +12,7 @@ const programs = [
 ];
 
 const sessions = ["2025-26", "2026-27"];
-const examTypes = ["First Mid Term", "Second Mid Term", "End Term"];
+const examTypes = ["First Mid Term", "Second Mid Term", "Third Mid Term", "End Term"];
 
 const QuestionPapers: React.FC = () => {
   const [program, setProgram] = React.useState(programs[0]);

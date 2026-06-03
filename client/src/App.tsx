@@ -98,6 +98,7 @@ import AutonomousPage from "./pages/autonomousNew";
 import StudentCounsellingPage from "./pages/student-counselling";
 import RTIInformationOfficer from "./pages/RTIInformationOfficer";
 import firefoodCertificatePage from "./pages/FirefoodCertificate";
+import AlumniPage from "./pages/AlumniPage";
 
 
 function Router() {
@@ -217,7 +218,8 @@ function Router() {
         <Route path="/autonomous" component={AutonomousPage} />
         <Route path="/student-counselling" component={StudentCounsellingPage} />
         <Route path="/rti-information-officer" component={RTIInformationOfficer} />
-          <Route path="/firefood-certificate" component={firefoodCertificatePage} />
+        <Route path="/firefood-certificate" component={firefoodCertificatePage} />
+        <Route path= "/AlumniPage" component={AlumniPage} />
 
 
         <Route>

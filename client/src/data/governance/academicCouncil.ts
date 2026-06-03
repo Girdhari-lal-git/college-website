@@ -146,14 +146,14 @@ export const academicCouncil = {
 
 atr: [
   {
-    title: "Approval of Autonomous Syllabus (First Year)",
-    date: "20-08-2024",
-    link: "/pdfs/ac/atr-fy-syllabus.pdf",
+    title: "Action Taken Report on First Academic Council Meeting",
+    date: "25-07-2025",
+    link: "https://drive.google.com/file/d/1NCw8wRv_ntFsynBxIuoGo9Z12Q12JT_V/view?usp=drive_linkf",
   },
   {
-    title: "Implementation of Continuous Evaluation Scheme",
-    date: "20-08-2024",
-    link: "/pdfs/ac/atr-evaluation-scheme.pdf",
+    title: "Action Taken Report on Second Academic Council Meeting",
+    date: "13-08-2025",
+    link: "https://drive.google.com/file/d/1aWZbz8Vfu3xZ-4r5DC2uw88I1H_Ff4io/view?usp=drive_link",
   },
 ],
 

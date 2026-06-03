@@ -144,16 +144,22 @@ export const boardsOfStudies = {
     mom: [
       {
         title: "First Board of Studies for Applied Sciences Meeting",
-        date: "10-08-2024",
-        link: "/pdfs/bog/mom-aug-2024.pdf"
-      }
+        date: "02--08-2025",
+        link: "https://drive.google.com/file/d/1PmTf_Tb6qLBHUI3lstKrhb0Clqfkr9sQ/view?usp=drive_link"
+      },
+
+       {
+        title: "Second Board of Studies for Applied Sciences Meeting",
+        date: "20-03-2026",
+        link: "https://drive.google.com/file/d/1V5XOPPHNXe-XJnSUlhRSkki3ujLGEjnk/view?usp=drive_link"
+      },
     ],
 
     atr: [
       {
-        title: "Revision of CSE Curriculum as per NEP 2020",
-        date: "12-09-2024",
-        link: "/pdfs/bos/cse/atr-nep-curriculum.pdf"
+        title: "First Board of Studies for Applied Sciences Meeting",
+        date: "02-08-2025",
+        link: "https://drive.google.com/file/d/1lHYA6aS-9-6zjXQ-8hVo6j7iEx2BwkO4/view?usp=drive_link"
       }
     ]
   },
@@ -263,17 +269,17 @@ export const boardsOfStudies = {
 
     mom: [
       {
-        title: "First Board of Governors Meeting",
-        date: "10-08-2024",
-        link: "/pdfs/bog/mom-aug-2024.pdf"
+        title: "First Board of Studies Meeting for Department of Computer Science & Engineering",
+        date: "17-01-2026",
+        link: "https://drive.google.com/file/d/1EdlAjYzImuxSw8zsa7zWFx0tUzyJcT3A/view?usp=drive_link"
       }
     ],
 
     atr: [
       {
-        title: "Introduction of AI & DS Electives",
-        date: "14-09-2024",
-        link: "/pdfs/bos/aids/atr-new-electives.pdf"
+        title: "",
+        date: "",
+        link: ""
       }
     ]
   },
@@ -390,17 +396,17 @@ export const boardsOfStudies = {
 
     mom: [
       {
-        title: "First Board of Governors Meeting",
-        date: "10-08-2024",
-        link: "/pdfs/bog/mom-aug-2024.pdf"
+        title: "First Board of Studies Meeting for Department of AI & DS",
+        date: "17-01-2026",
+        link: "https://drive.google.com/file/d/1hiE2QBahXA6d6g_kgNqh2S6XnO_K_D_p/view?usp=drive_link"
       }
     ],
 
     atr: [
       {
         title: "Curriculum Review for Foundational Courses",
-        date: "12-09-2024",
-        link: "/pdfs/bos/applied/atr-curriculum-review.pdf"
+        date: "",
+        link: ""
       }
     ]
   },
@@ -503,17 +509,17 @@ export const boardsOfStudies = {
 
     mom: [
       {
-        title: "First Board of Governors Meeting",
-        date: "10-08-2024",
-        link: "/pdfs/bog/mom-aug-2024.pdf"
+        title: "First Board of Studies Meeting for Department of IoT",
+        date: "31-01-2026",
+        link: "https://drive.google.com/file/d/1nm_nUGvt518GCJZNCY9IhPuP8tKz1-bS/view?usp=drive_link"
       }
     ],
 
     atr: [
       {
         title: "IoT Curriculum Alignment with Industry",
-        date: "15-09-2024",
-        link: "/pdfs/bos/iot/atr-industry-alignment.pdf"
+        date: "",
+        link: ""
       }
     ]
   }

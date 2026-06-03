@@ -148,7 +148,7 @@ const Stat = ({ number, label }: StatProps) => (
 export default function AboutSection() {
   const stats: StatProps[] = [
     { number: "2 Decades", label: "Years of Excellence" },
-    { number: "90+", label: "Faculty Members" },
+    { number: "100+", label: "Faculty Members" },
     { number: "1800+", label: "Students" },
     { number: "75%", label: "Placement Rate" },
   ];
