@@ -79,6 +79,65 @@ const activityData = [
             "A technical exhibition where students presented innovative projects, showcasing practical applications of their academic learning.",
         coordinator: "Dr. Payal Bansal",
     },
+
+    
+  {
+    date: "Feb 07, 2026",
+    activity: "Expert Session – Makerspace & Design Innovation",
+    description:
+      "Expert talk highlighting innovation, rapid prototyping, design thinking, and opportunities available through makerspaces.",
+    coordinator: "Dr. Payal Bansal",
+  },
+  {
+    date: "Feb 10, 2026",
+    activity: "A Session on Awareness of IPR",
+    description:
+      "Awareness program on Intellectual Property Rights, patents, copyrights, trademarks, and innovation protection.",
+    coordinator: "Dr. Payal Bansal",
+  },
+  {
+    date: "Feb 27, 2026",
+    activity: "A Workshop on High Performance Computing",
+    description:
+      "Technical workshop on high-performance computing concepts, parallel processing, and computational problem-solving.",
+    coordinator: "Dr. Payal Bansal",
+  },
+  {
+    date: "Mar 17, 2026",
+    activity: "Introduction to 3D Scanning & Digital Modeling",
+    description:
+      "Interactive session demonstrating digital modeling techniques and the role of 3D scanning in engineering applications.",
+    coordinator: "Dr. Payal Bansal",
+  },
+  {
+    date: "Mar 18, 2026",
+    activity: "Introduction to Git & GitHub: A Powerful Version Control Tool",
+    description:
+      "An introductory session covering Git and GitHub fundamentals, version control concepts, and collaborative software development practices.",
+    coordinator: "Dr. Payal Bansal",
+  },
+  {
+    date: "Mar 19, 2026",
+    activity: "Getting Started with Raspberry Pi: Learn & Build",
+    description:
+      "Practical session focused on Raspberry Pi fundamentals, hardware interfacing, and basic project development.",
+    coordinator: "Dr. Payal Bansal",
+  },
+  {
+    date: "Mar 27, 2026",
+    activity: "A Workshop on Microcontrollers",
+    description:
+      "Workshop introducing microcontroller programming, embedded systems concepts, and real-world hardware applications.",
+    coordinator: "Dr. Payal Bansal",
+  },
+  {
+    date: "Mar 30, 2026",
+    activity: "Workshop for Students on Three-Dimensional Scanning",
+    description:
+      "Hands-on workshop introducing students to 3D scanning technologies, applications, and data acquisition techniques.",
+    coordinator: "Dr. Payal Bansal",
+  },
+
 ];
 
 const achievementColumns = [
@@ -117,7 +176,7 @@ const IETEPage = () => {
     <section className="py-12 bg-white">
       <div className="container mx-auto px-6 text-center">
         <img
-          src={"/images/council/iste.png"}
+          src={"/images/chapters/iete/IETE-Logo1.jpg"}
           alt="IETE Logo"
           className="mx-auto h-24 mb-6 transform hover:scale-105 transition-transform duration-300"
         />

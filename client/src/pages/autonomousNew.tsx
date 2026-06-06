@@ -132,6 +132,57 @@ const AutonomousPage: React.FC = () => {
               <li>Ensure transparent evaluation</li>
               <li>Regular academic audits</li>
             </ul>
+            <h4>Academic Flexibility & Multidisciplinary Learning</h4>
+
+<p>
+  One of the key advantages of PIET's autonomous status is the ability to
+  offer a flexible, future-ready, and student-centric curriculum aligned
+  with the vision of <strong>NEP 2020</strong>. Students are empowered to
+  customize their academic journey through interdisciplinary learning
+  opportunities that extend beyond the boundaries of their core branch.
+</p>
+
+<ul>
+  <li>
+    <strong>Minor Degree Specializations:</strong> Students can pursue
+    Minor Degrees in emerging technology domains such as 
+    <strong> Cyber Security</strong>,
+    <strong> Artificial Intelligence & Machine Learning</strong>, and
+    <strong> VLSI Design</strong>, enabling them to gain specialized
+    expertise alongside their major degree.
+  </li>
+
+  <li>
+    <strong>Open Elective Courses:</strong> Students may choose courses
+    offered by other departments, promoting multidisciplinary learning,
+    broader technical exposure, and enhanced career opportunities.
+  </li>
+
+  <li>
+    <strong>Flexible Learning Pathways:</strong> The curriculum has been
+    designed to support skill development, innovation, research,
+    entrepreneurship, and industry readiness through a wide range of
+    elective and specialization options.
+  </li>
+</ul>
+
+<div className="bg-blue-50 border-l-4 border-blue-600 p-4 rounded-md my-4">
+  <p className="mb-0">
+    <strong>Explore More:</strong> Detailed regulations governing Minor
+    Degree Programs, Open Elective Courses, credit requirements, and
+    academic provisions are available in the
+    <strong> Policies Section</strong>. Students can explore complete
+    schemes and syllabi of all Minor Degree and Open Elective offerings in
+    the <strong>Syllabus Section</strong>.
+  </p>
+</div>
+
+<p>
+  Through these initiatives, PIET provides students with the flexibility
+  to develop expertise in emerging technologies, pursue interdisciplinary
+  interests, and build a distinctive academic profile that meets the
+  evolving demands of industry and higher education.
+</p>
           </div>
         )}
 
@@ -148,6 +199,17 @@ const AutonomousPage: React.FC = () => {
                 </tr>
               </thead>
               <tbody>
+                <tr>
+                  <td className="border p-2">
+                    Reconstitution of Board of studies of Department of Applied Sciences
+                  </td>
+                  <td className="border p-2">26-05-2026</td>
+                  <td className="border p-2">
+                    <a className="text-primary" href="https://drive.google.com/file/d/1WTZzEuORpWzE9EDUxZGkTS4fgkqIjIhF/view?usp=drive_link">
+                      PDF
+                    </a>
+                  </td>
+                </tr>
                 <tr>
                   <td className="border p-2">
                     UGC Grants Autonomy to PIET (Approval Letter)

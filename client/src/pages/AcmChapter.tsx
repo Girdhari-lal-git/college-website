@@ -35,10 +35,31 @@ const memberData = [
   { name: 'Neeraj Dulani', designation: 'Graphic Co-ordinator' }
 ]
 
+const facultymemberData = [
+  { name: 'Dinesh Goyal', memberId: '4039602' },
+  { name: 'Anil Kumar', memberId: '4510364' },
+  { name: 'Abhishek Dadhich', memberId: '8698652' },
+  { name: 'Shikha Gautam', memberId: '7254928' },
+  { name: 'Nitin Phulwani', memberId: '1562980' },
+  { name: 'Shalini Chaudhary', memberId: '8227476' },
+  { name: 'Madhu Choudhary', memberId: '5584409' },
+  { name: 'Bersha Kumari', memberId: '7619502' },
+  { name: 'Udbhav Ojha', memberId: '8877591' },
+  { name: 'Vivek Saxena', memberId: '7977998' },
+  { name: 'Shivani Sharma', memberId: '6358976' },
+  { name: 'Sanjay Sinha', memberId: '0958271' },
+  { name: 'Neha Srivastava', memberId: '2385230' },
+  { name: 'Chanchal Tiwari', memberId: '6999542' },
+];
 
 const memberColumns = [
   { label: 'Member Name', key: 'name' },
   { label: 'Designation', key: 'designation' },
+]
+
+const facultymemberColumns = [
+  { label: 'Faculty Member Name', key: 'name' },
+  { label: 'Member ID', key: 'memberId' },
 ]
 
 const eventData = [
@@ -145,9 +166,15 @@ const AcmChapter = () => {
       </div>
 
       <div className="container mt-10 mx-auto">
-        <h2 className="text-3xl text-primary font-bold mb-8 text-center">List of Members</h2>
+        <h2 className="text-3xl text-primary font-bold mb-8 text-center">ACM Chapter Team</h2>
         <div className="w-24 h-1 bg-secondary mb-6 mx-auto"></div>
         <DynamicTable columns={memberColumns} data={memberData} />
+      </div>
+
+      <div className="container mt-10 mx-auto">
+        <h2 className="text-3xl text-primary font-bold mb-8 text-center">ACM Faculty Members</h2>
+        <div className="w-24 h-1 bg-secondary mb-6 mx-auto"></div>
+        <DynamicTable columns={facultymemberColumns} data={facultymemberData} />
       </div>
 
       <div className="container mt-14 mx-auto">

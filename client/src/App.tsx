@@ -99,6 +99,7 @@ import StudentCounsellingPage from "./pages/student-counselling";
 import RTIInformationOfficer from "./pages/RTIInformationOfficer";
 import firefoodCertificatePage from "./pages/FirefoodCertificate";
 import AlumniPage from "./pages/AlumniPage";
+import RedRibbonClubPage from "./pages/Red_ribbon_Club";
 
 
 function Router() {
@@ -220,6 +221,7 @@ function Router() {
         <Route path="/rti-information-officer" component={RTIInformationOfficer} />
         <Route path="/firefood-certificate" component={firefoodCertificatePage} />
         <Route path= "/AlumniPage" component={AlumniPage} />
+        <Route path="/Red-ribbon-Club" component={RedRibbonClubPage} />
 
 
         <Route>

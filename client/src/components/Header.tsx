@@ -1092,7 +1092,7 @@ export default function Header() {
                   >
                     <i className="fas fa-shield-alt mr-2"></i>IPRs
                   </Link>
-                  */}
+                  
                   <Link
                     href="/research-activities"
                     className="block p-3 text-neutral-800 hover:bg-primary hover:text-white transition-colors whitespace-nowrap overflow-hidden text-ellipsis"
@@ -1100,6 +1100,7 @@ export default function Header() {
                     <i className="fas fa-chart-line mr-2"></i>Research
                     Activities
                   </Link>
+                  */}
 
                   <Link
                     href="/publications"
@@ -1311,7 +1312,13 @@ export default function Header() {
                   >
                     <i className="fas fa-hands-helping mr-2"></i>NSS Unit
                   </Link>
-
+                  
+                  <Link
+                    href="/Red-ribbon-Club"
+                    className="block p-3 text-neutral-800 hover:bg-primary hover:text-white transition-colors whitespace-nowrap overflow-hidden text-ellipsis"
+                  >
+                    <i className="fas fa-heartbeat mr-2"></i>Red Ribbon Club
+                  </Link>
                   <a
                     href="https://drive.google.com/file/d/1cjckOsucjzB1s-_KqnM4FncfiegYybNZ/view?usp=drive_link"
                     target="_blank"
@@ -1812,6 +1819,7 @@ export default function Header() {
                   <i className="fas fa-shield-alt mr-2"></i>IPRs
                 </Link>
               </li>
+              {/*
               <li>
                 <Link
                   href="/research-activities"
@@ -1820,6 +1828,7 @@ export default function Header() {
                   <i className="fas fa-chart-line mr-2"></i>Research Activities
                 </Link>
               </li>
+                */}
               <li>
                 <Link
                   href="/publications"
@@ -2084,6 +2093,14 @@ export default function Header() {
                   className="block py-2 hover:text-secondary transition-colors"
                 >
                   <i className="fas fa-hands-helping mr-2"></i>NSS Unit
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/red-ribbon-club"
+                  className="block py-2 hover:text-secondary transition-colors"
+                >
+                  <i className="fas fa-hands-helping mr-2"></i>Red Ribbon Club
                 </Link>
               </li>
               <li>

@@ -1,7 +1,7 @@
 import React from "react";
 import { syllabusData, SyllabusItem } from "@/data/syllabusData";
 
-const degrees = ["B. Tech.", "M. Tech."];
+const degrees = ["B. Tech.", "M. Tech.", "Minor Degree", "Open Elective"];
 
 const programsByDegree: Record<string, string[]> = {
   "B. Tech.": [
@@ -15,6 +15,8 @@ const programsByDegree: Record<string, string[]> = {
     "ECE",
   ],
   "M. Tech.": ["CSE", "AI & DS"],
+  "Minor Degree": ["Cyber Security", "AI & ML", "VLSI Design"],
+  "Open Elective": ["CSE", "CS (R)", "AI & DS", "CS (AI)", "CS (DS)", "CS (IoT)", "ECE"],
 };
 
 const SyllabusExplorer: React.FC = () => {
@@ -36,6 +38,14 @@ const SyllabusExplorer: React.FC = () => {
 
     if (degree === "M. Tech.") {
       return [1, 2, 3, 4];
+    }
+
+    if (degree === "Minor Degree") {
+      return [3, 4, 5, 6, 7, 8];
+    }
+
+      if (degree === "Open Elective") {
+      return [6, 7, 8];
     }
 
     return [];

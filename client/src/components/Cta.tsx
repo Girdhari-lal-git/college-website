@@ -13,12 +13,16 @@ const Cta = () => {
           our legacy of excellence in technical education.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Link
-            href="/admission-fees"
-            className="inline-block px-8 py-3 bg-white text-primary hover:bg-neutral-100 transition-colors rounded-lg font-semibold shadow-lg"
-          >
-            Apply Now
-          </Link>
+          <a
+  href="https://www.poornima.org/reap/"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-block px-8 py-3 bg-white text-primary hover:bg-neutral-100 transition-colors rounded-lg font-semibold shadow-lg"
+>
+ Apply Now ( REAP )
+</a>
+            
+        
           <Link
             href="/about"
             className="inline-block px-8 py-3 bg-transparent border-2 border-white text-white hover:bg-white hover:text-primary transition-colors rounded-lg font-semibold"

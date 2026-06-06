@@ -5,18 +5,19 @@ import Footer from "@/components/Footer";
 import BreadCrumb from "@/components/BreadCrumb";
 import Cta from "@/components/Cta";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { GraduationCap, BookOpen, DollarSign, FileText } from "lucide-react";
+import { GraduationCap, BookOpen, DollarSign, FileText, IndianRupeeIcon } from "lucide-react";
 
 const AdmissionFees = () => {
     const branches = [
-        { name: "Computer Sci. & Engg. (Artificial Intelligence)" },
-        { name: "Computer Engineering (Indian Language)" },
-        { name: "Computer Engineering (IoT)" },
-        { name: "Computer Engineering (Data Science)" },
-        { name: "Computer Engineering" },
-        { name: "Artificial Intelligence & Data Science" },
-        { name: "Electronics and Communication Engineering" },
-        { name: "Electrical Engineering" },
+        { name: "Computer Sci. & Engg. (Artificial Intelligence)", intake: 90 },
+        { name: "Computer Engineering (Indian Language)", intake: 60 },
+        { name: "Computer Engineering (IoT)", intake: 60 },
+        { name: "Computer Engineering (Data Science)", intake: 60 },
+        { name: "Computer Engineering", intake: 180 },
+        { name: "Artificial Intelligence & Data Science", intake: 60 },
+        { name: "Electronics and Communication Engineering", intake: 30 },
+        { name: "Electrical Engineering", intake: 30 },
+        { name: "Electronics and Computer Engineering", intake: 30 },
     ];
 
     const feeStructure = [
@@ -79,6 +80,14 @@ const AdmissionFees = () => {
         {
             sno: 8,
             program: "Electrical Engineering",
+            tuitionFee: "85,575",
+            developmentFee: "12,835",
+            naacFee: "21,395",
+            totalFee: "1,19,805",
+        },
+        {
+            sno: 9,
+            program: "Electronics and Computer Engineering",
             tuitionFee: "85,575",
             developmentFee: "12,835",
             naacFee: "21,395",
@@ -187,7 +196,7 @@ const AdmissionFees = () => {
                 <div className="text-center max-w-4xl mx-auto">
                     <h2 className="text-4xl font-bold text-primary mb-6">
                         B.Tech{" "}
-                        <span className="text-secondary">Admission 2025</span>
+                        <span className="text-secondary">Admission 2026</span>
                     </h2>
                     <div className="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mb-8"></div>
                     <p className="text-xl text-neutral-600 leading-relaxed mb-8">
@@ -213,7 +222,7 @@ const AdmissionFees = () => {
                         <CardContent className="p-6">
                             <GraduationCap className="h-12 w-12 text-primary mx-auto mb-4" />
                             <h3 className="text-2xl font-bold text-primary mb-2">
-                                8
+                                9
                             </h3>
                             <p className="text-neutral-600">Programs Offered</p>
                         </CardContent>
@@ -229,7 +238,7 @@ const AdmissionFees = () => {
                     </Card>
                     <Card className="text-center border-primary/20 hover:shadow-lg transition-shadow">
                         <CardContent className="p-6">
-                            <DollarSign className="h-12 w-12 text-primary mx-auto mb-4" />
+                            <IndianRupeeIcon className="h-12 w-12 text-primary mx-auto mb-4" />
                             <h3 className="text-2xl font-bold text-primary mb-2">
                                 ₹1,19,805
                             </h3>
@@ -268,6 +277,9 @@ const AdmissionFees = () => {
                                         <th className="border border-neutral-300 px-4 py-3 text-left">
                                             Branch
                                         </th>
+                                        <th className="border border-neutral-300 px-4 py-3 text-left">
+                                            Intake Capacity
+                                        </th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -286,6 +298,9 @@ const AdmissionFees = () => {
                                             <td className="border border-neutral-300 px-4 py-3">
                                                 {branch.name}
                                             </td>
+                                            <td className="border border-neutral-300 px-4 py-3 text-center">
+                                                {branch.intake}
+                                            </td>
                                         </tr>
                                     ))}
                                 </tbody>
@@ -301,7 +316,7 @@ const AdmissionFees = () => {
                     <CardHeader>
                         <CardTitle className="text-2xl text-primary flex items-center gap-3">
                             <DollarSign className="h-8 w-8" />
-                            Fee Structure: Academic Year 2025-26
+                            Fee Structure: Academic Year 2026-27
                         </CardTitle>
                     </CardHeader>
                     <CardContent>

@@ -24,6 +24,11 @@ import {
 const Recogniation = () => {
     const reports = [
         {
+            year: "2026-27",
+            title: "AICTE 2026-27 Report",
+            pdfUrl: "https://drive.google.com/file/d/1eSf5YZY4uzODFULamQ-UzF41omwDQNOV/view?usp=drive_link",
+        },
+        {
             year: "2025-26",
             title: "AICTE 2025-26 Report",
             pdfUrl: "https://drive.google.com/file/d/14k5xvUsy-IBIqyAI9zjbyS7aurc9r6um/view?usp=sharing",

@@ -43,22 +43,23 @@ export const financeCommittee = {
   mom: [
     {
       title: "First Finance Committee Meeting",
-      date: "10-08-2024",
-      link: "/pdfs/finance/mom-aug-2024.pdf",
+      date: "08-08-2025",
+      link: "https://drive.google.com/file/d/1FIvgy9o0mtUweLIbeZjzB2P9QepDxce7/view?usp=drive_link",
+    },
+     {
+      title: "Second Finance Committee Meeting",
+      date: "09-05-2026",
+      link: "https://drive.google.com/file/d/129PEbVHz8syEaLpX9DzVZzQwIAd_RFCb/view?usp=drive_link",
     },
   ],
 
   atr: [
   {
-    title: "Approval of Annual Budget (Autonomous)",
-    date: "15-08-2024",
-    link: "/pdfs/finance/atr-annual-budget.pdf",
+    title: "Action Taken Report on First Finance Committee Meeting",
+    date: "08-08-2025",
+    link: "https://drive.google.com/file/d/1tzGJqU2mpz2L2dO7Q6uMD6hOD6M92JNR/view?usp=drive_link",
   },
-  {
-    title: "Approval of Procurement Policy",
-    date: "15-08-2024",
-    link: "/pdfs/finance/atr-procurement-policy.pdf",
-  },
+ 
 ],
 
 } as const;

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "wouter";
 import { motion } from 'framer-motion';
 
 const WhyChoosePIET = () => {
@@ -148,15 +149,21 @@ const WhyChoosePIET = () => {
               <h3 className="text-3xl font-bold mb-4">Ready to Start Your Journey?</h3>
               <p className="text-xl mb-8 opacity-90">Join PIET and become part of our legacy of excellence in engineering education.</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <button className="bg-white text-primary px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg">
-                  <i className="fas fa-file-alt mr-2"></i>
-                  Apply Now
-                </button>
-                <button className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-primary transition-all duration-300 transform hover:scale-105">
-                  <i className="fas fa-info-circle mr-2"></i>
-                  Learn More
-                </button>
-              </div>
+                        <a
+                href="https://www.poornima.org/reap/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block px-8 py-3 bg-white text-primary hover:bg-neutral-100 transition-colors rounded-lg font-semibold shadow-lg"
+              >
+               Apply Now ( REAP )
+              </a>                       
+              <Link
+              href="/about"
+              className="inline-block px-8 py-3 bg-transparent border-2 border-white text-white hover:bg-white hover:text-primary transition-colors rounded-lg font-semibold"
+                        >
+              Learn More
+              </Link>
+                </div>
             </div>
           </div>
         </motion.div>

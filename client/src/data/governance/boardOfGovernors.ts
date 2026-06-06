@@ -194,15 +194,15 @@ export const boardOfGovernors = {
   ],
 
   atr: [
-  {
-    title: "Approval of Academic Regulations",
-    date: "15-08-2024",
-    link: "/pdfs/bog/atr-academic-regulations.pdf",
+    {
+    title: "Action Taken Report on Second Meeting of BoG",
+    date: "08-10-2025",
+    link: "https://drive.google.com/file/d/16ZzpYLAapPThraQp687No4WQtN6RmfTG/view?usp=drive_link",
   },
   {
-    title: "Approval of New UG & PG Programs",
-    date: "15-08-2024",
-    link: "/pdfs/bog/atr-new-programs.pdf",
+    title: "Action Taken Report on First Meeting of BoG",
+    date: "17-07-2025",
+    link: "https://drive.google.com/file/d/1goUdP0ROzClknWQxbRLDbQBgOy6aCZur/view?usp=drive_link",
   },
 ],
 }as const;

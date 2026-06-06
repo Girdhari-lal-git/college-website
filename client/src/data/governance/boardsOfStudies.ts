@@ -9,9 +9,9 @@ export const boardsOfStudies = {
     {
       category: "Head of Department (Chairperson)",
       nominatedBy: "Chairman, Academic Council",
-      name: "Dr. Sama Jain",
+      name: "Dr. Rekha Nair",
       address: "Professor (HoD), Applied Sciences Department, PIET Jaipur",
-      email: "sama.jain@poornima.org"
+      email: "rekhanair@poornima.org"
     },
     {
       category: "Teacher",
@@ -23,9 +23,9 @@ export const boardsOfStudies = {
     {
       category: "Teacher",
       nominatedBy: "Chairman, Board of Studies",
-      name: "Dr. Sanjay Kumar Sinha",
+      name: "Dr. Umesh Kumar",
       address: "Professor, CSE Department, PIET Jaipur",
-      email: "sanjay.sinha@poornima.org"
+      email: "umesh.kumar@poornima.org"
     },
     {
       category: "Teacher",
@@ -107,9 +107,9 @@ export const boardsOfStudies = {
     {
       category: "Member Secretary",
       nominatedBy: "Nominated by Principal",
-      name: "Dr. Bhanu Pratap",
+      name: "Dr. Ritu Raj Singh Rathore",
       address: "Associate Professor (Dy. HoD – Academic), Applied Sciences Department, PIET Jaipur",
-      email: "bhanu.pratap@poornima.org"
+      email: "rituraj.rathore@poornima.org"
     },
     {
       category: "Invited Member",
