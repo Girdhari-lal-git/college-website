@@ -10,6 +10,19 @@ import { Calendar, Download } from 'lucide-react';
 
 const academicCalendars = [
     {
+        year: "2026-27",
+        oddSemester: {
+            title: "Odd Semester 2026-27",
+            image: "/images/ac/26-27/ODD_Sem_2026-27_Acad_Cal.jpg",
+        },
+        evenSemester: {
+            title: "Even Semester 2026-27",
+            image: "/images/ac/26-27/ODD_Sem_2026-27_AcCal.jpg",
+        },
+        status: "active"
+    },
+
+    {
         year: "2025-26",
         oddSemester: {
             title: "Odd Semester 2025-26",
@@ -19,7 +32,7 @@ const academicCalendars = [
             title: "Even Semester 2025-26",
             image: "/images/ac/25-26/Even_Sem_2025-26-1.png",
         },
-        status: "active"
+        status: "completed"
     },
     {
         year: "2024-25",

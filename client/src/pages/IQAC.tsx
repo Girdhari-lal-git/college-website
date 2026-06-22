@@ -515,6 +515,7 @@ Prof. (Dr.) Mukesh Chandra</>
 };
 
 const academicCalendars = {
+    '2026-27': ['Academic Calendar 2026-27(Even Sem)', 'Academic Calendar 2026-27(Odd Sem)'],
     '2025-26': ['Academic Calendar 2025-26(Even Sem)', 'Academic Calendar 2025-26(Odd Sem)'],
     '2024-25': ['Academic Calendar 2024-25(Even Sem)', 'Academic Calendar 2024-25(Odd Sem)'],
     '2023-24': ['Academic Calendar 2023-24(Even Sem)', 'Academic Calendar 2023-24(Odd Sem)'],
@@ -634,6 +635,8 @@ const IQACPage = () => {
     const getSimpleDocumentLink = (item: string, year: string) => {
         // Map specific documents to their Google Drive links
         const documentLinks = {
+            'Academic Calendar 2026-27(Odd Sem)': 'https://drive.google.com/file/d/1mNz_4qy9lGXROe9lS4eiHA_gDwJRCpxR/view?usp=drive_link',
+            'Academic Calendar 2026-27(Even Sem)': 'https://drive.google.com/file/d/114eiQ33-Yzq-fjUiW3L0-a-1512/view?uspnk',
             'Academic Calendar 2025-26(Even Sem)': 'https://drive.google.com/file/d/114eiQ33-Yzq-fjUiW3L0-k71H8a-1512/view?usp=drive_link',
             'Academic Calendar 2025-26(odd Sem)': 'https://drive.google.com/file/d/1VwqO--p7iGGd2cxT_678MCPAQabZk1hM/view?usp=sharing',
             'Academic Calendar 2024-25(Even Sem)': 'https://drive.google.com/file/d/1DCIpAmnUo-qNIHhIIq_SdNkU2P8Rr_b6/view?usp=drive_link',

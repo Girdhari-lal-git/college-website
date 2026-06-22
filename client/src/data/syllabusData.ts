@@ -8,7 +8,7 @@ export interface SyllabusItem {
   syllabusLink: string;
 }
 export const syllabusData: SyllabusItem[] = [
-  // First year Subjects, Schemes and Syllabi
+  // First year Subjects, Schemes and Syllabi from 2025-26 (common for all branches)
   {
     degree: "B. Tech.",
     branch: "First Year",
@@ -36,7 +36,7 @@ export const syllabusData: SyllabusItem[] = [
     subjectName: "Scheme and Syllabus for (B.Tech) CSE Third Semester",
     description: "Scheme and syllabus (From 2026-27)",
     schemeLink: "https://drive.google.com/file/d/1caeRcBYtNJFXXi6xF4R7Z3xVQd-wxwn4/view?usp=drive_link",
-    syllabusLink: "",
+    syllabusLink: "https://drive.google.com/file/d/176VxWo7mrp1w8LEKkyTDlbRohUcsR0fa/view?usp=drive_link",
   },
   {
     degree: "B. Tech.",
@@ -45,7 +45,7 @@ export const syllabusData: SyllabusItem[] = [
     subjectName: "Scheme and Syllabus for (B.Tech) CSE Fourth Semester",
     description: "Scheme and syllabus (From 2026-27)",
     schemeLink: "https://drive.google.com/file/d/1b8JhdMI7J3hUdzCQr-U0S_9fNhRj28f5/view?usp=drive_link",
-    syllabusLink: ""
+    syllabusLink: "https://drive.google.com/file/d/1pbL01m0BQYWQLAwmyf4kJzEVbPWrHyf6/view?usp=drive_link"
   },
   {
     degree: "B. Tech.",
@@ -65,7 +65,7 @@ export const syllabusData: SyllabusItem[] = [
     schemeLink: "https://drive.google.com/file/d/1S0KDNxM7wx3d9nR5nDElqWFZAc08nL0K/view?usp=drive_link",
     syllabusLink: ""
   },
-   {
+  {
     degree: "B. Tech.",
     branch: "CSE",
     semester: 7,
@@ -92,7 +92,7 @@ export const syllabusData: SyllabusItem[] = [
     subjectName: "Scheme and Syllabus for (B.Tech) CSE (Indian Language) Third Semester",
     description: "Scheme and syllabus (From 2026-27)",
     schemeLink: "https://drive.google.com/file/d/14A6sin7bjs0WQKUpEhwZbM8CnCktx6kx/view?usp=drive_link",
-    syllabusLink: "",
+    syllabusLink: "https://drive.google.com/file/d/1n-vsC6WwSTcLADJPM-wbdAW77iGLIbNp/view?usp=drive_link",
   },
   {
     degree: "B. Tech.",
@@ -101,9 +101,9 @@ export const syllabusData: SyllabusItem[] = [
     subjectName: "Scheme and Syllabus for (B.Tech) CSE (Indian Language) Fourth Semester",
     description: "Scheme and syllabus (From 2026-27)",
     schemeLink: "https://drive.google.com/file/d/1il1vtkm6m9BueRfm7ixkbbSMv373ug-N/view?usp=drive_link",
-    syllabusLink: ""
+    syllabusLink: "https://drive.google.com/file/d/1zEa04VS_lhPRxIX5OUqR1MRI0XFrF9zy/view?usp=drive_link"
   },
-  {
+  { 
     degree: "B. Tech.",
     branch: "CS (R)",
     semester: 5,
@@ -148,7 +148,7 @@ export const syllabusData: SyllabusItem[] = [
     subjectName: "Scheme and Syllabus for (B.Tech) AI & DS Third Semester",
     description: "Scheme and syllabus (From 2026-27)",
     schemeLink: "https://drive.google.com/file/d/1o68zhQCXPCteo5hFQGgp7JLyVkVyMwg1/view?usp=drive_link",
-    syllabusLink: "",
+    syllabusLink: "https://drive.google.com/file/d/13IjD_IqYxpt3-mOKcRKAloQsYa6-kYY4/view?usp=drive_link",
   },
   {
     degree: "B. Tech.",
@@ -157,7 +157,7 @@ export const syllabusData: SyllabusItem[] = [
     subjectName: "Scheme and Syllabus for (B.Tech) AI & DS Fourth Semester",
     description: "Scheme and syllabus (From 2026-27)",
     schemeLink: "https://drive.google.com/file/d/1q1fe2MPlEseQtxTpb6H8MlvMuz_Wg-P2/view?usp=drive_link",
-    syllabusLink: ""
+    syllabusLink: "https://drive.google.com/open?id=1f5N2nx7BPx5oDIk7qMfhBiFeJZhfc3Dw&usp=drive_copy"
   },
   {
     degree: "B. Tech.",
@@ -204,7 +204,7 @@ export const syllabusData: SyllabusItem[] = [
     subjectName: "Scheme and Syllabus for (B.Tech) CS (AI) Third Semester",
     description: "Scheme and syllabus (From 2026-27)",
     schemeLink: "https://drive.google.com/file/d/1H1bFMQjxZpZE2FBD_m2mZz6WP0rojYBD/view?usp=drive_link",
-    syllabusLink: "",
+    syllabusLink: "https://drive.google.com/file/d/1Jc6f5jotD-GHtoc8tpKHY1CmH9AVjs-O/view?usp=drive_link",
   },
   {
     degree: "B. Tech.",
@@ -213,7 +213,7 @@ export const syllabusData: SyllabusItem[] = [
     subjectName: "Scheme and Syllabus for (B.Tech) CS (AI) Fourth Semester",
     description: "Scheme and syllabus (From 2026-27)",
     schemeLink: "https://drive.google.com/file/d/1ARo4KzN5o2ifsp_kX1vMQ2FFETcJbfd3/view?usp=drive_link",
-    syllabusLink: ""
+    syllabusLink: "https://drive.google.com/file/d/1WGecwsLxTxeso4HnZ3VHG1xEPRkBaCFa/view?usp=drive_link"
   },
   {
     degree: "B. Tech.",
@@ -260,7 +260,7 @@ export const syllabusData: SyllabusItem[] = [
     subjectName: "Scheme and Syllabus for (B.Tech) CS (DS) Third Semester",
     description: "Scheme and syllabus (From 2026-27)",
     schemeLink: "https://drive.google.com/file/d/1QawVMOjCo0RCKTSPCoxIzRPx83fUWAsI/view?usp=drive_link",
-    syllabusLink: "",
+    syllabusLink: "https://drive.google.com/file/d/16_TWieBb2DQF5r3iIffmIqOImHh2KaM1/view?usp=drive_link",
   },
   {
     degree: "B. Tech.",
@@ -269,7 +269,7 @@ export const syllabusData: SyllabusItem[] = [
     subjectName: "Scheme and Syllabus for (B.Tech) CS (DS) Fourth Semester",
     description: "Scheme and syllabus (From 2026-27)",
     schemeLink: "https://drive.google.com/file/d/18hef5s2h-K8-PfZX4SN3U6AIp08ZKT4k/view?usp=drive_link",
-    syllabusLink: ""
+    syllabusLink: "https://drive.google.com/file/d/1cG6oCWnTVdWVyZdmaLXORTV_fqxnvc21/view?usp=drive_link"
   },
   {
     degree: "B. Tech.",
@@ -316,7 +316,7 @@ export const syllabusData: SyllabusItem[] = [
     subjectName: "Scheme and Syllabus for (B.Tech) CS (IoT) Third Semester",
     description: "Scheme and syllabus (From 2026-27)",
     schemeLink: "https://drive.google.com/file/d/15ChW5lv9WEYSjzZWNGmhZ2TMmHsKNdpm/view?usp=drive_link",
-    syllabusLink: "",
+    syllabusLink: "https://drive.google.com/file/d/1ttlWaLbg3kK5dYB5CB1_v7KXTBvYGAh2/view?usp=drive_link",
   },
   {
     degree: "B. Tech.",
@@ -325,7 +325,7 @@ export const syllabusData: SyllabusItem[] = [
     subjectName: "Scheme and Syllabus for (B.Tech) CS (IoT) Fourth Semester",
     description: "Scheme and syllabus (From 2026-27)",
     schemeLink: "https://drive.google.com/file/d/1urZb7d5kkrOyO8AXruidMN1aJ9WfzQTF/view?usp=drive_link",
-    syllabusLink: ""
+    syllabusLink: "https://drive.google.com/file/d/13X1AvcrqGC8vlVFqCl6RWg6Py-my-b9m/view?usp=drive_link"
   },
   {
     degree: "B. Tech.",
@@ -372,7 +372,7 @@ export const syllabusData: SyllabusItem[] = [
     subjectName: "Scheme and Syllabus for (B.Tech) ECE Third Semester",
     description: "Scheme and syllabus (From 2026-27)",
     schemeLink: "https://drive.google.com/file/d/1ReCFCKg0uvqvEwCPFLGvNAvcgOrbgM2d/view?usp=drive_link",
-    syllabusLink: "",
+    syllabusLink: "https://drive.google.com/file/d/1rJFq_VMa1xH8guXwBmG3Y_tFMVGmd9qA/view?usp=drive_link",
   },
   {
     degree: "B. Tech.",
@@ -381,7 +381,7 @@ export const syllabusData: SyllabusItem[] = [
     subjectName: "Scheme and Syllabus for (B.Tech) ECE Fourth Semester",
     description: "Scheme and syllabus (From 2026-27)",
     schemeLink: "https://drive.google.com/file/d/1N8Kh83MJPJkGIpU2BwgAr4CYqqRbYBZ3/view?usp=drive_link",
-    syllabusLink: ""
+    syllabusLink: "https://drive.google.com/file/d/10PYAltQuEx-2xKVNRhK_vgqo_GyCOIE_/view?usp=drive_link"
   },
   {
     degree: "B. Tech.",
@@ -418,6 +418,26 @@ export const syllabusData: SyllabusItem[] = [
     description: "Scheme and syllabus (From 2026-27)",
     schemeLink: "https://drive.google.com/file/d/14duL8n3cZ6ixkJy44W4PhzzeL7HaRhD6/view?usp=drive_link",
     syllabusLink: ""
+  },
+
+  // First year Subjects, Schemes and Syllabi from 2026-27 (common for all branches)
+  {
+    degree: "B. Tech.",
+    branch: "First Year",
+    semester: 1,
+    subjectName: "Scheme and Syllabus for First Year (B.Tech) First Semester",
+    description: "Scheme and syllabus, common for all the programs (effective from 2026-27)",
+    schemeLink: "https://drive.google.com/file/d/11usRSueeRnBoevkTe_bcgAkHIHOpFCz0/view?usp=drive_link",
+    syllabusLink: "https://drive.google.com/file/d/10hFLHyMuX8_B36iQbcyeJL6dUSgUAKE2/view?usp=drive_link",
+  },
+  {
+    degree: "B. Tech.",
+    branch: "First Year",
+    semester: 2,
+    subjectName: "Scheme and Syllabus for First Year (B.Tech) Second Semester",
+    description: "Scheme and syllabus, common for all the programs (effective from 2026-27)",
+    schemeLink: "https://drive.google.com/file/d/1PKNRaedtejIOZKO2g_K2V7tmOKJbfGAn/view?usp=drive_link",
+    syllabusLink: "https://drive.google.com/file/d/1uGmvSt-RUNW1LJyFo3mwNJf7gcJeNhjt/view?usp=drive_link"
   },
    
 ];
