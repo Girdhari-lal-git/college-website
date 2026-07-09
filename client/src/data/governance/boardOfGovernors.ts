@@ -147,6 +147,11 @@ export const boardOfGovernors = {
 
   mom: [
     {
+    title: "3rd Meeting of BoG",
+    date: "June 4, 2026",
+    link: "https://drive.google.com/file/d/1IIZ_E8jJupsthdOksVAPUDOsKYX4fkN_/view?usp=drive_link"
+  },
+    {
     title: "2nd Meeting of BoG",
     date: "October 8, 2025",
     link: "https://drive.google.com/file/d/1AsDmcdR2hvGCz2PTCEm2vGyeJk8ZrFgT/view?usp=drive_link"

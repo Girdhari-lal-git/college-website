@@ -51,6 +51,8 @@ const feedbackForms = [
 ];
 
 const feedbackAnalysis = [
+   'Action Taken Report of Feedback (2025-26)',
+    'Feedback Analysis (2025-26)',
     'Action Taken Report of Feedback (2024-25)',
     'Feedback Analysis (2024-25)',
     'Action Taken Report of Feedback (2023-24)',
@@ -107,9 +109,9 @@ export const iqacMeetingsData: Record<string, Record<string, { label: string; li
       { label: "Action Taken Report - 31", link: "#" },
     ],
     "Meeting 31": [
-      { label: "Agenda of Meeting - 31", link: "#" },
-      { label: "Minutes of Meeting - 31", link: "#" },
-      { label: "Action Taken Report - 30", link: "#" },
+      { label: "Agenda of Meeting - 31", link: "https://drive.google.com/file/d/1spCGSDUh3a8pjCeswhLp_sK74FO8T1ie/view?usp=drive_link" },
+      { label: "Minutes of Meeting - 31", link: "https://drive.google.com/file/d/1_7G7QJ1FXc0alzwLWElV0e9_ljjKKBrH/view?usp=drive_link" },
+      { label: "Action Taken Report - 30", link: "https://drive.google.com/file/d/1J6UR9h_MAVDr1YRsVjFfzR-5ON7K8EKp/view?usp=drive_link" },
     ],
     "Meeting 30": [
       { label: "Agenda of Meeting - 30", link: "https://drive.google.com/file/d/18QDXPQr8Ki7EnD__yuUQ9j2yhNhhP9Yf/view?usp=drive_link" },
@@ -701,6 +703,7 @@ const IQACPage = () => {
             'Student Feedback form on Ambience': 'https://drive.google.com/file/d/1VBDK_kFoDULC6wguHwg5LGw9ONZL6woU/view?usp=drive_link',
             'Student Feedback form on Academics': 'https://drive.google.com/file/d/1GywY6_Xuf1z8ZYoWi1mKkQ40oqZkX_hT/view?usp=drive_link',
             'Student Feedback on Academics over ERP (Process)': 'https://drive.google.com/file/d/1NCkjC-niVMM3iMJvB4-NTyaIMi7AdYHv/view?usp=drive_link',
+             'Feedback Analysis (2025-26)': 'https://drive.google.com/file/d/1Ws-wUrKDDYuU4TkNtfm3fOhMRhVQqqMJ/view?usp=drive_link',
             'Action Taken Report of Feedback (2024-25)': 'https://drive.google.com/file/d/1k8322p0PYJRb_Yn2C_KY8kZkzSo3bR78/view?usp=drive_link',
              'Feedback Analysis (2024-25)': 'https://drive.google.com/file/d/1n70wjTXIQVXt56lsSsHY3gCqxtutirCW/view?usp=drive_link',
             'Action Taken Report of Feedback (2023-24)': 'https://drive.google.com/file/d/1S6Uaw35s9s1yY9WADCaACMAMJjKw8yuc/view?usp=drive_link',

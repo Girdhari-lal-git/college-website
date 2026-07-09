@@ -24,7 +24,7 @@ export const syllabusData: SyllabusItem[] = [
     semester: 2,
     subjectName: "Scheme and Syllabus for First Year (B.Tech) Second Semester",
     description: "Scheme and syllabus, common for all the programs (From 2025-26)",
-    schemeLink: "https://drive.google.com/file/d/1ZGo5S4w-qM9imhWbjQlityxKBdXQOzfT/view?usp=drive_link",
+    schemeLink: "https://drive.google.com/file/d/13ZGSfq3UgvgZ2EWYnim7SxnMZwPCQsbW/view?usp=drive_link",
     syllabusLink: "https://drive.google.com/file/d/1gXiuFIIpo_U4lnI-NJe9X_TBEIIoBknd/view?usp=drive_link"
   },
 

@@ -26,6 +26,12 @@ interface Faculty {
     designation: string;
     gender: string;
     imageUrl?: string;
+};
+
+interface ProgramSectionProps {
+    programName: string;
+    peos: string[];
+    psos: string[];
 }
 
 export const courseData: SubjectCO[] = [
@@ -774,10 +780,10 @@ const scrData = [
 
 
 const missionPoints = [
-    "FDeliver high-quality, industry-relevant education in AI and Data Science aligned with global standards.",
-    "Foster innovation and research through collaboration with academia and industry partners like AWS.",
-    "Empower students with practical skills, ethical awareness, and entrepreneurial mindset for successful careers.",
-    "Promote continuous learning and professional development among faculty and students.",
+    "M1: To develop the students as technocrats proficient with technologies in the field of Artificial Intelligence & Data Science.",
+    "M2:To provide quality education as per need of industry and professions, while ensuring students’ contribution to society through research development aptitude.",
+    "M3:To nurture the students with professional ethics & concern towards mankind in a global perspective."
+   
 ];
 
 const objectivePoints = [
@@ -791,10 +797,9 @@ const visionContent = (
     <div className="flex flex-col items-center text-center space-y-4">
     <i className="fas fa-lightbulb text-yellow-500 text-5xl"></i>
     <p className="text-gray-700 flex-grow flex items-center justify-center text-justify">
-      To be a center of excellence in Artificial Intelligence and Data Science
-        education and research, nurturing innovative leaders who transform
-        society through cutting-edge technology and interdisciplinary
-        collaboration.
+      To develop technocrats in the domain of emerging technologies by making 
+      them ethical professionals with innovative knowledge and 
+      scientific temper to enrich the society ready to face global challenges.
     </p>
   </div> 
     
@@ -805,6 +810,8 @@ const visionContent = (
         society through cutting-edge technology and interdisciplinary
         collaboration.
     </p> */}
+
+   
 
 const projectFieldCounts = [
     { field: "Machine Learning/Deep Learning", count: 9 },
@@ -826,6 +833,8 @@ const columns = [
     { label: "S.No", key: "sno" },
     { label: "Title of FDP / Workshop", key: "title" },
 ];
+
+
 
 
 const AI = () => {
@@ -998,6 +1007,422 @@ const totalPages = Math.ceil(yearData.length / entriesPerPage);
                     content={objectiveContent}
                 />
             </div>
+
+                {/* ====================== PEO & PSO ====================== */}
+
+<section className="py-16 bg-gray-50">
+    <div className="container mx-auto px-4">
+
+        <h2 className="text-3xl font-bold text-center text-primary">
+            Program Educational Objectives (PEOs) &
+            Program Specific Outcomes (PSOs)
+        </h2>
+
+        <div className="w-24 h-1 bg-secondary mx-auto mt-3 mb-10"></div>
+
+        {/* ================= AI&DS ================= */}
+
+        <div className="mb-12">
+
+            <div className="bg-gradient-to-r from-primary to-secondary text-white rounded-xl px-6 py-4 shadow-lg mb-6">
+                <h3 className="text-2xl font-bold text-center">
+                    Bachelor of Technology in Artificial Intelligence & Data Science
+                </h3>
+            </div>
+
+            <div className="grid lg:grid-cols-2 gap-8">
+
+                {/* PEO */}
+
+                <div className="bg-white rounded-xl shadow-md overflow-hidden">
+
+                    <div className="bg-blue-700 text-white px-5 py-3">
+                        <h4 className="text-xl font-semibold text-center">
+                            Program Educational Objectives (PEOs)
+                        </h4>
+                    </div>
+
+                    <div className="p-6 space-y-5">
+
+                        <div>
+                            <span className="font-bold text-primary">
+                                PEO 1
+                            </span>
+                            <p>
+                               <strong>Professional Growth and Technological Competence</strong>
+                            </p>
+                             <p className="text-justify">
+                               Build successful careers in industry, academia, entrepreneurship, and allied domains by the application of Artificial Intelligence, Data Science, Machine Learning, and emerging technologies.
+                            </p>
+                        </div>
+
+                        <div>
+                            <span className="font-bold text-primary">
+                                PEO 2
+                            </span>
+                            <p>
+                                <strong>Computational and Analytical Proficiency</strong>
+                            </p>
+                            <p className="text-justify">
+                                Serve as technical experts and innovators by designing and scaling intelligent computing and data-driven solutions for interdisciplinary and real-world challenges in Artificial Intelligence and Data Science during their career span.
+                            </p>
+                        </div>
+
+                        <div>
+                            <span className="font-bold text-primary">
+                                PEO 3
+                            </span>
+                            <p>
+                                <strong>Ethical Values and Social Responsibility</strong>
+                            </p>
+                            <p className="text-justify">
+                               Exhibit professional ethics, leadership, teamwork, lifelong learning, and social responsibility while contributing sustainable and intelligent solutions for societal development. 
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                {/* PSO */}
+
+                <div className="bg-white rounded-xl shadow-md overflow-hidden">
+
+                    <div className="bg-secondary text-white px-5 py-3">
+                        <h4 className="text-xl font-semibold text-center">
+                            Program Specific Outcomes (PSOs)
+                        </h4>
+                    </div>
+
+                    <div className="p-6 space-y-5">
+
+                        <div>
+                            <span className="font-bold text-secondary">
+                                PSO 1
+                            </span>
+                            <p>
+                                <strong>Artificial and Machine Intelligence Skills</strong>
+                            </p>
+                            <p className="text-justify">
+                                Empower graduates with a comprehensive skill set in software development, fostering employability across diverse industries to meet the dynamic demands of the professional landscape.
+
+                            </p>
+                        </div>
+
+                        <div>
+                            <span className="font-bold text-secondary">
+                                PSO 2
+                            </span>
+                            <p>
+                                <strong>Analytics & Basic Sciences</strong>
+                            </p>
+                            <p className="text-justify">
+                                Integrate principles of mathematics, statistics, and basic sciences to analyze complex problems and develop innovative solutions in Artificial Intelligence and Data Science.
+                            </p>
+                        </div>
+
+                        <div>
+                            <span className="font-bold text-secondary">
+                                PSO 3
+                            </span>
+                            <p>
+                                <strong>Career and Life Skills</strong>
+                            </p>
+                            <p className="text-justify">
+                               Master AI and Data Analytics to innovate for societal impact by resolving complex problems using theoretical knowledge and practical tools. 
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        {/* CSE(AI) */}
+ 
+
+      <div className="mb-12">
+
+    <div className="bg-gradient-to-r from-primary to-secondary text-white rounded-xl px-6 py-4 shadow-lg mb-6">
+        <h3 className="text-2xl font-bold text-center">
+            Bachelor of Technology in Computer Science & Engineering (Artificial Intelligence)
+        </h3>
+    </div>
+
+    <div className="grid lg:grid-cols-2 gap-8">
+
+        {/* PEO */}
+
+        <div className="bg-white rounded-xl shadow-md overflow-hidden">
+
+            <div className="bg-blue-700 text-white px-5 py-3">
+                <h4 className="text-xl font-semibold text-center">
+                    Program Educational Objectives (PEOs)
+                </h4>
+            </div>
+
+            <div className="p-6 space-y-5">
+
+                <div>
+                    <span className="font-bold text-primary">
+                        PEO 1
+                    </span>
+                    <p>
+                        <strong>Career and Professional Excellence</strong>
+                    </p>
+                    <p className="text-justify">
+                        Establish successful careers in industry, academia,
+                        entrepreneurship, and allied domains by applying the
+                        principles of Computer Science, Artificial Intelligence,
+                        and emerging technologies.
+                    </p>
+                </div>
+
+                <div>
+                    <span className="font-bold text-primary">
+                        PEO 2
+                    </span>
+                    <p>
+                        <strong>Analytical and Technical Foundations</strong>
+                    </p>
+                    <p className="text-justify">
+                        Function as technical experts and innovators for
+                        designing, adapting, and scaling intelligent computing
+                        and data-driven solutions to address complex
+                        interdisciplinary and real-world problems in their
+                        careers.
+                    </p>
+                </div>
+
+                <div>
+                    <span className="font-bold text-primary">
+                        PEO 3
+                    </span>
+                    <p>
+                        <strong>Ethics, Leadership, and Societal Contribution</strong>
+                    </p>
+                    <p className="text-justify">
+                        Demonstrate professional ethics, leadership qualities,
+                        teamwork, lifelong learning, and social responsibility
+                        while contributing sustainable and AI-driven solutions
+                        for the betterment of society in their professional
+                        journey.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+        {/* PSO */}
+
+        <div className="bg-white rounded-xl shadow-md overflow-hidden">
+
+            <div className="bg-secondary text-white px-5 py-3">
+                <h4 className="text-xl font-semibold text-center">
+                    Program Specific Outcomes (PSOs)
+                </h4>
+            </div>
+
+            <div className="p-6 space-y-5">
+
+                <div>
+                    <span className="font-bold text-secondary">
+                        PSO 1
+                    </span>
+                    <p>
+                        <strong>Computing Skills with AI-Integrated Software Solutions</strong>
+                    </p>
+                    <p className="text-justify">
+                        Proficiency in developing IT solutions integrated with
+                        AI technologies for applications such as Machine
+                        Learning, Computer Vision, and Natural Language
+                        Processing.
+                    </p>
+                </div>
+
+                <div>
+                    <span className="font-bold text-secondary">
+                        PSO 2
+                    </span>
+                    <p>
+                        <strong>Analytical and Scientific Foundations</strong>
+                    </p>
+                    <p className="text-justify">
+                        Apply mathematics and statistics to solve complex
+                        problems and create innovative AI and Data Science
+                        solutions.
+                    </p>
+                </div>
+
+                <div>
+                    <span className="font-bold text-secondary">
+                        PSO 3
+                    </span>
+                    <p>
+                        <strong>Career and Societal Impact Skills</strong>
+                    </p>
+                    <p className="text-justify">
+                        Expertise to implement AI with Computer Science to
+                        tackle real-world problems using both theoretical
+                        understanding and hands-on skills.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+        {/* CSE(Data Science) */}
+
+     <div className="mb-12">
+
+    <div className="bg-gradient-to-r from-primary to-secondary text-white rounded-xl px-6 py-4 shadow-lg mb-6">
+        <h3 className="text-2xl font-bold text-center">
+            Bachelor of Technology in Computer Science & Engineering (Data Science)
+        </h3>
+    </div>
+
+    <div className="grid lg:grid-cols-2 gap-8">
+
+        {/* PEO */}
+
+        <div className="bg-white rounded-xl shadow-md overflow-hidden">
+
+            <div className="bg-blue-700 text-white px-5 py-3">
+                <h4 className="text-xl font-semibold text-center">
+                    Program Educational Objectives (PEOs)
+                </h4>
+            </div>
+
+            <div className="p-6 space-y-5">
+
+                <div>
+                    <span className="font-bold text-primary">
+                        PEO 1
+                    </span>
+                    <p>
+                        <strong>Data-Driven Career Advancement</strong>
+                    </p>
+                    <p className="text-justify">
+                        Attain successful careers in Data Science, analytics,
+                        intelligent systems, and related computing domains with
+                        strong foundations in Computer Science and data-centric
+                        technologies.
+                    </p>
+                </div>
+
+                <div>
+                    <span className="font-bold text-primary">
+                        PEO 2
+                    </span>
+                    <p>
+                        <strong>Intelligent Analytics and Problem Solving</strong>
+                    </p>
+                    <p className="text-justify">
+                        Demonstrate analytical and computational proficiency by
+                        applying statistical, mathematical, and data-driven
+                        approaches to develop efficient solutions for complex
+                        engineering and business challenges during their career
+                        span.
+                    </p>
+                </div>
+
+                <div>
+                    <span className="font-bold text-primary">
+                        PEO 3
+                    </span>
+                    <p>
+                        <strong>Continuous Learning and Responsible Leadership</strong>
+                    </p>
+                    <p className="text-justify">
+                        Engage in lifelong learning, research, innovation,
+                        ethical practices, leadership, and social
+                        responsibility to address emerging challenges and
+                        contribute sustainable solutions in intelligent
+                        computing in their professional journey.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+        {/* PSO */}
+
+        <div className="bg-white rounded-xl shadow-md overflow-hidden">
+
+            <div className="bg-secondary text-white px-5 py-3">
+                <h4 className="text-xl font-semibold text-center">
+                    Program Specific Outcomes (PSOs)
+                </h4>
+            </div>
+
+            <div className="p-6 space-y-5">
+
+                <div>
+                    <span className="font-bold text-secondary">
+                        PSO 1
+                    </span>
+                    <p>
+                        <strong>Computing Skills for Data Science & Machine Intelligence</strong>
+                    </p>
+                    <p className="text-justify">
+                        Acquire in-depth knowledge of Data Science and Machine
+                        Intelligence with essential computing skills by
+                        applying computational techniques to solve real-world
+                        challenges.
+                    </p>
+                </div>
+
+                <div>
+                    <span className="font-bold text-secondary">
+                        PSO 2
+                    </span>
+                    <p>
+                        <strong>Data Analytics and Basic Sciences</strong>
+                    </p>
+                    <p className="text-justify">
+                        Utilize principles of mathematics, statistics, and
+                        basic sciences to analyze complex problems and develop
+                        innovative solutions in Data Science and Engineering.
+                    </p>
+                </div>
+
+                <div>
+                    <span className="font-bold text-secondary">
+                        PSO 3
+                    </span>
+                    <p>
+                        <strong>Professional and Life Skills</strong>
+                    </p>
+                    <p className="text-justify">
+                        Develop essential competencies for career and personal
+                        success including communication, teamwork, leadership,
+                        adaptability, and ethical decision-making.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+    </div>
+</section>
+
+
 
             {/* hod message */}
 

@@ -168,6 +168,169 @@ const activitiesColumns = [
     { label: "Category", key: "category" },
 ];
 
+export const activities2025 = [
+    {
+        sno: 1,
+        department: "NEP",
+        activity: "Teej Celebration",
+        date: "26 July 2025",
+        coordinator: "Dr. Nupur Jain",
+        category: "IKS",
+    },
+    {
+        sno: 2,
+        department: "NEP",
+        activity: "NEP Awareness Rally",
+        date: "08 August 2025",
+        coordinator: "Dr. Nupur Jain & Dr. Krati Sharma",
+        category: "Skill Development",
+    },
+    {
+        sno: 3,
+        department: "NEP",
+        activity: "Panel Discussion on Entrepreneurship Possibility using IKS",
+        date: "22 August 2025",
+        coordinator: "Dr. Krati Sharma",
+        category: "Holistic Education and Values Based Learning",
+    },
+    {
+        sno: 4,
+        department: "NEP",
+        activity: "Expert Session on Elements of Environmental Science in Vedic Literature by Dr. Krishna Kumar Kumawat",
+        date: "02 September 2025",
+        coordinator: "Dr. Krati Sharma",
+        category: "Environment Awareness and Sustainability",
+    },
+    {
+        sno: 5,
+        department: "NEP",
+        activity: "Canvas of Change",
+        date: "16 September 2025",
+        coordinator: "Dr. Krati Sharma",
+        category: "Multidisciplinary",
+    },
+    {
+        sno: 6,
+        department: "NEP",
+        activity: "Jaipur Visit under Student Orientation Program",
+        date: "18 September 2025",
+        coordinator: "Dr. Krati Sharma",
+        category: "IKS",
+    },
+    {
+        sno: 7,
+        department: "NEP",
+        activity: "Verbal Voyage: Symphony of Extempore",
+        date: "23 September 2025",
+        coordinator: "Dr. Krati Sharma",
+        category: "Multidisciplinary",
+    },
+    {
+        sno: 8,
+        department: "NEP",
+        activity: "Lecture on Violin Demonstration",
+        date: "25 October 2025",
+        coordinator: "Ms. Garima Kachhara",
+        category: "Multidisciplinary",
+    },
+    {
+        sno: 9,
+        department: "NEP",
+        activity: "Release of NEP Newsletter",
+        date: "25 October 2025",
+        coordinator: "Dr. Krati Sharma",
+        category: "Holistic Education & Multidisciplinary",
+    },
+    {
+        sno: 10,
+        department: "NEP",
+        activity: "Nukkad Natak on Awareness about NEP",
+        date: "07 November 2025",
+        coordinator: "Dr. Krati Sharma",
+        category: "Skill Development",
+    },
+    {
+        sno: 11,
+        department: "NEP",
+        activity: "Visit to Jaipur Literature Festival",
+        date: "16 January 2026",
+        coordinator: "Dr. Krati Sharma",
+        category: "Holistic Education Value Based Learning",
+    },
+    {
+        sno: 12,
+        department: "NEP",
+        activity: "Vasant Panchami Celebration",
+        date: "23 January 2026",
+        coordinator: "Mr. Ashok Choudhary",
+        category: "IKS",
+    },
+    {
+        sno: 13,
+        department: "NEP",
+        activity: "Participation in Bharat Bodh IKS National Level Examination",
+        date: "31 January 2026",
+        coordinator: "Dr. Krati Sharma",
+        category: "IKS",
+    },
+    {
+        sno: 14,
+        department: "NEP",
+        activity: "Connecting with Traditional Practices: Recycle Projects",
+        date: "06 February 2026",
+        coordinator: "Dr. Krati Sharma",
+        category: "IKS",
+    },
+    {
+        sno: 15,
+        department: "NEP",
+        activity: "Debate Competition on Equity vs Merit: Navigating Fairness in India's Higher Education System",
+        date: "21 March 2026",
+        coordinator: "Dr. Krati Sharma",
+        category: "Skill Development",
+    },
+    {
+        sno: 16,
+        department: "NEP",
+        activity: "Saarthi Path Ways: Learning from Experience",
+        date: "31 March 2026",
+        coordinator: "Dr. Krati Sharma",
+        category: "Multidisciplinary",
+    },
+    {
+        sno: 17,
+        department: "NEP",
+        activity: "NEP Awareness Session for Students",
+        date: "25 April 2026",
+        coordinator: "Dr. Krati Sharma",
+        category: "Skill Development",
+    },
+    {
+        sno: 18,
+        department: "NEP",
+        activity: "Interaction on Minor's Degree & Honours Degree by Dr. Dinesh Goyal",
+        date: "30 April 2026",
+        coordinator: "Dr. Krati Sharma",
+        category: "Skill Development",
+    },
+    {
+        sno: 19,
+        department: "NEP",
+        activity: "Cleanliness Drive in the Campus",
+        date: "29 May 2026",
+        coordinator: "Dr. Krati Sharma",
+        category: "Environment Awareness",
+    },
+    {
+        sno: 20,
+        department: "NEP",
+        activity: "Yoga Session for All",
+        date: "21 June 2026",
+        coordinator: "Mr. Robin Prakash & Dr. Krati Sharma",
+        category: "Health & Well Being",
+    },
+];
+
 const activities2024 = [
     {
         sno: 1,
@@ -1197,6 +1360,74 @@ const NEPPage = () => {
                 <div className="w-24 h-1 bg-secondary mx-auto mb-6"></div>
                 <DynamicTable columns={saarthiColumns} data={saarthiTeam} />
             </div>
+            
+
+           <section className="py-10">
+    <div className="max-w-6xl mx-auto px-6 lg:px-10">
+        <h3 className="text-2xl font-bold text-gray-800 mb-6">
+            Event Photographs
+        </h3>
+
+    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4  ">
+
+        <img
+            src="/images/nep2020/nep2.jpeg"
+            alt="Event 1"
+            className="w-full h-72 object-cover rounded-lg shadow-md hover:scale-105 transition duration-300 cursor-pointer"
+        />
+
+        <img
+            src="/images/nep2020/nep3.jpeg"
+            alt="Event 2"
+            className="w-full h-72 object-cover rounded-lg shadow-md hover:scale-105 transition duration-300 cursor-pointer"
+        />
+
+        <img
+            src="/images/nep2020/nep4.jpeg"
+            alt="Event 3"
+            className="w-full h-72 object-cover rounded-lg shadow-md hover:scale-105 transition duration-300 cursor-pointer"
+        />
+
+        <img
+            src="/images/nep2020/nep5.jpg"
+            alt="Event 4"
+            className="w-full h-72 object-cover rounded-lg shadow-md hover:scale-105 transition duration-300 cursor-pointer"
+        />
+
+        <img
+            src="/images/nep2020/nep6.jpg"
+            alt="Event 5"
+            className="w-full h-72 object-cover rounded-lg shadow-md hover:scale-105 transition duration-300 cursor-pointer"
+        />
+
+        <img
+            src="/images/nep2020/nep7.jpg"
+            alt="Event 6"
+            className="w-full h-72 object-cover rounded-lg shadow-md hover:scale-105 transition duration-300 cursor-pointer"
+        />
+
+        <img
+            src="/images/nep2020/nep8.jpeg"
+            alt="Event 6"
+            className="w-full h-72 object-cover rounded-lg shadow-md hover:scale-105 transition duration-300 cursor-pointer"
+        />
+        <img
+            src="/images/nep2020/nep1.jpeg"
+            alt="Event 6"
+            className="w-full h-72 object-cover rounded-lg shadow-md hover:scale-105 transition duration-300 cursor-pointer"
+        />
+
+         <img
+            src="/images/nep2020/nep9.jpg"
+            alt="Event 2"
+            className="w-full h-72 object-cover rounded-lg shadow-md hover:scale-105 transition duration-300 cursor-pointer"
+        />
+
+    </div>
+    
+</div>
+</section>
+
 
             {/* NEP Activities Section */}
             <div className="container mx-auto my-16">
@@ -1206,6 +1437,16 @@ const NEPPage = () => {
                 <div className="w-24 h-1 bg-secondary mx-auto mb-10"></div>
 
                 <div className="space-y-12">
+                    <div>
+                        <h3 className="text-2xl font-semibold mb-6 text-center text-primary">
+                            Activities 2025-26
+                        </h3>
+                        <DynamicTable
+                            columns={activitiesColumns}
+                            data={activities2025}
+                        />
+                    </div>
+
                     <div>
                         <h3 className="text-2xl font-semibold mb-6 text-center text-primary">
                             Activities 2024-25

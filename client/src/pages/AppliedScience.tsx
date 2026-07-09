@@ -587,18 +587,20 @@ const AppliedScience = () => {
                 <div className="container mx-auto px-4">
                     <Message
                         title="Message from the HOD"
-                        content={`"Scientific learning is best achieved by doing science"
+                        content={`"Education is not merely the acquisition of knowledge; it is the cultivation of wisdom, innovation, and character."
 
-This teaching philosophy enables student community to learn and simultaneously make scientific contribution to society. We are committed to deliver an excellent graduate program of study as well as provide an opportunity for cutting-edge research in all natural and applied sciences.
+Welcome to the Department of Applied Sciences and First Year Engineering at PIET, where we lay the foundation for engineering excellence through a strong emphasis on scientific principles, analytical thinking, and innovation. As an autonomous institution committed to the vision of the National Education Policy (NEP) 2020, we strive to nurture not only technically competent engineers but also socially responsible and globally aware professionals.
+The first year of engineering plays a pivotal role in shaping the mindset of students as they transition from school to higher education. In alignment with the AICTE-prescribed Student Induction Programme, we facilitate a smooth and meaningful transition by fostering curiosity, creativity, and a spirit of lifelong learning. Beyond imparting fundamental knowledge in Mathematics, Physics, Chemistry, Programming for Problem solving, and Communication Skills, we focus on experiential and outcome-based learning that equips students to meet the challenges of an ever-evolving technological world.
+At PIET, learning extends far beyond textbooks and classrooms. We place significant emphasis on project-based learning, communication and interpersonal skills, computational thinking, basic programming, teamwork through collaborative activities, and exposure to industry practices. We actively cultivate innovation and creative thinking by providing students with opportunities to engage with the Idea Lab and by integrating innovation and design thinking into the learning process. Through hands-on experiences and interdisciplinary projects, students are encouraged to ideate, experiment, and develop solutions to real-world challenges, thereby nurturing creativity, problem-solving abilities, leadership qualities, and an entrepreneurial mindset from the first year of engineering itself.
+The department is privileged to have a team of highly qualified and experienced faculty members who are dedicated to teaching, research, and mentoring. Through continuous guidance and academic support, they inspire students to explore emerging technologies, undertake innovative projects, participate in technical competitions, engage in research activities, and develop the professional competencies required to excel in their chosen disciplines.
+We are committed to creating an intellectually stimulating environment that promotes interdisciplinary learning, innovation, and holistic development. By integrating academic excellence with value-based education, we seek to develop graduates who are not only proficient professionals but also ethical leaders and responsible citizens capable of contributing meaningfully to society.
+At PIET, we firmly believe that a strong scientific foundation is the cornerstone of engineering innovation and sustainable development. With an unwavering commitment to excellence, we continue to nurture future innovators, researchers, entrepreneurs, and leaders who will shape a better tomorrow.
+I warmly invite you to explore the Department of Applied Sciences and become a part of our journey towards knowledge, innovation, and excellence.
 
-I feel elated to introduce you to the Department of Applied Sciences which is the foundation of Engineers that strives for increasing the knowledge, enhancing the critical thinking, ability to change information into knowledge and power of analyzing things technically.
-
-Department of Applied Sciences plays a vital role in an engineering college catering to the teaching of basic Sciences and Humanities courses for engineering students of all branches. The purpose of applied sciences in Engineering study is to lay a strong foundation of basic principles of various disciplines such as Mathematics, Physics, Chemistry, Computers, Electronics, Mechanics and Communication Skills in the mind of the learners, so that they proceed to rest of their years of study with up to date knowledge and training of basic engineering skills.
-
-- Dr. Sama Jain
+- Dr. Rekha Nair
 HOD, Department of Applied Sciences, PIET`}
-                        imageUrl="/images/messages/hod.jpeg"
-                        imageAlt="Dr. Sama Jain - HOD, Department of Applied Sciences"
+                        imageUrl="/images/hod/HoD_AS_RN.jpeg"
+                        imageAlt="Dr. Rekha Nair - HOD, Department of Applied Sciences"
                     />
                 </div>
             </section>

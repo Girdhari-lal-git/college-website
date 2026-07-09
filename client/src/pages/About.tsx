@@ -79,6 +79,14 @@ const events = [
     description: "Expert talks and workshops on AI advancements.",
     link: "/events/ai-conclave",
   },
+  {
+    id: 4,
+    image:
+      "/images/UpcomingEvents/NBA_FDP-NITTR-2026.jpeg",
+    title: "FDP on OBE and NBA-SAR for Quality Assurance organised by Department of Applied Sciences, PIET in collaboration with Dept of Media Engineering NITTTR , Chandigarh.",
+    description: "This FDP is designed to enhance your understanding of Outcome-Based Education (OBE) and the NBA Self-Assessment Report (SAR) process, which are critical for maintaining quality assurance in technical education. For any queries, feel free to contact at krati.sharma@poornima.org or call +91-8305750628.",
+    link: "https://drive.google.com/file/d/1iUUsfdhTMClR-GZsNghuQbXX31fg61jf/view?usp=drive_link",
+  },
 ];
 
 

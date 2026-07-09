@@ -133,15 +133,23 @@ export const academicCouncil = {
 
    mom: [
   {
-    title: "First Academic Council Meeting",
-    date: "24-07-2025",
-    link: "https://drive.google.com/file/d/1tiSM3_s5QAAjLrn5FiCgVi22W8uIrpH1/view?usp=drive_link"
+    title: "Third Academic Council Meeting",
+    date: "16-05-2026",
+    link: "https://drive.google.com/file/d/1If9w9rcrUgA-zN7paPhEHXUaxyhVPj_1/view?usp=drive_link"
   },
-  {
+
+    {
     title: "Second Academic Council Meeting",
     date: "13-08-2025",
     link: "https://drive.google.com/file/d/17PB0h5BIfZrRi2Wmbv-1lAtRLODgy_5l/view?usp=drive_link"
   },
+
+    {
+    title: "First Academic Council Meeting",
+    date: "24-07-2025",
+    link: "https://drive.google.com/file/d/1tiSM3_s5QAAjLrn5FiCgVi22W8uIrpH1/view?usp=drive_link"
+  },
+  
 ],
 
 atr: [
