@@ -20,6 +20,24 @@ const conferenceData = [
 
   {
   sno: 1,
+  title: 'International Conference on Recent Advances in Artificial Intelligence, Computer Vision & Smart Systems',
+  name: 'ICRACS-2025',
+  date: '17-18 April 2026',
+  type: 'International',
+  year: '2026',
+  link: (
+    <a
+      href="NA"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-blue-600 hover:underline"
+    >
+      NA
+    </a>
+  ),
+},
+  {
+  sno: 2,
   title: 'International Conference on resilience, Reflection and Innovation in Library Services and Practices 2026',
   name: 'ICIDHLV-2026',
   date: '20-21 Feb 2026',
@@ -38,7 +56,7 @@ const conferenceData = [
 },
 
 {
-  sno: 2,
+  sno: 3,
   title: 'International Conference on Sustainable & Intelligent Computing in Science and Technology',
   name: 'ICIMMI-2025',
   date: '16-17 December 2025',
@@ -46,18 +64,18 @@ const conferenceData = [
   year: '2025',
   link: (
     <a
-      href="NA"
+      href="https://drive.google.com/file/d/1WtxYJKwiPtcawmkap6t1UDgREpUkAhnj/view?usp=drive_link"
       target="_blank"
       rel="noopener noreferrer"
       className="text-blue-600 hover:underline"
     >
-      NA
+      ICIMMI-2025 (ACM-NY)
     </a>
   ),
 },
 
 {
-  sno: 3,
+  sno: 4,
   title: 'International Conference on Sustainable & Intelligent Computing in Science and Technology',
   name: 'ICSICST-2025',
   date: '16-17 May 2025',
@@ -75,7 +93,7 @@ const conferenceData = [
   ),
 },
 {
-  sno: 4,
+  sno: 5,
   title: 'International Conference on Networked Computing and Data Analytics',
   name: 'ICNCDA-2025',
   date: '23-24 May 2025',
@@ -94,7 +112,7 @@ const conferenceData = [
 },
 
 {
-  sno: 5,
+  sno: 6,
   title: 'International Conference on Recent Advances in Artificial Intelligence, Computer Vision & Smart Systems',
   name: 'ICRACS-2025',
   date: '16-17 April 2025',
@@ -114,7 +132,7 @@ const conferenceData = [
 
 
 {
-  sno: 6,
+  sno: 7,
   title: 'International Conference on Information Management and Machine Intelligence',
   name: 'ICIMMI-2024',
   date: '23-24 December 2024',
@@ -135,7 +153,7 @@ const conferenceData = [
 
 
     {
-  sno: 7,
+  sno: 8,
   title: 'International Conference on Intelligent Systems Using Semiconductors for Robotics and IoT',
   name: 'ICISRI-2024',
   date: '29-30 November 2024',
@@ -143,19 +161,19 @@ const conferenceData = [
   year: '2024',
   link: (
     <a
-      href="NA"
+      href="https://drive.google.com/file/d/1FAO6DKStYrI9h5s19mCjjGnnneysCBFW/view?usp=drive_link"
       target="_blank"
       rel="noopener noreferrer"
       className="text-blue-600 hover:underline"
     >
-      NA
+      ICISRI-2024
     </a>
   ),
 },
 
 
   {
-    sno: 8,
+    sno: 9,
     title: 'International Conference on Smart Innovations for Society',
     name: 'ICSIS- 2024',
     date: '24-25 April 2024',
@@ -173,7 +191,7 @@ const conferenceData = [
     ),
   },
   {
-    sno: 9,
+    sno: 10,
     title: 'International Conference on Intelligent Systems & Computing',
     name: 'ICISC- 2024',
     date: '24-25 April 2024',
@@ -191,7 +209,7 @@ const conferenceData = [
     ),
   },
   {
-    sno: 10,
+    sno: 11,
     title:
       'International Conference on Recent Advances in Artificial intelligence, Computer Vision & Smart Systems',
     name: 'ICRACS 2024',
@@ -210,7 +228,7 @@ const conferenceData = [
     ),
   },
   {
-    sno: 11,
+    sno: 12,
     title: 'International Conference on Information Management and Machine Intelligence',
     name: 'ICIMMI 2023',
     date: '14-16 December 2023',
@@ -228,7 +246,7 @@ const conferenceData = [
     ),
   },
   {
-    sno: 12,
+    sno: 13,
     title: 'International Conference on Mathematics, Modeling and Statistics',
     name: 'ICMMS 2023',
     date: '1-2 September 2023',
@@ -246,7 +264,7 @@ const conferenceData = [
     ),
   },
   {
-    sno: 13,
+    sno: 14,
     title:
       'International Conference on Research Trends of ICT Using Digital Libraries with Human Values & Ethics',
     name: 'ICIDLHV 2023',
@@ -265,7 +283,7 @@ const conferenceData = [
     ),
   },
   {
-    sno: 14,
+    sno: 15,
     title: 'International Conference on Information Management and Machine Intelligence',
     name: 'ICIMMI 2022',
     date: '23-24 December 2022',
@@ -283,7 +301,7 @@ const conferenceData = [
     ),
   },
   {
-    sno: 15,
+    sno: 16,
     title: 'International Conference on Smart Innovations for Society',
     name: 'ICSIS 2022',
     date: '6-7 May 2022',
@@ -301,7 +319,7 @@ const conferenceData = [
     ),
   },
   {
-    sno: 16,
+    sno: 17,
     title: 'International Conference on Intelligent Systems and Computation',
     name: 'ICISC 2022',
     date: '6-7 May 2022',
@@ -319,7 +337,7 @@ const conferenceData = [
     ),
   },
   {
-    sno: 17,
+    sno: 18,
     title: 'International Conference on Information Management and Machine Intelligence',
     name: 'ICIMMI-2021',
     date: '23-24 December 2021',
@@ -337,7 +355,7 @@ const conferenceData = [
     ),
   },
   {
-    sno: 18,
+    sno: 19,
     title: 'International Conference on Post-Covid Challenges on Life and Livelihood',
     name: 'ICPCC 2021',
     date: '5-6 March 2021',
@@ -355,7 +373,7 @@ const conferenceData = [
     ),
   },
   {
-    sno: 19,
+    sno: 20,
     title: 'International Conference on Smart Innovations for Society 2021',
     name: 'ICSIS 2021',
     date: '20-21 August 2021',
@@ -373,7 +391,7 @@ const conferenceData = [
     ),
   },
   {
-    sno: 20,
+    sno: 21,
     title: 'International Conference on Intelligent System & Computation 2021',
     name: 'ICISC 2021',
     date: '20-21 August 2021',
@@ -391,7 +409,7 @@ const conferenceData = [
     ),
   },
   {
-    sno: 21,
+    sno: 22,
     title: 'International Conference on Information Management and Machine Intelligence',
     name: 'ICIMMI-2020',
     date: '24-25 July 2020',
@@ -409,7 +427,7 @@ const conferenceData = [
     ),
   },
   {
-    sno: 22,
+    sno: 23,
     title:
       'Proceedings of Second International Conference on Smart Energy and Communication',
     name: 'ICSEC-2020',
@@ -428,7 +446,7 @@ const conferenceData = [
     ),
   },
   {
-    sno: 23,
+    sno: 24,
     title: 'International Conference on Smart Innovations for Society 2020',
     name: 'ICSIS 2020',
     date: '20-21 March 2020',
@@ -446,7 +464,7 @@ const conferenceData = [
     ),
   },
   {
-    sno: 24,
+    sno: 25,
     title: 'International Conference on Intelligent Systems & Computation 2020',
     name: 'ICISC 2020',
     date: '20-21 March 2020',
@@ -464,7 +482,7 @@ const conferenceData = [
     ),
   },
   {
-    sno: 25,
+    sno: 26,
     title:
       'Information Management and Machine Intelligence: Proceedings of ICIMMI',
     name: 'ICIMMI-2019',
@@ -483,7 +501,7 @@ const conferenceData = [
     ),
   },
   {
-    sno: 26,
+    sno: 27,
     title: 'International Conference on Smart Innovations for Society 2019',
     name: 'ICSIS 2019',
     date: '6-7 April 2019',
@@ -501,7 +519,7 @@ const conferenceData = [
     ),
   },
   {
-    sno: 27,
+    sno: 28,
     title: 'International Conference on Smart Computation and Technology',
     name: 'ICSCT 2019',
     date: '6-7 April 2019',
@@ -519,7 +537,7 @@ const conferenceData = [
     ),
   },
   {
-    sno: 28,
+    sno: 29,
     title: 'International Conference on Smart infrastructure and Environment',
     name: 'ICSIE 2019',
     date: '6-7 April 2019',
@@ -537,7 +555,7 @@ const conferenceData = [
     ),
   },
   {
-    sno: 29,
+    sno: 30,
     title: 'International Conference on Smart Energy and Communication',
     name: 'ICSEC 2019',
     date: '6-7 April 2019',

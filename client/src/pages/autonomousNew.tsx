@@ -201,6 +201,39 @@ const AutonomousPage: React.FC = () => {
               <tbody>
                 <tr>
                   <td className="border p-2">
+                    Circular for publication of revised Academic and Examination Policy for Autonomous Batches (Admitted from Academic Year 2025–2026 Onwards)
+                  </td>
+                  <td className="border p-2">15-07-2026</td>
+                  <td className="border p-2">
+                    <a className="text-primary" href="https://drive.google.com/file/d/1ewj85fDz73uydzDaqYEY_6p7NJTZAz8G/view?usp=drive_link">
+                      PDF
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td className="border p-2">
+                    Circulation of revised Finance Policy of PIET for Autonomous Batches (Admitted from Academic Year 2025–2026 Onwards)
+                  </td>
+                  <td className="border p-2">16-07-2026</td>
+                  <td className="border p-2">
+                    <a className="text-primary" href="https://drive.google.com/file/d/1jrK2wEVIDHp9JmISTHe8oqXGKZ01gh2z/view?usp=drive_link">
+                      PDF
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td className="border p-2">
+                    Circulation of policy for mapping student academic records with ABC/AAPAR ID & NAD for Autonomous Batches (Admitted from Academic Year 2025–2026 Onwards)
+                  </td>
+                  <td className="border p-2">16-07-2026</td>
+                  <td className="border p-2">
+                    <a className="text-primary" href="https://drive.google.com/file/d/1Yz5KgGTA7EYXno4Yv97bLtvlPPjcNNSu/view?usp=drive_link">
+                      PDF
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td className="border p-2">
                     Reconstitution of Board of studies of Department of Applied Sciences
                   </td>
                   <td className="border p-2">26-05-2026</td>
@@ -340,7 +373,34 @@ const AutonomousPage: React.FC = () => {
               <tbody>
                 <tr>
                   <td className="border p-2">1</td>
-                  <td className="border p-2">Academic and examination Policy</td>
+                  <td className="border p-2">Revised Academic and examination Policy july 2026</td>
+                  <td className="border p-2">
+                    <a className="text-primary" href="https://drive.google.com/file/d/1ewj85fDz73uydzDaqYEY_6p7NJTZAz8G/view?usp=drive_link">
+                      PDF
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td className="border p-2">2</td>
+                  <td className="border p-2">Revised Finance policy of PIET july 2026</td>
+                  <td className="border p-2">
+                    <a className="text-primary" href="https://drive.google.com/file/d/1jrK2wEVIDHp9JmISTHe8oqXGKZ01gh2z/view?usp=drive_link">
+                      PDF
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td className="border p-2">3</td>
+                  <td className="border p-2">Policy for mapping student academic records with ABC/AAPAR ID & NAD July 2026 </td>
+                  <td className="border p-2">
+                    <a className="text-primary" href="https://drive.google.com/file/d/1Yz5KgGTA7EYXno4Yv97bLtvlPPjcNNSu/view?usp=drive_link">
+                      PDF
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td className="border p-2">4</td>
+                  <td className="border p-2">Academic and examination Policy july 2025</td>
                   <td className="border p-2">
                     <a className="text-primary" href="https://drive.google.com/file/d/1j5RsxfifAv7Rz1131ra4xCSUO5jc7s9W/view?usp=drive_link">
                       PDF
@@ -348,7 +408,7 @@ const AutonomousPage: React.FC = () => {
                   </td>
                 </tr>
                 <tr>
-                  <td className="border p-2">2</td>
+                  <td className="border p-2">5</td>
                   <td className="border p-2">Service Rules/ Human Resource Policy</td>
                   <td className="border p-2">
                     <a className="text-primary" href="https://drive.google.com/file/d/1T-fPtAhwGuKgahTu0VDwHyNhy-MExMZj/view?usp=drive_link">
@@ -357,7 +417,7 @@ const AutonomousPage: React.FC = () => {
                   </td>
                 </tr>
                 <tr>
-                  <td className="border p-2">3</td>
+                  <td className="border p-2">6</td>
                   <td className="border p-2">Code of Conduct for Faculty, Staff and Students</td>
                   <td className="border p-2">
                     <a className="text-primary" href="https://drive.google.com/file/d/1vsi_6FrfkIOOHlI9tM6fTVAevWKHf8IC/view?usp=drive_link">
@@ -366,7 +426,7 @@ const AutonomousPage: React.FC = () => {
                   </td>
                 </tr>
                 <tr>
-                  <td className="border p-2">4</td>
+                  <td className="border p-2">7</td>
                   <td className="border p-2">Admission Policy</td>
                   <td className="border p-2">
                     <a className="text-primary" href="https://drive.google.com/file/d/1fPFuygnbBY_RD9zxBJH_7ajC7aRZ94zy/view?usp=drive_link">
@@ -375,7 +435,7 @@ const AutonomousPage: React.FC = () => {
                   </td>
                 </tr>
                 <tr>
-                  <td className="border p-2">5</td>
+                  <td className="border p-2">8</td>
                   <td className="border p-2">Student Grievance Redressal Policy</td>
                   <td className="border p-2">
                     <a className="text-primary" href="https://drive.google.com/file/d/1CxjIZygLQ3wMvc3ZlqSxN4YWYF9pYVgG/view?usp=drive_link">
@@ -384,7 +444,7 @@ const AutonomousPage: React.FC = () => {
                   </td>
                 </tr>
                 <tr>
-                  <td className="border p-2">6</td>
+                  <td className="border p-2">9</td>
                   <td className="border p-2">Anti-Ragging Policy</td>
                   <td className="border p-2">
                     <a className="text-primary" href="#">
@@ -393,7 +453,7 @@ const AutonomousPage: React.FC = () => {
                   </td>
                 </tr>
                 <tr>
-                  <td className="border p-2">7</td>
+                  <td className="border p-2">10</td>
                   <td className="border p-2">Prevention of Sexual Harassment Policy(ICC)</td>
                   <td className="border p-2">
                     <a className="text-primary" href="#">
@@ -402,7 +462,7 @@ const AutonomousPage: React.FC = () => {
                   </td>
                 </tr>
                 <tr>
-                  <td className="border p-2">8</td>
+                  <td className="border p-2">11</td>
                   <td className="border p-2">Equal Opportunity Policy</td>
                   <td className="border p-2">
                     <a className="text-primary" href="https://drive.google.com/file/d/1xBlKPmy9Sx-RHh-ha0jXPbwgHXjr8aEp/view?usp=drive_link">
@@ -412,7 +472,7 @@ const AutonomousPage: React.FC = () => {
                 </tr>
                 
                 <tr>
-                  <td className="border p-2">9</td>
+                  <td className="border p-2">12</td>
                   <td className="border p-2">Internship Policy</td>
                   <td className="border p-2">
                     <a className="text-primary" href="https://drive.google.com/file/d/1fCZHQYXUVpBNiMgJ0PCCieC7UZELY2Z2/view?usp=drive_link">
@@ -421,7 +481,7 @@ const AutonomousPage: React.FC = () => {
                   </td>
                 </tr>
                 <tr>
-                  <td className="border p-2">10</td>
+                  <td className="border p-2">13</td>
                   <td className="border p-2">Internal Quality Assurance Cell (IQAC) Policy</td>
                   <td className="border p-2">
                     <a className="text-primary" href="https://drive.google.com/file/d/1VwqO--p7iGGd2cxT_678MCPAQabZk1hM/view?usp=drive_link">
@@ -430,7 +490,7 @@ const AutonomousPage: React.FC = () => {
                   </td>
                 </tr>
                 <tr>
-                  <td className="border p-2">11</td>
+                  <td className="border p-2">14</td>
                   <td className="border p-2">Fee Refund Policy</td>
                   <td className="border p-2">
                     <a className="text-primary" href="https://drive.google.com/file/d/11Sk42Fd1opFSsa0AwR_yEIMqOfOa6Im0/view?usp=drive_link">
@@ -439,7 +499,7 @@ const AutonomousPage: React.FC = () => {
                   </td>
                 </tr>
                  <tr>
-                  <td className="border p-2">12</td>
+                  <td className="border p-2">15</td>
                   <td className="border p-2">Finance Policy</td>
                   <td className="border p-2">
                     <a className="text-primary" href="https://drive.google.com/file/d/1ffyGVMiDl1Xiw7tT_QYJg89m8MN5iwgV/view?usp=drive_link">

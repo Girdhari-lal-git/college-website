@@ -94,6 +94,11 @@ const bestPractices = [
     'Best Practices 2'
 ];
 
+const bestPracticesautonomous = [
+    'Autonomous Best Practices 1',
+    'Autonomous Best Practices 2'
+];
+
 const bestPracticesEvidence = [
     'Best Practices 1 Evidence',
     'Best Practices 2 Evidence'
@@ -104,8 +109,8 @@ export const iqacMeetingsData: Record<string, Record<string, { label: string; li
   
   "2025-26": {
     "Meeting 32": [
-      { label: "Agenda of Meeting - 32", link: "#" },
-      { label: "Minutes of Meeting - 32", link: "#" },
+      { label: "Agenda of Meeting - 32", link: "https://drive.google.com/file/d/15fUybaC1pSP06yOuGpZbFRMQZmsVox60/view?usp=drive_link" },
+      { label: "Minutes of Meeting - 32", link: "https://drive.google.com/file/d/15fUybaC1pSP06yOuGpZbFRMQZmsVox60/view?usp=drive_link" },
       { label: "Action Taken Report - 31", link: "#" },
     ],
     "Meeting 31": [
@@ -284,6 +289,147 @@ export const iqacMeetingsData: Record<string, Record<string, { label: string; li
 
 // Enhanced data for IQAC Quality Activities with proper structure
 const iqacQualityActivities = {
+    '2025-2026': [
+        {
+    name: '3rd International Conference on Recent Advances in Artificial Intelligence, Computer Vision and Smart Systems (ICRACS 2026)',
+    organization: 'Poornima Institute of Engineering & Technology, Jaipur'
+},
+{
+    name: 'International Conference on Sustainable & Intelligent Computing in Science and Technology (ICIDLHV 2026)',
+    organization: 'Poornima Institute of Engineering & Technology, Jaipur'
+},
+{
+    name: '7th International Conference on Information Management & Machine Intelligence (ICIMMI 2024)',
+    organization: 'Poornima Institute of Engineering & Technology, Jaipur'
+},
+{
+    name: 'SIH Internal Hackathon 2025',
+    organization: 'IDEA LAB, Poornima Institute of Engineering & Technology, Jaipur'
+},
+{
+    name: 'Internal Hackathon for Hardware Category',
+    organization: 'IDEA LAB, Poornima Institute of Engineering & Technology, Jaipur'
+},
+{
+    name: 'HACKINDIA 2024',
+    organization: 'IDEA LAB, Poornima Institute of Engineering & Technology, Jaipur'
+},
+{
+    name: 'Academic Quality and Administrative Readiness: OBE Implementation',
+    organization: 'Poornima Institute of Engineering & Technology, Jaipur'
+},
+{
+    name: '95th Annual Session of NASI and Symposium on "Healthy Brain, Mind and Cognition: From Computers to Clinics"',
+    organization: 'Indian Institute of Technology Guwahati (IIT Guwahati)'
+},
+{
+    name: 'ISEA Phase-III Sponsored Bootcamp on "Securing the Airwaves: Cybersecurity in Wireless Communications"',
+    organization: 'Information Security Education & Awareness (ISEA)'
+},
+{
+    name: 'One-Day Capacity Building Workshop on Technology-Enabled Teaching Pedagogy with Responsible Use of e-Learning Tools as per NEP 2020 Using Smart Board',
+    organization: 'Poornima Institute of Engineering & Technology, Jaipur'
+},
+{
+    name: 'Five-day Faculty Development Program on "Capacity Building in Higher Education Institutions (HEIs): The Challenges and Opportunities"',
+    organization: 'Poornima Institute of Engineering & Technology, Jaipur'
+},
+{
+    name: 'Expert Session under AICTE Distinguished Professional Scheme (DPS)',
+    organization: 'AICTE, Poornima Institute of Engineering & Technology, Jaipur'
+},
+{
+    name: 'Awareness Session on the Sexual Harassment of Women at Workplace (POSH Act, 2013)',
+    organization: 'NSS, Poornima Institute of Engineering & Technology, Jaipur'
+},
+{
+    name: 'FDP on Higher Education in Institutes of National Importance in India – Preparing Students for Entrance Exams',
+    organization: 'IQAC, Poornima Institute of Engineering & Technology, Jaipur'
+},
+{
+    name: 'Funding Opportunities and Formulation of Research and Innovation Proposals',
+    organization: 'IQAC, Poornima Institute of Engineering & Technology, Jaipur'
+},
+{
+    name: 'Expert Session on "Engineering Leadership Skills Beyond Technical Excellence"',
+    organization: 'IQAC, Poornima Institute of Engineering & Technology, Jaipur'
+},
+{
+    name: '5 Days Faculty Development Programme on "Facilitating IGNITE Course in Entrepreneurship"',
+    organization: 'PBIC, Poornima Institute of Engineering & Technology, Jaipur'
+},
+{
+    name: 'IPR Day Session: Unlocking Innovation – Exploring Intellectual Property Rights (IPR) in the Digital Age',
+    organization: 'IQAC, Poornima Institute of Engineering & Technology, Jaipur'
+},
+{
+    name: 'UDBHAV 2025 National Level Project Exhibition',
+    organization: 'IDEA LAB, Poornima Institute of Engineering & Technology, Jaipur'
+},
+{
+    name: 'IEEE Women in Engineering (WIE) Ambassador Program',
+    organization: 'Poornima Institute of Engineering & Technology, Jaipur'
+},
+    ],
+    
+    '2024-2025': [
+    {
+    name: '2nd International Conference on Recent Advances in Artificial Intelligence, Computer Vision & Smart Systems (ICRACS 2025)',
+    organization: 'Poornima Institute of Engineering & Technology, Jaipur'
+},
+{
+    name: 'International Conference on Networked Computing and Data Analytics (ICNCDA-2025)',
+    organization: 'Poornima Institute of Engineering & Technology, Jaipur'
+},
+{
+    name: 'International Conference on Sustainable & Intelligent Computing in Science and Technology (ICSICST-2025)',
+    organization: 'Poornima Institute of Engineering & Technology, Jaipur'
+},
+{
+    name: 'International Conference on Intelligent Systems Using Semiconductors for Robotics and IoT (ICISRI 2024)',
+    organization: 'Poornima Institute of Engineering & Technology, Jaipur'
+},
+{
+    name: '6th International Conference on Information Management & Machine Intelligence (ICIMMI 2024)',
+    organization: 'Poornima Institute of Engineering & Technology, Jaipur'
+},
+{
+    name: 'FDP on Advanced Tools & Techniques for Quality Research, Innovation and Analysis',
+    organization: 'Indian Society for Technical Education (ISTE)'
+},
+{
+    name: 'AICTE ATAL FDP on Three Day Introductory Face to Face FDP on Universal Human Values (UHV)',
+    organization: 'AICTE'
+},
+{
+    name: 'NITTTR FDP on Methods of Research and Publication Ethics (Hybrid Mode)',
+    organization: 'NITTR, Chandigarh'
+},
+{
+    name: 'Faculty Development Program on Cryptography and Network Security',
+    organization: 'NITTR, Chandigarh'
+},
+{
+    name: '5 Days Faculty Development Programme on Facilitating IGNITE Course in Entrepreneurship',
+    organization: 'Poornima Institute of Engineering & Technology, Jaipur'
+},
+{
+    name: 'Six-days AICTE Training and Learning (ATAL) Online Faculty Development Programme on Preserving Local Dialects Using Multi-Layer Perceptron for Sustainable Development of Communities',
+    organization: 'AICTE'
+},
+{
+    name: 'FDP On Advanced Tools & Techniques for Quality Research, Innovation and Analysis',
+    organization: 'Indian Society for Technical Education (ISTE)'
+},
+{
+    name: 'Poornima Institute Students’ Remarkable Achievement at IETE Student Day',
+    organization: 'Poornima Institute of Engineering & Technology, Jaipur'
+},
+{
+    name: 'AWS Academy Educator Online Workshop: Introduction to AWS Academy LMS',
+    organization: 'Poornima Institute of Engineering & Technology, Jaipur'
+},
+], 
     '2023-2024': [
         {
             name: 'Innovation,Design,and Entrepreneurship(IDE) Bootcamp for Students Innovations and Teachers of Schools',
@@ -703,8 +849,8 @@ const IQACPage = () => {
             'Student Feedback form on Ambience': 'https://drive.google.com/file/d/1VBDK_kFoDULC6wguHwg5LGw9ONZL6woU/view?usp=drive_link',
             'Student Feedback form on Academics': 'https://drive.google.com/file/d/1GywY6_Xuf1z8ZYoWi1mKkQ40oqZkX_hT/view?usp=drive_link',
             'Student Feedback on Academics over ERP (Process)': 'https://drive.google.com/file/d/1NCkjC-niVMM3iMJvB4-NTyaIMi7AdYHv/view?usp=drive_link',
-             'Feedback Analysis (2025-26)': 'https://drive.google.com/file/d/1Ws-wUrKDDYuU4TkNtfm3fOhMRhVQqqMJ/view?usp=drive_link',
-            'Action Taken Report of Feedback (2024-25)': 'https://drive.google.com/file/d/1k8322p0PYJRb_Yn2C_KY8kZkzSo3bR78/view?usp=drive_link',
+             'Feedback Analysis (2025-26)': 'https://drive.google.com/file/d/1c0MsPY7uRZJjAJc3Fa1axMjmilWS3sk5/view?usp=drive_link',
+            'Action Taken Report of Feedback (2024-25)': 'https://drive.google.com/file/d/12cnYYiPxqahti4tyUEnEhwUTb1YacSz2/view?usp=drive_link',
              'Feedback Analysis (2024-25)': 'https://drive.google.com/file/d/1n70wjTXIQVXt56lsSsHY3gCqxtutirCW/view?usp=drive_link',
             'Action Taken Report of Feedback (2023-24)': 'https://drive.google.com/file/d/1S6Uaw35s9s1yY9WADCaACMAMJjKw8yuc/view?usp=drive_link',
              'Feedback Analysis (2023-24)': 'https://drive.google.com/file/d/12r5uy8xlvbl9dIFP-hwzV5DwNPyZOhSp/view?usp=drive_link',
@@ -725,6 +871,8 @@ const IQACPage = () => {
             'Students Satisfaction Survey 2020-21': 'https://drive.google.com/file/d/1q8fzzRb02XD32lvxa9DQR8a92JrIQ0R4/view?usp=drive_link',
             'Students Satisfaction Survey 2019-20': 'https://drive.google.com/file/d/1yosVGBLSnO0eopZe803xa46Wjc24VyDN/view?usp=drive_link',
             'Students Satisfaction Survey 2018-19': 'https://drive.google.com/file/d/1g6FLs6UNjJz8xWiVabMbx06n8y69owlk/view?usp=drive_link',
+            'Autonomous Best Practices 1': 'https://drive.google.com/file/d/1ci9y5ITkRl_QGPmE9w2bpyc2s2SEvuhd/view?usp=drive_link',
+            'Autonomous Best Practices 2': 'https://drive.google.com/file/d/1j-0NAluee8YCJnrkHBH-m0xD1eYO8XAj/view?usp=drive_link',
             'Best Practices 1': 'https://drive.google.com/file/d/1i5AsKxlkjG4L6mn9z-EEG_Tk8QD1S1vt/view?usp=drive_link',
             'Best Practices 2': 'https://drive.google.com/file/d/16nSCqyCgykjI6XFonAcjWsdnw1CGJGMW/view?usp=drive_link',
             'Best Practices 1 Evidence': 'https://drive.google.com/file/d/1gui-YAhh0c7tgiRcK1sR5daGuLDsGsbO/view?usp=drive_link',
@@ -1427,6 +1575,9 @@ const IQACPage = () => {
                     setOpenYear={setOpenEnvReportYear}
                     icon={FileText}
                 />
+                </div>
+                <div >
+                <ModernTable title="Best Practices Under Autonomy" data={bestPracticesautonomous} icon={Award} />
                 </div>
                 <div >
                 <ModernTable title="Best Practices" data={bestPractices} icon={Award} />

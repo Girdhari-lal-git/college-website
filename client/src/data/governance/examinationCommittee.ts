@@ -84,6 +84,16 @@ export const examinationCommittee = {
     date: "12-03-2026",
     link: "https://drive.google.com/file/d/1MiQpt6wb14fY-2fSTVWwSO8NlYvzpqLu/view?usp=drive_link"
   },
+   {
+    title: "Fourth Examination Committee Meeting",
+    date: "12-06-2026",
+    link: "https://drive.google.com/file/d/1o3w4x63KQ4ga8g32lmSGSm5xTe0bO9ZZ/view?usp=drive_link"
+  },
+   {
+    title: "Fifth Examination Committee Meeting",
+    date: "10-07-2026",
+    link: "https://drive.google.com/file/d/1IMD0I9BQIVjncoqQY8ci2IphmfSOihgS/view?usp=drive_link"
+  },
 ],
 
 atr: [

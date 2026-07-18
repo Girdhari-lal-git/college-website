@@ -63,53 +63,236 @@ const downloadstudentColumns: Column<downloadstaffRow>[] = [
 
 const downloadstudentData: downloadstaffRow[] = [
     {
-        sno: 1,
-        name: "NAAC Certificate",
-        download: (
-            <a
-                href="https://drive.google.com/file/d/1m3kUGHhUblrY7SOobKjf1TmdYJSsqkzd/view?usp=drive_link"
-                download
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                <button className="bg-primary text-white px-4 py-1 rounded hover:bg-secondary transition inline-flex items-center gap-2">
-                    <i className="fas fa-download" /> Download
-                </button>
-            </a>
-        ),
-    },
-    {
-        sno: 2,
-        name: "NAAC Score Card",
-        download: (
-            <a
-                href="https://drive.google.com/file/d/1Qez7cEf3y6SyhFdef3JAxH_8yEmxD1Xd/view?usp=drive_link"
-                download
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                <button className="bg-primary text-white px-4 py-1 rounded hover:bg-secondary transition inline-flex items-center gap-2">
-                    <i className="fas fa-download" /> Download
-                </button>
-            </a>
-        ),
-    },
-    {
-        sno: 3,
-        name: "NAAC SSR Report (Second Cycle)",
-        download: (
-            <a
-                href="https://drive.google.com/file/d/1Oaglfsnel_GyFF4xY-0d9vZRnJbS0wyJ/view?usp=drive_link"
-                download
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                <button className="bg-primary text-white px-4 py-1 rounded hover:bg-secondary transition inline-flex items-center gap-2">
-                    <i className="fas fa-download" /> Download
-                </button>
-            </a>
-        ),
-    },
+    sno: 1,
+    name: "S-1 : Student No Dues",
+    download: (
+        <a href="https://drive.google.com/file/d/1b-U32sxRRyszCzaRv66D3CBIqc7eLkkL/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">
+            <button className="bg-primary text-white px-4 py-1 rounded hover:bg-secondary transition inline-flex items-center gap-2">
+                <i className="fas fa-download" /> Download
+            </button>
+        </a>
+    ),
+},
+{
+    sno: 2,
+    name: "S-2 : Student No Dues (Hosteller)",
+    download: (
+        <a href="https://drive.google.com/file/d/1tYzG2pmSeoZU9D4ClGKU5mHS18cUM_as/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">
+            <button className="bg-primary text-white px-4 py-1 rounded hover:bg-secondary transition inline-flex items-center gap-2">
+                <i className="fas fa-download" /> Download
+            </button>
+        </a>
+    ),
+},
+{
+    sno: 3,
+    name: "S-3 : Application Form for Registration of II, III & IV Year",
+    download: (
+        <a href="https://drive.google.com/file/d/1Ts7z6SChSvyAU0AXFiea7mTnZBJT1nuQ/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">
+            <button className="bg-primary text-white px-4 py-1 rounded hover:bg-secondary transition inline-flex items-center gap-2">
+                <i className="fas fa-download" /> Download
+            </button>
+        </a>
+    ),
+},
+{
+    sno: 4,
+    name: "S-4 : Smart ID Card",
+    download: (
+        <a href="https://drive.google.com/file/d/1ONteALKnV_pFzca0wjccxpiokPf565VX/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">
+            <button className="bg-primary text-white px-4 py-1 rounded hover:bg-secondary transition inline-flex items-center gap-2">
+                <i className="fas fa-download" /> Download
+            </button>
+        </a>
+    ),
+},
+{
+    sno: 5,
+    name: "S-5 : Application for Refund of Access Fee",
+    download: (
+        <a href="https://drive.google.com/file/d/1cxG2mNgf5T6zQ7farvCooo-4lz4Hoi5N/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">
+            <button className="bg-primary text-white px-4 py-1 rounded hover:bg-secondary transition inline-flex items-center gap-2">
+                <i className="fas fa-download" /> Download
+            </button>
+        </a>
+    ),
+},
+{
+    sno: 6,
+    name: "S-6 : Semester Internship",
+    download: (
+        <a href="https://drive.google.com/file/d/12W8KrQJFjiIflZbbz2zWgLvRUzMmrQr6/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">
+            <button className="bg-primary text-white px-4 py-1 rounded hover:bg-secondary transition inline-flex items-center gap-2">
+                <i className="fas fa-download" /> Download
+            </button>
+        </a>
+    ),
+},
+{
+    sno: 7,
+    name: "S-7 : Application for College Transportation",
+    download: (
+        <a href="https://drive.google.com/file/d/1dJau5GBWPEJfw8oDK7meg3lbYjxvCxo9/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">
+            <button className="bg-primary text-white px-4 py-1 rounded hover:bg-secondary transition inline-flex items-center gap-2">
+                <i className="fas fa-download" /> Download
+            </button>
+        </a>
+    ),
+},
+{
+    sno: 8,
+    name: "S-7B : Application Form for Availing Coaching Shuttle",
+    download: (
+        <a href="https://drive.google.com/file/d/1K25N8QrdTTfRIe4tNUQ9WgtNfYkuvu5H/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">
+            <button className="bg-primary text-white px-4 py-1 rounded hover:bg-secondary transition inline-flex items-center gap-2">
+                <i className="fas fa-download" /> Download
+            </button>
+        </a>
+    ),
+},
+{
+    sno: 9,
+    name: "S-8 : Undertaking for Industrial Visit",
+    download: (
+        <a href="https://drive.google.com/file/d/16VXAmXKk3P-oIRyG3D3jUnJKb4q4YtYt/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">
+            <button className="bg-primary text-white px-4 py-1 rounded hover:bg-secondary transition inline-flex items-center gap-2">
+                <i className="fas fa-download" /> Download
+            </button>
+        </a>
+    ),
+},
+{
+    sno: 10,
+    name: "S-10 : Hosteller Leave Application Form",
+    download: (
+        <a href="https://drive.google.com/file/d/199FlTMLIwsUOl_AvpxNAxBzz2sKcCWPi/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">
+            <button className="bg-primary text-white px-4 py-1 rounded hover:bg-secondary transition inline-flex items-center gap-2">
+                <i className="fas fa-download" /> Download
+            </button>
+        </a>
+    ),
+},
+{
+    sno: 11,
+    name: "S-11 : OutPass for Hosteller",
+    download: (
+        <a href="https://drive.google.com/file/d/1CTFiJpSHuZsTrs3B0_e1EWOyds1-CRxp/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">
+            <button className="bg-primary text-white px-4 py-1 rounded hover:bg-secondary transition inline-flex items-center gap-2">
+                <i className="fas fa-download" /> Download
+            </button>
+        </a>
+    ),
+},
+{
+    sno: 12,
+    name: "S-12 : Application for Mentorship",
+    download: (
+        <a href="https://drive.google.com/file/d/1MnRhH1H6P_qnA-0Y5rKi-FDDV0Laygfp/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">
+            <button className="bg-primary text-white px-4 py-1 rounded hover:bg-secondary transition inline-flex items-center gap-2">
+                <i className="fas fa-download" /> Download
+            </button>
+        </a>
+    ),
+},
+{
+    sno: 13,
+    name: "S-13 : Self Help Group",
+    download: (
+        <a href="https://drive.google.com/file/d/1oyaptaEJIBtWVDMtzK7rbpymhYcbUmw6/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">
+            <button className="bg-primary text-white px-4 py-1 rounded hover:bg-secondary transition inline-flex items-center gap-2">
+                <i className="fas fa-download" /> Download
+            </button>
+        </a>
+    ),
+},
+{
+    sno: 14,
+    name: "S-15 : Application Form for Loan Application",
+    download: (
+        <a href="https://drive.google.com/file/d/1CBx1Bs-Shpm4SwcYhiMnOawxNEm153K8/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">
+            <button className="bg-primary text-white px-4 py-1 rounded hover:bg-secondary transition inline-flex items-center gap-2">
+                <i className="fas fa-download" /> Download
+            </button>
+        </a>
+    ),
+},
+{
+    sno: 15,
+    name: "S-16 : Poornima Student Work Abroad Program",
+    download: (
+        <a href="https://drive.google.com/file/d/1Wcy_RYs2zpEEcRb-18wArLAivH73WDL5/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">
+            <button className="bg-primary text-white px-4 py-1 rounded hover:bg-secondary transition inline-flex items-center gap-2">
+                <i className="fas fa-download" /> Download
+            </button>
+        </a>
+    ),
+},
+{
+    sno: 16,
+    name: "S-18 : Student Participation in Activities Outside Poornima Institute",
+    download: (
+        <a href="https://drive.google.com/file/d/1ibHy7SRF0WMRvnqKsMq8gFqitW9vhIlL/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">
+            <button className="bg-primary text-white px-4 py-1 rounded hover:bg-secondary transition inline-flex items-center gap-2">
+                <i className="fas fa-download" /> Download
+            </button>
+        </a>
+    ),
+},
+{
+    sno: 17,
+    name: "S-19 : Requisition of CC/TC/Degree",
+    download: (
+        <a href="https://drive.google.com/file/d/1U8-gvGpw-MgEjJ1BsO8w346B1ZXzbSWO/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">
+            <button className="bg-primary text-white px-4 py-1 rounded hover:bg-secondary transition inline-flex items-center gap-2">
+                <i className="fas fa-download" /> Download
+            </button>
+        </a>
+    ),
+},
+{
+    sno: 18,
+    name: "S-20 : Application for Updation in Marks",
+    download: (
+        <a href="https://drive.google.com/file/d/1YWp0H8xREYDrMzu9nobo0ZzKtUPPeeTR/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">
+            <button className="bg-primary text-white px-4 py-1 rounded hover:bg-secondary transition inline-flex items-center gap-2">
+                <i className="fas fa-download" /> Download
+            </button>
+        </a>
+    ),
+},
+{
+    sno: 19,
+    name: "S-21 : Information Collection Form for MOOCs",
+    download: (
+        <a href="https://drive.google.com/file/d/1ZRT0WMW5XAELiAA6zKCN_ho7AZEbZW1b/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">
+            <button className="bg-primary text-white px-4 py-1 rounded hover:bg-secondary transition inline-flex items-center gap-2">
+                <i className="fas fa-download" /> Download
+            </button>
+        </a>
+    ),
+},
+{
+    sno: 20,
+    name: "S-22 : Student NEFT Details for Reimbursement",
+    download: (
+        <a href="https://drive.google.com/file/d/1N3Lt1WCOFyI6Ey47v0y3F2O4Y4_83bWL/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">
+            <button className="bg-primary text-white px-4 py-1 rounded hover:bg-secondary transition inline-flex items-center gap-2">
+                <i className="fas fa-download" /> Download
+            </button>
+        </a>
+    ),
+},
+{
+    sno: 21,
+    name: "S-23 : Loan Amount Confirmation",
+    download: (
+        <a href="https://drive.google.com/file/d/16fArwcSlZUuWHmRic12BU1E6WNDdRKU8/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">
+            <button className="bg-primary text-white px-4 py-1 rounded hover:bg-secondary transition inline-flex items-center gap-2">
+                <i className="fas fa-download" /> Download
+            </button>
+        </a>
+    ),
+},
 ];
 
 const downloads: React.FC = () => {

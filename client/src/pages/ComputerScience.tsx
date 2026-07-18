@@ -1769,10 +1769,9 @@ const points = [
 ];
 
 const missionPoints = [
-    "To provide a comprehensive outcome-based education through a robust curriculum and hands-on learning.",
-    "To promote research, innovation, and entrepreneurial thinking among students and faculty.",
-    "To bridge the gap between academia and industry through real-world projects, internships, and technical collaborations.",
-    "To ensure holistic student development by nurturing ethical values, professional skills, and lifelong learning.",
+    "M1: To develop competent professionals with innovative mindset, problem-solving, design and implementation skills through excellent education.",
+    "M2: To provide a platform so that undergraduates can excel as computer professionals, entrepreneurs or managers while fulfilling their ethical and social responsibilities in a globally competitive environment.",
+    "M3: To contribute significantly to the research and discovery of new arenas of methods and knowledge in the field of computer engineering.",
 ];
 
 const objectivePoints = [
@@ -1786,9 +1785,7 @@ const visionContent = (
      <div className="flex flex-col items-center text-center space-y-4">
     <i className="fas fa-lightbulb text-yellow-500 text-5xl"></i>
     <p className="text-gray-700 flex-grow flex items-center justify-center text-justify">
-       To foster an environment of innovation, research, and academic
-        excellence that prepares future technocrats and leaders to address
-        global challenges in computer engineering and technology.
+      To create an environment in which new ideas, research and technology develop and the technocrats and innovators of tomorrow become competent to face the global challenges.
     </p>
   </div> 
     
@@ -1932,6 +1929,144 @@ const ComputerScience = () => {
                     content={objectiveContent}
                 />
             </div>
+
+                {/* ====================== PEO & PSO ====================== */}
+
+<section className="py-4 bg-gray-50">
+    <div className="container mx-auto px-4">
+
+        <h2 className="text-3xl font-bold text-center text-primary">
+            Program Educational Objectives (PEOs) &
+            Program Specific Outcomes (PSOs)
+        </h2>
+
+        <div className="w-24 h-1 bg-secondary mx-auto mt-3 mb-10"></div>
+
+        {/* ================= CSE ================= */}
+
+        <div className="mb-12">
+
+            <div className="bg-gradient-to-r from-primary to-secondary text-white rounded-xl px-6 py-4 shadow-lg mb-6">
+                <h3 className="text-2xl font-bold text-center">
+                    Bachelor of Technology in Computer Science and Engineering (CSE & CSE (R))              </h3>
+            </div>
+
+            <div className="grid lg:grid-cols-2 gap-8">
+
+                {/* PEO */}
+
+                <div className="bg-white rounded-xl shadow-md overflow-hidden">
+
+                    <div className="bg-blue-700 text-white px-5 py-3">
+                        <h4 className="text-xl font-semibold text-center">
+                            Program Educational Objectives (PEOs)
+                        </h4>
+                    </div>
+
+                    <div className="p-6 space-y-5">
+
+                        <div>
+                            <span className="font-bold text-primary">
+                                PEO 1
+                            </span>
+                            <p>
+                               <strong>Career and Professional Excellence</strong>
+                            </p>
+                             <p className="text-justify">
+                               Empower graduates for progressive careers in the software industry, IT and computing services, and allied sectors with strong computing knowledge, analytical skills and proficiency in solution design and implementation.
+                            </p>
+                        </div>
+
+                        <div>
+                            <span className="font-bold text-primary">
+                                PEO 2
+                            </span>
+                            <p>
+                                <strong>Technical Innovation and Problem Solving</strong>
+                            </p>
+                            <p className="text-justify">
+                                Nurture engineers as technical experts and innovators to design, adapt and scale intelligent computing, data-driven and computer-system-based solutions to solve complex interdisciplinary real-world problems.
+                            </p>
+                        </div>
+
+                        <div>
+                            <span className="font-bold text-primary">
+                                PEO 3
+                            </span>
+                            <p>
+                                <strong>Ethics, Leadership and Lifelong Learning</strong>
+                            </p>
+                            <p className="text-justify">
+                               Cultivate graduates with professional integrity, leadership, collaborative competence, entrepreneurial outlook, ethical responsibility and lifelong learning for meaningful contribution in diverse global professional environments. 
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                {/* PSO */}
+
+                <div className="bg-white rounded-xl shadow-md overflow-hidden">
+
+                    <div className="bg-secondary text-white px-5 py-3">
+                        <h4 className="text-xl font-semibold text-center">
+                            Program Specific Outcomes (PSOs)
+                        </h4>
+                    </div>
+
+                    <div className="p-6 space-y-5">
+
+                        <div>
+                            <span className="font-bold text-secondary">
+                                PSO 1
+                            </span>
+                            <p>
+                                <strong>Software Development</strong>
+                            </p>
+                            <p className="text-justify">
+                                The proficiency to understand, apply and analyze the concepts of various fields of computer engineering such as programming languages, data structures, algorithms, operating systems, databases, web design, security, networking, cloud computing and open-source platforms.
+
+                            </p>
+                        </div>
+
+                        <div>
+                            <span className="font-bold text-secondary">
+                                PSO 2
+                            </span>
+                            <p>
+                                <strong>Computer-Based Applied Science</strong>
+                            </p>
+                            <p className="text-justify">
+                                Understanding and applying knowledge of computer systems such as architecture, electronics and hardware design, built upon a strong foundation in basic and applied sciences including mathematics, physics and electrical engineering.
+                            </p>
+                        </div>
+
+                        <div>
+                            <span className="font-bold text-secondary">
+                                PSO 3
+                            </span>
+                            <p>
+                                <strong>Career Skills</strong>
+                            </p>
+                            <p className="text-justify">
+                              The ability to apply, analyze and evaluate industry best practices by developing innovative projects and acquiring the attitude required to work professionally, pursue higher studies and research, and become an entrepreneur
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        {/* CSE(R) */}
+ 
+
+</div>
+</section>
 
             {/* hod message */}
 
