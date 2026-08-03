@@ -100,7 +100,7 @@ import RTIInformationOfficer from "./pages/RTIInformationOfficer";
 import firefoodCertificatePage from "./pages/FirefoodCertificate";
 import AlumniPage from "./pages/AlumniPage";
 import RedRibbonClubPage from "./pages/Red_ribbon_Club";
-
+import TestDepartmentPage from "./pages/AI-testpage";
 
 function Router() {
   return (
@@ -211,8 +211,7 @@ function Router() {
         <Route path="/electoral-literacy-forum" component={ElectoralLiteracyForum} />
         <Route path="/hackathons" component={Hackathons} />
         <Route path="/student-council" component={StudentCouncil} />
-        <Route path="/conference" component={StudentCouncil} />
-        <Route path="/careers" component={About} />
+                <Route path="/careers" component={About} />
         <Route path="/syllabus" component={SyllabusPage} />
         <Route path="/bos" component={BOSPage} />
         <Route path="/academicCouncil" component={AcademicCouncilPage} />
@@ -222,6 +221,8 @@ function Router() {
         <Route path="/firefood-certificate" component={firefoodCertificatePage} />
         <Route path= "/AlumniPage" component={AlumniPage} />
         <Route path="/Red-ribbon-Club" component={RedRibbonClubPage} />
+        <Route path="/test-department" component={TestDepartmentPage} />
+
 
 
         <Route>

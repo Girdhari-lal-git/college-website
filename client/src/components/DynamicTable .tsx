@@ -74,21 +74,23 @@ const DynamicTable: React.FC<DynamicTableProps> = ({ columns, data }) => {
                     </thead>
                     <tbody>
                         {currentPageData.map((row, idx) => (
-                            <tr
-                                key={idx}
-                                className="cursor-pointer hover:bg-secondary/10 transition-colors"
-                            >
-                                {columns.map(({ key }) => (
-                                    <td
-                                        key={key}
-                                        className="px-6 py-4 whitespace-nowrap font-medium text-primary border-b border-gray-200"
+                                    <tr
+                                        key={idx}
+                                        className="cursor-pointer hover:bg-secondary/10 transition-colors"
                                     >
-                                        {row[key]}
-                                    </td>
-                                ))}
-                            </tr>
-                        ))}
-                        {currentPageData.length === 0 && (
+                                        {columns.map(({ key }) => (
+                                           <td
+                                                key={key}
+                                                className="px-6 py-4 whitespace-nowrap font-medium text-primary border-b border-gray-200"
+                                            >
+                                                {key === "__serial__"
+                                                    ? (currentPage - 1) * ITEMS_PER_PAGE + idx + 1
+                                                    : row[key]}
+                                            </td>
+                                        ))}
+                                    </tr>
+                                ))}                       
+                                 {currentPageData.length === 0 && (
                             <tr>
                                 <td
                                     colSpan={columns.length}

@@ -31,17 +31,11 @@ export const grievanceRedresalData = {
   {
     category: "Member",
     nominatedBy: "Chairman, Academic Council",
-    name: "Mr. Ashwini Lata",
+    name: "Dr. Rekha Nair",
     address: "Poornima Institute of Engineering & Technology (PIET), Jaipur",
     email: ""
   },
-  {
-    category: "Member",
-    nominatedBy: "Chairman, Academic Council",
-    name: "Dr. Sama Jain",
-    address: "Poornima Institute of Engineering & Technology (PIET), Jaipur",
-    email: ""
-  },
+  
   {
     category: "Member",
     nominatedBy: "Chairman, Academic Council",
@@ -60,6 +54,13 @@ export const grievanceRedresalData = {
     category: "Member",
     nominatedBy: "Chairman, Academic Council",
     name: "Dr. Budesh Kanwar",
+    address: "Poornima Institute of Engineering & Technology (PIET), Jaipur",
+    email: ""
+  },
+  {
+    category: "Member",
+    nominatedBy: "Chairman, Academic Council",
+    name: "Mr. Mahesh Sharma",
     address: "Poornima Institute of Engineering & Technology (PIET), Jaipur",
     email: ""
   },
@@ -280,14 +281,14 @@ export const grievanceRedresalData = {
   {
     category: "Member-6",
     nominatedBy: "Chairman, Academic Council",
-    name: "Dr. Sanjay Sinha",
-    address: "Professor, Computer Science Engineering, PIET Jaipur",
+    name: "Mr. Vishnu Prakash Sharma",
+    address: "Assistant Professor, Applied Sciences, PIET Jaipur",
     email: "sanjay.sinha@poornima.org"
   },
   {
     category: "Member-7",
     nominatedBy: "Chairman, Academic Council",
-    name: "Ms. Priya Verma",
+    name: "Dr. Ashima Tiwari",
     address: "Assistant Professor, Computer Science Engineering, PIET Jaipur",
     email: "priya.verma@poornima.org"
   },
@@ -358,7 +359,7 @@ export const grievanceRedresalData = {
   {
     category: "Member",
     nominatedBy: "Chairman, Academic Council",
-    name: "Dr. Sama Jain",
+    name: "Dr. Rekha Nair",
     address: "Presiding Officer of Internal Complaint Committee / Women Redressal Cell, PIET Jaipur",
     email: ""
   },
@@ -372,7 +373,7 @@ export const grievanceRedresalData = {
   {
     category: "Member",
     nominatedBy: "Chairman, Academic Council",
-    name: "Mr. Mukul Nama",
+    name: "Dr. Rajendra Singh",
     address: "Secretary, SC/ST/OBC Cell, PIET Jaipur",
     email: ""
   },

@@ -106,39 +106,42 @@ import ReportTimeline from "@/components/ReportTimeline";
 const facultyData = [
     {
         imageSrc:
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_FZR1-SNQItQMwECGXMp7MYCspr3Fm0R61Q&s",
+            "/images/pbic/Ajay_Maurya-2025.jpg",
         name: "Dr. Ajay Maurya	",
         gender: "Male",
         designation: "PBIC Coordinator",
     },
     {
         imageSrc:
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_FZR1-SNQItQMwECGXMp7MYCspr3Fm0R61Q&s",
-        name: "Mr. Varun Chahar	",
-        gender: "Male",
-        designation: "PBIC Student Coordinator",
-    },
-    {
-        imageSrc:
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_FZR1-SNQItQMwECGXMp7MYCspr3Fm0R61Q&s",
-        name: "Mr. Shubham Pratap Singh",
-        gender: "Male",
-        designation: "PBIC Student Coordinator",
-    },
-    {
-        imageSrc:
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_FZR1-SNQItQMwECGXMp7MYCspr3Fm0R61Q&s",
+            "/images/messages/reg.jpg",
         name: "	Dr. Balwan",
         gender: "Male",
         designation: "PBIC, Campus Coordinator, PIET",
     },
     {
         imageSrc:
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_FZR1-SNQItQMwECGXMp7MYCspr3Fm0R61Q&s",
+            "images/iqac/Dr. Mukesh Chandra.jpg",
         name: "Dr. Mukesh Chandra",
         gender: "Male",
         designation: "PBIC Campus Coordinator, PIET",
     },
+     {
+        imageSrc:
+            "/images/pbic/Shubham_PBIC.jpeg",
+        name: "Mr. Shubham Pratap Singh",
+        gender: "Male",
+        designation: "PBIC Student Coordinator",
+    },
+    {
+        imageSrc:
+            "/images/pbic/Dev_PBIC.jpeg",
+        name: "Mr. Dev Pratap Singh",
+        gender: "Male",
+        designation: "PBIC Student Coordinator",
+    },
+   
+    
+    
 ];
 
 const columns = [
@@ -500,7 +503,389 @@ const startups = [
     pbicid: "2025P10-1",
     year: 2025
   },
+  {
+    sno: 51,
+    startupName: "Pedal Wash",
+    studentName: "Divgun Singh",
+    pbicid: "2025P11-1",
+    year: 2025
+},
+{
+    sno: 52,
+    startupName: "Medaan E-Sports",
+    studentName: "Anshul Agarwal",
+    pbicid: "2025P11-2",
+    year: 2025
+},
+{
+    sno: 53,
+    startupName: "AI Sales Representative",
+    studentName: "Sanchit Saraswat",
+    pbicid: "2026P01-1",
+    year: 2026
+},
+{
+    sno: 54,
+    startupName: "AI WhatsApp and Email Automation",
+    studentName: "Sagar Trivedi",
+    pbicid: "2026P01-2",
+    year: 2026
+},
+{
+    sno: 55,
+    startupName: "A-Drop",
+    studentName: "Rudhra Tak",
+    pbicid: "2026P02-1",
+    year: 2026
+},
+{
+    sno: 56,
+    startupName: "SkillXSwap",
+    studentName: "Saloni Goyal",
+    pbicid: "2026P02-2",
+    year: 2026
+},
+{
+    sno: 57,
+    startupName: "ChowkIndia",
+    studentName: "Konark Agarwal",
+    pbicid: "2026P05-1",
+    year: 2026
+},
 ]; 
+
+const columnsactivity = [ 
+
+    { label: "S.No", key: "__serial__" },
+    { label: "Activity Details", key: "activityDetails" },
+    { label: "Date of Activity", key: "dateOfActivity" },
+    { label: "Resource Person", key: "resourcePerson" },
+
+];
+const dataactivity = [ 
+  
+  // ===================== 2018-19 =====================
+  {
+    activityDetails: "EAD-18 (Entrepreneurship Awareness Drive-2018) Supported by E-Cell, IIT Kharagpur",
+    dateOfActivity: "Oct-18",
+    resourcePerson: ""
+  },
+  {
+    activityDetails: "IEEE Sponsored & AICTE Approved Workshop on Financial Literacy",
+    dateOfActivity: "20-Dec-18",
+    resourcePerson: ""
+  },
+  {
+    activityDetails: "Entrepreneur Talk by Prof. Samish Dalal, Associate Professor & Administrator, Global FMB Program, SP Jain Institute of Management & Research, and TEDx Speaker",
+    dateOfActivity: "25-Jan-2019",
+    resourcePerson: "Prof. Samish Dalal"
+  },
+  {
+    activityDetails: "Student Interaction with Rajasthan Finance Corporation (RFC) and RIICO regarding Yuva Udyamita Protsahan Yojana",
+    dateOfActivity: "13-Feb-2019",
+    resourcePerson: "Rajasthan Finance Corporation (RFC) & RIICO"
+  },
+  {
+    activityDetails: "\"Prayag\" - A Contest to Promote Entrepreneurship among Students",
+    dateOfActivity: "Nov-18",
+    resourcePerson: ""
+  },
+  {
+    activityDetails: "India First Leadership Talk Series",
+    dateOfActivity: "08-Jan-19",
+    resourcePerson: "Shri Anand Mahindra, Chairman, Mahindra Group"
+  },
+  {
+    activityDetails: "Introduction to Intellectual Property Rights",
+    dateOfActivity: "10-Jan-19",
+    resourcePerson: "Ms. Shwetasree Majumder, Principal, Fidus Law Chamber"
+  },
+  {
+    activityDetails: "India First Leadership Talk Series",
+    dateOfActivity: "21-Jan-2019",
+    resourcePerson: "Dr. Anand Deshpande, Founder, Chairman & Managing Director, Persistent Systems Ltd."
+  },
+
+  // ===================== 2019-20 =====================
+  {
+    activityDetails: "Innocity Entrepreneurship Bootcamp - 3-Day Program Organized by Startup Oasis in Association with Innocity and Gensus Edutainers",
+    dateOfActivity: "July 25-27, 2019",
+    resourcePerson: ""
+  },
+  {
+    activityDetails: "Startup Chaupal - Startup Talk in Association with Gensus Edutainers, Jaipur",
+    dateOfActivity: "July 15, 2019",
+    resourcePerson: ""
+  },
+  {
+    activityDetails: "Execution of First Accelerator Program of Poornima Group 'GenStart'",
+    dateOfActivity: "October 12, 2019",
+    resourcePerson: ""
+  },
+
+  // ===================== 2020-21 =====================
+  {
+    activityDetails: "RTU (ATU) TEQIP III Sponsored Industry Expert Session on 'The Game Has Changed: Crafting a Career in New Normal'",
+    dateOfActivity: "13-Jan-2021",
+    resourcePerson: ""
+  },
+  {
+    activityDetails: "Business Communication & Leadership Skills for Startups",
+    dateOfActivity: "20-Jan-2021",
+    resourcePerson: ""
+  },
+  {
+    activityDetails: "Intellectual Property Rights - 2021",
+    dateOfActivity: "23-Jan-2021",
+    resourcePerson: ""
+  },
+  {
+    activityDetails: "RTU (ATU) TEQIP III Sponsored Session on 'VUCA World & the Competencies Needed to Thrive'",
+    dateOfActivity: "27-Jan-2021",
+    resourcePerson: ""
+  },
+  {
+    activityDetails: "RTU (ATU) TEQIP III Sponsored Session on 'Minimalism and How It Can Empower One Financially'",
+    dateOfActivity: "27-Feb-2021",
+    resourcePerson: ""
+  },
+  {
+    activityDetails: "RTU (ATU) TEQIP III Sponsored Session on 'Earthquake and Prevention Techniques in Building Construction'",
+    dateOfActivity: "27-Feb-2021",
+    resourcePerson: ""
+  },
+  {
+    activityDetails: "Webinar on the Journey of a Thesis of a Research Paper to a Patent",
+    dateOfActivity: "09-Feb-2021",
+    resourcePerson: ""
+  },
+  {
+    activityDetails: "Awareness Webinar on Intellectual Property Rights, Patents and Trademarks",
+    dateOfActivity: "14-Jul-2020",
+    resourcePerson: ""
+  },
+  {
+    activityDetails: "RTU (ATU) TEQIP III Sponsored Industry Expert Session on Setting Up and Growing a Business Venture",
+    dateOfActivity: "22-23 Mar 2021",
+    resourcePerson: ""
+  },
+  {
+    activityDetails: "RTU-Poornima Hackathon 2021",
+    dateOfActivity: "22-24 Mar 2021",
+    resourcePerson: ""
+  },
+  {
+    activityDetails: "Webinar on Placement Scenario and Prospects in COVID Pandemic",
+    dateOfActivity: "30-Nov-2020",
+    resourcePerson: ""
+  },
+
+    // ===================== 2021-22 =====================
+  {
+    activityDetails: "Why, What and How of Patents",
+    dateOfActivity: "27-Oct-2021",
+    resourcePerson: "Ms. Latika Khanduja, Founder, IPOLEA"
+  },
+  {
+    activityDetails: 'Role of "Entrepreneurship and Innovation" in Your Success Story',
+    dateOfActivity: "31-Jan-2022",
+    resourcePerson: "Dr. Hrishikesh Dhamle, MD & CEO, Atrimed Pharmaceuticals | Trustee, Save a Mother Foundation | Founder, Atrimed Biotech"
+  },
+  {
+    activityDetails: 'Expert Talk on "Process of Innovation Development & Technology Readiness Level (TRL)" and "Commercialisation of Lab Technology & Tech Transfer"',
+    dateOfActivity: "10-Jan-2022",
+    resourcePerson: "Er. Loveneesh Talwar, Yoganand College of Engineering, Jammu"
+  },
+  {
+    activityDetails: 'Session on "Entrepreneurship Skills, Attitude, and Behavior Development"',
+    dateOfActivity: "19-Feb-2022",
+    resourcePerson: "Dr. Ramesh Mittal, Director, National Institute of Agricultural Marketing"
+  },
+  {
+    activityDetails: 'Session on "Achieving Problem Solution Fit and Product Market Fit"',
+    dateOfActivity: "22-Feb-2022",
+    resourcePerson: "M. S. Satyanarayana"
+  },
+  {
+    activityDetails: 'Session on "Ideation to Legal Protection of an Invention"',
+    dateOfActivity: "22-Feb-2022",
+    resourcePerson: "Dr. Selladurai Muthusamy"
+  },
+  {
+    activityDetails: 'Session on "Ideas Are Easy, Implementation Is Hard"',
+    dateOfActivity: "23-Feb-2022",
+    resourcePerson: "Dr. Ashu Jain"
+  },
+  {
+    activityDetails: 'Session on "Achieving Problem Solution Fit & Product Market Fit"',
+    dateOfActivity: "23-Feb-2022",
+    resourcePerson: "Dr. Sabahat Fatima, Assistant Professor, Integral University & Program Coordinator, iNurture Education Solutions"
+  },
+  {
+    activityDetails: 'Expert Session on "IP Awareness & Filing Process"',
+    dateOfActivity: "26-Apr-2022",
+    resourcePerson: "Mr. Shailendra Singh, Examiner of Patents and Designs"
+  },
+  {
+    activityDetails: 'Session on "Entrepreneurial Communication Skills"',
+    dateOfActivity: "17-May-2022",
+    resourcePerson: "Dr. Ashu Jain"
+  },
+  {
+    activityDetails: "Session - Entrepreneurship in 21st Century",
+    dateOfActivity: "27-May-2022",
+    resourcePerson: "Dr. Vivek Bindra"
+  },
+  {
+    activityDetails: "Campus Entrepreneur Master Class",
+    dateOfActivity: "",
+    resourcePerson: "Founder – Bada Business"
+  },
+  {
+    activityDetails: "Session on How to Build a Startup from Bottom to Top",
+    dateOfActivity: "10-Jun-2022",
+    resourcePerson: "Mr. Devendra Sharma, CEO, OLE ROOMS"
+  },
+  {
+    activityDetails: 'Session on "Achieving Value Proposition Fit & Business Fit"',
+    dateOfActivity: "11-Jun-2022",
+    resourcePerson: "Dr. Leena Sharma, HOD & Sr. Assistant Professor, Department of Management, St. Xavier's College, Jaipur"
+  },
+
+  // ===================== 2022-23 =====================
+  {
+    activityDetails: "5 Startups Participated at Rajasthan IT Day, Jaipur (Startup Expo by Government of Rajasthan)",
+    dateOfActivity: "19-21 Mar 2023",
+    resourcePerson: "iStart Rajasthan"
+  },
+  {
+    activityDetails: "Poornima Hackathon 2023",
+    dateOfActivity: "03-04 Mar 2023",
+    resourcePerson: "Poornima Institute of Engineering & Technology, Jaipur"
+  },
+  {
+    activityDetails: 'Session on "Entrepreneurship Skill, Attitude and Behaviour Development"',
+    dateOfActivity: "22-Feb-2023",
+    resourcePerson: "Meeta Mathur, Director, Taanya Krafts Pvt. Ltd."
+  },
+  {
+    activityDetails: 'Session on "Entrepreneurship: The Real World, Challenges & The Road Ahead (An Insider View)"',
+    dateOfActivity: "06-Feb-2023",
+    resourcePerson: "Raghav Totla, Director, Prime Telelink Pvt. Ltd."
+  },
+  {
+    activityDetails: "Participation at National Startup Day",
+    dateOfActivity: "16-Jan-2023",
+    resourcePerson: "Atal Incubation Center, JKLU"
+  },
+  {
+    activityDetails: 'Session on "How to Become a Successful Entrepreneur"',
+    dateOfActivity: "10-Dec-2022",
+    resourcePerson: "Mr. Abhishek Gupta, Assistant Manager Investment, CIIE.CO"
+  },
+  {
+    activityDetails: 'Success Story by Incubate (Startup - Book of Youth)',
+    dateOfActivity: "09-Dec-2022",
+    resourcePerson: "Ankit Khemani"
+  },
+  {
+    activityDetails: "5 Startups Participated at Digifest Jodhpur (Startup Expo by Government of Rajasthan)",
+    dateOfActivity: "11-13 Nov 2022",
+    resourcePerson: "Digifest 2022, Government of Rajasthan"
+  },
+
+  // ===================== 2023-24 =====================
+  {
+    activityDetails: "AWS Community Day (Startup Meet)",
+    dateOfActivity: "04-Nov-2023",
+    resourcePerson: "AWS Community"
+  },
+  {
+    activityDetails: 'Networking Session on "Building a Startup"',
+    dateOfActivity: "15-Dec-2023",
+    resourcePerson: "Mr. Himanshu Rajpurohit, Founder & CEO, Strangify"
+  },
+  {
+    activityDetails: "Sculpting Calm from Clocks (Motivational Session for Startups)",
+    dateOfActivity: "13-Mar-2024",
+    resourcePerson: "Mr. Sandeep Chhabra, CEO, Techno Softwares, India"
+  },
+
+    // ===================== 2024-25 =====================
+  {
+    activityDetails: 'Session on "Entrepreneurial Mindset"',
+    dateOfActivity: "06-Sep-2024",
+    resourcePerson: "Mr. Paresh Gupta, Founder & CEO, Global Centre for Entrepreneurship & Commerce (GCEC), Jaipur, and 8-time TEDx Speaker"
+  },
+  {
+    activityDetails: 'Session on "How to Be an Entrepreneur"',
+    dateOfActivity: "10-Sep-2024",
+    resourcePerson: "Mr. Rahul Sharma, Founder & CEO, AeroPhantom and Alumnus of PIET"
+  },
+  {
+    activityDetails: 'Session on "Building a Startup"',
+    dateOfActivity: "22-Oct-2024",
+    resourcePerson: "PBIC, PIET"
+  },
+  {
+    activityDetails: "Inauguration of PBIC New Co-working Space",
+    dateOfActivity: "11-Dec-2024",
+    resourcePerson: "Prof. Guy Littlefair, Pro Vice Chancellor, International & Executive Dean, Auckland University of Technology, New Zealand"
+  },
+  {
+    activityDetails: "National Startup Day Activity",
+    dateOfActivity: "16-Jan-2025",
+    resourcePerson: "Idea Presentation Competition by PBIC"
+  },
+  {
+    activityDetails: '5-Day Faculty Development Programme on "Facilitating IGNITE Course in Entrepreneurship"',
+    dateOfActivity: "21-25 Apr 2025",
+    resourcePerson: "Dr. Harish Sharma, Dr. S. D. Purohit and Mr. Amit Singh (Wadhwani Foundation)"
+  },
+
+  // ===================== 2025-26 =====================
+  {
+    activityDetails: "Achieving Problem-Solution Fit",
+    dateOfActivity: "01-Sep-2025",
+    resourcePerson: "Dr. Kavya Saini, Associate Professor, IIIM, Jaipur"
+  },
+  {
+    activityDetails: "Idea Showcase / Demo Day",
+    dateOfActivity: "10-Oct-2025",
+    resourcePerson: ""
+  },
+  {
+    activityDetails: "Entrepreneurship & Innovation as a Career Opportunity",
+    dateOfActivity: "15-Nov-2025",
+    resourcePerson: "Experts from GCEC Foundation"
+  },
+  {
+    activityDetails: "IIC Regional Meet 2025 (Rajasthan Region)",
+    dateOfActivity: "25-Nov-2025",
+    resourcePerson: "Faculty Members and Student Innovators from Poornima Institute of Engineering & Technology (PIET), Jaipur"
+  },
+  {
+    activityDetails: "Session on Effective Sales and Marketing Strategies for Entrepreneurs / Startups",
+    dateOfActivity: "16-Jan-2026",
+    resourcePerson: "Mr. Hitesh Porwal, Founder, Bizstart"
+  },
+  {
+    activityDetails: "Awareness Session on Social Entrepreneurship",
+    dateOfActivity: "26-Feb-2026",
+    resourcePerson: "Dr. Imran Rautan, Founder of Litvill Lessons Association, India and Co-founder of Litvill Ecovillage, Hungary"
+  },
+  {
+    activityDetails: "Research Orientation and Startups Ecosystem Awareness",
+    dateOfActivity: "13-Mar-2026",
+    resourcePerson: "Mr. Saurabh Kothari, Expert, GCEC Global Foundation, Jaipur"
+  },
+  {
+    activityDetails: "Launchpad – Techathon 2026 (PGVF)",
+    dateOfActivity: "27-28 Mar 2026",
+    resourcePerson: "PGVF, GCEC Global Foundation, AICTE IDEA Lab"
+  }
+
+];
 
 
 
@@ -660,7 +1045,17 @@ const pbic = () => {
                         List of Startups Registered under PBIC
                     </h2>
                     <div className="w-24 h-1 bg-secondary mb-6 mx-auto"></div>
-                    <DynamicTable columns={columns} data={startups} />
+                    <DynamicTable columns={columns} data={[...startups].reverse()} />
+                </div>
+            </div>
+
+ <div className="bg-red-50 border border-red p-10">
+                <div className="container mt-10 mx-auto">
+                    <h2 className="text-3xl text-primary font-bold mb-8 text-center">
+                        List of Activities Conducted by PBIC
+                    </h2>
+                    <div className="w-24 h-1 bg-secondary mb-6 mx-auto"></div>
+                    <DynamicTable columns={columnsactivity} data={[...dataactivity].reverse()} />
                 </div>
             </div>
 

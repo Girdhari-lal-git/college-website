@@ -43,11 +43,37 @@ const documentColumns = [
 const documentData = [
     {
         sno: 1,
-        name: "Notification of Internal Complaints Committee",
+        name: "Notification of Internal Complaints Committee 2024-25",
         download: (
             <a
                 className="btn btn-primary"
                 href="https://drive.google.com/file/d/1Ny5IRceBgIFmF7gD6vM2nUA4sw_vziFO/view?usp=sharing"
+                target="__blank"
+            >
+                Download
+            </a>
+        ),
+    },
+    {
+        sno: 2,
+        name: "Notification of Internal Complaints Committee 2025-26",
+        download: (
+            <a
+                className="btn btn-primary"
+                href="https://drive.google.com/file/d/15tsgdKI04bQdhALoFgYhGAnHyZpwPOWH/view?usp=drive_link"
+                target="__blank"
+            >
+                Download
+            </a>
+        ),
+    },
+    {
+        sno: 3,
+        name: "Notification of Internal Complaints Committee 2026-27",
+        download: (
+            <a
+                className="btn btn-primary"
+                href="https://drive.google.com/file/d/1yUR9oiUR_CMt8xY8Yza7R0UlhlELkBo7/view?usp=drive_link"
                 target="__blank"
             >
                 Download

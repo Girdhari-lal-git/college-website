@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Brain, Cpu, Database, ArrowRight,  Users, Clock } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import BreadCrumb from "@/components/BreadCrumb";
@@ -648,7 +649,56 @@ export const courseData: SubjectCO[] = [
         ],
     },
 ];
-
+const programs = [
+    {
+        title: "B.Tech Artificial Intelligence & Data Science",
+        short: "AI & DS",
+        icon: Brain,
+        gradient: "from-blue-600 via-cyan-500 to-sky-400",
+        description:
+            "Build intelligent systems using Artificial Intelligence, Machine Learning, Deep Learning and Data Analytics.",
+        features: [
+            "Artificial Intelligence",
+            "Machine Learning",
+            "Deep Learning",
+            "Computer Vision"
+        ],
+        intake: "60 Seats",
+        duration: "4 Years"
+    },
+    {
+        title: "Computer Science & Engineering (AI)",
+        short: "CS (AI)",
+        icon: Cpu,
+        gradient: "from-purple-600 via-violet-500 to-indigo-500",
+        description:
+            "Strong Computer Science fundamentals integrated with Artificial Intelligence technologies.",
+        features: [
+            "Programming",
+            "AI Systems",
+            "Cloud Computing",
+            "Robotics"
+        ],
+        intake: "60 Seats",
+        duration: "4 Years"
+    },
+    {
+        title: "Computer Science & Engineering (DS)",
+        short: "CS (DS)",
+        icon: Database,
+        gradient: "from-emerald-600 via-teal-500 to-cyan-400",
+        description:
+            "Master data-driven technologies including Big Data, Analytics and Business Intelligence.",
+        features: [
+            "Data Science",
+            "Big Data",
+            "Data Analytics",
+            "Visualization"
+        ],
+        intake: "60 Seats",
+        duration: "4 Years"
+    }
+];
 
 const labData = [
     {
@@ -1007,6 +1057,137 @@ const totalPages = Math.ceil(yearData.length / entriesPerPage);
                     content={objectiveContent}
                 />
             </div>
+ {/* hod message */}
+
+            <section className="py-16 bg-gradient-to-br from-blue-50 via-white to-indigo-50">
+                <div className="container mx-auto px-4">
+                    <Message
+                        title="Message from the HOD"
+                        content={`Welcome to the Department of Artificial Intelligence & Data Science at Poornima Institute of Engineering & Technology!
+
+Established in 2021, our department is at the forefront of innovation and excellence within the Poornima Foundation. With a focus on providing quality education and fostering research and innovation in the dynamic fields of Artificial Intelligence & Data Science, we are dedicated to nurturing the next generation of leaders and researchers.
+
+Our undergraduate program, leading to a B.Tech. in Artificial Intelligence & Data Science, offers students a comprehensive curriculum aligned with the standards set by Rajasthan Technical University, KOTA. With an emphasis on hands-on learning and practical experience, our state-of-the-art infrastructure and cutting-edge laboratory facilities provide students with the tools and resources they need to succeed in today's rapidly evolving technological landscape.
+
+At our department, we believe in fostering a culture of innovation, critical thinking, and ethical responsibility. Our faculty members are not only educators but also mentors who guide students in their academic and professional journey. Through industry partnerships, research collaborations, and practical projects, we ensure that our graduates are well-prepared to meet the challenges of the AI and Data Science industry.
+
+We invite you to explore our programs, facilities, and opportunities. Together, let's shape the future of technology and make a positive impact on society through the power of Artificial Intelligence and Data Science.
+
+- Dr. Budesh Kanwar
+HOD, Department of AI & Data Science, PIET`}
+                        imageUrl="/images/hod/ai.png"
+                        imageAlt="Dr. Budesh Kanwar - HOD, Department of AI & Data Science"
+                    />
+                </div>
+            </section>
+
+<section className="py-12">
+            <div className="text-center mb-12">
+                <h2 className="text-4xl font-bold text-primary">
+                    Explore Our Programs
+                </h2>
+
+                <p className="mt-3 text-gray-600 max-w-2xl mx-auto">
+                    Industry-oriented programs designed to prepare students for
+                    careers in Artificial Intelligence, Data Science and Emerging Technologies.
+                </p>
+            </div>
+
+            <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
+                {programs.map((program, index) => {
+                    const Icon = program.icon;
+
+                    return (
+                        <div
+                            key={index}
+                            className="group rounded-3xl overflow-hidden bg-white border border-gray-200 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-3"
+                        >
+                            {/* Gradient Header */}
+
+                            <div
+                                className={`bg-gradient-to-r ${program.gradient} p-8 text-white relative`}
+                            >
+                                <div className="absolute top-4 right-4 opacity-20 text-8xl">
+                                    <Icon size={90} />
+                                </div>
+
+                                <div className="w-16 h-16 rounded-2xl bg-white/20 flex items-center justify-center backdrop-blur-md">
+                                    <Icon size={32} />
+                                </div>
+
+                                <h3 className="text-2xl font-bold mt-5">
+                                    {program.short}
+                                </h3>
+
+                                <p className="mt-2 opacity-90">
+                                    {program.title}
+                                </p>
+                            </div>
+
+                            {/* Content */}
+
+                            <div className="p-7">
+
+                                <p className="text-gray-600 leading-7">
+                                    {program.description}
+                                </p>
+
+                                <div className="mt-6 space-y-3">
+
+                                    {program.features.map((item) => (
+                                        <div
+                                            key={item}
+                                            className="flex items-center gap-3"
+                                        >
+                                            <div className="h-2.5 w-2.5 rounded-full bg-primary"></div>
+
+                                            <span className="text-gray-700">
+                                                {item}
+                                            </span>
+                                        </div>
+                                    ))}
+
+                                </div>
+
+                                <div className="border-t mt-7 pt-6 flex justify-between">
+
+                                    <div className="flex items-center gap-2 text-sm">
+
+                                        <Users className="text-primary" size={18} />
+
+                                        {program.intake}
+
+                                    </div>
+
+                                    <div className="flex items-center gap-2 text-sm">
+
+                                        <Clock className="text-primary" size={18} />
+
+                                        {program.duration}
+
+                                    </div>
+
+                                </div>
+
+                                <button
+                                    className="mt-8 w-full bg-primary text-white rounded-xl py-3 flex items-center justify-center gap-2 hover:bg-secondary transition"
+                                >
+                                    Explore Program
+
+                                    <ArrowRight
+                                        size={18}
+                                        className="group-hover:translate-x-1 transition"
+                                    />
+                                </button>
+
+                            </div>
+
+                        </div>
+                    );
+                })}
+            </div>
+        </section>
+
 
                 {/* ====================== PEO & PSO ====================== */}
 
@@ -1424,30 +1605,7 @@ const totalPages = Math.ceil(yearData.length / entriesPerPage);
 
 
 
-            {/* hod message */}
-
-            <section className="py-16 bg-gradient-to-br from-blue-50 via-white to-indigo-50">
-                <div className="container mx-auto px-4">
-                    <Message
-                        title="Message from the HOD"
-                        content={`Welcome to the Department of Artificial Intelligence & Data Science at Poornima Institute of Engineering & Technology!
-
-Established in 2021, our department is at the forefront of innovation and excellence within the Poornima Foundation. With a focus on providing quality education and fostering research and innovation in the dynamic fields of Artificial Intelligence & Data Science, we are dedicated to nurturing the next generation of leaders and researchers.
-
-Our undergraduate program, leading to a B.Tech. in Artificial Intelligence & Data Science, offers students a comprehensive curriculum aligned with the standards set by Rajasthan Technical University, KOTA. With an emphasis on hands-on learning and practical experience, our state-of-the-art infrastructure and cutting-edge laboratory facilities provide students with the tools and resources they need to succeed in today's rapidly evolving technological landscape.
-
-At our department, we believe in fostering a culture of innovation, critical thinking, and ethical responsibility. Our faculty members are not only educators but also mentors who guide students in their academic and professional journey. Through industry partnerships, research collaborations, and practical projects, we ensure that our graduates are well-prepared to meet the challenges of the AI and Data Science industry.
-
-We invite you to explore our programs, facilities, and opportunities. Together, let's shape the future of technology and make a positive impact on society through the power of Artificial Intelligence and Data Science.
-
-- Dr. Budesh Kanwar
-HOD, Department of AI & Data Science, PIET`}
-                        imageUrl="/images/hod/ai.png"
-                        imageAlt="Dr. Budesh Kanwar - HOD, Department of AI & Data Science"
-                    />
-                </div>
-            </section>
-
+           
             {/* faculty cards */}
 
             <section className="container py-12 mx-auto">

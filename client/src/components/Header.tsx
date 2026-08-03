@@ -1320,7 +1320,7 @@ export default function Header() {
                     <i className="fas fa-heartbeat mr-2"></i>Red Ribbon Club
                   </Link>
                   <a
-                    href="https://drive.google.com/file/d/1cjckOsucjzB1s-_KqnM4FncfiegYybNZ/view?usp=drive_link"
+                    href="https://drive.google.com/file/d/13uLbxec7462Umj0QMSymKXdF1cj_A8Ia/view?usp=drive_link"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block p-3 text-neutral-800 hover:bg-primary hover:text-white transition-colors whitespace-nowrap overflow-hidden text-ellipsis"
@@ -2105,7 +2105,7 @@ export default function Header() {
               </li>
               <li>
                 <a
-                  href="https://drive.google.com/file/d/1VEIAJ8dgTDsxpj6RicdpVX7jMwFLBOIr/view?usp=drive_link"
+                  href="https://drive.google.com/file/d/13uLbxec7462Umj0QMSymKXdF1cj_A8Ia/view?usp=drive_link"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block py-2 hover:text-secondary transition-colors"

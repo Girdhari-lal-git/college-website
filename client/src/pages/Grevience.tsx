@@ -128,7 +128,7 @@ const Grievances = () => {
                         </li>
                         <li>
                             <a
-                                href="https://drive.google.com/file/d/17cH_d5CWao4skHY0DOF1E5kva1oRlxHB/view?usp=drive_link"
+                                href="https://drive.google.com/file/d/1yUR9oiUR_CMt8xY8Yza7R0UlhlELkBo7/view?usp=drive_link"
                                 className="text-secondary hover:underline"
                                 target="_blank"
                                 rel="noopener noreferrer"
@@ -138,7 +138,7 @@ const Grievances = () => {
                         </li>
                         <li>
                             <a
-                                href="https://drive.google.com/file/d/15tsgdKI04bQdhALoFgYhGAnHyZpwPOWH/view?usp=drive_link"
+                                href="https://drive.google.com/file/d/1hFMNxT52L9Os5fQAzmrXEu1YMlrwLDde/view?usp=drive_link"
                                 className="text-secondary hover:underline"
                                 target="_blank"
                                 rel="noopener noreferrer"
@@ -148,7 +148,7 @@ const Grievances = () => {
                         </li>
                         <li>
                             <a
-                                href="https://drive.google.com/file/d/1bytUm11HV5LD_lfR7dXzjTi4_7WYx44q/view?usp=drive_link"
+                                href="https://drive.google.com/file/d/1TszKN6ZACbKq31TJhHkA6KOQviXWsvQs/view?usp=drive_link"
                                 className="text-secondary hover:underline"
                                 target="_blank"
                                 rel="noopener noreferrer"

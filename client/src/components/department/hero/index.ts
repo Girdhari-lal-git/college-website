@@ -1,0 +1,1 @@
+export { default as DepartmentHero } from "./DepartmentHero";

@@ -1,0 +1,5 @@
+export const LAYOUT = {
+    HEADER_HEIGHT: 72,
+    NAVIGATION_HEIGHT: 60,
+    SECTION_OFFSET: 16,
+};

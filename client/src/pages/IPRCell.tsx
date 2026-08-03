@@ -88,7 +88,7 @@ const IPRCell = () => {
         name: "IPR Policy",
         download: (
             <a
-                href="https://drive.google.com/file/d/1E1SAKv1UpD6_h3-pt4lJ0YOgHbexS5VY/view?usp=drive_link"
+                href="https://drive.google.com/file/d/1L1_SX6ERg8zz9hU3Em0Stv6KZBtuci3Y/view?usp=drive_link"
                 target="_blank"
                 rel="noopener noreferrer"
             >
@@ -120,6 +120,78 @@ const IPRCell = () => {
     {/* Sample IPR data for demonstration purposes. In a real application, this would likely come from an API or database. */}
 
     const iprData = {
+         2026: [
+  {
+    sno: 1,
+    grantNo: '202611041353',
+    author: 'Mr. Indra Kishor',
+    affiliation: 'PIET, Jaipur',
+    title: 'Autonomous Disaster Response Robotic System Incorporating Multi-Sensor Environmental Perception and Vision-Based Survivor Detection'
+  },
+  {
+    sno: 2,
+    grantNo: '202611041354',
+    author: 'Dr. Priya Mathur',
+    affiliation: 'PIET, Jaipur',
+    title: 'Cloud-Integrated Machine Learning-Based System and Method for Real-Time Prediction of Hybrid Nanofluid Density'
+  },
+  {
+    sno: 3,
+    grantNo: '202611041355',
+    author: 'Dr. Priya Mathur',
+    affiliation: 'PIET, Jaipur',
+    title: 'System and Method for Predicting Specific Heat Capacity of Hybrid Nanofluids'
+  },
+  {
+    sno: 4,
+    grantNo: '202611041356',
+    author: 'Mr. Indra Kishor',
+    affiliation: 'PIET, Jaipur',
+    title: 'Virtual Reality-Based Intelligent Herbal Garden System with Context-Aware Interactive Support'
+  },
+  {
+    sno: 5,
+    grantNo: '202611041480',
+    author: 'Mr. Indra Kishor',
+    affiliation: 'PIET, Jaipur',
+    title: 'Neuro-Adaptive Quadruped Robotic System for Predictive Industrial Hazard Mitigation'
+  },
+  {
+    sno: 6,
+    grantNo: '202611041481',
+    author: 'Mr. Indra Kishor',
+    affiliation: 'PIET, Jaipur',
+    title: 'Self-Learning Edge-Perceptive Mobile Robot System with Predictive Fall Risk Assessment and Dynamic Directional Control'
+  },
+  {
+    sno: 7,
+    grantNo: '202611041482',
+    author: 'Mr. Indra Kishor',
+    affiliation: 'PIET, Jaipur',
+    title: 'Multi-Modal Hazard Perception and Autonomous Mitigation System for Residential Utility Spaces'
+  },
+  {
+    sno: 8,
+    grantNo: '202611041483',
+    author: 'Mr. Indra Kishor',
+    affiliation: 'PIET, Jaipur',
+    title: 'AI-Driven Quadruped Safety Robot for Real-Time Risk Forecasting and Multi-Sensor Hazard Detection'
+  },
+  {
+    sno: 9,
+    grantNo: '202611041649',
+    author: 'Mr. Indra Kishor',
+    affiliation: 'PIET, Jaipur',
+    title: 'Adaptive Emotion-Integrated Quadruped Robot with Life-State Recognition and Predictive Hazard-Driven Behavior Modulation'
+  },
+  {
+    sno: 10,
+    grantNo: '202611041650',
+    author: 'Mr. Indra Kishor',
+    affiliation: 'PIET, Jaipur',
+    title: 'Virtual Reality-Enabled System and Method for Capturing User Activities and Generating Reusable Animation Sequences'
+  }
+   ],
         2025: [
             { sno: 1, grantNo: '202511076121', author: 'Dr. Sandeep Gupta', affiliation: 'PIET, Jaipur', title: 'Adaptive Voice-Controlled Robotic Navigation System with Distributed Processing Architecture' },
     { sno: 2, grantNo: '202511076485', author: 'Dr. Sandeep Gupta', affiliation: 'PIET, Jaipur', title: 'Dual-Thread Mobile Acoustic Sensing System with Real-Time Audio Processing and Wireless Communication' },

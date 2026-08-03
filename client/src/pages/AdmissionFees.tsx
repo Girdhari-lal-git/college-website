@@ -10,10 +10,10 @@ import { GraduationCap, BookOpen, DollarSign, FileText, IndianRupeeIcon } from "
 const AdmissionFees = () => {
     const branches = [
         { name: "Computer Sci. & Engg. (Artificial Intelligence)", intake: 90 },
-        { name: "Computer Engineering (Indian Language)", intake: 60 },
-        { name: "Computer Engineering (IoT)", intake: 60 },
-        { name: "Computer Engineering (Data Science)", intake: 60 },
-        { name: "Computer Engineering", intake: 180 },
+        { name: "Computer Science & Engineering (Indian Language)", intake: 60 },
+        { name: "Computer Science & Engineering (IoT)", intake: 60 },
+        { name: "Computer Science & Engineering (Data Science)", intake: 60 },
+        { name: "Computer  Engineering", intake: 180 },
         { name: "Artificial Intelligence & Data Science", intake: 60 },
         { name: "Electronics and Communication Engineering", intake: 30 },
         { name: "Electrical Engineering", intake: 30 },

@@ -216,7 +216,7 @@ const About = () => {
             icon: <Award className="h-6 w-6" />,
         },
         {
-            number: "90+",
+            number: "100+",
             label: "Faculty Members",
             icon: <Users className="h-6 w-6" />,
         },
