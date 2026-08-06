@@ -13,7 +13,6 @@ export interface DepartmentHeroData {
     brochureUrl?: string;
     contactUrl?: string;
 
-    stats: DepartmentStat[];
 }
 
 export interface DepartmentHeroButton {
@@ -27,9 +26,5 @@ export interface DepartmentHeroData {
     tagline: string;
     description?: string;
 
-    heroImage?: string;
-
-    stats: DepartmentStat[];
-
-    buttons?: DepartmentHeroButton[];
+    buttons: DepartmentHeroButton[];
 }

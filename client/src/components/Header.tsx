@@ -1,6 +1,7 @@
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, type FormEvent } from "react";
 import { Link, useLocation } from "wouter";
 import LazyImage from "./LazyImage";
+import { headerSearchItems } from "../data/searchRoutes";
 
 
 export default function Header() {
@@ -30,9 +31,9 @@ export default function Header() {
 
   const [isSearchExpanded, setSearchExpanded] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
-  const [, setLocation] = useLocation();
-  const searchInputRef = useRef(null);
-  const searchContainerRef = useRef(null);
+  const [, setLocation] = useLocation();    
+  const searchInputRef = useRef<HTMLInputElement | null>(null);
+  const searchContainerRef = useRef<HTMLDivElement | null>(null);
 
   const toggleSearch = () => {
     setSearchExpanded(!isSearchExpanded);
@@ -43,428 +44,40 @@ export default function Header() {
           searchInputRef.current.focus();
         }
       }, 100);
-    } else {
+    } else {    
       // Clear search when collapsing
       setSearchTerm("");
     }
   };
 
-  const handleSearchSubmit = (e) => {
+  const handleSearchSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (searchTerm.trim() && filteredResults.length > 0) {
       handleResultClick(filteredResults[0].link);
     }
   };
 
-  const searchItems = [
-    // Main Pages
-    {
-      title: "Home",
-      description:
-        "PIET Homepage - Poornima Institute of Engineering and Technology",
-      link: "/",
-      category: "Main",
-    },
-    {
-      title: "About PIET",
-      description: "About Poornima Institute of Engineering & Technology",
-      link: "/about",
-      category: "About",
-    },
-    {
-      title: "Admission & Fees",
-      description: "Engineering admission process and fee structure at PIET",
-      link: "/admission-fees",
-      category: "Admission",
-    },
-    {
-      title: "Gallery",
-      description: "PIET campus and event photo gallery",
-      link: "/gallery",
-      category: "Campus",
-    },
+  const searchItems = headerSearchItems;
 
-    // Academic Departments
-    {
-      title: "Computer Science Engineering",
-      description: "CSE Department at PIET with latest curriculum",
-      link: "/computer-science",
-      category: "Academics",
-    },
-    {
-      title: "Artificial Intelligence & Data Science",
-      description: "AI & DS Department offering cutting-edge programs",
-      link: "/artificial-intelligence",
-      category: "Academics",
-    },
-    {
-      title: "Internet of Things (IoT)",
-      description: "IoT Department with industry-relevant curriculum",
-      link: "/dep-iot",
-      category: "Academics",
-    },
-    {
-      title: "Applied Sciences",
-      description: "Department of Applied Sciences at PIET",
-      link: "/applied-sceince",
-      category: "Academics",
-    },
-    {
-      title: "Academic Calendar",
-      description: "PIET academic calendar and important dates",
-      link: "/calendar",
-      category: "Academics",
-    },
+  const normalizedSearchTerm = searchTerm.trim().toLowerCase();
 
-    // Administration
-    {
-      title: "Principal Message",
-      description: "Message from Principal of PIET",
-      link: "/director-message",
-      category: "Administration",
-    },
-    {
-      title: "Registrar Message",
-      description: "Message from Registrar/Ombudsperson",
-      link: "/registar-message",
-      category: "Administration",
-    },
-    {
-      title: "Controller of Examination",
-      description: "COE message and examination details",
-      link: "/coe-message",
-      category: "Administration",
-    },
-    {
-      title: "Governing Council",
-      description: "PIET Governing Council members",
-      link: "/governing-council",
-      category: "Administration",
-    },
-    {
-      title: "Management Team",
-      description: "PIET management team and leadership",
-      link: "/management-team",
-      category: "Administration",
-    },
-    {
-      title: "Organogram",
-      description: "PIET organizational structure",
-      link: "/organogram",
-      category: "Administration",
-    },
+  const filteredResults = normalizedSearchTerm
+    ? searchItems.filter((item) => {
+        const searchableText = [
+          item.title,
+          item.description,
+          ...(item.keywords ?? []),
+          item.category,
+        ]
+          .join(" ")
+          .toLowerCase();
 
-    // Research & Innovation
-    {
-      title: "Research & Development",
-      description: "R&D activities and projects at PIET",
-      link: "/research-development",
-      category: "Research",
-    },
-    {
-      title: "PBIC - Business Incubation",
-      description: "Poornima Business Incubation Center",
-      link: "/pbic",
-      category: "Research",
-    },
-    {
-      title: "AICTE IDEA Lab",
-      description: "Innovation and entrepreneurship lab",
-      link: "/ideal-lab",
-      category: "Research",
-    },
-    {
-      title: "Publications",
-      description: "Research publications by PIET faculty",
-      link: "/publications",
-      category: "Research",
-    },
-    {
-      title: "IPR Cell",
-      description: "Intellectual Property Rights cell at PIET",
-      link: "/ipr-cell",
-      category: "Research",
-    },
-    {
-      title: "IPRs List",
-      description: "Patents and intellectual property portfolio",
-      link: "/iprs",
-      category: "Research",
-    },
-
-    // Accreditation & Rankings
-    {
-      title: "NAAC Accreditation",
-      description: "NAAC A Grade accreditation details",
-      link: "/naac",
-      category: "Accreditation",
-    },
-    {
-      title: "NBA Accreditation",
-      description: "National Board of Accreditation status",
-      link: "/nba",
-      category: "Accreditation",
-    },
-    {
-      title: "NIRF Ranking",
-      description: "National Institutional Ranking Framework",
-      link: "/nirf",
-      category: "Accreditation",
-    },
-    {
-      title: "QS I-Gauge Ranking",
-      description: "QS I-Gauge university rankings",
-      link: "/qs-gauge",
-      category: "Accreditation",
-    },
-    {
-      title: "Times Ranking",
-      description: "Times Higher Education rankings",
-      link: "/times-ranking",
-      category: "Accreditation",
-    },
-    {
-      title: "ISO Certificate",
-      description: "ISO certification and quality standards",
-      link: "/iso-certificate",
-      category: "Accreditation",
-    },
-    {
-      title: "AISHE",
-      description: "All India Survey on Higher Education",
-      link: "/aishe",
-      category: "Accreditation",
-    },
-
-    // Student Life
-    {
-      title: "Placements",
-      description: "PIET placement records and top recruiters",
-      link: "/placements",
-      category: "Student Life",
-    },
-    {
-      title: "Hostel Facilities",
-      description: "PIET hostel accommodation and amenities",
-      link: "/hostel-facilties",
-      category: "Student Life",
-    },
-    {
-      title: "Hostel Life",
-      description: "Student life in PIET hostels",
-      link: "/hostel-life",
-      category: "Student Life",
-    },
-    {
-      title: "Sports Facilities",
-      description: "Sports and recreational facilities at PIET",
-      link: "/sports",
-      category: "Student Life",
-    },
-    {
-      title: "Campus Facilities",
-      description: "Infrastructure and facilities at PIET",
-      link: "/facilties",
-      category: "Student Life",
-    },
-    {
-      title: "Annual Events",
-      description: "PIET annual events and celebrations",
-      link: "/annual-events",
-      category: "Student Life",
-    },
-    {
-      title: "Hackathons",
-      description: "Coding competitions and hackathons",
-      link: "/hackathons",
-      category: "Student Life",
-    },
-    {
-      title: "NSS Unit",
-      description: "National Service Scheme activities",
-      link: "/nss",
-      category: "Student Life",
-    },
-    {
-      title: "Health Care",
-      description: "Medical facilities and health services",
-      link: "/health",
-      category: "Student Life",
-    },
-
-    // Chapters & Organizations
-    {
-      title: "IEEE Chapter",
-      description: "PIET-IEEE student chapter activities",
-      link: "/iee",
-      category: "Chapters",
-    },
-    {
-      title: "ACM Chapter",
-      description: "PIET-ACM student chapter",
-      link: "/acm",
-      category: "Chapters",
-    },
-    {
-      title: "IETE Chapter",
-      description: "PIET-IETE electronics chapter",
-      link: "/iete",
-      category: "Chapters",
-    },
-    {
-      title: "ISTE Chapter",
-      description: "PIET-ISTE technical education chapter",
-      link: "/iste",
-      category: "Chapters",
-    },
-    {
-      title: "Electoral Literacy Forum",
-      description: "Democratic awareness and voting education",
-      link: "/electoral-literacy-forum",
-      category: "Chapters",
-    },
-
-    // Innovation & Cells
-    {
-      title: "ICC - Internal Complaints Committee",
-      description: "Internal complaints committee for grievances",
-      link: "/complaints",
-      category: "Innovation",
-    },
-    {
-      title: "IIC - Innovation Council",
-      description: "Institution's Innovation Council",
-      link: "/iic",
-      category: "Innovation",
-    },
-    {
-      title: "Industry Institute Interactions",
-      description: "Industry-academia collaboration programs",
-      link: "/industry-institute-innovation",
-      category: "Innovation",
-    },
-    {
-      title: "Cells & Committees",
-      description: "Various academic and administrative cells",
-      link: "/cells-committees",
-      category: "Innovation",
-    },
-
-    // Policies & Compliance
-    {
-      title: "NEP 2020",
-      description: "New Education Policy implementation at PIET",
-      link: "/nep",
-      category: "Policies",
-    },
-    {
-      title: "OBE - Outcome Based Education",
-      description: "Outcome-based education methodology",
-      link: "/obe",
-      category: "Policies",
-    },
-    {
-      title: "Rules & Regulations",
-      description: "Academic and disciplinary rules",
-      link: "/rules-regulation",
-      category: "Policies",
-    },
-    {
-      title: "Grievance Cell",
-      description: "Student grievance redressal mechanism",
-      link: "/greviance",
-      category: "Policies",
-    },
-    {
-      title: "Anti-Ragging",
-      description: "Anti-ragging policies and measures",
-      link: "/greviance",
-      category: "Policies",
-    },
-    {
-      title: "Disability Support",
-      description: "Support for differently-abled students",
-      link: "/disable",
-      category: "Policies",
-    },
-
-    // Resources
-    {
-      title: "E-Library",
-      description: "Digital library resources and databases",
-      link: "/e-library",
-      category: "Resources",
-    },
-    {
-      title: "IQAC",
-      description: "Internal Quality Assurance Cell",
-      link: "/iqac",
-      category: "Resources",
-    },
-    {
-      title: "Alumni",
-      description: "PIET alumni network and connections",
-      link: "/alumni",
-      category: "Resources",
-    },
-    {
-      title: "Alumni Registration",
-      description: "Register with PIET alumni network",
-      link: "/alumni-registration",
-      category: "Resources",
-    },
-
-    // Contact & Support
-    {
-      title: "Complaints Registration",
-      description: "Submit complaints and feedback",
-      link: "/complaints-registration",
-      category: "Support",
-    },
-    {
-      title: "Messages",
-      description: "Messages from leadership and faculty",
-      link: "/messages",
-      category: "About",
-    },
-    {
-      title: "Downloads",
-      description: "important documents and forms",
-      link: "/downloads",
-      category: "documents",
-    },
-    {
-      title: "Syllabus",
-      description: "syllabus for all courses",
-      link: "/syllabus",
-      category: "syllabus",
-    },
-     {
-      title: "Academic Council",
-      description: "Academic Council details",
-      link: "/academicCouncil",
-      category: "Governance",
-    },
-
-    {
-      title: "Autonomous Institute",
-      description: "PIET Autonomous Institute details",
-      link: "/autonomous",
-      category: "Autonomy",
-    },
-    
-  ];
-
-   const filteredResults = searchTerm
-    ? searchItems.filter(
-        (item) =>
-          item.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-          item.description.toLowerCase().includes(searchTerm.toLowerCase()),
-      )  
-    : []; 
+        return searchableText.includes(normalizedSearchTerm);
+      })
+    : [];
    
 
-  const handleResultClick = (link) => {
+  const handleResultClick = (link: string) => {
     setLocation(link);
     setSearchTerm("");
     setSearchExpanded(false);
@@ -472,8 +85,8 @@ export default function Header() {
 
   // Close search when clicking outside
   useEffect(() => {
-    function handleClickOutside(event) {
-      if (searchContainerRef.current && !searchContainerRef.current.contains(event.target)) {
+    function handleClickOutside(event: MouseEvent) {
+      if (searchContainerRef.current && !searchContainerRef.current.contains(event.target as Node)) {
         setSearchExpanded(false);
         setSearchTerm("");
       }
