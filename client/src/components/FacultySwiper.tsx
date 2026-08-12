@@ -8,7 +8,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 import ProfileCard from "@/components/ProfileCard";
-import "./FacultySwiper.css"; // We'll define styles here
+
 
 interface FacultyProfile {
     imageSrc: string;

@@ -18,7 +18,10 @@ const FacultyCard = ({ faculty }: Props) => {
             "
         >
             <img
-                src={faculty.photo}
+                src={
+    faculty.imageUrl ||
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_FZR1-SNQItQMwECGXMp7MYCspr3Fm0R61Q&s"
+}
                 alt={faculty.name}
                 className="
                     h-64
@@ -61,7 +64,6 @@ const FacultyCard = ({ faculty }: Props) => {
                             </span>
                         ))}
                 </div>
-
                 <button
                     className="
                         mt-5

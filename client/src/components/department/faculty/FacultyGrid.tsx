@@ -6,12 +6,11 @@ interface Props {
 }
 
 const designationOrder = [
-    "Professor & Head",
     "Professor",
     "Associate Professor",
     "Assistant Professor",
-    "Assistant Professor (Senior Scale)",
-    "Teaching Associate",
+    "Teaching Assistant",
+    "Technical assistant",
 ];
 
 const FacultyGrid = ({ faculty }: Props) => {

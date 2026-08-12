@@ -102,7 +102,10 @@ export default function Header() {
   }, [isSearchExpanded]);
 
   return (
-    <header className="bg-white shadow-lg fixed top-0 left-0 right-0 z-50 backdrop-blur-sm">
+    <header
+    id="college-main-header"
+    className="bg-white shadow-lg fixed top-0 left-0 right-0 z-50 backdrop-blur-sm"
+>
       {/* Top Bar */}
       <div className="bg-gradient-primary text-white py-2 px-4">
         <div className="container mx-auto flex flex-wrap justify-between items-center">

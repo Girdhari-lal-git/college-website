@@ -10,6 +10,8 @@ const DepartmentLayout = ({
     return (
         <main
             className="
+                relative
+                overflow-x-hidden
                 bg-white
                 text-gray-800
             "

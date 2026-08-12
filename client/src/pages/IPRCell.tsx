@@ -10,46 +10,46 @@ import { ChevronDown, ChevronRight, Download, FileText, Calendar, Award, Users, 
 
 const IPRCell = () => {
     const iprCommittee = [
-        {
-            sno: 1,
-            name: "Dr. Dinesh Goyal",
-            designation: "Director",
-            institute: "Poornima Institute of Engineering & Technology, Jaipur",
-            contact: "9887678379",
-            email: "dinesh.goyal@poornima.org"
-        },
-        {
-            sno: 2,
-            name: "Mr. Pankaj kumar",
-            designation: "IPR Trainer and Facilitator",
-            institute: "I P constellation (IPC) Private Limited",
-            contact: "8619109061",
-            email: "ipr.pkumar@gmail.com"
-        },
-        {
-            sno: 3,
-            name: "Dr. Payal Bansal",
-            designation: "HOD, IOT",
-            institute: "Poornima Institute of Engineering & Technology, Jaipur",
-            contact: "97854 87195",
-            email: "payal.bansal@poornima.org"
-        },
-        {
-            sno: 4,
-            name: "Mr Ashish Jain",
-            designation: "Managing Director",
-            institute: "Anktech Software Pvt. Ltd.",
-            contact: "9001070444",
-            email: "ashish.jain2@anktech.co.in"
-        },
-        {
-            sno: 5,
-            name: "Ms Sonal Srivastava",
-            designation: "Founding Partner, Patent Agent",
-            institute: "Freelance IPR Attorny",
-            contact: "9953275218",
-            email: "sonal@onlinepatentfiling.com"
-        }
+       {
+    sno: 1,
+    name: "Dr. Dinesh Goyal",
+    designation: "Principal",
+    institute: "Poornima Institute of Engineering & Technology, Jaipur",
+    contact: "9887678379",
+    email: "dinesh.goyal@poornima.org"
+},
+{
+    sno: 2,
+    name: "Mr. Rajat Malhotra",
+    designation: "Patent Attorney",
+    institute: "LegalPreneur-Strategic Legal Solutions",
+    contact: "9891016781",
+    email: "rajatmalhotra@legalpreneur.in"
+},
+{
+    sno: 3,
+    name: "Mr. Vikram Pratap Singh",
+    designation: "Patent Attorney",
+    institute: "LegalPreneur-Strategic Legal Solutions",
+    contact: "9799959792",
+    email: "vikrampratapsingh@legalpreneur.in"
+},
+{
+    sno: 4,
+    name: "Mr. Ashwini Kapoor",
+    designation: "Founder & CEO",
+    institute: "Automaison, Home Automation and Home Theatre",
+    contact: "9413102801",
+    email: "Automaisonindia@gmail.com"
+},
+{
+    sno: 5,
+    name: "Ms. Jayshree Surolia",
+    designation: "Assistant Professor",
+    institute: "Poornima Institute of Engineering & Technology, Jaipur",
+    contact: "7742541121",
+    email: "jayshree.surolia@poornima.org"
+}
     ];
 
     const usefulLinks = [
@@ -103,7 +103,7 @@ const IPRCell = () => {
         name: "IPR Cell",
         download: (
             <a
-                href="https://drive.google.com/file/d/1K9aw4cV7kHD-yZgZcKm00rim_Dk2WPt7/view?usp=drive_link"
+                href="https://drive.google.com/file/d/1fLAtU6MgGGMUTdqQXgVbif-oNI3jFk-r/view?usp=drive_link"
                 target="_blank"
                 rel="noopener noreferrer"
             >

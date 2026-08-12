@@ -5,9 +5,13 @@ export interface FacultyProfile {
 
     designation: string;
 
-    qualification?: string;
+    department: string;
 
-    photo: string;
+    gender: string;
+
+    imageUrl?: string;
+
+    qualification?: string;
 
     email?: string;
 
@@ -22,6 +26,6 @@ export interface FacultyProfile {
     scopus?: string;
 
     orcid?: string;
+
     isHod?: boolean;
-    isdyHod?: boolean;
 }

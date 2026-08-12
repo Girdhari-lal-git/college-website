@@ -38,6 +38,8 @@ const DepartmentHero = ({ data }: Props) => {
     className="
         relative
         flex
+        mt-60
+        mb-10
         h-[200px]
         flex-col
         justify-center

@@ -26,30 +26,16 @@ export const departmentSections = [
         icon: Users,
     },
     {
-        id: "labs",
+        id: "laboratories",
         label: "Laboratories",
         icon: FlaskConical,
     },
     {
-        id: "placements",
-        label: "Placements",
+        id: "highlights",
+        label: "Highlights",
         icon: Briefcase,
     },
-    {
-        id: "alumni",
-        label: "Alumni",
-        icon: Award,
-    },
-    {
-        id: "research",
-        label: "Research",
-        icon: Microscope,
-    },
-    {
-        id: "achievements",
-        label: "Achievements",
-        icon: Award,
-    },
+      
     {
         id: "downloads",
         label: "Downloads",

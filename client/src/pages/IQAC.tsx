@@ -25,6 +25,7 @@ const iqacInitiatives = [
     'IQAC Initiatives (After 2018)',
     'IQAC Initiatives (Before 2018)',
     'IQAC Initiatives (from 2023-24)',
+    'IQAC Initiatives (from 2025-26 Under Autonomy)',
 ];
 
 const aqarReports = [
@@ -554,6 +555,23 @@ const iqacQualityActivities = {
 
 // Data for other dropdowns
 const fdpWorkshopsData = {
+    '2025-2026': [
+        'Faculty Development Programe on Theory to Code: A Hands-On Practice in Machine Learning Algorithms',
+            'Faculty Development Programe on Agentic AI',
+            'Faculty Development Programe on Social Media Analytics: Tools, Techniques & Lab Setup',
+            'Faculty Development Program on Data-Driven Intelligence: Machine and Deep Learning Applications',
+            'Five-day Faculty Development Program (FDP) on "Capacity Building in Higher Education Institutions (HEIs): The Challenges and Opportunities"',
+            'Empowering Educators: Faculty Development Programe on TCS iON & ERP Tools',
+            'Outcome-Based Education in Action: Faculty Development Programe on Attainment Calculation',
+            'A Hands-on Faculty Development Programe on for Educators',
+            'Faculty Development Programe on Higher Education in Institutes of National Importance in India – Preparing Students for Entrance Exams',
+            'Report on Funding Opportunities and Formulation of Research and Innovation Proposals',
+            'An expert session on "Engineering Leadership Skills Beyond Technical Excellence."',
+            'An expert session on "Design and Innovation"',
+            'Examination Conduction: Ethical, Confidential, and Systematic Practices',
+            'Motivational Session by the Director sir on Research, Innovation, and Academic Excellence',
+            'Training Session on Transformation of Program Outcomes and Mapping Framework',
+    ],
     '2024-2025': [
         'Six Days FDP on Machine Learning',
         'FDP On Advanced Tools & Techniques for Quality Research, Innovation and Analysis',
@@ -706,6 +724,23 @@ const IQACPage = () => {
     const getFDPDocumentLink = (item: string, year: string) => {
         // Map specific FDP documents to their Google Drive links
         const fdpLinks = {
+            //2025-26
+            'Faculty Development Programe on Theory to Code: A Hands-On Practice in Machine Learning Algorithms': 'https://drive.google.com/file/d/1dBPqeScXEYXxTmBRl8WzKhbYnhHwdhWH/view?usp=drive_link',
+            'Faculty Development Programe on Agentic AI': 'https://drive.google.com/file/d/1btSDDObXe9LuF4go477QMwz7NEb9X6MC/view?usp=drive_link',
+            'Faculty Development Programe on Social Media Analytics: Tools, Techniques & Lab Setup': 'https://drive.google.com/file/d/14JF0dOjfTgYMswXsHbQe8KD0RN7Jndq9/view?usp=drive_link',
+            'Faculty Development Program on Data-Driven Intelligence: Machine and Deep Learning Applications': 'https://drive.google.com/file/d/1TTjUCIZ4jJrPOjgunc-Jp3b-pY_AUBUJ/view?usp=drive_link',
+            'Five-day Faculty Development Program (FDP) on "Capacity Building in Higher Education Institutions (HEIs): The Challenges and Opportunities"': 'https://drive.google.com/file/d/14QjPMQHuKFXaubv8LqYVXT3tiR7PSiNE/view?usp=drive_link',
+            'Empowering Educators: Faculty Development Programe on TCS iON & ERP Tools': 'https://drive.google.com/file/d/1OdYlOB8ie8oMztS6nfeSLnTkvKcteWH5/view?usp=drive_link',
+            'Outcome-Based Education in Action: Faculty Development Programe on Attainment Calculation': 'https://drive.google.com/file/d/1WJyKg_QNvxcDQbuXy2HQBwDSvxXRnkU9/view?usp=drive_link',
+            'A Hands-on Faculty Development Programe on for Educators': 'https://drive.google.com/file/d/1V_qkriBN3Q3yoLOjhnrBnS9tj_QkUjUd/view?usp=drive_link',
+            'Faculty Development Programe on Higher Education in Institutes of National Importance in India – Preparing Students for Entrance Exams': 'https://drive.google.com/file/d/1iFsk3KzTGF-Gq-UWLN91DY0gUt_vGQzp/view?usp=drive_link',
+            'Report on Funding Opportunities and Formulation of Research and Innovation Proposals': 'https://drive.google.com/file/d/1rruogAz1DwOtA_RjlFTOkWG7-qRjEUpJ/view?usp=drive_link',
+            'An expert session on "Engineering Leadership Skills Beyond Technical Excellence."': 'https://drive.google.com/file/d/1LdlXvQXP6_CT3h9H2ZfxGo2CNlPVzD87/view?usp=drive_link',
+            'An expert session on "Design and Innovation"': 'https://drive.google.com/file/d/13btDyhkeJOqAODVFxQZvF41QhFyoZh0s/view?usp=drive_link',
+            'Examination Conduction: Ethical, Confidential, and Systematic Practices': 'https://drive.google.com/file/d/1eFzwtFHh80RjPF7ktE-IrjPRaW0pE-yG/view?usp=drive_link',
+            'Motivational Session by the Director sir on Research, Innovation, and Academic Excellence': 'https://drive.google.com/file/d/12Zo7_BtZ7AVHqKQJqVSgq0h_JrV6l6wj/view?usp=drive_link',
+            'Training Session on Transformation of Program Outcomes and Mapping Framework': 'https://drive.google.com/file/d/1qiotWhUxJLzPW6X8VOHKqz4ymGhdiRir/view?usp=drive_link',
+            
             // 2024-25
             'Six Days FDP on Machine Learning': 'https://drive.google.com/file/d/15EfPev8vSSTWy5eyy2bSsAxc_PiKSgnS/view?usp=drive_link',
             'FDP On Advanced Tools & Techniques for Quality Research, Innovation and Analysis': 'https://drive.google.com/file/d/1ffZUeUp_0bwdMJ0dsvInmcu2nji0vNJH/view?usp=drive_link',
@@ -814,6 +849,7 @@ const IQACPage = () => {
         const tableLinks = {
             'Quality Policy': 'https://drive.google.com/file/d/1lR9Qb2UeYQmrHCRVtsXZl5KFqL6fcMrm/view?usp=drive_link',
             'IQAC Handbook': 'https://drive.google.com/file/d/1StGgGUMWj8RwFdhvO3-1I1LM0NVGF-PA/view?usp=drive_link',
+            'IQAC Initiatives (from 2025-26 Under Autonomy)': 'https://drive.google.com/file/d/1msX4UPLQgFfxYmhjFbcVZwZI-DniAmp8/view?usp=drive_link',
             'IQAC Initiatives (from 2023-24)': 'https://drive.google.com/file/d/1WKasvmEFsx-PpD38nRJ5FM1IJkH6aSPF/view?usp=drive_link',
             'IQAC Initiatives (After 2018)': 'https://drive.google.com/file/d/1hfIG2OhZz5UUKs8VT008NG3Qu4SBP76_/view?usp=drive_link',
             'IQAC Initiatives (Before 2018)': 'https://drive.google.com/file/d/1SHI5G6qmxlekI8oboO2bi7PLk6wKt5yA/view?usp=drive_link',

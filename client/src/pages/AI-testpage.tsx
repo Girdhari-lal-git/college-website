@@ -10,6 +10,16 @@ import { OverviewSection } from "@/components/department/overview";
 import { Calendar, GraduationCap, Users, FlaskConical, Building2, Handshake, } from "lucide-react";
 import { aiDsDepartment } from "@/data/departments/ai-ds";
 import {ProgramsSection} from "@/components/department/programs";
+import FacultySection from "@/components/department/faculty/FacultySection";
+import { LaboratoriesSection } from "@/components/department/labs";
+import { DepartmentHighlightsSection, } from "@/components/department/highlights";
+import { DownloadsSection } from "@/components/department/downloads";
+import { AccessibilityFeatures } from "@/components/AccessibilityFeatures";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import BreadCrumb from "@/components/BreadCrumb";
+import Cta from "@/components/Cta";
+
 
 
 
@@ -114,21 +124,21 @@ const activeSection = useScrollSpy({
 }); 
 
     return (
+        
         <DepartmentLayout>
+             <AccessibilityFeatures />
+             <Header />
             {/* Hero */}
             <DepartmentHero
     data={aiDsDepartment.hero}
 />
-
-
-
 
             {/* Navigation */}
             <DepartmentNavigation
     items={departmentSections}
     activeSection={activeSection}
     onNavigate={scrollToSection} /> 
-
+<main>
             {/* Overview */}
             <OverviewSection
     data={aiDsDepartment.overview}
@@ -139,33 +149,30 @@ const activeSection = useScrollSpy({
     programs={aiDsDepartment.programs}
 />
 
-            {/* Sections */}
-            {departmentSections.map((section) => (
-     <DepartmentSection id={section.id}
-    title={section.label}
->
-                    
-                    <div className="mt-4 space-y-4">
-                        {Array.from({ length: 12 }).map((_, index) => (
-                            <div
-                                key={index}
-                                className="rounded-lg border bg-gray-50 p-6"
-                            >
-                                <h3 className="font-semibold">
-                                    Dummy Card {index + 1}
-                                </h3>
+            {/* Faculty Section */}
+           <FacultySection
+    department="AI and Data Science"
+/>
 
-                                <p className="mt-2 text-sm text-gray-600">
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit. Pellentesque habitant morbi
-                                    tristique senectus et netus et malesuada
-                                    fames ac turpis egestas.
-                                </p>
-                            </div>
-                        ))}
-                    </div>
-                </DepartmentSection>
-            ))}
+<LaboratoriesSection
+    laboratories={aiDsDepartment.laboratories}
+/>
+
+
+            {/* Highlights Section */}
+            <DepartmentHighlightsSection
+    data={aiDsDepartment.highlights}
+/>
+
+
+ {/* Downloads */}
+             <DownloadsSection
+    downloads={aiDsDepartment.downloads}
+/>       
+
+      </main>     
+      <Cta />
+            <Footer />
 
         </DepartmentLayout>
     );

@@ -4,6 +4,168 @@ import { Brain, Cpu, Database, Briefcase, Bot, BarChart3, Search, Network, Targe
 
 {/*import { DepartmentData } from "@/components/department/types"; */} // We'll create this later if needed.
 
+const departmentHighlights = {
+    achievements: [
+        {
+            id: "achievement-1",
+            name: "Dr. Ananya Sharma",
+            photo: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=800&q=80",
+            role: "Assistant Professor",
+            achievement:
+                "Recognized for outstanding contribution to Artificial Intelligence research and student innovation.",
+            year: "2026",
+        },
+        {
+            id: "achievement-2",
+            name: "Rahul Meena",
+            photo: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=800&q=80",
+            role: "B.Tech AI & DS Student",
+            achievement:
+                "Secured a position among the top teams in a national-level Artificial Intelligence hackathon.",
+            year: "2026",
+        },
+        {
+            id: "achievement-3",
+            name: "Priya Verma",
+            photo: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=800&q=80",
+            role: "B.Tech AI & DS Student",
+            achievement:
+                "Received recognition for an innovative computer vision based student project.",
+            year: "2025",
+        },
+    ],
+
+    placements: [
+        {
+            id: "placement-1",
+            name: "Arjun Sharma",
+            photo: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80",
+            program: "B.Tech AI & DS",
+            company: "TechNova Solutions",
+            package: "₹18 LPA",
+            year: "2026",
+        },
+        {
+            id: "placement-2",
+            name: "Neha Singh",
+            photo: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80",
+            program: "B.Tech CSE (AI)",
+            company: "DataSphere Technologies",
+            package: "₹15 LPA",
+            year: "2026",
+        },
+        {
+            id: "placement-3",
+            name: "Karan Verma",
+            photo: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=800&q=80",
+            program: "B.Tech CSE (DS)",
+            company: "Insight Analytics",
+            package: "₹12 LPA",
+            year: "2025",
+        },
+    ],
+
+    alumni: [
+        {
+            id: "alumni-1",
+            name: "Dr. Rohan Mehta",
+            photo: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=800&q=80",
+            program: "B.Tech CSE",
+            graduationYear: "2020",
+            designation: "AI Research Scientist",
+            organization: "Future AI Labs",
+        },
+        {
+            id: "alumni-2",
+            name: "Sneha Kapoor",
+            photo: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=800&q=80",
+            program: "B.Tech AI & DS",
+            graduationYear: "2021",
+            designation: "Machine Learning Engineer",
+            organization: "Global Tech Solutions",
+        },
+        {
+            id: "alumni-3",
+            name: "Amit Joshi",
+            photo: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80",
+            program: "B.Tech CSE (AI)",
+            graduationYear: "2022",
+            designation: "Data Scientist",
+            organization: "Analytics One",
+        },
+    ],
+
+    projectDomains: [
+        {
+            id: "computer-vision",
+            name: "Computer Vision",
+            count: 6,
+            icon: "eye",
+        },
+        {
+            id: "artificial-intelligence",
+            name: "Artificial Intelligence",
+            count: 10,
+            icon: "brain",
+        },
+        {
+            id: "data-science",
+            name: "Data Science",
+            count: 8,
+            icon: "chart",
+        },
+        {
+            id: "natural-language-processing",
+            name: "Natural Language Processing",
+            count: 5,
+            icon: "message",
+        },
+        {
+            id: "iot-ai",
+            name: "IoT & AI",
+            count: 4,
+            icon: "cpu",
+        },
+        {
+            id: "web-development",
+            name: "Web Development",
+            count: 7,
+            icon: "code",
+        },
+    ],
+
+    projectsPdf: "#",
+};
+
+
+const downloads = [
+    {
+        id: "ai-ds-syllabus",
+        name: "AI & DS Syllabus",
+        fileUrl: "/downloads/ai-ds-syllabus.pdf",
+    },
+    {
+        id: "cse-ai-syllabus",
+        name: "CSE (AI) Syllabus",
+        fileUrl: "/downloads/cse-ai-syllabus.pdf",
+    },
+    {
+        id: "cse-ds-syllabus",
+        name: "CSE (DS) Syllabus",
+        fileUrl: "/downloads/cse-ds-syllabus.pdf",
+    },
+    {
+        id: "department-brochure",
+        name: "Department Brochure",
+        fileUrl: "/downloads/department-brochure.pdf",
+    },
+    {
+        id: "student-project-list",
+        name: "Student Project List",
+        fileUrl: "/downloads/student-project-list.pdf",
+    },
+];
+
 export const aiDsDepartment = {
     hero: {
         name: "Department of Artificial Intelligence & Data Science",
@@ -27,6 +189,7 @@ export const aiDsDepartment = {
         ],
     },
 
+    
     overview: {
         about: [
             "The Department of Artificial Intelligence & Data Science was established with the vision of creating highly skilled professionals capable of solving real-world problems using Artificial Intelligence, Machine Learning and Data Science.",
@@ -315,4 +478,57 @@ export const aiDsDepartment = {
 
         // We'll add CSE (AI) and CSE (DS) after the framework is tested.
     ],
+
+    laboratories: [
+    {
+        id: "ai-lab",
+
+        name: "Artificial Intelligence Laboratory",
+
+        image: "/images/departments/ai-ds/labs/ai-lab.jpg",
+
+        shortDescription:
+            "Modern computing laboratory supporting Artificial Intelligence, Machine Learning and Data Science practical courses.",
+
+        description:
+            "The laboratory provides a high-performance computing environment equipped with modern software tools and hardware resources for practical learning, research and project development.",
+
+        capacity: 60,
+
+        coordinator: "Dr. Shipra Bhatia",
+
+        technicalAssistant: "Mr. XXXXX",
+
+        software: [
+            "Python",
+            "Anaconda",
+            "TensorFlow",
+            "PyTorch",
+            "Jupyter Notebook",
+            "VS Code"
+        ],
+
+        equipment: [
+            "High Performance Workstations",
+            "48 GB GPU Workstation",
+            "Gigabit Network",
+            "Projector"
+        ],
+
+        objectives: [
+            "Hands-on AI & ML experiments",
+            "Deep Learning model development",
+            "Research and project implementation"
+        ]
+    }
+],
+
+ highlights: departmentHighlights,
+
+
+ downloads,
 };
+
+
+
+

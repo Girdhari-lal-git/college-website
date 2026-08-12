@@ -1,6 +1,6 @@
+import { useEffect, useRef, useState } from "react";
 import DepartmentNavigationItem from "./DepartmentNavigationItem";
 import { NavigationItem } from "./types";
-import { LAYOUT } from "@/constants/layout";
 
 interface Props {
     items: NavigationItem[];
@@ -13,47 +13,193 @@ const DepartmentNavigation = ({
     activeSection,
     onNavigate,
 }: Props) => {
+
+    const navigationRef = useRef<HTMLDivElement>(null);
+
+    const [isPinned, setIsPinned] = useState(false);
+    const [headerHeight, setHeaderHeight] = useState(0);
+    const [navigationTop, setNavigationTop] = useState(0);
+
+    /*
+     * Get actual height of college header
+     */
+    useEffect(() => {
+
+        const updateHeaderHeight = () => {
+
+            const header =
+                document.getElementById(
+                    "college-main-header"
+                );
+
+            if (!header) return;
+
+            setHeaderHeight(
+                header.getBoundingClientRect().height
+            );
+        };
+
+        updateHeaderHeight();
+
+        window.addEventListener(
+            "resize",
+            updateHeaderHeight
+        );
+
+        return () => {
+            window.removeEventListener(
+                "resize",
+                updateHeaderHeight
+            );
+        };
+
+    }, []);
+
+
+    /*
+     * Find actual position of department navigation
+     */
+    useEffect(() => {
+
+        const updateNavigationPosition = () => {
+
+            if (!navigationRef.current) return;
+
+            const rect =
+                navigationRef.current.getBoundingClientRect();
+
+            setNavigationTop(
+                rect.top + window.scrollY
+            );
+        };
+
+        updateNavigationPosition();
+
+        window.addEventListener(
+            "resize",
+            updateNavigationPosition
+        );
+
+        return () => {
+            window.removeEventListener(
+                "resize",
+                updateNavigationPosition
+            );
+        };
+
+    }, []);
+
+
+    /*
+     * Detect when navigation reaches
+     * the bottom of college header
+     */
+    useEffect(() => {
+
+        const handleScroll = () => {
+
+            const shouldPin =
+                window.scrollY >=
+                navigationTop - headerHeight;
+
+            setIsPinned(shouldPin);
+        };
+
+        handleScroll();
+
+        window.addEventListener(
+            "scroll",
+            handleScroll,
+            { passive: true }
+        );
+
+        return () => {
+            window.removeEventListener(
+                "scroll",
+                handleScroll
+            );
+        };
+
+    }, [navigationTop, headerHeight]);
+
+
     return (
-        <nav
-            className="
-                sticky
-                z-40
-                bg-white/95
-                backdrop-blur-md
-                border-b
-                shadow-sm
-            "
-            style={{
-                top: `${LAYOUT.HEADER_HEIGHT}px`,
-            }}
+
+        <div
+            ref={navigationRef}
+            className="relative w-full z-40"
         >
-            <div className="max-w-7xl mx-auto">
+
+            {/* 
+                Keeps the page from jumping when
+                navigation becomes fixed
+            */}
+            {isPinned && (
+                <div
+                    aria-hidden="true"
+                    style={{
+                        height: "56px",
+                    }}
+                />
+            )}
+
+
+            <nav
+                className="
+                    w-full
+                    border-b
+                    border-gray-200
+                    bg-white
+                    shadow-sm
+                "
+                style={{
+                    position: isPinned
+                        ? "fixed"
+                        : "relative",
+
+                    top: isPinned
+                        ? `${headerHeight}px`
+                        : "auto",
+
+                    left: 0,
+                    right: 0,
+
+                    zIndex: 40,
+                }}
+            >
+
                 <div
                     className="
-                        flex
-                        items-center
-                        gap-3
-                        overflow-x-auto
-                        scrollbar-hide
-                        scroll-smooth
-                        snap-x
-                        snap-mandatory
+                        mx-auto
+                        max-w-7xl
                         px-4
-                        py-3
-                        whitespace-nowrap
+                        sm:px-6
+                        lg:px-8
                     "
                 >
-                    {items.map((item) => (
-                        <DepartmentNavigationItem
-                            key={item.id}
-                            item={item}
-                            active={activeSection === item.id}
-                            onClick={onNavigate}
-                        />
-                    ))}
+
+                    <div className="flex overflow-x-auto">
+
+                        {items.map((item) => (
+
+                            <DepartmentNavigationItem
+                                key={item.id}
+                                item={item}
+                                active={
+                                    activeSection === item.id
+                                }
+                                onClick={onNavigate}
+                            />
+
+                        ))}
+
+                    </div>
+
                 </div>
-            </div>
-        </nav>
+
+            </nav>
+
+        </div>
     );
 };
 
