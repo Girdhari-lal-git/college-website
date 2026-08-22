@@ -199,6 +199,56 @@ const AutonomousPage: React.FC = () => {
                 </tr>
               </thead>
               <tbody>
+                
+                <tr>
+                  <td className="border p-2">
+                  Circular for publication of revised Board of studies for Department of Computer Science & Engineering
+                  </td>
+                  <td className="border p-2">11-08-2026</td>
+                  <td className="border p-2">
+                    <a className="text-primary" href="https://drive.google.com/file/d/1oq8g_FaDcXxEjcszlE5mKR_ODeILjyoW/view?usp=drive_link">
+                      PDF
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td className="border p-2">
+                    Circular for publication of revised Board of studies for Department of Artificial Intelligence & Data Science
+                  </td>
+                  <td className="border p-2">11-08-2026</td>
+                  <td className="border p-2">
+                    <a className="text-primary" href="https://drive.google.com/file/d/1c7iFfXGGsPMJF4jfNLdjV3cn5nUv3x6Q/view?usp=drive_link">
+                      PDF
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td className="border p-2">
+                    Circular for publication of revised Board of studies for Department of Internet of Things
+                                     </td>
+                  <td className="border p-2">13-08-2026</td>
+                  <td className="border p-2">
+                    <a className="text-primary" href="https://drive.google.com/file/d/1skr3bVnvDTMjJJcmF82m5t0GX1ypsFGg/view?usp=drive_link">
+                      PDF
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td className="border p-2">
+                    Circular for publication of revised Board of studies for Department of Applied Sciences
+                  </td>
+                  <td className="border p-2">13-08-2026</td>
+                  <td className="border p-2">
+                    <a className="text-primary" href="https://drive.google.com/file/d/11F4-XL13XyxY8unhi8EsMbeNTDMD8Vwc/view?usp=drive_link">
+                      PDF
+                    </a>
+                  </td>
+                </tr>
+
+                
                 <tr>
                   <td className="border p-2">
                     Circular for publication of revised Academic and Examination Policy for Autonomous Batches (Admitted from Academic Year 2025–2026 Onwards)

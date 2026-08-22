@@ -5,7 +5,14 @@ import BreadCrumb from "@/components/BreadCrumb";
 import Cta from "@/components/Cta";
 import { AccessibilityFeatures } from "@/components/AccessibilityFeatures";
 
-const Card = ({ iconClass, title, description, color }) => (
+type CardProps = {
+    iconClass: string;
+    title: string;
+    description: string;
+    color: string;
+};
+
+const Card = ({ iconClass, title, description, color }: CardProps) => (
     <div
         className={`bg-white shadow-md border-2 border-primary border-l-8  rounded-xl p-6 flex flex-col min-h-[250px] transition hover:scale-[1.02] duration-300`}
     >
@@ -108,7 +115,7 @@ const Grievances = () => {
                     <ul className="list-disc ml-6 space-y-2 text-gray-700">
                         <li>
                             <a
-                                href="https://drive.google.com/file/d/165QbjW_C9-toksqv-LqGRmBylCe1j-wg/view?usp=sharing"
+                                href="https://drive.google.com/file/d/1w41jV6-ooh8-nzr3f5X2mUekbrZPjYTY/view?usp=drive_link"
                                 className="text-secondary hover:underline"
                                 target="_blank"
                                 rel="noopener noreferrer"
@@ -118,7 +125,7 @@ const Grievances = () => {
                         </li>
                         <li>
                             <a
-                                href="https://drive.google.com/file/d/1nSwXPqNgVyZ4fxe3QfZpolRtq1vKmJr-/view?usp=sharing"
+                                href="https://drive.google.com/file/d/1M9o_wH2IgAVCgbPRzi4OAKwrG27nLdQM/view?usp=drive_link"
                                 className="text-secondary hover:underline"
                                 target="_blank"
                                 rel="noopener noreferrer"
