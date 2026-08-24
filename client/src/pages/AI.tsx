@@ -1080,6 +1080,10 @@ HOD, Department of AI & Data Science, PIET`}
                     />
                 </div>
             </section>
+           
+           
+           
+            {/* ====================== Explore Our Programs ====================== */}
 
 <section className="py-12">
             <div className="text-center mb-12">

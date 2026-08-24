@@ -376,6 +376,17 @@ const annualdocumentColumns = [
  const regulareventDocumentData = [
    {
         sno: 1,
+        name: 'Events 2025-26',
+        download: (
+            <a href="https://drive.google.com/file/d/1xiprtSkOFK5aW8Pl5MhmOj4rlM_JWEYM/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">
+                <button className="bg-primary text-white px-4 py-1 rounded hover:bg-secondary transition inline-flex items-center gap-2">
+                    <i className="fas fa-download" /> Download PDF
+                </button>
+            </a>
+        )
+    }, 
+  {
+        sno: 2,
         name: 'Events 2024-25',
         download: (
             <a href="https://drive.google.com/file/d/12T2xTlRiSm_GUzcR67WUSFZHGhCa_hzg/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">
@@ -386,7 +397,7 @@ const annualdocumentColumns = [
         )
     }, 
   {
-        sno: 2,
+        sno: 3,
         name: 'Events 2023-24',
         download: (
             <a href="https://drive.google.com/file/d/1007Qcof3mSTZTb7UMLsNfbsfNDSgQzuD/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">
@@ -397,7 +408,7 @@ const annualdocumentColumns = [
         )
     },
     {
-        sno: 3,
+        sno: 4,
         name: 'Events 2022-23',
         download: (
             <a href="https://drive.google.com/file/d/1wUdJ7999MyE_uN06RfZxliCBjFRU1Ehv/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">
@@ -408,7 +419,7 @@ const annualdocumentColumns = [
         )
     },
     {
-        sno: 4,
+        sno: 5,
         name: 'Events 2021-22',
         download: (
             <a href="https://drive.google.com/file/d/1Gi-BAbQKUBX0bsEKMEr_H67HyvjglCiH/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">
@@ -419,7 +430,7 @@ const annualdocumentColumns = [
         )
     },
     {
-        sno: 5,
+        sno: 6,
         name: 'Events 2020-21',
         download: (
             <a href="https://drive.google.com/file/d/1kLW-IA2bA30IlM61XMQOEc_hJtUF203_/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">
@@ -430,7 +441,7 @@ const annualdocumentColumns = [
         )
     },
     {
-        sno: 6,
+        sno: 7,
         name: 'Events 2019-20',
         download: (
             <a href="https://drive.google.com/file/d/1TZtYaTq6v026Kb1xYiJ8tUtt6iBC5wmS/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">
@@ -441,7 +452,7 @@ const annualdocumentColumns = [
         )
     },
     {
-        sno: 7,
+        sno: 8,
         name: 'Events 2018-19',
         download: (
             <a href="https://drive.google.com/file/d/1_U0OB-u-ebY4ySxArCu3QsxnX7iBQYES/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">

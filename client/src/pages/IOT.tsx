@@ -5,7 +5,7 @@ import BreadCrumb from "@/components/BreadCrumb";
 import ProfileMessageSection from "@/components/ProfileMessageSection";
 import OverviewSection from "@/components/OverviewSection";
 import Checklist from "@/components/Checklist";
-import { Check } from "lucide-react";
+import { ArrowRight, Check, Clock, Users } from "lucide-react";
 import InfoCard from "@/components/InfoCard";
 import Message from "@/components/Message";
 import ProfileCard from "@/components/ProfileCard";
@@ -939,10 +939,10 @@ const points = [
 ];
 
 const missionPoints = [
-    "To provide a comprehensive outcome-based education through a robust curriculum and hands-on learning.",
-    "To promote research, innovation, and entrepreneurial thinking among students and faculty.",
-    "To bridge the gap between academia and industry through real-world projects, internships, and technical collaborations.",
-    "To ensure holistic student development by nurturing ethical values, professional skills, and lifelong learning.",
+    "M1: Develop and deploy advanced IoT solutions leveraging electronics, robotics, and automation to streamline processes, enhance efficiency, and drive digital transformation across Industries.",
+    "M2: Empower businesses and communities through intelligent systems embedded within IoT frameworks, enabling real-time decision-making and adaptive responses to dynamic Environments.",
+    "M3: Pioneer research and development in IoT technologies, emphasizing secure and scalable automation solutions that optimize resource utilization and minimize environmental impact. ",
+    "M4: Educate and advocate for the adoption of IoT-driven intelligent systems, promoting a connected ecosystem that enhances quality of life, productivity, and global competitiveness.",
 ];
 
 const objectivePoints = [
@@ -1017,6 +1017,39 @@ const projects = [
     { name: "Interior product website" },
 
     // Add more...
+];
+
+const programs = [
+    {
+        icon: Check,
+        gradient: "from-blue-600 to-cyan-500",
+        short: "B.Tech IoT",
+        title: "Internet of Things",
+        description:
+            "An industry-oriented program focused on connected devices, embedded systems, cloud platforms, and IoT applications.",
+        features: [
+            "IoT architecture and protocols",
+            "Embedded systems and sensors",
+            "Cloud computing and data analytics",
+        ],
+        intake: "60 seats",
+        duration: "4 years",
+    },
+    {
+        icon: Check,
+        gradient: "from-purple-600 to-pink-500",
+        short: "B.Tech ECE",
+        title: "Electronics and Communication",
+        description:
+            "A practical program covering electronics, communication systems, embedded technology, and emerging digital solutions.",
+        features: [
+            "Digital and analog electronics",
+            "Communication systems",
+            "Embedded technology",
+        ],
+        intake: "60 seats",
+        duration: "4 years",
+    },
 ];
 
 const missionContent = <Checklist items={missionPoints} />;
@@ -1133,7 +1166,246 @@ const IOT = () => {
             </div>
 
 
-                      {/* ====================== PEO & PSO ====================== */}
+                    
+
+
+            {/* hod message */}
+
+            <section className="py-16 bg-gradient-to-br from-blue-50 via-white to-indigo-50">
+                <div className="max-w-7xl mx-auto px-8">
+                    <Message
+                        title="Message from the HOD"
+                        content={`Dear Students, Faculty, and Visitors,
+
+As the Head of Department (HoD), it is my privilege to lead a team of dedicated faculty members and passionate students who are at the forefront of shaping the future of IoT (Internet of Things). Our department serves as a hub for cutting-edge research, technological advancement, and academic excellence.
+
+At the core of our mission is the belief that IoT has the potential to revolutionize industries, enhance quality of life, and address complex societal challenges. Through our interdisciplinary approach, we strive to empower students with the knowledge, skills, and mindset required to thrive in this rapidly evolving field.
+
+Our department is more than just a collection of classrooms and laboratories; it is a vibrant community of innovators, problem solvers, and visionaries. Here, collaboration is key, and diversity of thought is celebrated. We provide a nurturing environment where students are encouraged to explore, experiment, and push the boundaries of what is possible.
+
+As the landscape of IoT continues to evolve, we remain committed to staying at the forefront of innovation. Our faculty members are actively engaged in groundbreaking research and industry partnerships, ensuring that our curriculum remains relevant and our students are prepared for the challenges of tomorrow.
+
+The Department of Internet of Things at PIET stands as a testament to our commitment to excellence in education and research. We are dedicated to developing smart solutions that connect devices, systems, and people, creating a more efficient and sustainable world.
+
+Whether you are a prospective student, a current member of our department, or a curious visitor, I invite you to join us on this exciting journey. Together, let's explore the endless possibilities of IoT and inspire the next generation of technological leaders.
+
+Thank you for your interest in the IoT Department. I look forward to welcoming you to our community.
+
+- Dr. Payal Bansal
+HOD, Department of Internet of Things, PIET`}
+                        imageUrl="/images/hod/dr. Payal Bansal.jpg"
+                        imageAlt="Dr. Payal Bansal - HOD, Department of Internet of Things"
+                    />
+                </div>
+            </section>
+
+
+    <section className="py-12">
+    <div className="text-center mb-12">
+        <h2 className="text-4xl font-bold text-primary">
+            Explore Our Programs
+        </h2>
+
+        <p className="mt-3 text-gray-600 max-w-2xl mx-auto">
+            Industry-oriented programs designed to prepare students for
+            careers in Internet of Things, Electronics and Communication,
+            Embedded Systems and emerging technologies.
+        </p>
+    </div>
+
+                          
+</section>
+
+      {/*Explore Our Programs*/}
+
+    <div className="grid lg:grid-cols-2 gap-8 max-w-7xl mx-auto">
+        {programs.map((program, index) => {
+            const Icon = program.icon;
+
+            return (
+                <div
+                    key={index}
+                    className="
+                        group
+                        rounded-3xl
+                        overflow-hidden
+                        bg-white
+                        border
+                        border-gray-200
+                        shadow-lg
+                        hover:shadow-2xl
+                        transition-all
+                        duration-500
+                        hover:-translate-y-3
+                    "
+                >
+                    {/* Gradient Header */}
+
+                    <div
+                        className={`
+                            bg-gradient-to-r
+                            ${program.gradient}
+                            p-8
+                            text-white
+                            relative
+                        `}
+                    >
+                        {/* Background Icon */}
+
+                        <div
+                            className="
+                                absolute
+                                top-4
+                                right-4
+                                opacity-20
+                                text-8xl
+                            "
+                        >
+                            <Icon size={90} />
+                        </div>
+
+                        {/* Main Icon */}
+
+                        <div
+                            className="
+                                w-16
+                                h-16
+                                rounded-2xl
+                                bg-white/20
+                                flex
+                                items-center
+                                justify-center
+                                backdrop-blur-md
+                            "
+                        >
+                            <Icon size={32} />
+                        </div>
+
+                        <h3 className="text-2xl font-bold mt-5">
+                            {program.short}
+                        </h3>
+
+                        <p className="mt-2 opacity-90">
+                            {program.title}
+                        </p>
+                    </div>
+
+                    {/* Content */}
+
+                    <div className="p-7">
+
+                        <p className="text-gray-600 leading-7">
+                            {program.description}
+                        </p>
+
+                        {/* Features */}
+
+                        <div className="mt-6 space-y-3">
+
+                            {program.features.map((item) => (
+                                <div
+                                    key={item}
+                                    className="flex items-center gap-3"
+                                >
+                                    <div
+                                        className="
+                                            h-2.5
+                                            w-2.5
+                                            rounded-full
+                                            bg-primary
+                                        "
+                                    />
+
+                                    <span className="text-gray-700">
+                                        {item}
+                                    </span>
+                                </div>
+                            ))}
+
+                        </div>
+
+                        {/* Program Information */}
+
+                        <div
+                            className="
+                                border-t
+                                mt-7
+                                pt-6
+                                flex
+                                justify-between
+                            "
+                        >
+
+                            <div
+                                className="
+                                    flex
+                                    items-center
+                                    gap-2
+                                    text-sm
+                                "
+                            >
+                                <Users
+                                    className="text-primary"
+                                    size={18}
+                                />
+
+                                {program.intake}
+                            </div>
+
+                            <div
+                                className="
+                                    flex
+                                    items-center
+                                    gap-2
+                                    text-sm
+                                "
+                            >
+                                <Clock
+                                    className="text-primary"
+                                    size={18}
+                                />
+
+                                {program.duration}
+                            </div>
+
+                        </div>
+
+                        {/* Explore Button */}
+
+                        <button
+                            className="
+                                mt-8
+                                w-full
+                                bg-primary
+                                text-white
+                                rounded-xl
+                                py-3
+                                flex
+                                items-center
+                                justify-center
+                                gap-2
+                                hover:bg-secondary
+                                transition
+                            "
+                        >
+                            Explore Program
+
+                            <ArrowRight
+                                size={18}
+                                className="
+                                    group-hover:translate-x-1
+                                    transition
+                                "
+                            />
+                        </button>
+
+                    </div>
+                </div>
+            );
+        })}
+    </div>
+
+      {/* ====================== PEO & PSO ====================== */}
 
 <section className="py-16 bg-gray-50">
     <div className="container mx-auto px-4">
@@ -1174,10 +1446,10 @@ const IOT = () => {
                                 PEO 1
                             </span>
                             <p>
-                               <strong>Professional Growth and Technological Competence</strong>
+                               <strong>Design Innovative Solutions</strong>
                             </p>
                              <p className="text-justify">
-                               Build successful careers in industry, academia, entrepreneurship, and allied domains by the application of Artificial Intelligence, Data Science, Machine Learning, and emerging technologies.
+                               Graduates will establish successful careers by applying software development, Internet of Things (IoT), and problem-solving skills to design innovative and efficient technological solutions.
                             </p>
                         </div>
 
@@ -1186,10 +1458,10 @@ const IOT = () => {
                                 PEO 2
                             </span>
                             <p>
-                                <strong>Computational and Analytical Proficiency</strong>
+                                <strong>Effective solutions for real-world problems</strong>
                             </p>
                             <p className="text-justify">
-                                Serve as technical experts and innovators by designing and scaling intelligent computing and data-driven solutions for interdisciplinary and real-world challenges in Artificial Intelligence and Data Science during their career span.
+                                Students will utilize knowledge of statistics, engineering principles, Artificial Intelligence (AI), and IoT technologies to develop effective solutions for real-world challenges.
                             </p>
                         </div>
 
@@ -1198,10 +1470,10 @@ const IOT = () => {
                                 PEO 3
                             </span>
                             <p>
-                                <strong>Ethical Values and Social Responsibility</strong>
+                                <strong>Sustainable and Intelligent Solutions</strong>
                             </p>
                             <p className="text-justify">
-                               Exhibit professional ethics, leadership, teamwork, lifelong learning, and social responsibility while contributing sustainable and intelligent solutions for societal development. 
+                               Engineer will apply IoT, data analytics, and emerging technologies to create sustainable solutions that address societal and environmental needs. 
                             </p>
                         </div>
 
@@ -1226,10 +1498,12 @@ const IOT = () => {
                                 PSO 1
                             </span>
                             <p>
-                                <strong>Artificial and Machine Intelligence Skills</strong>
+                                <strong>Develop Proficiency in Software Development for IoT Applications:</strong>
                             </p>
                             <p className="text-justify">
-                                Empower graduates with a comprehensive skill set in software development, fostering employability across diverse industries to meet the dynamic demands of the professional landscape.
+                                Equip graduates with a comprehensive skill set in software development, enhancing their
+readiness for diverse IoT applications across industries and optimizing their employability in
+a rapidly evolving professional landscape. 
 
                             </p>
                         </div>
@@ -1239,10 +1513,13 @@ const IOT = () => {
                                 PSO 2
                             </span>
                             <p>
-                                <strong>Analytics & Basic Sciences</strong>
+                                <strong>Apply Foundational Sciences in IoT based Automation: </strong>
                             </p>
                             <p className="text-justify">
-                                Integrate principles of mathematics, statistics, and basic sciences to analyze complex problems and develop innovative solutions in Artificial Intelligence and Data Science.
+                                Utilize principles from foundational sciences like mathematics and statistics to apply
+automation based on IoT. Extract valuable insights and create innovative solutions for
+challenges in AI, Data Science, and IoT.
+
                             </p>
                         </div>
 
@@ -1251,10 +1528,12 @@ const IOT = () => {
                                 PSO 3
                             </span>
                             <p>
-                                <strong>Career and Life Skills</strong>
+                                <strong>Harness Data Analytics for Societal Impact in IoT:</strong>
                             </p>
                             <p className="text-justify">
-                               Master AI and Data Analytics to innovate for societal impact by resolving complex problems using theoretical knowledge and practical tools. 
+                              Leverage data analytics capabilities within IoT environments to tackle intricate societal
+challenges. Integrate theoretical knowledge with practical IoT tools to foster innovation and devise sustainable solutions.
+ 
                             </p>
                         </div>
 
@@ -1296,13 +1575,10 @@ const IOT = () => {
                         PEO 1
                     </span>
                     <p>
-                        <strong>Career and Professional Excellence</strong>
+                        <strong>Technical Expertise and Innovation</strong>
                     </p>
                     <p className="text-justify">
-                        Establish successful careers in industry, academia,
-                        entrepreneurship, and allied domains by applying the
-                        principles of Computer Science, Artificial Intelligence,
-                        and emerging technologies.
+                       : Graduates will apply knowledge of science, electronics, computing, and engineering to develop sustainable IoT, embedded, and software solutions for real-world challenges.
                     </p>
                 </div>
 
@@ -1311,14 +1587,10 @@ const IOT = () => {
                         PEO 2
                     </span>
                     <p>
-                        <strong>Analytical and Technical Foundations</strong>
+                        <strong>Intelligent Solutions</strong>
                     </p>
                     <p className="text-justify">
-                        Function as technical experts and innovators for
-                        designing, adapting, and scaling intelligent computing
-                        and data-driven solutions to address complex
-                        interdisciplinary and real-world problems in their
-                        careers.
+                        : Students will utilize emerging technologies and engineering tools to design intelligent AI, IoT, and secure automation solutions for industry and societal needs.
                     </p>
                 </div>
 
@@ -1327,14 +1599,10 @@ const IOT = () => {
                         PEO 3
                     </span>
                     <p>
-                        <strong>Ethics, Leadership, and Societal Contribution</strong>
+                        <strong>Sustainable and Intelligent Solutions</strong>
                     </p>
                     <p className="text-justify">
-                        Demonstrate professional ethics, leadership qualities,
-                        teamwork, lifelong learning, and social responsibility
-                        while contributing sustainable and AI-driven solutions
-                        for the betterment of society in their professional
-                        journey.
+                        Engineering will apply data analytics, networking, and communication technologies to develop secure and scalable IoT solutions for smart decision-making and technological advancement.
                     </p>
                 </div>
 
@@ -1359,13 +1627,10 @@ const IOT = () => {
                         PSO 1
                     </span>
                     <p>
-                        <strong>Computing Skills with AI-Integrated Software Solutions</strong>
+                        <strong>Electronics and Computing Application</strong>
                     </p>
                     <p className="text-justify">
-                        Proficiency in developing IT solutions integrated with
-                        AI technologies for applications such as Machine
-                        Learning, Computer Vision, and Natural Language
-                        Processing.
+                        Apply fundamentals of science, electronics, and computing to design and develop innovative and sustainable software & embedded solutions.
                     </p>
                 </div>
 
@@ -1374,12 +1639,10 @@ const IOT = () => {
                         PSO 2
                     </span>
                     <p>
-                        <strong>Analytical and Scientific Foundations</strong>
+                        <strong>Modern Tools and Intelligent Systems</strong>
                     </p>
                     <p className="text-justify">
-                        Apply mathematics and statistics to solve complex
-                        problems and create innovative AI and Data Science
-                        solutions.
+                        Use modern engineering tools and programming skills to develop automated and intelligent systems in AI, IoT, communication, and embedded domains.
                     </p>
                 </div>
 
@@ -1388,12 +1651,10 @@ const IOT = () => {
                         PSO 3
                     </span>
                     <p>
-                        <strong>Career and Societal Impact Skills</strong>
+                        <strong>Data and Network-Based Solutions</strong>
                     </p>
                     <p className="text-justify">
-                        Expertise to implement AI with Computer Science to
-                        tackle real-world problems using both theoretical
-                        understanding and hands-on skills.
+                        Leverage data analytics, networking, and communication technologies to build efficient, secure, and scale-able solutions for real-world challenges.
                     </p>
                 </div>
 
@@ -1407,37 +1668,6 @@ const IOT = () => {
 </div>
 </section>
 
-
-
-            {/* hod message */}
-
-            <section className="py-16 bg-gradient-to-br from-blue-50 via-white to-indigo-50">
-                <div className="max-w-7xl mx-auto px-8">
-                    <Message
-                        title="Message from the HOD"
-                        content={`Dear Students, Faculty, and Visitors,
-
-As the Head of Department (HoD), it is my privilege to lead a team of dedicated faculty members and passionate students who are at the forefront of shaping the future of IoT (Internet of Things). Our department serves as a hub for cutting-edge research, technological advancement, and academic excellence.
-
-At the core of our mission is the belief that IoT has the potential to revolutionize industries, enhance quality of life, and address complex societal challenges. Through our interdisciplinary approach, we strive to empower students with the knowledge, skills, and mindset required to thrive in this rapidly evolving field.
-
-Our department is more than just a collection of classrooms and laboratories; it is a vibrant community of innovators, problem solvers, and visionaries. Here, collaboration is key, and diversity of thought is celebrated. We provide a nurturing environment where students are encouraged to explore, experiment, and push the boundaries of what is possible.
-
-As the landscape of IoT continues to evolve, we remain committed to staying at the forefront of innovation. Our faculty members are actively engaged in groundbreaking research and industry partnerships, ensuring that our curriculum remains relevant and our students are prepared for the challenges of tomorrow.
-
-The Department of Internet of Things at PIET stands as a testament to our commitment to excellence in education and research. We are dedicated to developing smart solutions that connect devices, systems, and people, creating a more efficient and sustainable world.
-
-Whether you are a prospective student, a current member of our department, or a curious visitor, I invite you to join us on this exciting journey. Together, let's explore the endless possibilities of IoT and inspire the next generation of technological leaders.
-
-Thank you for your interest in the IoT Department. I look forward to welcoming you to our community.
-
-- Dr. Payal Bansal
-HOD, Department of Internet of Things, PIET`}
-                        imageUrl="/images/hod/dr. Payal Bansal.jpg"
-                        imageAlt="Dr. Payal Bansal - HOD, Department of Internet of Things"
-                    />
-                </div>
-            </section>
 
             {/* faculty cards */}
 

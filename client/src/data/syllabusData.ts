@@ -1,7 +1,7 @@
 export interface SyllabusItem {
-  degree: "B. Tech." | "M. Tech.";
+  degree: "B. Tech." | "M. Tech." | "Minor Degree";
   branch: string;
-  semester: number;
+  semester?: number;
   subjectName: string;
   description: string;
   schemeLink: string;
@@ -439,5 +439,36 @@ export const syllabusData: SyllabusItem[] = [
     schemeLink: "https://drive.google.com/file/d/1Bo9gRRrdBIpxMFxV32OFwLP8Rcjasyi6/view?usp=drive_link",
     syllabusLink: "https://drive.google.com/file/d/1aPdsfCQi3vOm9KmpERCh5hLECM8J74LP/view?usp=drive_link"
   },
+
+  {
+    degree: "Minor Degree",
+    branch: "Cyber Security",
+    subjectName: "Complete Minor Degree Syllabus",
+    description:
+        "Complete syllabus for Minor Degree in Cyber Security.",
+    schemeLink: "https://drive.google.com/file/d/1_7BvUbakAZJPjE0kgwkV4zMMFBADa1X2/view?usp=drive_link",
+    syllabusLink: "https://drive.google.com/file/d/1aoTSG-V2VyiYLSa7_XT2KX_E4CxqAC4e/view?usp=drive_link",
+},
+
+{
+    degree: "Minor Degree",
+    branch: "AI & ML",
+    subjectName: "Complete Minor Degree Syllabus",
+    description:
+        "Complete syllabus for Minor Degree in Artificial Intelligence & Machine Learning.",
+    schemeLink: "https://drive.google.com/file/d/1h4PE4maF67pgZ0LxgcP4_oiWtREQlMhh/view?usp=drive_link",
+    syllabusLink: "https://drive.google.com/file/d/1YXxLHZk3iwHOeAdzKfbvRscQO3UVVJm9/view?usp=drive_link",
+},
+
+{
+    degree: "Minor Degree",
+    branch: "VLSI Design",
+    subjectName: "Complete Minor Degree Syllabus",
+    description:
+        "Complete syllabus for Minor Degree in VLSI Design.",
+    schemeLink: "https://drive.google.com/file/d/1OmFLNUtXyPaaDF-RTsLBmjRUGJm40Lib/view?usp=drive_link",
+    syllabusLink: "https://drive.google.com/file/d/1RAUmHXWjsNFdZVcXXxsfGzbEDOd544Pv/view?usp=drive_link",
+},
    
 ];
+
