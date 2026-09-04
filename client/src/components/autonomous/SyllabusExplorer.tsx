@@ -19,9 +19,20 @@ const programsByDegree: Record<string, string[]> = {
   "Open Elective": ["CSE", "CS (R)", "AI & DS", "CS (AI)", "CS (DS)", "CS (IoT)", "ECE"],
 };
 
-const SyllabusExplorer: React.FC = () => {
-  const [degree, setDegree] = React.useState<string>("");
-  const [branch, setBranch] = React.useState<string>("");
+interface SyllabusExplorerProps {
+    initialDegree?: string;
+    initialBranch?: string;
+}
+
+const SyllabusExplorer: React.FC<SyllabusExplorerProps> = ({
+    initialDegree = "",
+    initialBranch = "",
+}) => {
+  const [degree, setDegree] =
+    React.useState<string>(initialDegree);
+
+const [branch, setBranch] =
+    React.useState<string>(initialBranch);
   const [semester, setSemester] = React.useState<number | "">("");
 
   // Semester rules
@@ -53,9 +64,12 @@ const SyllabusExplorer: React.FC = () => {
 
   // Reset dependent filters
   React.useEffect(() => {
-    setBranch("");
+    if (degree !== initialDegree) {
+        setBranch("");
+    }
+
     setSemester("");
-  }, [degree]);
+}, [degree]);
 
   React.useEffect(() => {
     setSemester("");
@@ -86,7 +100,7 @@ const SyllabusExplorer: React.FC = () => {
           ))}
         </select>
 
-        {/* Program */}
+                                           {/* Program */}
         <select
           className="input"
           value={branch}
@@ -100,7 +114,7 @@ const SyllabusExplorer: React.FC = () => {
             ))}
         </select>
 
-        {/* Semester */}
+                                          {/* Semester */}
         <select
           className="input"
           value={semester}
@@ -116,7 +130,8 @@ const SyllabusExplorer: React.FC = () => {
         </select>
       </div>
 
-      {/* RESULT TABLE */}
+                                        {/* RESULT TABLE */}
+
       <table className="w-full border text-sm">
         <thead className="bg-muted">
           <tr>
