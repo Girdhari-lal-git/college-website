@@ -8,14 +8,13 @@ import OverviewSection from "@/components/OverviewSection";
 import Checklist from "@/components/Checklist";
 import { Check } from "lucide-react";
 import InfoCard from "@/components/InfoCard";
+import TopPlacementSection from "@/components/TopPlacementSection";
+import TopAlumniSection from "@/components/TopAlumniSection";
 import Message from "@/components/Message";
 import ProfileCard from "@/components/ProfileCard";
 import FacultySwiper from "@/components/FacultySwiper";
 import LabInfoCard from "@/components/LabInfoCard";
-
-import CourseOutcomeAccordion, {
-    SubjectCO,
-} from "@/components/CourseOutcomeAccordion";
+import CourseOutcomeAccordion, { SubjectCO, } from "@/components/CourseOutcomeAccordion";
 import Cta from "@/components/Cta";
 import DynamicTable from "@/components/DynamicTable ";
 import { AccessibilityFeatures } from "@/components/AccessibilityFeatures";
@@ -824,9 +823,97 @@ const scrData = [
         title: "Semester Closing Report - 2025-26(Odd Semester)",
         link: "https://drive.google.com/file/d/1BmHVWnyhLPpOfezPJVA8R7UD60IMKIxy/view?usp=drive_link",    
     },
+     {
+        sno: 8,
+        title: "Semester Closing Report - 2025-26(Even Semester)",
+        link: "https://drive.google.com/file/d/1jF4h1bqp56HYpe1UgRr1yS6U0J4kJefN/view?usp=drive_link",    
+    },
    
 ];
 
+const topPlacementStudents = [
+    {
+        name: "Aarav Sharma",
+        batch: "2025",
+        program: "B.Tech AI & DS",
+        designation: "Software Engineer",
+        company: "Microsoft",
+        package: "₹18 LPA",
+        image: "/images/placements/aarav.jpg",
+    },
+
+    {
+        name: "Priya Mehta",
+        batch: "2025",
+        program: "B.Tech AI & DS",
+        designation: "Data Scientist",
+        company: "Deloitte",
+        package: "₹14 LPA",
+        image: "/images/placements/priya.jpg",
+    },
+
+    {
+        name: "Rahul Verma",
+        batch: "2024",
+        program: "B.Tech AI & DS",
+        designation: "AI Engineer",
+        company: "Accenture",
+        package: "₹12 LPA",
+        image: "/images/placements/rahul.jpg",
+    },
+     {
+        name: "Abhishek Verma",
+        batch: "2024",
+        program: "B.Tech AI & DS",
+        designation: "AI Engineer",
+        company: "Accenture",
+        package: "₹12 LPA",
+        image: "/images/placements/rahul.jpg",
+    },
+];
+
+const topAlumni = [
+  {
+    name: "Devendra Goriya",
+    batch: "2023",
+    program: "B.Tech AI & DS",
+    designation: "Software Engineer",
+    organization: "Company A",
+    description:
+      "Working in software development and AI-driven solutions.",
+    image: "/images/alumni/alumni1.jpg",
+  },
+  {
+    name: "Garima Shekhawat",
+    batch: "2023",
+    program: "B.Tech AI & DS",
+    designation: "Data Scientist",
+    organization: "Company B",
+    description:
+      "Working in data analytics and machine learning.",
+    image: "/images/alumni/alumni2.jpg",
+  },
+  {
+    name: "Riddhi Dadheech",
+    batch: "2024",
+    program: "B.Tech AI & DS",
+    designation: "AI Engineer",
+    organization: "Company C",
+    description:
+      "Working on artificial intelligence and machine learning applications.",
+    image: "/images/alumni/alumni3.jpg",
+  },
+  {
+    name: "Rishank Jain",
+    batch: "2024",
+    program: "B.Tech AI & DS",
+    designation: "Software Developer",
+    organization: "Company D",
+    description:
+      "Working in full-stack software development.",
+    image: "/images/alumni/alumni4.jpg",
+  },
+];
 
 
 const missionPoints = [
@@ -1647,6 +1734,19 @@ HOD, Department of AI & Data Science, PIET`}
                     </div>
                 </div>
             </section>
+
+            {/* Top Placements */}
+
+                    <TopPlacementSection
+                        students={topPlacementStudents}
+                    />
+
+
+            {/* Top Alumni */}
+
+                    <TopAlumniSection
+                        alumni={topAlumni}
+                    />
 
             {/* student projects section */}
 <section className="py-16 bg-neutral-50">

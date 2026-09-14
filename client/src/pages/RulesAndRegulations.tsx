@@ -23,7 +23,7 @@ const codeOfConductData = [
         name: "Code of Conduct for (Director/Faculty/Staff) 2025-2026",
         download: (
             <a
-                href="https://drive.google.com/file/d/1GZSP2lX4UHMS0Zg_HJkMc27oTXIS17nc/view?usp=drive_link"
+                href="https://drive.google.com/file/d/10pNaGWLXAfJar3RB9ljyJNygAPlg3cvo/view?usp=drive_link"
                 target="_blank"
                 rel="noopener noreferrer"
             >

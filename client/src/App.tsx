@@ -101,6 +101,7 @@ import firefoodCertificatePage from "./pages/FirefoodCertificate";
 import AlumniPage from "./pages/AlumniPage";
 import RedRibbonClubPage from "./pages/Red_ribbon_Club";
 import TestDepartmentPage from "./pages/AI-testpage";
+import ieee from "./pages/IEEEPagenew";
 
 function Router() {
   return (
@@ -222,6 +223,8 @@ function Router() {
         <Route path= "/AlumniPage" component={AlumniPage} />
         <Route path="/Red-ribbon-Club" component={RedRibbonClubPage} />
         <Route path="/test-department" component={TestDepartmentPage} />
+        <Route path="/ieee" component={ieee} />
+
 
 
 
