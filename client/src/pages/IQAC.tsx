@@ -111,8 +111,8 @@ export const iqacMeetingsData: Record<string, Record<string, { label: string; li
   "2025-26": {
     "Meeting 32": [
       { label: "Agenda of Meeting - 32", link: "https://drive.google.com/file/d/15fUybaC1pSP06yOuGpZbFRMQZmsVox60/view?usp=drive_link" },
-      { label: "Minutes of Meeting - 32", link: "https://drive.google.com/file/d/15fUybaC1pSP06yOuGpZbFRMQZmsVox60/view?usp=drive_link" },
-      { label: "Action Taken Report - 31", link: "#" },
+      { label: "Minutes of Meeting - 32", link: "https://drive.google.com/file/d/1OcooO4EF71eShdp50zi7y-_Ef-Ft0bbl/view?usp=drive_link" },
+      { label: "Action Taken Report - 31", link: "https://drive.google.com/file/d/1hg6wc8wW157O025AjYGFMmz_4ZTowl_X/view?usp=drive_link" },
     ],
     "Meeting 31": [
       { label: "Agenda of Meeting - 31", link: "https://drive.google.com/file/d/1spCGSDUh3a8pjCeswhLp_sK74FO8T1ie/view?usp=drive_link" },

@@ -162,6 +162,11 @@ export const boardOfGovernors = {
     link: "https://drive.google.com/file/d/1-N9zmUr3ng8_1U9v44E7h7_DLTSm_z_m/view?usp=drive_link"
   },
   {
+    title: "17th GC Meeting",
+    date: "April 11, 2025",
+    link: "https://drive.google.com/file/d/1N_NOKbFmMBUOHM8VN9wVKg0BIBoO_FTe/view?usp=drive_link"
+  },
+  {
     title: "16th GC Meeting",
     date: "April 02, 2024",
     link: "https://drive.google.com/file/d/1AqrY365OFdEfD3YeVaEY4TPfP0eaKW0T/view?usp=sharing"

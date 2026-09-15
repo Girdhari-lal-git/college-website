@@ -70,7 +70,12 @@ const Utility = ["Electricity", "Internet", "Water", "Maintenance"];
 
 const annualreports = [
     
-    {
+   {
+        year: "2025-26",
+        title: "PBIC Annual Report 2025-26",
+        pdfUrl: "https://drive.google.com/file/d/1Jqgc5l7GOlk6JfFJdiIZBj_BJpOA59gz/view?usp=drive_link",
+    }, 
+  {
         year: "2024-25",
         title: "PBIC Annual Report 2024-25",
         pdfUrl: "https://drive.google.com/file/d/1eJybA6PFFptNNiLL79WQ22wkbA8Ol-0c/view?usp=drive_link",
