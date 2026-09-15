@@ -1132,4 +1132,35 @@ export const questionPapers: QuestionPaper[] = [
     subjectName: "Data Structures and Algorithms",
     link: "https://drive.google.com/file/d/12J8tMlt384WndEhSUYoPczMK5lHhDXMW/view?usp=drive_link",
   },
+
+  // Minor Degree first mid term questions paper sem 3 2026-27
+  {
+    program: "AI & DS",
+    session: "2026-27",
+    semester: 3,
+    examType: "First Mid Term",
+    subjectCode: "253AD5-19",
+    subjectName: "Introduction to Machine Learning (Minor Degree)",
+    link: "https://drive.google.com/file/d/1tRh3iJ3ilcfmk8ZYG0PYl47KBqx8Djtr/view?usp=drive_link",
+  },
+
+  {
+    program: "CSE",
+    session: "2026-27",
+    semester: 3,
+    examType: "First Mid Term",
+    subjectCode: "253CS5-19",
+    subjectName: "Cyber Security and Privacy (Minor Degree)",
+    link: "https://drive.google.com/file/d/1lb8SFpEyRawzCIPBGiNPnBgWyc893X_l/view?usp=drive_link",
+  }, 
+  // Circuit theory and Network Analysis first mid term questions paper sem 3 2026-27
+  {
+    program: "ECE",
+    session: "2026-27",
+    semester: 3,
+    examType: "First Mid Term",
+    subjectCode: "253EC4-04",
+    subjectName: "Circuit Theory and Networks",
+    link: "https://drive.google.com/file/d/1VuwI_jcTH1NuvfGnJfSdvByDCphTlW-z/view?usp=drive_link",
+  },
 ];

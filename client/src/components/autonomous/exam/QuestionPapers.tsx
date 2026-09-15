@@ -9,6 +9,7 @@ const programs = [
   "CS (AI)",
   "CS (DS)",
   "CS (IoT)",
+  "ECE",
 ];
 
 const sessions = ["2025-26", "2026-27"];
