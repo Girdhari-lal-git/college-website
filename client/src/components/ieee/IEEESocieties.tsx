@@ -30,10 +30,7 @@ const IEEESocieties: React.FC = () => {
           {ieeeSocieties.map((society) => (
             <div
               key={society.id}
-              className="
-                group relative
-                rounded-2xl
-                border border-gray-200
+              className=" group relative rounded-2xl border border-gray-200
                 bg-white
                 p-7
                 hover:border-primary/30

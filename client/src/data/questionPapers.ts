@@ -449,7 +449,7 @@ export const questionPapers: QuestionPaper[] = [
     examType: "Second Mid Term",
     subjectCode: "252AS2-03",
     subjectName: "Engineering Chemistry",
-    link: "https://drive.google.com/file/d/1YyeigVuR7kTVPG1LO83gVWH_z8OmLKf4/view?usp=drive_link",
+    link: "https://drive.google.com/file/d/1IR03vrxpI_DFOBDAYOKRxk4d8MaXb9CA/view?usp=drive_link",
   },
   {
     program: "Applied Science",
