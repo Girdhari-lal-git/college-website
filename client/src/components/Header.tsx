@@ -123,6 +123,12 @@ export default function Header() {
               <i className="fas fa-envelope mr-2"></i>registrar.piet@poornima.org
             </a>
           </div>
+            <Link
+              to="/global-career-pathways"
+              className="text-sm hover:text-accent-light transition-colors"
+            >
+              INTERNATIONAL
+            </Link>
           <div className="flex items-center space-x-4">
                             <a
                     href="https://www.aicte.gov.in/schemes/students-development-schemes"

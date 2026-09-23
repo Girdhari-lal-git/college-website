@@ -1,5 +1,5 @@
 export type RegionType = "all" | "usa" | "europe" | "asia_middle_east" | "australia";
-export type MobilityType = "all" | "semester_exchange" | "higher_studies" | "internship" | "summer_school" | "joint_research";
+export type MobilityType = "all" | "twinning_program" | "semester_exchange" | "higher_studies" | "internship" | "summer_school" | "joint_research";
 
 export interface UniversityPartner {
   id: string;
@@ -36,7 +36,7 @@ export const GLOBAL_PARTNERS: UniversityPartner[] = [
     country: "USA",
     flag: "US",
     region: "usa",
-    programs: ["higher_studies", "semester_exchange", "joint_research"],
+    programs: ["twinning_program", "higher_studies", "semester_exchange", "joint_research"],
     description: "PIET lists VCU among its international university partners. Explore postgraduate study and research options through the current PIET notice.",
     highlights: ["Postgraduate study research", "Engineering and computing", "Research-led university"],
     keyDisciplines: ["Computer Science", "Artificial Intelligence", "Information Systems", "Engineering"],
@@ -154,13 +154,13 @@ export const GLOBAL_PARTNERS: UniversityPartner[] = [
     country: "Taiwan",
     flag: "TW",
     region: "asia_middle_east",
-    programs: ["semester_exchange", "summer_school", "internship", "joint_research"],
+    programs: ["twinning_program", "semester_exchange", "summer_school", "internship", "joint_research"],
     description: "PIET lists Asia University as an international partner for academic and research exposure.",
     highlights: ["Academic collaboration", "AI and technology exposure", "Research conversations"],
     keyDisciplines: ["Artificial Intelligence", "Semiconductors", "Cybersecurity", "Software Engineering"],
     pietSupport: "Speak with your department about current nominations, exchange calls and research opportunities.",
     officialLink: "https://www.asia.edu.tw/",
-    logo: "https://www.piet.poornima.org/images/partners/asiauniversity.PNG",
+    logo: "/images/cmp/asiauniversity.PNG",
   },
   {
     id: "muscat",
@@ -168,13 +168,13 @@ export const GLOBAL_PARTNERS: UniversityPartner[] = [
     country: "Oman",
     flag: "OM",
     region: "asia_middle_east",
-    programs: ["semester_exchange", "summer_school", "joint_research"],
+    programs: ["twinning_program", "semester_exchange", "summer_school", "joint_research"],
     description: "PIET lists Muscat University as an international academic partner in its collaborations directory.",
     highlights: ["Cross-cultural exposure", "Technology and innovation", "Academic collaboration"],
     keyDisciplines: ["Cloud Computing", "Cybersecurity", "Engineering Management", "Software"],
     pietSupport: "Confirm credit mapping, nomination requirements and current availability with PIET before planning.",
     officialLink: "https://muscatuniversity.edu.om/",
-    logo: "https://www.piet.poornima.org/images/partners/muscat.PNG",
+    logo: "/images/cmp/muscat.PNG",
   },
   {
     id: "jan-wyzykowski",
@@ -182,7 +182,7 @@ export const GLOBAL_PARTNERS: UniversityPartner[] = [
     country: "Poland",
     flag: "PL",
     region: "europe",
-    programs: ["semester_exchange", "summer_school", "internship"],
+    programs: ["twinning_program", "semester_exchange", "summer_school", "internship"],
     description: "PIET lists Jan Wyzykowski University, Poland, as an international collaboration partner.",
     highlights: ["European mobility research", "Industrial technology", "Central European exposure"],
     keyDisciplines: ["Software Engineering", "Automation", "Mechatronics", "Information Systems"],
@@ -196,7 +196,7 @@ export const GLOBAL_PARTNERS: UniversityPartner[] = [
     country: "Germany",
     flag: "DE",
     region: "europe",
-    programs: ["semester_exchange", "higher_studies", "joint_research"],
+    programs: ["twinning_program", "semester_exchange", "higher_studies", "joint_research"],
     description: "Use Germany as a higher-study and applied-research destination to investigate alongside PIET faculty guidance.",
     highlights: ["Applied engineering", "Embedded systems", "Industrial technology"],
     keyDisciplines: ["Embedded Systems", "Automotive Software", "Automation", "AI"],
@@ -260,6 +260,9 @@ export const GLOBAL_PARTNERS: UniversityPartner[] = [
 export const PROGRAM_TYPES: Record<MobilityType, ProgramDetail> = {
   all: {
     id: "all", title: "All global pathways", subtitle: "A broad view of international exposure options.", icon: "globe", badge: "Start with exploration", description: "Compare the main ways PIET students can prepare for overseas study, mobility, internships and research.", whoIsEligible: "All students can begin exploring; each opportunity has its own academic and administrative criteria.", keyBenefits: ["Clearer career planning", "International network building", "Better-prepared applications"], processSteps: ["Review the pathway", "Shortlist a partner or destination", "Confirm the current PIET process"], featuredPartners: ["VCU", "Asia University", "Muscat University", "Jan Wyzykowski University"],
+  },
+  twinning_program: {
+    id: "twinning_program", title: "Twinning Program", subtitle: "Build a structured international collaboration pathway with academic and cultural exchange at its core.", icon: "users", badge: "Collaborative global learning", description: "The Twinning Program creates a focused bridge between PIET and partner institutions for shared learning, faculty exchange, academic mobility and cross-cultural engagement.", whoIsEligible: "Most relevant to students, faculty and academic teams looking for a collaborative and international learning experience.", keyBenefits: ["Academic collaboration", "Global exposure with faculty guidance", "Cross-cultural learning and networking"], processSteps: ["Review the current twinning notice", "Check eligibility and partner fit", "Prepare the required academic documents", "Confirm PIET approval and participation steps"], featuredPartners: ["Asia University", "Muscat University", "Jan Wyzykowski University"],
   },
   semester_exchange: {
     id: "semester_exchange", title: "Semester exchange", subtitle: "Explore one or two semesters abroad while planning credit alignment.", icon: "plane", badge: "Credit alignment requires approval", description: "A semester abroad can build academic confidence, cultural fluency and a stronger global profile. Course equivalence must be confirmed before you commit.", whoIsEligible: "Typically most relevant to 2nd and 3rd year students; current CGPA, backlog and nomination rules vary.", keyBenefits: ["Immersive academic experience", "Cross-cultural teamwork", "Potential credit transfer subject to approval"], processSteps: ["Speak with your HOD or department", "Map courses before applying", "Complete nomination and documentation", "Confirm visa and departure requirements"], featuredPartners: ["Asia University", "Jan Wyzykowski University", "Muscat University", "TAR UMT"],
