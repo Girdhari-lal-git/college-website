@@ -102,6 +102,7 @@ import AlumniPage from "./pages/AlumniPage";
 import RedRibbonClubPage from "./pages/Red_ribbon_Club";
 import TestDepartmentPage from "./pages/AI-testpage";
 import ieee from "./pages/IEEEPagenew";
+import GlobalCareerPathways from "./pages/GlobalCareerPathways";
 
 function Router() {
   return (
@@ -224,6 +225,8 @@ function Router() {
         <Route path="/Red-ribbon-Club" component={RedRibbonClubPage} />
         <Route path="/test-department" component={TestDepartmentPage} />
         <Route path="/ieee" component={ieee} />
+        <Route path="/global-career-pathways" component={GlobalCareerPathways} />
+
 
 
 
