@@ -15,6 +15,7 @@ import GreenPIETSection from "@/components/GreenPIETSection";
 import Footer from "@/components/Footer";
 import { AccessibilityFeatures } from "@/components/AccessibilityFeatures";
 import ConnectionStatus from "@/components/ConnectionStatus";
+import  SportsCalendarMarquee from "@/components/homeMarquee";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
       <Header />
       
         <HeroSlider />
+        <SportsCalendarMarquee />
         <AboutSection />
          <QuickLinks />
         <WhyChoosePIET />

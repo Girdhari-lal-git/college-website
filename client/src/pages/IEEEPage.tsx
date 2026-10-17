@@ -7,6 +7,7 @@ import InfoCard from "@/components/InfoCard";
 import Checklist from "@/components/Checklist";
 import DynamicTable from "@/components/DynamicTable ";
 import { AccessibilityFeatures } from "@/components/AccessibilityFeatures";
+import DSSYWLCSection from "@/components/DSSYWLCSection";
 
 /* ================= DATA ================= */
 
@@ -39,7 +40,74 @@ const activities = [
   { date: "09 Oct 2025", event: "IEEE Gaming Session", coordinator: "IEEE Team PIET" },
   { date: "10 Oct 2025", event: "Udbhav 2025 & Valedictory Ceremony", coordinator: "IEEE Team PIET" },
    { date: "7-8 Feb 2026", event: "DSSYWLC 2025", coordinator: "IEEE Team PIET" },
-];
+
+  {
+    date: "02 Jul 2026 - 02 Aug 2026",
+    event: "IEEE DSSYWLC-25",
+    coordinator: "Dr. Budesh Kanwar/Mr. Anurag Anand Duvey"
+  },
+  {
+    date: "02 Jul 2026 - 02 Aug 2026",
+    event: "TECHNICAL WORKSHOP UNDER IEEE (Workshop on Design Thinking IDEA Lab)",
+    coordinator: "Dr. Budesh Kanwar/ Mr. Kamal Saini/ Mr. Anurag Anand Duvey"
+  },
+  {
+    date: "02 Jul 2026 - 02 Aug 2026",
+    event: "IEEE WOMEN IN ENGINEERING ACTIVITIES (Report on Panel Discussion: Women in AI Leadership)",
+    coordinator: "Dr. Budesh Kanwar /Mrs. Alka Rani/Mrs Bhavna purohit"
+  },
+  {
+    date: "02 Jul 2026 - 02 Aug 2026",
+    event: "Report on Workshop on Design Thinking IDEA Lab",
+    coordinator: "(Dr. Ashish)"
+  },
+  {
+    date: "02 Jul 2026 - 02 Aug 2026",
+    event: "Report on session on CI/CD in Practice Building Fast and Secure Deployments.",
+    coordinator: "Dr. Budesh Kanwar"
+  },
+  {
+    date: "02 Jul 2026 - 02 Aug 2026",
+    event: "Report on session on Building a Future-Ready Tech Career: Understanding AI, Internships, Research Pathways & IEEE Opportunities",
+    coordinator: "Dr. Budesh Kanwar"
+  },
+  {
+    date: "02 Jul 2026 - 02 Aug 2026",
+    event: "Report on Valedictory & Closing Ceremony (IEEE DSSYWLC–25)",
+    coordinator: "Dr. Budesh Kanwar"
+  },
+  {
+    date: "02 Jul 2026 - 02 Aug 2026",
+    event: "Report on (IEEE DSSYWLC–25)",
+    coordinator: "Dr. Budesh Kanwar"
+  },
+  {
+    date: "02 Jul 2026 - 02 Aug 2026",
+    event: "Report on Panel Discussion: Shaping Tomorrow’s Technologists",
+    coordinator: "Dr. Budesh Kanwar"
+  },
+  {
+    date: "27 Feb 2026",
+    event: "WORKSHOP ON HPSC",
+    coordinator: "(Dr. Ashish)"
+  },
+  {
+    date: "04 Feb 2026",
+    event: "SESSION UNDER IEEE (Hackathon and Freelancing)",
+    coordinator: "Dr. Budesh Kanwar/ Dr. Ajay Maurya/ Dr. Uday Pratap"
+  },
+  {
+    date: "04 Sep 2026",
+    event: "Visit NGO (WIE)",
+    coordinator: "Dr. Budesh Kanwar"
+  },
+  {
+    date: "18 Apr 2026",
+    event: "ICRACS day 2 (Gopal Sir)",
+    coordinator: "Dr. Budesh Kanwar"
+  }
+
+  ];
 
 const chapters = [
   {
@@ -132,7 +200,7 @@ const IEEEPage = () => (
       <InfoCard title="Branch Advantages" content={<Checklist items={branchBenefits} />} iconClass={""} />
     </section>
 
-    
+    <DSSYWLCSection />
 
     {/* CHAPTERS */}
     <section className="py-16 bg-white">
