@@ -1,4 +1,5 @@
-import React, { useState, useRef, useEffect } from 'react';
+
+import React, { useState, useRef, useEffect } from "react";
 
 interface LazyImageProps {
   src: string;
@@ -8,95 +9,97 @@ interface LazyImageProps {
   fallbackSrc?: string;
 }
 
-const LazyImage: React.FC<LazyImageProps> = ({ 
-  src, 
-  alt, 
-  className = '', 
-  placeholder = '/api/placeholder/400/300',
-  fallbackSrc = '/images/placeholder.jpg'
+const LazyImage: React.FC<LazyImageProps> = ({
+  src,
+  alt,
+  className = "",
+  placeholder = "/api/placeholder/400/300",
+  fallbackSrc = "/images/placeholder.jpg",
 }) => {
   const [isLoaded, setIsLoaded] = useState(false);
   const [isInView, setIsInView] = useState(false);
   const [error, setError] = useState(false);
   const [currentSrc, setCurrentSrc] = useState(src);
-  const [retryCount, setRetryCount] = useState(0);
-  const imgRef = useRef<HTMLImageElement>(null);
-  const maxRetries = 2;
+  const [attempt, setAttempt] = useState(0);
+  const imgRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (!imgRef.current) return;
+    setCurrentSrc(src);
+    setIsLoaded(false);
+    setError(false);
+    setAttempt(0);
+  }, [src]);
 
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsInView(true);
-          observer.disconnect();
-        }
-      },
-      { threshold: 0.1, rootMargin: '50px' }
-    );
+  useEffect(() => {
+    const element = imgRef.current;
+    if (!element) return;
 
-    observer.observe(imgRef.current);
+    if (!("IntersectionObserver" in window)) {
+      setIsInView(true);
+      return;
+    }
+
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        setIsInView(true);
+        observer.disconnect();
+      }
+    }, { rootMargin: "100px" });
+
+    observer.observe(element);
     return () => observer.disconnect();
   }, []);
 
-  const handleLoad = () => {
-    setIsLoaded(true);
-    setError(false);
-  };
-
   const handleError = () => {
-    if (retryCount < maxRetries && currentSrc === src) {
-      // Try fallback src
+    setIsLoaded(false);
+
+    if (attempt === 0 && fallbackSrc && fallbackSrc !== src) {
       setCurrentSrc(fallbackSrc);
-      setRetryCount(prev => prev + 1);
-    } else if (retryCount < maxRetries && currentSrc === fallbackSrc) {
-      // Try placeholder
+      setAttempt(1);
+    } else if (attempt <= 1 && placeholder && placeholder !== currentSrc) {
       setCurrentSrc(placeholder);
-      setRetryCount(prev => prev + 1);
+      setAttempt(2);
     } else {
       setError(true);
-      setIsLoaded(false);
     }
   };
 
-  // Reset when src changes
-  useEffect(() => {
-    setCurrentSrc(src);
-    setError(false);
-    setIsLoaded(false);
-    setRetryCount(0);
-  }, [src]);
-
   return (
-    <div className={`relative overflow-hidden ${className}`} ref={imgRef}>
+    <div
+      ref={imgRef}
+      className={`relative overflow-hidden ${className}`}
+    >
+      {isInView && !error && (
+        <img
+          key={currentSrc}
+          src={currentSrc}
+          alt={alt}
+          onLoad={() => {
+            setIsLoaded(true);
+            setError(false);
+          }}
+          onError={handleError}
+          loading="lazy"
+          decoding="async"
+          className={`block h-full w-full object-cover transition-opacity duration-300 ${
+            isLoaded ? "opacity-100" : "opacity-0"
+          }`}
+        />
+      )}
+
       {!isLoaded && !error && (
-        <div className="absolute inset-0 bg-gray-200 animate-pulse flex items-center justify-center">
-          <div className="text-gray-400 text-sm">Loading...</div>
+        <div className="absolute inset-0 flex items-center justify-center bg-gray-200">
+          <span className="text-sm text-gray-500">Loading...</span>
         </div>
       )}
 
       {error && (
-        <div className="absolute inset-0 bg-gray-100 flex items-center justify-center">
-          <div className="text-gray-400 text-sm text-center p-4">
+        <div className="absolute inset-0 flex items-center justify-center bg-gray-100">
+          <div className="p-4 text-center text-gray-500">
             <div className="mb-2 text-2xl">📷</div>
             <div>Image unavailable</div>
           </div>
         </div>
-      )}
-
-      {isInView && !error && (
-        <img
-          src={currentSrc}
-          alt={alt}
-          onLoad={handleLoad}
-          onError={handleError}
-          className={`transition-opacity duration-300 ${
-            isLoaded ? 'opacity-100' : 'opacity-0'
-          } ${className}`}
-          loading="lazy"
-          decoding="async"
-        />
       )}
     </div>
   );

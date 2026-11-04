@@ -27,6 +27,7 @@ interface Faculty {
     designation: string;
     gender: string;
     imageUrl?: string;
+    profileUrl?: string;
 }
 const projectData: StudentProject[] = [
     {
@@ -1076,6 +1077,7 @@ const IOT = () => {
                     // Transform data to match FacultySwiper expected format
                     const transformedFaculty = iotFaculty.map(
                         (faculty: Faculty) => ({
+                             _id: faculty._id,
                             imageSrc:
                                 faculty.imageUrl ||
                                 "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_FZR1-SNQItQMwECGXMp7MYCspr3Fm0R61Q&s",

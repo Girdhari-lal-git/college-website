@@ -26,6 +26,7 @@ interface Faculty {
     designation: string;
     gender: string;
     imageUrl?: string;
+    profileUrl?: string;
 };
 
 interface ProgramSectionProps {
@@ -992,18 +993,20 @@ const AI = () => {
                         ) || [];
 
                     // Transform data to match FacultySwiper expected format
-                    const transformedFaculty = aiFaculty.map(
-                        (faculty: Faculty) => ({
-                            imageSrc:
-                                faculty.imageUrl ||
-                                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_FZR1-SNQItQMwECGXMp7MYCspr3Fm0R61Q&s",
-                            name: faculty.name,
-                           // gender: faculty.gender,
-                            designation: faculty.designation,
-                        }),
-                    );
+                   
+const transformedFaculty = aiFaculty.map((faculty: Faculty) => ({
+    _id: faculty._id,
+    imageSrc:
+        faculty.imageUrl ||
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_FZR1-SNQItQMwECGXMp7MYCspr3Fm0R61Q&s",
+    name: faculty.name,
+   
+    designation: faculty.designation,
+    department: faculty.department,
+}));
 
-                    setFacultyData(transformedFaculty);
+setFacultyData(transformedFaculty);
+
                 }
             } catch (error) {
                 console.error("Error loading faculty:", error);
@@ -1080,7 +1083,8 @@ const start = (currentPage - 1) * entriesPerPage;
 const currentEntries = yearData.slice(start, start + entriesPerPage);
 const totalPages = Math.ceil(yearData.length / entriesPerPage);
 
-
+console.log("Faculty data:", facultyData);
+console.log("Faculty loading:", loading);
     return (
         <div>
             <AccessibilityFeatures />

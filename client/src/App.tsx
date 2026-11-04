@@ -103,7 +103,7 @@ import RedRibbonClubPage from "./pages/Red_ribbon_Club";
 import TestDepartmentPage from "./pages/AI-testpage";
 import ieee from "./pages/IEEEPagenew";
 import GlobalCareerPathways from "./pages/GlobalCareerPathways";
-
+import FacultyProfile from "@/pages/FacultyProfile";
 function Router() {
   return (
     <>
@@ -226,6 +226,7 @@ function Router() {
         <Route path="/test-department" component={TestDepartmentPage} />
         <Route path="/ieee" component={ieee} />
         <Route path="/global-career-pathways" component={GlobalCareerPathways} />
+        <Route path="/faculty/:slug" component={FacultyProfile} />
 
 
 

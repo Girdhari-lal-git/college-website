@@ -181,16 +181,82 @@ export function registerRoutes(app: any) {
     }
   });
 
+ 
   // Public endpoint for faculty
   publicRoutes.get('/faculty', async (req: Request, res: Response) => {
     try {
-      const faculty = await Faculty.find({}).sort({ createdAt: -1 });
+      const faculty = await Faculty.find({})
+        .sort({ createdAt: -1 });
+
       res.json({ success: true, data: faculty });
     } catch (error) {
       console.error('Error fetching faculty:', error);
-      res.status(500).json({ success: false, message: 'Error fetching faculty' });
+      res.status(500).json({
+        success: false,
+        message: 'Error fetching faculty'
+      });
     }
   });
+
+  // Public endpoint for a single faculty profile by MongoDB ID
+  publicRoutes.get(
+    '/faculty/profile/:id',
+    async (req: Request, res: Response) => {
+      console.log("FACULTY PROFILE HANDLER HIT:", req.params.id);
+      try {
+        const { id } = req.params;
+
+        if (!/^[0-9a-fA-F]{24}$/.test(id)) {
+          return res.status(400).json({
+            success: false,
+            message: 'Invalid faculty ID'
+          });
+        }
+
+        const faculty = await Faculty.findById(id).select(
+  '_id name department designation gender email employeeId imageUrl biography qualifications experience teachingAreas researchInterests publications awards professionalMemberships nptelCertifications fdpsWorkshopsAttended resourcePersonActivities professionalLinks'
+);
+
+        if (!faculty) {
+          return res.status(404).json({
+            success: false,
+            message: 'Faculty not found'
+          });
+        }
+
+        res.json({ success: true, data: faculty });
+      } catch (error) {
+        console.error('Error fetching faculty profile:', error);
+        res.status(500).json({
+          success: false,
+          message: 'Error fetching faculty profile'
+        });
+      }
+    }
+  );
+
+  // Public endpoint for faculty by department
+  publicRoutes.get(
+    '/faculty/:department',
+    async (req: Request, res: Response) => {
+      try {
+        const { department } = req.params;
+
+        const faculty = await Faculty.find({
+          department: department
+        }).sort({ createdAt: -1 });
+
+        res.json({ success: true, data: faculty });
+      } catch (error) {
+        console.error('Error fetching faculty by department:', error);
+        res.status(500).json({
+          success: false,
+          message: 'Error fetching faculty by department'
+        });
+      }
+    }
+  );
+
 
   // Public endpoint for faculty by department
   publicRoutes.get('/faculty/:department', async (req: Request, res: Response) => {
@@ -287,16 +353,22 @@ export function registerRoutes(app: any) {
     } catch (error) {
       console.error('Alumni registration error:', error);
 
+      const mongooseError = error as {
+        code?: unknown;
+        name?: string;
+        errors?: Record<string, { message: string }>;
+      };
+
       // Handle duplicate email error
-      if (error.code === 11000) {
+      if (mongooseError.code === 11000) {
         return res.status(400).json({ 
           error: 'This email is already registered in our alumni database' 
         });
       }
 
       // Handle mongoose validation errors
-      if (error.name === 'ValidationError') {
-        const validationErrors = Object.values(error.errors).map((err: any) => err.message);
+      if (mongooseError.name === 'ValidationError') {
+        const validationErrors = Object.values(mongooseError.errors ?? {}).map((err) => err.message);
         return res.status(400).json({ 
           error: 'Validation failed',
           details: validationErrors

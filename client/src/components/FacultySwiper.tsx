@@ -14,7 +14,9 @@ interface FacultyProfile {
     imageSrc: string;
     name: string;
     gender: string;
-    designation: string;
+    designation: string;   
+    _id: string;    
+    department?: string;
 }
 
 interface FacultySwiperProps {
@@ -50,16 +52,26 @@ const FacultySwiper: React.FC<FacultySwiperProps> = ({
             }}
             className={`faculty-swiper ${className}`}
         >
-            {profiles.map((profile, idx) => (
-                <SwiperSlide key={idx}>
-                    <ProfileCard
-                        imageSrc={profile.imageSrc}
-                        name={profile.name}
-                        gender={profile.gender}
-                        designation={profile.designation}
-                    />
-                </SwiperSlide>
-            ))}
+           {profiles.map((profile) => (
+    <SwiperSlide key={profile._id || profile.name}>
+        <ProfileCard
+            facultyId={profile._id}
+            imageSrc={profile.imageSrc}
+            name={profile.name}
+            gender={profile.gender}
+            designation={profile.designation}
+            profileHref={
+                profile._id
+                    ? `/faculty/${profile.name
+                          .toLowerCase()
+                          .trim()
+                          .replace(/[^a-z0-9]+/g, "-")
+                          .replace(/^-|-$/g, "")}-${profile._id}`
+                    : undefined
+            }
+        />
+    </SwiperSlide>
+))}
         </Swiper>
     );
 };

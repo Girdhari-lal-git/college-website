@@ -16,8 +16,24 @@ interface Faculty {
   designation: string;
   gender: string;
   imageUrl?: string;
+  email?: string;
+  employeeId?: string;
+  biography?: string;
+  qualifications?: string[];
+  experience?: string;
+  teachingAreas?: string[];
+  researchInterests?: string[];
+  publications?: { title: string; year?: number; url?: string }[];
+  awards?: string[];
+  professionalMemberships?: string[];
+  nptelCertifications?: string[];
+  fdpsWorkshopsAttended?: string[];
+  resourcePersonActivities?: string[];
+  professionalLinks?: { label: string; url: string }[];
   createdAt: string;
 }
+
+const splitLines = (value: string) => value.split(/\r?\n/).map((item) => item.trim()).filter(Boolean);
 
 export default function FacultyManagement() {
   const [faculty, setFaculty] = useState<Faculty[]>([]);
@@ -33,7 +49,21 @@ export default function FacultyManagement() {
     department: '',
     designation: '',
     gender: '',
-    imageUrl: ''
+    imageUrl: '',
+    email: '',
+    employeeId: '',
+    biography: '',
+    qualificationsText: '',
+    experience: '',
+    teachingAreasText: '',
+    researchInterestsText: '',
+    publicationsText: '',
+    awardsText: '',
+    professionalMembershipsText: '',
+    nptelCertificationsText: '',
+    fdpsWorkshopsAttendedText: '',
+    resourcePersonActivitiesText: '',
+    professionalLinksText: ''
   });
 
   useEffect(() => {
@@ -78,7 +108,33 @@ export default function FacultyManagement() {
           'Authorization': `Bearer ${token}`,
           'Content-Type': 'application/json'
         },
-        body: JSON.stringify(formData)
+        body: JSON.stringify({
+          name: formData.name,
+          department: formData.department,
+          designation: formData.designation,
+          gender: formData.gender,
+          imageUrl: formData.imageUrl,
+          email: formData.email,
+          employeeId: formData.employeeId,
+          biography: formData.biography,
+          experience: formData.experience,
+          qualifications: splitLines(formData.qualificationsText),
+          teachingAreas: splitLines(formData.teachingAreasText),
+          researchInterests: splitLines(formData.researchInterestsText),
+          awards: splitLines(formData.awardsText),
+          professionalMemberships: splitLines(formData.professionalMembershipsText),
+          nptelCertifications: splitLines(formData.nptelCertificationsText),
+          fdpsWorkshopsAttended: splitLines(formData.fdpsWorkshopsAttendedText),
+          resourcePersonActivities: splitLines(formData.resourcePersonActivitiesText),
+          publications: splitLines(formData.publicationsText).map((line) => {
+            const [title, year, url] = line.split('|').map((part) => part.trim());
+            return { title, ...(year && !Number.isNaN(Number(year)) ? { year: Number(year) } : {}), ...(url ? { url } : {}) };
+          }).filter((item) => item.title),
+          professionalLinks: splitLines(formData.professionalLinksText).map((line) => {
+            const [label, url] = line.split('|').map((part) => part.trim());
+            return { label, url };
+          }).filter((item) => item.label && item.url)
+        })
       });
 
       if (response.ok) {
@@ -124,7 +180,21 @@ export default function FacultyManagement() {
       department: facultyMember.department,
       designation: facultyMember.designation,
       gender: facultyMember.gender,
-      imageUrl: facultyMember.imageUrl || ''
+      imageUrl: facultyMember.imageUrl || '',
+      email: facultyMember.email || '',
+      employeeId: facultyMember.employeeId || '',
+      biography: facultyMember.biography || '',
+      qualificationsText: (facultyMember.qualifications || []).join('\n'),
+      experience: facultyMember.experience || '',
+      teachingAreasText: (facultyMember.teachingAreas || []).join('\n'),
+      researchInterestsText: (facultyMember.researchInterests || []).join('\n'),
+      publicationsText: (facultyMember.publications || []).map((p) => [p.title, p.year ?? '', p.url ?? ''].join(' | ')).join('\n'),
+      awardsText: (facultyMember.awards || []).join('\n'),
+      professionalMembershipsText: (facultyMember.professionalMemberships || []).join('\n'),
+      nptelCertificationsText: (facultyMember.nptelCertifications || []).join('\n'),
+      fdpsWorkshopsAttendedText: (facultyMember.fdpsWorkshopsAttended || []).join('\n'),
+      resourcePersonActivitiesText: (facultyMember.resourcePersonActivities || []).join('\n'),
+      professionalLinksText: (facultyMember.professionalLinks || []).map((p) => `${p.label} | ${p.url}`).join('\n')
     });
     setSelectedImage(null);
     setImagePreview(null);
@@ -137,7 +207,21 @@ export default function FacultyManagement() {
       department: '',
       designation: '',
       gender: '',
-      imageUrl: ''
+      imageUrl: '',
+      email: '',
+      employeeId: '',
+      biography: '',
+      qualificationsText: '',
+      experience: '',
+      teachingAreasText: '',
+      researchInterestsText: '',
+      publicationsText: '',
+      awardsText: '',
+      professionalMembershipsText: '',
+      nptelCertificationsText: '',
+      fdpsWorkshopsAttendedText: '',
+      resourcePersonActivitiesText: '',
+      professionalLinksText: ''
     });
     setEditingFaculty(null);
     setError('');
@@ -194,7 +278,7 @@ export default function FacultyManagement() {
               Add Faculty
             </Button>
           </DialogTrigger>
-          <DialogContent className="sm:max-w-[425px]">
+          <DialogContent className="sm:max-w-3xl max-h-[90vh] overflow-y-auto">
             <DialogHeader>
               <DialogTitle>
                 {editingFaculty ? 'Edit Faculty' : 'Add New Faculty'}
@@ -248,6 +332,15 @@ export default function FacultyManagement() {
               </div>
 
               <div className="space-y-2">
+                <Label htmlFor="email">Email ID</Label>
+                <Input id="email" type="email" value={formData.email} onChange={(e) => setFormData(prev => ({ ...prev, email: e.target.value }))} placeholder="name@poornima.edu.in" />
+              </div>
+              <div className="space-y-2">
+                <Label htmlFor="employeeId">Employee ID</Label>
+                <Input id="employeeId" value={formData.employeeId} onChange={(e) => setFormData(prev => ({ ...prev, employeeId: e.target.value }))} placeholder="Employee ID" />
+              </div>
+
+              <div className="space-y-2">
                 <Label htmlFor="gender">Gender</Label>
                 <Select 
                   value={formData.gender} 
@@ -265,6 +358,42 @@ export default function FacultyManagement() {
               </div>
 
               <div className="space-y-2">
+                <Label htmlFor="biography">Short Description / About</Label>
+                <textarea id="biography" value={formData.biography} onChange={(e) => setFormData(prev => ({ ...prev, biography: e.target.value }))} placeholder="Write a verified faculty biography." rows={3} className="w-full rounded-md border border-input bg-background px-3 py-2 text-sm shadow-sm focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring" />
+              </div>             <div className="space-y-2">
+                <Label htmlFor="experience">Teaching / Professional Experience</Label>
+                <textarea id="experience" value={formData.experience} onChange={(e) => setFormData(prev => ({ ...prev, experience: e.target.value }))} placeholder="e.g. 8 years in teaching and research." rows={3} className="w-full rounded-md border border-input bg-background px-3 py-2 text-sm shadow-sm focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring" />
+              </div>             <div className="space-y-2">
+                <Label htmlFor="qualificationsText">Qualifications</Label>
+                <textarea id="qualificationsText" value={formData.qualificationsText} onChange={(e) => setFormData(prev => ({ ...prev, qualificationsText: e.target.value }))} placeholder="One qualification per line." rows={3} className="w-full rounded-md border border-input bg-background px-3 py-2 text-sm shadow-sm focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring" />
+              </div>             <div className="space-y-2">
+                <Label htmlFor="teachingAreasText">Teaching Subjects / Areas</Label>
+                <textarea id="teachingAreasText" value={formData.teachingAreasText} onChange={(e) => setFormData(prev => ({ ...prev, teachingAreasText: e.target.value }))} placeholder="One subject or area per line." rows={3} className="w-full rounded-md border border-input bg-background px-3 py-2 text-sm shadow-sm focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring" />
+              </div>              <div className="space-y-2">
+                <Label htmlFor="researchInterestsText">Research Areas of Interest</Label>
+                <textarea id="researchInterestsText" value={formData.researchInterestsText} onChange={(e) => setFormData(prev => ({ ...prev, researchInterestsText: e.target.value }))} placeholder="One research interest per line." rows={3} className="w-full rounded-md border border-input bg-background px-3 py-2 text-sm shadow-sm focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring" />
+              </div>              <div className="space-y-2">
+                <Label htmlFor="awardsText">Awards / Recognitions</Label>
+                <textarea id="awardsText" value={formData.awardsText} onChange={(e) => setFormData(prev => ({ ...prev, awardsText: e.target.value }))} placeholder="One award per line." rows={3} className="w-full rounded-md border border-input bg-background px-3 py-2 text-sm shadow-sm focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring" />
+              </div>              <div className="space-y-2">
+                <Label htmlFor="professionalMembershipsText">Professional Memberships</Label>
+                <textarea id="professionalMembershipsText" value={formData.professionalMembershipsText} onChange={(e) => setFormData(prev => ({ ...prev, professionalMembershipsText: e.target.value }))} placeholder="One membership per line." rows={3} className="w-full rounded-md border border-input bg-background px-3 py-2 text-sm shadow-sm focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring" />
+              </div>              <div className="space-y-2">
+                <Label htmlFor="nptelCertificationsText">NPTEL Certifications</Label>
+                <textarea id="nptelCertificationsText" value={formData.nptelCertificationsText} onChange={(e) => setFormData(prev => ({ ...prev, nptelCertificationsText: e.target.value }))} placeholder="One certification per line." rows={3} className="w-full rounded-md border border-input bg-background px-3 py-2 text-sm shadow-sm focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring" />
+              </div>              <div className="space-y-2">
+                <Label htmlFor="fdpsWorkshopsAttendedText">FDPs / Workshops Attended</Label>
+                <textarea id="fdpsWorkshopsAttendedText" value={formData.fdpsWorkshopsAttendedText} onChange={(e) => setFormData(prev => ({ ...prev, fdpsWorkshopsAttendedText: e.target.value }))} placeholder="One FDP or workshop per line." rows={3} className="w-full rounded-md border border-input bg-background px-3 py-2 text-sm shadow-sm focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring" />
+              </div>             <div className="space-y-2">
+                <Label htmlFor="resourcePersonActivitiesText">Resource Person / Talks</Label>
+                <textarea id="resourcePersonActivitiesText" value={formData.resourcePersonActivitiesText} onChange={(e) => setFormData(prev => ({ ...prev, resourcePersonActivitiesText: e.target.value }))} placeholder="One activity or talk per line." rows={3} className="w-full rounded-md border border-input bg-background px-3 py-2 text-sm shadow-sm focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring" />
+              </div>             <div className="space-y-2">
+                <Label htmlFor="publicationsText">Publications</Label>
+                <textarea id="publicationsText" value={formData.publicationsText} onChange={(e) => setFormData(prev => ({ ...prev, publicationsText: e.target.value }))} placeholder="One per line: Title | Year | URL (year and URL optional)." rows={3} className="w-full rounded-md border border-input bg-background px-3 py-2 text-sm shadow-sm focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring" />
+              </div>            <div className="space-y-2">
+                <Label htmlFor="professionalLinksText">Professional Profile Links</Label>
+                <textarea id="professionalLinksText" value={formData.professionalLinksText} onChange={(e) => setFormData(prev => ({ ...prev, professionalLinksText: e.target.value }))} placeholder="One per line: Label | URL (e.g. Google Scholar | https://...)." rows={3} className="w-full rounded-md border border-input bg-background px-3 py-2 text-sm shadow-sm focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring" />
+              </div>            <div className="space-y-2">
                 <Label>Faculty Image (Optional)</Label>
                 {formData.imageUrl ? (
                   <div className="space-y-2">

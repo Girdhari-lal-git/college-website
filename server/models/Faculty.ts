@@ -22,10 +22,81 @@ const facultySchema = new mongoose.Schema({
     required: true,
     enum: ['Male', 'Female', 'Other']
   },
+  email: {
+    type: String,
+    trim: true,
+    lowercase: true,
+    default: "",
+  },
+  employeeId: {
+    type: String,
+    trim: true,
+    default: "",
+  },
   imageUrl: {
     type: String,
     default: null
-  }
+  },
+  
+  biography: {
+    type: String,
+    default: "",
+  },
+  qualifications: {
+    type: [String],
+    default: [],
+  },
+  experience: {
+    type: String,
+    default: "",
+  },
+  teachingAreas: {
+    type: [String],
+    default: [],
+  },
+  researchInterests: {
+    type: [String],
+    default: [],
+  },
+  publications: {
+    type: [
+      {
+        title: { type: String, required: true },
+        year: Number,
+        url: String,
+      },
+    ],
+    default: [],
+  },
+  professionalMemberships: {
+    type: [String],
+    default: [],
+  },
+  nptelCertifications: {
+    type: [String],
+    default: [],
+  },
+  fdpsWorkshopsAttended: {
+    type: [String],
+    default: [],
+  },
+  resourcePersonActivities: {
+    type: [String],
+    default: [],
+  },
+  awards: {
+    type: [String],
+    default: [],
+  },
+  professionalLinks: {
+    type: [
+      {
+        label: String,
+        url: String,
+      },
+    ],
+    default: [],
+  },
 }, {
   timestamps: true
 });
