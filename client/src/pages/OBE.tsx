@@ -15,7 +15,7 @@ const obereportsDocumentData = [
         sno: 1,
         name: 'OBE Manual 2026-27',
         download: (
-            <a href="https://drive.google.com/file/d/1oQe09bUriWWy6mIgWWN9CZ8_zr_aX1Pt/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">
+            <a href="https://drive.google.com/file/d/1mOGR6gSn8kLID-r-nbcd0Z3krNvvsPNE/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">
                 <button className="bg-primary text-white px-4 py-1 rounded hover:bg-secondary transition inline-flex items-center gap-2">
                     <i className="fas fa-download" /> Download PDF
                 </button>
@@ -26,7 +26,7 @@ const obereportsDocumentData = [
         sno: 2,
         name: 'OBE Manual 2025-26',
         download: (
-            <a href="https://drive.google.com/file/d/1oQe09bUriWWy6mIgWWN9CZ8_zr_aX1Pt/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">
+            <a href="https://drive.google.com/file/d/1mOGR6gSn8kLID-r-nbcd0Z3krNvvsPNE/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">
                 <button className="bg-primary text-white px-4 py-1 rounded hover:bg-secondary transition inline-flex items-center gap-2">
                     <i className="fas fa-download" /> Download PDF
                 </button>
