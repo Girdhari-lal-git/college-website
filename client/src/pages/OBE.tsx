@@ -13,7 +13,7 @@ import LazyImage from '@/components/LazyImage';
 const obereportsDocumentData = [
     {
         sno: 1,
-        name: 'OBE Manual 2025-26',
+        name: 'OBE Manual 2026-27',
         download: (
             <a href="https://drive.google.com/file/d/1oQe09bUriWWy6mIgWWN9CZ8_zr_aX1Pt/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">
                 <button className="bg-primary text-white px-4 py-1 rounded hover:bg-secondary transition inline-flex items-center gap-2">
@@ -24,6 +24,17 @@ const obereportsDocumentData = [
     },
     {
         sno: 2,
+        name: 'OBE Manual 2025-26',
+        download: (
+            <a href="https://drive.google.com/file/d/1oQe09bUriWWy6mIgWWN9CZ8_zr_aX1Pt/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">
+                <button className="bg-primary text-white px-4 py-1 rounded hover:bg-secondary transition inline-flex items-center gap-2">
+                    <i className="fas fa-download" /> Download PDF
+                </button>
+            </a>
+        )
+    },
+    {
+        sno: 3,
         name: 'OBE Manual 2024-25',
         download: (
             <a href="https://drive.google.com/file/d/1n9MTuZdTL75VHBIJoTBoI56JOGdTTjM8/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">
@@ -34,7 +45,7 @@ const obereportsDocumentData = [
         )
     },
     {
-        sno: 3,
+        sno: 4,
         name: 'OBE Manual 2023-24',
         download: (
             <a href="https://drive.google.com/file/d/18ymY8phfGUeMChfrZZUuA0_q6hrSLdOU/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">
@@ -45,7 +56,7 @@ const obereportsDocumentData = [
         )
     },
     {
-        sno: 4,
+        sno: 5,
         name: 'OBE Manual 2022-23',
         download: (
             <a href="https://drive.google.com/file/d/17lcj31h5GDEj2shV-ejoyGchhUa9pWcg/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">
@@ -56,7 +67,7 @@ const obereportsDocumentData = [
         )
     },
     {
-        sno: 5,
+        sno: 6,
         name: 'OBE Manual 2021-22',
         download: (
             <a href="https://drive.google.com/file/d/1gnB6zzKCqrCwJyTfxXn8k26G4uv8HSpS/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">
@@ -67,7 +78,7 @@ const obereportsDocumentData = [
         )
     },
     {
-        sno: 6,
+        sno: 7,
         name: 'OBE Manual 2020-21',
         download: (
             <a href="https://drive.google.com/file/d/15RYhWj4hGmFuhYAXCE8yjGQb-Ss8KdE3/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">
@@ -78,7 +89,7 @@ const obereportsDocumentData = [
         )
     },
     {
-        sno: 7,
+        sno: 8,
         name: 'OBE Manual 2019-20',
         download: (
             <a href="https://drive.google.com/file/d/1cIOq8yI-vt4_d33lGTcrzZTeOD_EPAl_/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">
@@ -89,7 +100,7 @@ const obereportsDocumentData = [
         )
     },
     {
-        sno: 8,
+        sno: 9,
         name: 'OBE Manual 2018-19',
         download: (
             <a href="https://drive.google.com/file/d/1YEUsgNAFEr_TLL5beLdf7Hm2PerWHpbk/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">
@@ -187,38 +198,117 @@ const ProgramsContent = (
         </p>
         
         <div className="grid md:grid-cols-2 gap-6">
+    <div className="space-y-4">
+        {[
+            "Engineering Knowledge: Apply knowledge of mathematics, natural science, computing, engineering fundamentals and an engineering specialization as specified in WK1 to WK4 respectively to develop to the solution of complex engineering problems.",
+            
+            "Problem Analysis: Identify, formulate, review research literature and analyze complex engineering problems reaching substantiated conclusions with consideration for sustainable development. (WK1 to WK4)",
+            
+            "Design/Development of Solutions: Design creative solutions for complex engineering problems and design/develop systems/components/processes to meet identified needs with consideration for the public health and safety, whole-life cost, net zero carbon, culture, society and environment as required. (WK5)",
+            
+            "Conduct Investigations of Complex Problems: Conduct investigations of complex engineering problems using research-based knowledge including design of experiments, modelling, analysis & interpretation of data to provide valid conclusions. (WK8).",
+            
+            "Engineering Tool Usage: Create, select and apply appropriate techniques, resources and modern engineering & IT tools, including prediction and modelling recognizing their limitations to solve complex engineering problems. (WK2 and WK6)",
+            
+            "The Engineer and The World: Analyze and evaluate societal and environmental aspects while solving complex engineering problems for its impact on sustainability with reference to economy, health, safety, legal framework, culture and environment. (WK1, WK5, and WK7)."
+        ].map((item, index) => (
+            <div key={index} className="bg-white p-4 rounded-lg shadow-sm border-l-4 border-primary hover:shadow-md transition-shadow">
+                <p className="text-sm text-gray-700">
+                    <span className="font-semibold">{item.split(':')[0]}:</span>
+                    {item.substring(item.indexOf(':') + 1)}
+                </p>
+            </div>
+        ))}
+    </div>
+
+    <div className="space-y-4">
+        {[
+            "Ethics: Apply ethical principles and commit to professional ethics, human values, diversity and inclusion; adhere to national & international laws. (WK9)",
+            
+            "Individual and Collaborative Team work: Function effectively as an individual, and as a member or leader in diverse/multi-disciplinary teams.",
+            
+            "Communication: Communicate effectively and inclusively within the engineering community and society at large, such as being able to comprehend and write effective reports and design documentation, make effective presentations considering cultural, language, and learning differences.",
+            
+            "Project Management and Finance: Apply knowledge and understanding of engineering management principles and economic decision-making and apply these to one’s own work, as a member and leader in a team, and to manage projects and in multidisciplinary environments.",
+            
+            "Life-Long Learning: Recognize the need for, and have the preparation and ability for i) independent and life-long learning ii) adaptability to new and emerging technologies iii) critical thinking in the broadest context of technological change. (WK8)"
+        ].map((item, index) => (
+            <div key={index} className="bg-white p-4 rounded-lg shadow-sm border-l-4 border-secondary hover:shadow-md transition-shadow">
+                <p className="text-sm text-gray-700">
+                    <span className="font-semibold">{item.split(':')[0]}:</span>
+                    {item.substring(item.indexOf(':') + 1)}
+                </p>
+            </div>
+        ))}
+    </div>
+</div>
+    </div>
+);
+
+const WKContent = (
+    <div className="space-y-6">
+        <p className="text-gray-700 leading-relaxed">
+            The Knowledge and Attitude Profile (WK) describes the knowledge and understanding
+            expected of engineering graduates in relation to the practice of engineering. The
+            profile comprises nine knowledge and attitude areas, covering scientific foundations,
+            mathematics and computing, engineering fundamentals, specialist knowledge, design,
+            engineering practice, societal aspects, research and emerging technologies, and
+            professional ethics.
+        </p>
+
+        <div className="grid md:grid-cols-2 gap-6">
             <div className="space-y-4">
                 {[
-                    "Engineering Knowledge: Apply the knowledge of mathematics, science, engineering fundamentals, and an engineering specialization to the solution of complex engineering problems.",
-                    "Problem Analysis: Identify, formulate, review research literature, and analyze complex engineering problems reaching substantiated conclusions using first principles of mathematics, natural sciences, and engineering sciences.",
-                    "Design/Development of Solutions: Design solutions for complex engineering problems and design system components or processes that meet the specified needs with appropriate consideration for the public health and safety, and the cultural, societal, and environmental considerations.",
-                    "Conduct Investigations of Complex Problems: Use research-based knowledge and research methods including design of experiments, analysis and interpretation of data, and synthesis of the information to provide valid conclusions.",
-                    "Modern Tool Usage: Create, select, and apply appropriate techniques, resources, and modern engineering and IT tools including prediction and modeling to complex engineering activities with an understanding of the limitations.",
-                    "The Engineer and Society: Apply reasoning informed by the contextual knowledge to assess societal, health, safety, legal and cultural issues and the consequent responsibilities relevant to the professional engineering practice."
+                    "WK1: A systematic, theory-based understanding of the natural sciences applicable to the discipline and awareness of relevant social sciences.",
+
+                    "WK2: Conceptually-based mathematics, numerical analysis, data analysis, statistics and formal aspects of computer and information science to support detailed analysis and modelling applicable to the discipline.",
+
+                    "WK3: A systematic, theory-based formulation of engineering fundamentals required in the engineering discipline.",
+
+                    "WK4: Engineering specialist knowledge that provides theoretical frameworks and bodies of knowledge for the accepted practice areas in the engineering discipline; much is at the forefront of the discipline.",
+
+                    "WK5: Knowledge, including efficient resource use, environmental impacts, whole-life cost, re-use of resources, net zero carbon, and similar concepts, that supports engineering design and operations in a practice area."
                 ].map((item, index) => (
-                    <div key={index} className="bg-white p-4 rounded-lg shadow-sm border-l-4 border-primary hover:shadow-md transition-shadow">
-                        <p className="text-sm text-gray-700"><span className="font-semibold">{item.split(':')[0]}:</span>{item.split(':')[1]}</p>
+                    <div
+                        key={index}
+                        className="bg-white p-4 rounded-lg shadow-sm border-l-4 border-primary hover:shadow-md transition-shadow"
+                    >
+                        <p className="text-sm text-gray-700">
+                            <span className="font-semibold">
+                                {item.split(':')[0]}:
+                            </span>
+                            {item.substring(item.indexOf(':') + 1)}
+                        </p>
                     </div>
                 ))}
             </div>
-            
+
             <div className="space-y-4">
                 {[
-                    "Environment and Sustainability: Understand the impact of the professional engineering solutions in societal and environmental contexts, and demonstrate the knowledge of, and need for sustainable development.",
-                    "Ethics: Apply ethical principles and commit to professional ethics and responsibilities and norms of the engineering practice.",
-                    "Individual and Team Work: Function effectively as an individual, and as a member or leader in diverse teams, and in multidisciplinary settings.",
-                    "Communication: Communicate effectively on complex engineering activities with the engineering community and with society at large, such as, being able to comprehend and write effective reports and design documentation, make effective presentations, and give and receive clear instructions.",
-                    "Project Management and Finance: Demonstrate knowledge and understanding of the engineering and management principles and apply these to one's own work, as a member and leader in a team, to manage projects and in multidisciplinary environments.",
-                    "Life-Long Learning: Recognize the need for, and have the preparation and ability to engage in independent and life-long learning in the broadest context of technological change."
+                    "WK6: Knowledge of engineering practice (technology) in the practice areas in the engineering discipline.",
+
+                    "WK7: Knowledge of the role of engineering in society and identified issues in engineering practice in the discipline, such as the professional responsibility of an engineer to public safety and sustainable development.",
+
+                    "WK8: Engagement with selected knowledge in the current research literature of the discipline, awareness of the power of critical thinking and creative approaches to evaluate emerging issues.",
+
+                    "WK9: Ethics, inclusive behavior and conduct. Knowledge of professional ethics, responsibilities, and norms of engineering practice. Awareness of the need for diversity by reason of ethnicity, gender, age, physical ability etc. with mutual understanding and respect, and of inclusive attitudes."
                 ].map((item, index) => (
-                    <div key={index} className="bg-white p-4 rounded-lg shadow-sm border-l-4 border-secondary hover:shadow-md transition-shadow">
-                        <p className="text-sm text-gray-700"><span className="font-semibold">{item.split(':')[0]}:</span>{item.split(':')[1]}</p>
+                    <div
+                        key={index}
+                        className="bg-white p-4 rounded-lg shadow-sm border-l-4 border-secondary hover:shadow-md transition-shadow"
+                    >
+                        <p className="text-sm text-gray-700">
+                            <span className="font-semibold">
+                                {item.split(':')[0]}:
+                            </span>
+                            {item.substring(item.indexOf(':') + 1)}
+                        </p>
                     </div>
                 ))}
             </div>
         </div>
     </div>
-);
+); 
 
 const data = {
     heading: "OBE Framework",
@@ -253,7 +343,7 @@ const data = {
 };
 
 const Formulation = {
-    heading: "Formulation of PO's and PSO's",
+    heading: "PO's and PSO's",
     paragraphs: [
         <div key="formulation" className="space-y-4">
             <p className="text-gray-700 leading-relaxed">
@@ -346,7 +436,20 @@ const OBE = () => {
                 </div>
             </section>
 
-            {/* Refinement Process Section */}
+            {/* WK Section */}
+            <section className="py-16 bg-gray-50">
+                <div className="container mx-auto px-4">
+                    <div className="max-w-8xl mx-auto">
+                        <div className="text-center mb-12">
+                            <h2 className="text-3xl font-bold text-primary mb-4">Knowloedge & Attitute Profile (WK)</h2>
+                            <div className="w-24 h-1 bg-secondary mx-auto"></div>
+                           {WKContent}
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Refinement Process Section 
             <section className="py-16 bg-primary">
                 <div className="container mx-auto px-4">
                     <div className="max-w-8xl mx-auto text-center text-white">
@@ -362,7 +465,7 @@ const OBE = () => {
                     </div>
                 </div>
             </section>
-
+*/}
             {/* PSO Definition Process */}
             <section className="py-16 bg-gray-50">
                 <div className="container mx-auto px-4">
@@ -388,6 +491,37 @@ const OBE = () => {
                     </div>
                 </div>
             </section>
+
+            {/* PEO Definition Process */}
+<section className="py-16 bg-gray-50">
+    <div className="container mx-auto px-4">
+        <div className="max-w-8xl mx-auto">
+            <div className="text-center mb-12">
+                <h2 className="text-3xl font-bold text-primary mb-4">
+                    Process for Defining PEOs
+                </h2>
+                <div className="w-24 h-1 bg-secondary mx-auto"></div>
+            </div>
+
+            <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-200 mb-8">
+                <p className="text-gray-700 text-lg text-center mb-8">
+                    The Program Educational Objectives (PEOs) of the department are
+                    defined through a systematic stakeholder-driven process involving
+                    the Departmental Advisory Committee, faculty, students, alumni,
+                    parents, prospective employers, and the assessment committee.
+                </p>
+
+                <div className="bg-blue-50 rounded-xl p-6 border border-blue-200">
+                    <LazyImage
+                        src="/images/obe/PeO_Define.png"
+                        alt="PEO Definition Process Diagram"
+                        className="w-full max-w-4xl h-auto mx-auto block rounded-lg shadow-md"
+                    />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
             {/* IIC Annual Reports */}
                          <div className="container mt-14 mx-auto mb-10">
                             <h2 className="text-3xl text-primary font-bold mb-8 text-center">OBE Booklets</h2>
